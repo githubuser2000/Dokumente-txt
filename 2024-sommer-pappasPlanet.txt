@@ -1,0 +1,32 @@
+for a in range(1,21):a,b=a-1,21-a;print([a,b]);
+[0, 20]
+[1, 19]
+[2, 18]
+[3, 17]
+[4, 16]
+[5, 15]
+[6, 14]
+[7, 13]
+[8, 12]
+[9, 11]
+[10, 10]
+[11, 9]
+[12, 8]
+[13, 7]
+[14, 6]
+[15, 5]
+[16, 4]
+[17, 3]
+[18, 2]
+[19, 1]
+
+ALX,trace,kerni,axel,xander:[familyFamilie ofVon theDem planetPlaneten:EarthErde:
+8 eight Acht amountBetrag{1st. theDieConnectedVerbundenenConfederatedVerbündetenWithoutOhneIdentityIdentitätUnknownUnbekannte, 2nd. superiourÜberlegenenCraftsmenHandwerkerFarmersBauernElevatedErhaben, 3rd. dominatingDominierendenMathematiciansMathematiker:planet:humbleDemütig:Problem:SolvingLösend:developerEntwickler:CalculationRechnen:MachinesMaschinen:TableTaschenCalculatorRechner:dominatingDominierenHumbleDemütig:Planet, 4th. planetaryPlanetareStrategyStrategieExpertsExpertenTacticsTaktikPlanetPlanetenOptimizationOptimierungByDurchMilitatryMilitärWithMitMathematiciansMathematikerForFür:planet:improvementVerbesserung:in:strategyStragie:EarthErde, 5th. singleEinzelPersonsPersonen asAls policemenPolizist ofVon theDem planet:EarthErde vsGegen LierLügner: riskingRiskieren WorldWeltWarsKriege vsGegen planet moonMond peopleMenschen, 6th. planet:unifyiengVereinende:sexualSexuell:workingArbeitenden:unifyiengVereinen:planet, 7th. goodGutesBehaviourVerhaltenPeopleMenschen:planet:selflessSelbstlosGoodGut, 8th. centralZentralenHelperHelferForFürPurposesZweckeOfVon:planet:nobleEdelNobleAdel:isIst:HelpersHelfer:forFür:nobleEdlen:planet.}::: isIst allAlles::: responsibleVerantwortlich:familyFamilie ofVon theDem planet:EarthErde:responsibleVerantwortlich:familyFamilie.
+(8 eight Acht amountBetrag)
+]:ALX,trace,kerni,axel,xander.
+
+ALX,trace,kerni,axel,xander:[planetaryPlanetaren ScientistsWissenschaftlerResearcherForscher:planet:EarthErde::[(10 ten Zehn Amount Betrag ) 1st.
+goalZielAimZweckGiverGeberWithMitIdentityIdentitätButAberNotNichtWithoutOhne, 2nd. ableFähigMaleMännlichOrderlyOrdentlichConnectedVerbundenenConfederatedVerbündetenDiplomatsDiplamtenAmbassadorsBotschafter, 3rd. planetaryPlanetareRealityRealitätTruthWahrheitsPolicemenPolizistAboutÜberSurvivalÜberlebenLifeLebenUsageNutzenFoodEssenVibrationVibrierenReflexesReflexeDriveTriebEconomyWirtschaftMoneyGeld, 4th. silentRuhigeDominatingDominierendeWorkerArbeiterUnionsGewerkschaftenPeopleMenschheitAboutÜberChangeVeränderungTransformationUnwandlungWorkArbeitDimensionsDimensionenCreationErschaffungDesignDesign, 5th. centralZentraleSuperiourÜberlegeneSublimeErhabenWholeGanz, 6th. problem:solversLöserCentricZentralHumbleDemütigCalculatingBerechnendCombiningKombinierend:highHochValueWertigImprovingVerbesserndAmountBetragAnythingIrgendwas, 7th. goodGuteHelpersHelferSelflessSelbstlosNobleEdelNobleAdelPurposesZweckeFeelingsGefühleEmotionsEmotions, 8th. safeSichereHirarchyHierarchiePeopleMenschenStatusStatusHonorEhreManagerVerwalterTycoonHaiAdminstratorVerwalter, 9th. sexualSexuellesUnifyingVereinendesPlaneteryPlanetaresBehaviourVerhaltenResponsibleVerantwortlicheAboutÜberSystemsSystemeSafeSicher, 10th. correctnessRichtigkeitDeterminationBestimmungResponsibleVerantwortlicheOptimizerOptimiererRealityRealitätsConsciousBewussteImproverVerbessererClassKlassenAwareBewussteScientistsWissenschaftler
+areSind: "planetaryPlanetaren ScientistsWissenschaftlerResearcherForscher:planet:EarthErde"
+(10 ten Zehn Amount Betrag ).
+]]:ALX,trace,kerni,axel,xander.

@@ -1,0 +1,1 @@
+Q Koninuum: 1. Schwierigkeit, 2. Komplexität, 3. Abstraktion, 4. Kristallin, 5. Kodieren, 6. Beschreiben, 7. Delegieren, 8. Bilden, 9. Framen, 10. Restriktion. W Kontinuum: 1. Wissensbasis, 2. Härte- oder Weiche der Kodierung, 3. "Libraries, Frameworks,Units" z.B des kodierens. 4. "enkodieren,dekodieren,betätigen" an der Wissensbasis! 5. Debugging, Entkäfern, Fehler behandeln!

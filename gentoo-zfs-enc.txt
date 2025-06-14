@@ -1,0 +1,6 @@
+ZFS="yes"
+ZFS_MODULES="zfs"
+
+zfs load-key -a
+
+zfs create -o encryption=on -o keyformat=passphrase -o keylocation=prompt -o pbkdf2iters=500000 -o encryption=aes-256-gcm poolname/datasetname

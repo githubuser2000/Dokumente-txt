@@ -1,0 +1,25 @@
+http://dl-learner.org/
+
+http://jsonapi.org/
+
+Designentscheidung?
+
+MVC vs. Domäne
+
+Softwareproduktlinien -> Eisenecker
+Generative and Component-Based Software Engineering
+
+Entwicklung einer Produktlinie für die Entwicklung Web-basierter
+Applilkationen auf Basis einer Applikations-Instanz zur Unterstützung
+des Heilungsprozesses in der Diabetes- und Ernährungsberatung
+
+Betrachtung wichtiger Aspekte:
+
+- Designentscheidung
+- Werkzeuge
+- Tests
+
+- ....
+
+-- 
+Prof. Dr. Thomas Riechert

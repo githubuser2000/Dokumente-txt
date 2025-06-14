@@ -1,0 +1,96 @@
+6. Funktion erstellen (für SSH und nicht-SSH)
+Eine Funktion kann komplexere Abkürzungen erlauben.
+
+Zsh/Bash:
+
+sh
+Code kopieren
+myrsync() {
+    rsync -av /home/user/important/ /backup/location/
+}
+Fish:
+
+fish
+Code kopieren
+function myrsync
+    rsync -av /home/user/important/ /backup/location/
+end
+
+
+
+
+
+
+
+
+
+
+
+
+2. SSHFS (SSH File System)
+Wenn Sie Verzeichnisse von einem Remote-Server häufig nutzen müssen, könnten Sie auch SSHFS verwenden, um ein Remote-Verzeichnis in Ihrem lokalen Dateisystem zu mounten. Dadurch können Sie das Verzeichnis wie ein lokales Verzeichnis ansprechen.
+
+SSHFS Mounten:
+
+sh
+Code kopieren
+sshfs myserver:/remote/dir /mnt/remote_dir
+Rsync-Befehl auf das gemountete Verzeichnis:
+
+sh
+Code kopieren
+rsync -av /mnt/remote_dir/ /backup/location/
+
+2. Shell-Variablen verwenden
+Sie können Umgebungsvariablen verwenden, um Pfade zu speichern und sie dann in Ihren rsync-Befehlen zu nutzen.
+
+Zsh/Bash:
+
+sh
+Code kopieren
+export SRC_DIR="/home/user/important"
+export DEST_DIR="/backup/location"
+rsync -av $SRC_DIR/ $DEST_DIR/
+Fish:
+
+fish
+Code kopieren
+set SRC_DIR "/home/user/important"
+set DEST_DIR "/backup/location"
+rsync -av $SRC_DIR/ $DEST_DIR/
+
+
+1. Alias erstellen (für nicht-SSH Adressen)
+In zsh, bash, und fish können Sie Aliase erstellen, um lange Pfade zu verkürzen.
+
+Zsh/Bash:
+
+sh
+Code kopieren
+alias mybackup='rsync -av /home/user/important/ /backup/location/'
+Fish:
+
+fish
+Code kopieren
+alias mybackup "rsync -av /home/user/important/ /backup/location/"
+
+
+
+3. Skripte zur Kombination von SSH und Pfaden
+Sie können ein Shell-Skript erstellen, das sowohl SSH-Verbindungen als auch Pfade vereinfacht.
+
+Beispielskript (Zsh/Bash):
+
+sh
+Code kopieren
+#!/bin/bash
+remote_sync() {
+    local LOCAL_DIR="$1"
+    local REMOTE_ALIAS="$2"
+    local REMOTE_PATH="$3"
+
+    rsync -av "$LOCAL_DIR" "$REMOTE_ALIAS:$REMOTE_PATH"
+}
+
+# Usage
+remote_sync ~/local/dir myserver /remote/dir

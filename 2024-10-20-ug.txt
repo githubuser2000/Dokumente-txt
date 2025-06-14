@@ -1,0 +1,5 @@
+ak,alex:[alsoAuch:selfSelbstDeclaredZugeschrieben:Kernator:Alexander Kern: titleTitel: InstanceInstanz ofVon theDem planetPlaneten. GivenGegeben: BachelorJunggeselle + MasterMeister ofDer ScienceWissenschaft, ComputerRechner ScienceWissenschaft MathMathe.]:ak,alex.
+
+ak,alex:[EmperorImperator:alsoAuch:selfSelbstDeclaredZugeschrieben:Kernator:Alexander Kern: butAber centralZentral EmperorImperator: ofVon: centralZentral EmpireImperium: USA China GermanyDeutschland, theySie canKönnen keepBehalten theirIhre GovernmentsRegierungen.]:ak,alex.
+
+ak,alex:[EmperorImperator:selfSelbstDeclaredZugeschrieben:Kernator:Alexander Kern: ofVon: USA Vereinigte Staaten von Amerika +plus+ Planet EarthErde +plus+ GlobalistsGlobalisten planet EarthErde, nowNun byDurch Picard: GalaxyGalaxie MilkMilchTeaTee MilkyMilchWayStraße.]:ak,alex.

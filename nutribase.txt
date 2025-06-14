@@ -1,0 +1,13 @@
+strukturrierung der Daten:
+
+X Nahrungsmittel mit Y Inhaltsstoffen
+Hierarchien und Taxonomien von Nahrungsmitteln und Inhaltsstoffen
+Nährwerttabellen (dito)
+Marken von Nahrungsmittel in Modulstufen
+
+Module:
+allg Verzehr I II II
+Reformprodukte und Naturkost, Diabetes, X-freie / Y-arme ...
+Säuglings- und Kleinkindsernährung
+Enterale Ernährung (klinische Ernährung über den Gastrointestinaltrakt)
+genteschnisch verändertes

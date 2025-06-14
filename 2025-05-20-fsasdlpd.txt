@@ -1,0 +1,55 @@
+ALX:[ontologisches Dateisystem durch Semantik (Erfindung)
+
+Was es nicht gibt
+   • Ordnerhierarchie, kein Verzeichnisbaum.
+   • Dateien, stattdessen eine Box bzw. eine Kapselung oder Kapsel, in und außerhalb alles und nichts sein könnte oder kann, also extrem beliebig definiert.
+   • Dateinamen wahrscheinlich sogar noch nicht einmal, sondern alles andere, das Dateinamen ersetzen könnte, also alle Formen von Daten, die es heute gibt, könnten Dateinamen aus Text ersetzen. Dateinamen wird es als Möglichkeit zwar auch geben, als eine Form eines Bezeichners, der nicht nur ein Text oder Name sein kann, sondern fast alles: Sondern sogar ein Bezeichner oder eine ID kann wegfallen.
+
+Heutige Dateisysteme sind
+   • Hierarchien (12)
+   • durch Symlinks und Hardlinks auch Graphen bzw. Netze (24)
+   • noch irgendwelche anderen Sachen
+
+Was muss man können, um ontologische Dateisysteme zu beherrschen
+   • Grundschule reicht nicht mehr, erst mit Mitte 20 ist man schlau genug dieses viel zu komplizierte Dateisystem zu benutzen (Sarkasmus)
+   • Ja ist aber wirklich schlimm, dass wenn Dinge besser werden, dass dann alles immer wieder komplizierter wird
+
+Bsp. 1
+   • angenommen es gibt die Datei Dateiname.tar.xz.gpg
+   • Heute sind das ja einfach nur Zeichen und Zeichenketten, denen wir gedanklich eine Bedeutung zuordnen und außerdem wird innerhalb der Datei noch mal extra erkannt, ob das auch wirklich dieses Format ist.
+   • In einem ontologischen Dateisystem wären das dann Verkettungen von Bedeutungszuordnungen also tar xz und gpg würden dann einfach solche ontologischen Verkettungen sein
+   • und diese Verkettung ist dann auch verkettet mit der Software, die diese Datei laden können
+   • Bsp. gibt es statt der Endung .mp3 eine ontotogische Information, die die mp3 mit dem Mediaplayer verknüpft.
+
+Sonstiges
+   • Die Idee dazu hatte ich bereits 2006, 2007. Da habe ich gehört, dass Microsoft daran arbeitet. Die haben dann damit aber aufgehört, mit der Begründung, dass es unendliche Bedeutungszuordnungen gibt. Naja.
+   • Ihr wisst ja auch von wem die Idee vom Brotli Kompressionsformat kam (mein Nachname ist Kern.). (Zig kommt von Leipzig, wo ich seit 2007 wohne.)
+   • Ideen zu haben ist sowieso totaler Unsinn, wenn man mal schaut, wie sinnlos das Patentrecht ist. Da kann man als Erfinder gleich aufgeben.]:ALX.
+
+ALX: [Ontological file system through semantics (invention)]
+
+What's not there
+• Folder hierarchy, not a directory tree.
+• Files, instead a box or an encapsulation or capsule, inside and outside of which everything and nothing could or can be, thus defined extremely arbitrarily.
+• File names probably not even yet, but anything else that could replace file names, i.e., all forms of data that exist today could replace text file names. File names will certainly exist as a possibility, as a form of identifier, which can be not just text or a name, but almost anything: even an identifier or ID can be omitted.
+
+Today's file systems are:
+• Hierarchies (12)
+• Graphs or networks (24) through symlinks and hardlinks
+• Some other things
+
+What do you need to know to master ontological file systems?
+• Elementary school is no longer enough; it's not until your mid-20s that you're smart enough to use this far too complicated file system (sarcasm)
+• Yes, but it's really bad that when things get better, everything just keeps getting more complicated.
+
+Example 1
+• Assume there is a file named filename.tar.xz.gpg
+• Today, these are simply characters and strings to which we mentally assign a meaning. Furthermore, within the file, there's an additional detection to determine whether it's actually in this format.
+• In an ontological file system, these would be concatenations of meaning assignments, so tar xz and gpg would simply be such ontological concatenations.
+• And this concatenation is then also linked to the software that can load this file.
+• For example, instead of the .mp3 extension, there is ontological information that links the mp3 to the media player.
+
+Miscellaneous
+• I had the idea for this back in 2006 or 2007. I heard that Microsoft was working on it. But then they stopped, arguing that there are infinite meaning assignments. Oh well.
+• You also know who came up with the idea for the Brotli compression format (my family name is Kern). (Zig comes from Leipzig, where I've lived since 2007.)
+• Having ideas is complete nonsense anyway, considering how pointless patent law is. As an inventor, you might as well give up.]:ALX.

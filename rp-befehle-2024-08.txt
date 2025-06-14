@@ -1,0 +1,1 @@
+p(sum((36**i*a for (i,a) in enumerate(((int(b) if b.isdecimal() else 9+ord(b)-96 for b in list(reversed("331"))))))))

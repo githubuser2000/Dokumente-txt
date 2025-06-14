@@ -1,0 +1,54 @@
+Ja, wenn du Software von Drittanbietern vermarktest, kannst du als Consultant, Reseller oder Vertriebspartner agieren – je nach Geschäftsmodell. Hier sind einige Wege, um Anbieter zu finden:
+
+1. Software-Marktplätze & Partnerprogramme
+
+SaaS-Marktplätze: Capterra, G2, GetApp
+
+Partnerprogramme großer Anbieter:
+
+Microsoft Partner Network (Azure, Dynamics, 365)
+
+AWS Partner Network
+
+SAP PartnerEdge
+
+Oracle PartnerNetwork
+
+HubSpot Solutions Partner
+
+
+Plattformen für Reseller: AppSumo, Paddle, FastSpring
+
+
+2. Direkte Kontaktaufnahme mit Anbietern
+
+Viele kleinere Softwarefirmen suchen Vertriebspartner. Sie bieten oft individuelle Deals.
+
+Suche nach "White-Label Software", falls du dein eigenes Branding nutzen möchtest.
+
+
+3. IT-Distributoren & Großhändler
+
+Ingram Micro, Tech Data, ALSO: Klassische Distributoren für Software-Reselling.
+
+Cloud Marketplaces: AWS Marketplace, Azure Marketplace.
+
+
+4. Affiliate-Marketing & Lead-Generierung
+
+CJ Affiliate, Impact, PartnerStack → Ideal für SaaS-Produkte, oft mit Provisionen.
+
+Alternativ kannst du Leads an Anbieter vermitteln und Provisionen pro Abschluss kassieren.
+
+
+5. Spezialisierte B2B-Netzwerke & Messen
+
+LinkedIn Sales Navigator: Direkt Software-Anbieter finden.
+
+Events wie die CeBIT, Web Summit oder SaaStr sind perfekt zum Netzwerken.
+
+
+Fazit:
+Wenn du nur vermittelst, bist du eher ein Affiliate oder Sales Partner. Wenn du Beratung und Anpassungen machst, bist du ein Consultant oder Systemintegrator. Die Wahl hängt davon ab, wie tief du in die Technik und den Vertrieb einsteigen willst.
+
+

@@ -1,0 +1,68 @@
+Sound Recorder|	com.android.soundrecorder|	4.4.2-999428|	19
+com.android.sdksetup|	com.android.sdksetup|	4.4.2-999428|	19
+Launcher|	com.android.launcher|	4.4.2-999428|	19
+Package Access Helper|	com.android.defcontainer|	4.4.2-999428|	19
+com.android.smoketest|	com.android.smoketest|	4.4.2-999428|	19
+Search|	com.android.quicksearchbox|	4.4.2-999428|	19
+Contacts|	com.android.contacts|	4.4.2-999428|	19
+Android Keyboard (AOSP)|	com.android.inputmethod.latin|	4.4.2-999428|	19
+Phone|	com.android.phone|	4.4.2-999428|	19
+Calculator|	com.android.calculator2|	4.4.2-999428|	19
+ProxyHandler|	com.android.proxyhandler|	4.4.2-999428|	19
+HTML Viewer|	com.android.htmlviewer|	4.4.2-999428|	19
+Connectivity Test|	com.android.emulator.connectivity.test|	1.0|	1
+dritterVersuch|	com.example.dritterversuch|	1.0|	1
+Calendar Storage|	com.android.providers.calendar|	4.4.2-999428|	19
+Input Devices|	com.android.inputdevices|	4.4.2-999428|	19
+Custom Locale|	com.android.customlocale2|	1.0|	1
+Calendar|	com.android.calendar|	4.4.2-999428|	19
+Browser|	com.android.browser|	4.4.2-999428|	19
+Music|	com.android.music|	4.4.2-999428|	19
+NetSpeed|	com.android.netspeed|	4.4.2-999428|	19
+Widget Preview|	com.android.widgetpreview|	4.4.2-999428|	19
+Example Wallpapers|	com.example.android.livecubes|	4.4.2-999428|	19
+Downloads|	com.android.providers.downloads.ui|	4.4.2-999428|	19
+User Dictionary|	com.android.providers.userdictionary|	4.4.2-999428|	19
+Documents|	com.android.documentsui|	4.4.2-999428|	19
+谷歌拼音输入法|	com.android.inputmethod.pinyin|	4.4.2-999428|	19
+com.android.sharedstoragebackup|	com.android.sharedstoragebackup|	4.4.2-999428|	19
+VpnDialogs|	com.android.vpndialogs|	4.4.2-999428|	19
+Messaging|	com.android.mms|	4.4.2-999428|	19
+PacProcessor|	com.android.pacprocessor|	4.4.2-999428|	19
+Media Storage|	com.android.providers.media|	4.4.2-999428|	700
+Certificate Installer|	com.android.certinstaller|	4.4.2-999428|	19
+API Demos|	com.example.android.apis|	4.4.2-999428|	19
+Print Spooler|	com.android.printspooler|	1|	1
+Fallback|	com.android.fallback|	4.4.2-999428|	19
+com.android.gesture.builder|	com.android.gesture.builder|	4.4.2-999428|	19
+Camera|	com.android.gallery|	4.4.2-999428|	19
+Android System|	android|	4.4.2-999428|	19
+Settings|	com.android.settings|	4.4.2-999428|	19
+Contacts Storage|	com.android.providers.contacts|	4.4.2-999428|	19
+Home screen tips|	com.android.protips|	1.0|	1
+External Storage|	com.android.externalstorage|	4.4.2-999428|	19
+Basic Daydreams|	com.android.dreams.basic|	4.4.2-999428|	19
+Development Settings|	com.android.development_settings|	1.0|	1
+Sample Soft Keyboard|	com.example.android.softkeyboard|	4.4.2-999428|	19
+Exchange Services|	com.android.exchange|	4.4.2-999428|	500060
+System UI|	com.android.systemui|	4.4.2-999428|	19
+Live Wallpaper Picker|	com.android.wallpaper.livepicker|	4.4.2-999428|	19
+Speech Recorder|	com.android.speechrecorder|	4.4.2-999428|	19
+Key Chain|	com.android.keychain|	4.4.2-999428|	19
+GPS Location Test|	com.android.emulator.gps.test|	1.0|	1
+Package installer|	com.android.packageinstaller|	4.4.2-999428|	19
+Dev Tools|	com.android.development|	1.0|	1
+com.android.smoketest.tests|	com.android.smoketest.tests|	4.4.2-999428|	19
+Phone/Messaging Storage|	com.android.providers.telephony|	4.4.2-999428|	19
+Pico TTS|	com.svox.pico|	1.0|	1
+Camera|	com.android.camera|	1|	1
+OpenWnn|	jp.co.omronsoft.openwnn|	4.4.2-999428|	19
+Email|	com.android.email|	4.4.2-999428|	500060
+Dialer|	com.android.dialer|	4.4.2-999428|	19
+Clock|	com.android.deskclock|	3.0.0|	301
+Fused Location|	com.android.location.fused|	4.4.2-999428|	19
+com.android.backupconfirm|	com.android.backupconfirm|	4.4.2-999428|	19
+Settings Storage|	com.android.providers.settings|	4.4.2-999428|	19
+com.android.keyguard|	com.android.keyguard|	4.4.2-999428|	19
+Shell|	com.android.shell|	4.4.2-999428|	19
+Download Manager|	com.android.providers.downloads|	4.4.2-999428|	19

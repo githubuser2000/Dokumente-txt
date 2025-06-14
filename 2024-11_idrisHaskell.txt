@@ -1,0 +1,451 @@
+Kennst du mehrere Projekte, die Idris 1 oder 2 (0.7) verwenden?
+
+Idris, sowohl in Version 1 als auch in Idris 2 (ab Version 0.7), ist vor allem in der Forschung, Lehre und experimentellen Softwareentwicklung beliebt. Es gibt eine begrenzte, aber wachsende Anzahl von Projekten, die diese Sprache nutzen, insbesondere im Bereich der funktionalen Programmierung und der verifizierbaren Software. Einige bemerkenswerte Anwendungsfälle und Projekte sind:
+
+1. Formale Spezifikationen und Verifizierung
+
+Theorem Proving: Idris wird oft als ein Werkzeug verwendet, um abhängige Typen für die Verifizierung von Algorithmen und mathematischen Beweisen einzusetzen.
+
+Beispielprojekte:
+
+Verified Data Structures: Implementierungen, die garantieren, dass z.B. Sortieralgorithmen oder Balancierung von Bäumen korrekt sind.
+
+Protocol Verification: Einfache Protokollimplementierungen, z. B. für Verschlüsselung oder sichere Kommunikation.
+
+
+
+2. Bibliotheken und Frameworks
+
+lightyear (Parser-Combinator): Eine Bibliothek in Idris 1 für das Schreiben von Parsern mit abhängigen Typen.
+
+idris2-elab-util: Sammlung von Bibliotheken, die in Idris 2 entwickelt werden, um Elaborations-Extensions zu unterstützen.
+
+effects: Eine effektbasierte Programmierbibliothek, die ähnliche Funktionalitäten wie Effekte in Haskell ermöglicht, aber auf Idris' Typ-System aufbaut.
+
+
+3. Erforschung neuer Paradigmen
+
+Softwareentwicklung mit garantierten Eigenschaften:
+
+Das Type-Driven Development (TDD) in Idris erlaubt es, Programme zu schreiben, die von vornherein durch Typen garantiert korrekt sind. Viele kleinere Forschungsprojekte basieren auf diesen Ideen.
+
+
+Alternative zu Haskell und Coq: Idris wird in Universitäten und Forschungsgruppen verwendet, die alternative Ansätze zu etablierten Tools wie Haskell oder Coq erforschen.
+
+
+4. Kompilierung und DSLs
+
+Spezial-Domänensprachen (DSLs):
+
+Idris eignet sich hervorragend für das Erstellen von DSLs, insbesondere dort, wo Sicherheit durch Typen und Verifizierung gefragt ist.
+
+Ein Beispiel ist die DSL für Finanztransaktionen, die von der Sicherheit in intelligenten Verträgen inspiriert wurde.
+
+
+
+5. Nebenprojekte von Entwicklern
+
+Viele kleine Projekte auf GitHub und GitLab, die zeigen, wie Idris in kleinen Anwendungen genutzt wird:
+
+Spiele: Es gibt experimentelle Spiele, die Idris für Logik und Gameplay-Entscheidungen verwenden.
+
+Kleine Webserver: Prototypen für typsichere Webserver in Idris.
+
+
+Beispiele:
+
+Idris-based Graph Algorithms
+
+Interactive Prover Projects: Kleine experimentelle Projekte wie das Verifizieren von Sudoku-Lösungen oder Routenplanung.
+
+
+
+6. Kommerzielle Anwendungen
+
+Propellor: Ein Systemkonfigurations-Tool, das von Haskell nach Idris portiert wurde, um mehr Typensicherheit zu erreichen.
+
+Einige kleinere Unternehmen und Startups experimentieren mit Idris, um kritische Softwarekomponenten abzusichern (z. B. für medizinische oder rechtliche Anwendungen).
+
+
+Idris hat jedoch eine kleinere Community als Haskell oder Coq. Die meisten Projekte befinden sich in einem experimentellen oder akademischen Stadium. Du kannst auf Plattformen wie GitHub, GitLab oder spezifischen Idris-Foren suchen, um aktuelle und spezifische Projekte zu finden.
+
+
+
+erzähle mir von effects und coq. Welche DSLs sind am populärsten?
+
+
+Effekte in Idris und Coq
+
+Effekte in Idris
+
+In Idris 2 (und auch schon in Idris 1) sind Effekte ein wichtiges Konzept, das es ermöglicht, funktionale Programme mit Seitenwirkungen (z. B. Ein- und Ausgaben, Zufallszahlen, State) auf eine typsichere Weise zu modellieren. Das Konzept der Effekte in Idris basiert auf einer Erweiterung des traditionellen funktionalen Programmierparadigmas.
+
+Effekte in Idris ermöglichen es, Programme zu schreiben, die nicht nur den Funktionswert, sondern auch die Art und Weise, wie sie mit ihrer Umgebung interagieren, explizit beschreiben. Dadurch können Seiteneffekte (wie IO, State oder Fehlerbehandlung) auf eine strukturierte und typsichere Art gehandhabt werden.
+
+Idris nutzt eine Effekt-System-Bibliothek, die es erlaubt, Programme in einem effektenspezifischen Stil zu schreiben. Es wird zwischen effektfreien und effektbehafteten Berechnungen unterschieden. Dies führt zu einem sehr flexiblen und sauberen Code, der ohne die Komplexität von Monad-Inferenz auskommt (wie es in Haskell der Fall ist).
+
+Populäre Effekte in Idris:
+
+State: Zustandsmodifikation, etwa zur Modellierung von Änderungen in einer Anwendung, wie das Speichern von Variablen.
+
+Error: Fehlerbehandlung und das Werfen von Ausnahmen.
+
+IO: Ein- und Ausgabeoperationen, wie das Lesen von Benutzereingaben oder das Schreiben auf eine Datei.
+
+Non-Determinism: Modellierung von nichtdeterministischen Berechnungen.
+
+Concurrency/Parallelism: Ansätze zur Handhabung von Parallelität in Programmen.
+
+
+Beispiel:
+
+effect Error : Type -> Type
+effect State : Type -> Type -> Type
+
+addWithState : (x : Int) -> (y : Int) -> Eff (State Int : Type) Int
+addWithState x y = do
+  state <- get
+  put (state + 1)
+  pure (x + y)
+
+In diesem Beispiel wird ein Zustandseffekt modelliert, der den Zustand nach der Berechnung verändert.
+
+Coq und Effekte
+
+Coq ist ein formales Beweissystem und ein interaktiver Theorembeweiser, der stark auf abhängigen Typen aufbaut. Im Gegensatz zu Idris, das eine funktionale Programmiersprache mit einem eingebauten Verifikationssystem ist, ist Coq primär ein Theorembeweiser. Coq ermöglicht es, formale Beweise zu führen, die Programme und ihre Korrektheit garantieren.
+
+Coq nutzt ebenfalls ein System für die Modellierung von Effekten, aber dieses ist mehr in der Theorie und weniger in der Praxis implementiert, da Coq nicht direkt für die praktische Softwareentwicklung, sondern für mathematische Beweise und die Verifikation von Software gedacht ist. Das Coq-Äquivalent zu Effekten sind Monaden, mit denen Nebenwirkungen in einem verifizierbaren Rahmen behandelt werden können, aber die Handhabung ist weniger intuitiv und stärker auf Beweise fokussiert.
+
+Populäre DSLs (Domänenspezifische Sprachen)
+
+Ein DSL ist eine Sprache, die speziell für einen bestimmten Anwendungsbereich entwickelt wurde, im Gegensatz zu allgemeinen Programmiersprachen wie Python oder Java. DSLs bieten häufig abstrakte und höherwertige Konzepte, die für den spezifischen Bereich optimiert sind.
+
+Populäre DSLs in der funktionalen Programmierung und verifizierbarer Software:
+
+1. SQL (Structured Query Language):
+
+Bereich: Datenbankabfragen
+
+Verwendung: SQL ist wahrscheinlich eine der bekanntesten DSLs und wird weitgehend für die Verwaltung und Abfrage von relationalen Datenbanken eingesetzt. Viele moderne Datenbanksysteme bieten eine Erweiterung von SQL, die spezifische Aufgaben wie Transaktionsverarbeitung oder räumliche Datenbehandlung ermöglichen.
+
+
+
+2. Regular Expressions (RegEx):
+
+Bereich: Textverarbeitung und Mustererkennung
+
+Verwendung: RegEx ist eine spezialisierte Sprache, die verwendet wird, um Muster in Texten zu erkennen. Sie wird in vielen Programmiersprachen als eingebautes Werkzeug verwendet, um Zeichenketten zu durchsuchen und zu manipulieren.
+
+
+
+3. HTML/CSS (HyperText Markup Language und Cascading Style Sheets):
+
+Bereich: Webentwicklung
+
+Verwendung: HTML und CSS sind DSLs für das Strukturieren und Stylen von Webdokumenten. Sie abstrahieren die Darstellung von Web-Inhalten und sind auf die Bedürfnisse von Webentwicklern zugeschnitten.
+
+
+
+4. LaTeX:
+
+Bereich: Dokumentenerstellung
+
+Verwendung: LaTeX ist eine leistungsfähige DSL für die wissenschaftliche und technische Dokumentation. Es ermöglicht die exakte Steuerung von Layouts, mathematischen Formeln und bibliografischen Daten.
+
+
+
+5. VHDL/Verilog:
+
+Bereich: Hardwarebeschreibung
+
+Verwendung: VHDL und Verilog sind DSLs für die Modellierung und Beschreibung von digitalen Schaltungen und FPGAs. Sie erlauben eine sehr detaillierte Spezifikation und Simulation von Hardwarekomponenten.
+
+
+
+6. XSLT (Extensible Stylesheet Language Transformations):
+
+Bereich: XML-Datenverarbeitung
+
+Verwendung: XSLT wird verwendet, um XML-Daten zu transformieren, sei es in andere XML-Dokumente, HTML oder Textformate.
+
+
+
+7. RPG (Report Program Generator):
+
+Bereich: Geschäftsanwendungen
+
+Verwendung: RPG wurde ursprünglich für die Erstellung von Geschäftsanwendungen auf IBM-Mainframes entwickelt und hat sich als DSL für die Geschäftsdatenverarbeitung etabliert.
+
+
+
+8. Spec# (Microsoft):
+
+Bereich: Softwareverifikation
+
+Verwendung: Spec# ist eine DSL zur Verifikation von C#-Code. Sie fügt zusätzliche sprachliche Konstrukte hinzu, um Programminvarianten und Vor- und Nachbedingungen zu spezifizieren, was zur formalen Verifikation beiträgt.
+
+
+
+9. Idris als DSL:
+
+Bereich: Abhängig typisierte Programmierung
+
+Verwendung: Idris wird selbst auch verwendet, um DSLs zu erstellen, insbesondere für sicherheitskritische Anwendungen, in denen die Verifikation von Software durch Typen im Vordergrund steht. Beispielsweise kann Idris für die Modellierung von spezialisierten Berechnungen in wissenschaftlichen oder technischen Bereichen eingesetzt werden.
+
+
+
+
+Fazit
+
+Effekte in Idris bieten eine strukturierte Möglichkeit, mit Nebenwirkungen umzugehen und Programme zu entwickeln, die auch in realen Anwendungen wie Web-Servern oder Datenbanken nützlich sind.
+
+Coq ist stärker auf mathematische und formale Verifikation ausgerichtet und wird hauptsächlich in der Forschung und bei der Entwicklung von verifizierten Programmen eingesetzt.
+
+DSLs sind sehr nützlich, um spezifische Anwendungsdomänen zu adressieren, und reichen von Textverarbeitung (RegEx, HTML) bis zu Hardwarebeschreibung (VHDL) und Softwareverifikation (Spec#).
+
+
+Effekte in Idris und Coq
+
+Effekte in Idris
+
+In Idris 2 (und auch schon in Idris 1) sind Effekte ein wichtiges Konzept, das es ermöglicht, funktionale Programme mit Seitenwirkungen (z. B. Ein- und Ausgaben, Zufallszahlen, State) auf eine typsichere Weise zu modellieren. Das Konzept der Effekte in Idris basiert auf einer Erweiterung des traditionellen funktionalen Programmierparadigmas.
+
+Effekte in Idris ermöglichen es, Programme zu schreiben, die nicht nur den Funktionswert, sondern auch die Art und Weise, wie sie mit ihrer Umgebung interagieren, explizit beschreiben. Dadurch können Seiteneffekte (wie IO, State oder Fehlerbehandlung) auf eine strukturierte und typsichere Art gehandhabt werden.
+
+Idris nutzt eine Effekt-System-Bibliothek, die es erlaubt, Programme in einem effektenspezifischen Stil zu schreiben. Es wird zwischen effektfreien und effektbehafteten Berechnungen unterschieden. Dies führt zu einem sehr flexiblen und sauberen Code, der ohne die Komplexität von Monad-Inferenz auskommt (wie es in Haskell der Fall ist).
+
+Populäre Effekte in Idris:
+
+State: Zustandsmodifikation, etwa zur Modellierung von Änderungen in einer Anwendung, wie das Speichern von Variablen.
+
+Error: Fehlerbehandlung und das Werfen von Ausnahmen.
+
+IO: Ein- und Ausgabeoperationen, wie das Lesen von Benutzereingaben oder das Schreiben auf eine Datei.
+
+Non-Determinism: Modellierung von nichtdeterministischen Berechnungen.
+
+Concurrency/Parallelism: Ansätze zur Handhabung von Parallelität in Programmen.
+
+
+Beispiel:
+
+effect Error : Type -> Type
+effect State : Type -> Type -> Type
+
+addWithState : (x : Int) -> (y : Int) -> Eff (State Int : Type) Int
+addWithState x y = do
+  state <- get
+  put (state + 1)
+  pure (x + y)
+
+In diesem Beispiel wird ein Zustandseffekt modelliert, der den Zustand nach der Berechnung verändert.
+
+Coq und Effekte
+
+Coq ist ein formales Beweissystem und ein interaktiver Theorembeweiser, der stark auf abhängigen Typen aufbaut. Im Gegensatz zu Idris, das eine funktionale Programmiersprache mit einem eingebauten Verifikationssystem ist, ist Coq primär ein Theorembeweiser. Coq ermöglicht es, formale Beweise zu führen, die Programme und ihre Korrektheit garantieren.
+
+Coq nutzt ebenfalls ein System für die Modellierung von Effekten, aber dieses ist mehr in der Theorie und weniger in der Praxis implementiert, da Coq nicht direkt für die praktische Softwareentwicklung, sondern für mathematische Beweise und die Verifikation von Software gedacht ist. Das Coq-Äquivalent zu Effekten sind Monaden, mit denen Nebenwirkungen in einem verifizierbaren Rahmen behandelt werden können, aber die Handhabung ist weniger intuitiv und stärker auf Beweise fokussiert.
+
+Populäre DSLs (Domänenspezifische Sprachen)
+
+Ein DSL ist eine Sprache, die speziell für einen bestimmten Anwendungsbereich entwickelt wurde, im Gegensatz zu allgemeinen Programmiersprachen wie Python oder Java. DSLs bieten häufig abstrakte und höherwertige Konzepte, die für den spezifischen Bereich optimiert sind.
+
+Populäre DSLs in der funktionalen Programmierung und verifizierbarer Software:
+
+1. SQL (Structured Query Language):
+
+Bereich: Datenbankabfragen
+
+Verwendung: SQL ist wahrscheinlich eine der bekanntesten DSLs und wird weitgehend für die Verwaltung und Abfrage von relationalen Datenbanken eingesetzt. Viele moderne Datenbanksysteme bieten eine Erweiterung von SQL, die spezifische Aufgaben wie Transaktionsverarbeitung oder räumliche Datenbehandlung ermöglichen.
+
+
+
+2. Regular Expressions (RegEx):
+
+Bereich: Textverarbeitung und Mustererkennung
+
+Verwendung: RegEx ist eine spezialisierte Sprache, die verwendet wird, um Muster in Texten zu erkennen. Sie wird in vielen Programmiersprachen als eingebautes Werkzeug verwendet, um Zeichenketten zu durchsuchen und zu manipulieren.
+
+
+
+3. HTML/CSS (HyperText Markup Language und Cascading Style Sheets):
+
+Bereich: Webentwicklung
+
+Verwendung: HTML und CSS sind DSLs für das Strukturieren und Stylen von Webdokumenten. Sie abstrahieren die Darstellung von Web-Inhalten und sind auf die Bedürfnisse von Webentwicklern zugeschnitten.
+
+
+
+4. LaTeX:
+
+Bereich: Dokumentenerstellung
+
+Verwendung: LaTeX ist eine leistungsfähige DSL für die wissenschaftliche und technische Dokumentation. Es ermöglicht die exakte Steuerung von Layouts, mathematischen Formeln und bibliografischen Daten.
+
+
+
+5. VHDL/Verilog:
+
+Bereich: Hardwarebeschreibung
+
+Verwendung: VHDL und Verilog sind DSLs für die Modellierung und Beschreibung von digitalen Schaltungen und FPGAs. Sie erlauben eine sehr detaillierte Spezifikation und Simulation von Hardwarekomponenten.
+
+
+
+6. XSLT (Extensible Stylesheet Language Transformations):
+
+Bereich: XML-Datenverarbeitung
+
+Verwendung: XSLT wird verwendet, um XML-Daten zu transformieren, sei es in andere XML-Dokumente, HTML oder Textformate.
+
+
+
+7. RPG (Report Program Generator):
+
+Bereich: Geschäftsanwendungen
+
+Verwendung: RPG wurde ursprünglich für die Erstellung von Geschäftsanwendungen auf IBM-Mainframes entwickelt und hat sich als DSL für die Geschäftsdatenverarbeitung etabliert.
+
+
+
+8. Spec# (Microsoft):
+
+Bereich: Softwareverifikation
+
+Verwendung: Spec# ist eine DSL zur Verifikation von C#-Code. Sie fügt zusätzliche sprachliche Konstrukte hinzu, um Programminvarianten und Vor- und Nachbedingungen zu spezifizieren, was zur formalen Verifikation beiträgt.
+
+
+
+9. Idris als DSL:
+
+Bereich: Abhängig typisierte Programmierung
+
+Verwendung: Idris wird selbst auch verwendet, um DSLs zu erstellen, insbesondere für sicherheitskritische Anwendungen, in denen die Verifikation von Software durch Typen im Vordergrund steht. Beispielsweise kann Idris für die Modellierung von spezialisierten Berechnungen in wissenschaftlichen oder technischen Bereichen eingesetzt werden.
+
+
+
+
+Fazit
+
+Effekte in Idris bieten eine strukturierte Möglichkeit, mit Nebenwirkungen umzugehen und Programme zu entwickeln, die auch in realen Anwendungen wie Web-Servern oder Datenbanken nützlich sind.
+
+Coq ist stärker auf mathematische und formale Verifikation ausgerichtet und wird hauptsächlich in der Forschung und bei der Entwicklung von verifizierten Programmen eingesetzt.
+
+DSLs sind sehr nützlich, um spezifische Anwendungsdomänen zu adressieren, und reichen von Textverarbeitung (RegEx, HTML) bis zu Hardwarebeschreibung (VHDL) und Softwareverifikation (Spec#).
+
+
+Sind Effekte aus Idris 1 und oder 2 am ehesten vergleichbar zu Typen von Klassen? oder von Instanzen?
+
+
+Effekte in Idris 1 und Idris 2 sind nicht direkt mit den Typen von Klassen oder Instanzen im klassischen Sinne von objektorientierten oder funktionalen Programmiersprachen wie Haskell vergleichbar, obwohl es gewisse Ähnlichkeiten gibt. Um die Unterschiede und Ähnlichkeiten zu klären, ist es hilfreich, die jeweiligen Konzepte zu verstehen.
+
+1. Effekte in Idris
+
+Effekte in Idris sind ein Konzept, das aus der funktionalen Programmierung und der Theorie der abhängigen Typen stammt. Sie ermöglichen es, neben den üblichen Funktionsberechnungen auch Seiteneffekte (wie IO, State, Fehlerbehandlung, etc.) explizit in den Typen zu modellieren.
+
+Effekte werden in Idris über ein Effekt-System modelliert, wobei ein Effekt eine Art von Berechnung oder Operation beschreibt, die das Verhalten eines Programms verändert, ohne seine Struktur oder seinen Zustand zu verändern. In Idris 2 beispielsweise werden Effekte als Effekt-Handler und Effekt-Typen definiert, die die Nebenwirkungen eines Programms beschreiben.
+
+Beispiel:
+
+effect State : Type -> Type -> Type
+
+get : State s s
+put : s -> State s ()
+
+In diesem Beispiel beschreibt der Effekt State einen Zustand, der von einer Berechnung verändert wird. get und put sind Operationen (Effekte) in diesem Effekt-System.
+
+2. Typen von Klassen (Class Types) und Instanzen
+
+In Haskell oder anderen Sprachen mit Typeclasses sind Typen von Klassen und Instanzen Konzepte, die verwendet werden, um Verhaltensweisen (z.B. Funktionen oder Operatoren) auf Typen zu abstrahieren. Eine Typeclass ist eine Sammlung von Funktionen, die für verschiedene Typen definiert sind. Instanzen dieser Typeclasses stellen dann die tatsächliche Implementierung für einen bestimmten Typ bereit.
+
+Beispiel in Haskell:
+
+class Eq a where
+  (==) :: a -> a -> Bool
+
+instance Eq Int where
+  (==) x y = x == y
+
+In diesem Beispiel definiert Eq eine Typeclass, und die Instanz Eq Int stellt eine konkrete Implementierung für den Typ Int bereit.
+
+3. Vergleich: Effekte vs. Typen von Klassen / Instanzen
+
+Ähnlichkeiten:
+
+Beide Konzepte — Effekte in Idris und Typeclasses in Haskell — dienen der Abstraktion und ermöglichen eine erweiterbare Struktur.
+
+In beiden Fällen werden Typen verwendet, um verschiedene Verhaltensweisen oder Operationen zu beschreiben, die auf bestimmte Daten angewendet werden können.
+
+Sowohl Effekte als auch Typeclasses sind mit Polymorphismus und Vererbung in gewissem Maße verbunden. Bei Typeclasses bedeutet dies, dass die gleiche Funktion auf verschiedene Typen angewendet werden kann, bei Effekten bedeutet es, dass verschiedene Berechnungen auf verschiedene Arten von Effekten angewendet werden können.
+
+
+Unterschiede:
+
+Effekte in Idris sind keine Abstraktionen für das Verhalten von Typen, sondern für die Art und Weise, wie Berechnungen und deren Nebenwirkungen (z.B. Zustandsänderungen oder IO) ablaufen. Sie sind eng mit dem Verhalten der Berechnungen und deren Kontrollfluss verbunden.
+
+Typeclasses (oder Typklassen) in Haskell hingegen definieren Verhalten in Bezug auf Typen, wobei Instanzen konkrete Implementierungen für spezifische Typen bereitstellen. Sie sind stark auf Vererbung von Verhalten und Polymorphismus ausgerichtet und abstrahieren Funktionen oder Methoden für Typen.
+
+
+
+Fazit:
+
+Effekte in Idris sind eher mit Monadischen Strukturen und Kontrollflussmodellierung vergleichbar, wobei die Nebenwirkungen explizit im Typ-System verankert sind. Sie sind also eher eine Möglichkeit, Berechnungen mit Seiteneffekten zu modellieren und unterscheiden sich von der Abstraktion von Verhaltensweisen, wie sie durch Typeclasses in Haskell erreicht wird.
+
+Typen von Klassen (Typeclasses) definieren Verhaltensweisen für Typen und ermöglichen es, allgemeine Operationen für Typen zu abstrahieren und instanzspezifische Implementierungen bereitzustellen. Sie sind polymorpher und eher darauf fokussiert, wie Typen miteinander interagieren.
+
+
+In diesem Sinne sind Effekte in Idris und Typeclasses in Haskell nicht direkt vergleichbar, sondern haben unterschiedliche Ziele und Anwendungsfälle. Effekte sind spezifischer auf die Modellierung von Berechnungen mit Nebenwirkungen ausgerichtet, während Typeclasses eine abstraktere, verhaltensbezogene Abstraktion für verschiedene Typen darstellen.
+
+
+
+Was kann Idris 2 (0.7), das Idris 1 nicht beherrscht oder kennt?
+
+
+Idris 2 ist eine Weiterentwicklung von Idris 1 und bringt viele neue Funktionen und Verbesserungen mit sich, die Idris 1 nicht bietet. Einige der wichtigsten Unterschiede und Erweiterungen in Idris 2 (0.7) sind:
+
+1. Bessere Effekte und Effekthandhabung
+
+Idris 2 führt eine viel ausgereiftere und flexiblere Handhabung von Effekten ein. In Idris 1 waren Effekte ein relativ experimentelles und rudimentäres Konzept. In Idris 2 werden Effekte viel stärker unterstützt und sind ein integraler Bestandteil des Sprachdesigns. Effekte ermöglichen es, neben rein funktionalen Berechnungen auch Seiteneffekte wie IO, State, Fehlerbehandlung und non-deterministische Berechnungen explizit zu modellieren. Der Effekt-Mechanismus in Idris 2 nutzt eine Effekt-System-API, die es ermöglicht, beliebige Effekte zu definieren und zu verarbeiten.
+
+Effekte und Effekt-Handler: Effekte in Idris 2 sind viel leistungsfähiger und bieten eine saubere Integration für Seiteneffekte im Vergleich zu Idris 1.
+
+
+Beispiel in Idris 2:
+
+effect State : Type -> Type -> Type
+
+get : State s s
+put : s -> State s ()
+
+2. Verbesserte Abhängigkeits-Typen
+
+Idris 2 baut die Unterstützung für abhängige Typen weiter aus. Es gibt Verbesserungen im Umgang mit abhängigen Funktoren, unabhängigen Typen und Typ-Inferenz. Insbesondere die unabhängigen Typen sind jetzt besser im Sprachkern integriert, und der Typinferenz-Algorithmus wurde weiter optimiert, was die Arbeit mit komplexeren Typen vereinfacht.
+
+3. Induktive Datentypen und Rekursion
+
+Die Behandlung von induktiven Datentypen und deren Rekursion ist in Idris 2 effizienter und flexibler. Auch die Handhabung von natürlicher Induktion wurde verbessert, was das Arbeiten mit rekursiven und induktiven Datentypen intuitiver macht.
+
+4. Generische Programmierung und Parametrische Polymorphie
+
+Idris 2 führt eine erweiterte Unterstützung für generische Programmierung ein. In Idris 1 war es schwierig, polymorphe Funktionen zu erstellen, die auf verschiedene Datentypen angewendet werden konnten. In Idris 2 wird die parametrische Polymorphie umfassend unterstützt, was die Erstellung von generischen Typen und Funktionen deutlich vereinfacht.
+
+Beispiel:
+
+id : a -> a
+id x = x
+
+5. Verbesserte Modularität und Namespaces
+
+Idris 2 bietet eine deutlich verbesserte Modularität und Namespace-Unterstützung. Dies bedeutet, dass Programme besser strukturiert und leichter gewartet werden können, insbesondere bei großen Projekten. Funktionen und Datentypen können nun besser in Modulen organisiert werden.
+
+Mehrere Module in einem Projekt: Man kann Module explizit importieren und auf diese Weise die Namensräume sauber trennen.
+
+
+6. Optimierter Compiler und Performance
+
+Der Compiler in Idris 2 wurde stark optimiert. Während Idris 1 als experimentell galt und in Bezug auf die Performance oft langsamer war, bietet Idris 2 signifikante Verbesserungen in Bezug auf Kompilierungszeit und Laufzeiteffizienz.
+
+Kompilierungs-Optimierungen
+
+
+	

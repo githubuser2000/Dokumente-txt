@@ -1,0 +1,9 @@
+A Vorgehensweise, nach gut dünken:
+A Beliebig erweiterter baum.
+B ??adressierbakeit??
+B Belieibige Baumoption, ggf. Besser als Baum.
+Addressieren.
+C Beliebige Themen Benennung.
+D Abstrakter baum ist bei abstraktem netz Topologie.
+D Abstrakte Topologie ist Design.
+D Abstrakte Bidirektionalität ist Energie als Eigenschaften universell.

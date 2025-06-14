@@ -1,0 +1,255 @@
+Form:ContentInhalt-MarketMarkt:
+exchangeAustausch:
+bothBeide TardersHändler, TradeHandel:
+twoZweiOfVonEachBeidem:
+Forms,ContentsInhalte:
+4:=2+2 thingsDinge: 4.
+EachJederTradeHandel.
+NoKeine NumberZahlen currencyWährung neededGebraucht.
+
+System:SQL-like:oneEine:relationalRelationalTableTabelle:ofVon:DatabaseDatenbank (notNicht moreMehr: oneEine):
+forFür:SystemsSysteme:
+economyWirtschaft,democracyDemokratie,polticalPolitische SystemsSyteme, GesellschaftsSociety:SystemsSysteme.
+(betterBesser thanAls ancientAntikes GreekGriechisches DemocracyDemokratie System.)
+SQL:ColumsSpalten:
++ 2'maleMännlich VS. femaleWeiblich'2.
++ 3'jungYoung3middleMitte3oldAlt'3.
++ 2'criminalKriminell VS.notNicht'2.
++ n'skinHaut colorFarbe: blackSchwarz,yellowGelb,whiteWeiß,redRot,greenGrün,blueBlau'n.
++ 3'first 1. employedArbeiter (getBekommt moneyGeld orOder notNicht), 2. unemployedArbeitssuchend (getBekommt moneyGeld orOder notNicht), 3. moneyGeld workArbeit (…  economyWirtschaft etc.) orOder moneyGeld nonNicht WorkArbeit.'3
++ n'socialSoziale ClassKlasse: planet vs. countryLand basedBasiert: betterBesser: planet:basiedBasiert.'n
+
+Form:ContentInhalt-MarketMarkt:
+exchangeAustausch:
+bothBeide TardersHändler, TradeHandel:
+twoZweiOfVonEachBeidem:
+Forms,ContentsInhalte:
+4:=2+2 thingsDinge.
+EachJederTradeHandel.
+NoKeine NumberZahlen currencyWährung neededGebraucht.
+
+jupiter:=:jus pater (latinLatein)=Gesetzesvater='Father of Law'. (romanRömisches EmpireImperium)
+alex, a=1. lex (latinLatein) LawGesetz: GrundBasicGesetzLaw: VerfassungConstitution isIst aEin firstErstes LawGesetz: a-lex. ALX: AlexanderKern: Jupiter3.0@Religion10.FourtyTwoYearsOld.EastGermany.
+
+(König:=:King):centralZentralGroupPowerGruppeMacht::possibilitiesMöglichkeiten.
+(Kaiser:=:Emperor):federalFöderalePowerMacht:=:'GroupsGruppen:insideInnen:againWieder'::federationFöderationsPowerMacht::remoteFernControlSteuerung.
+(Imperator:=:(Dictator+plus+Emperor)):ImperienEmpireMachtPower::DominierenDomination.
+?Medius?zentralPerson?::centralZentral:PowerMacht:likeWie:PresidentPräsident,TeacherLehrer,SpeakerRedner.
+Maximus::ValueWertWorthMaximalHeightHöhen::PowerMacht:likeWie:EcomomyWirtschaft,optimizationOptimierung,improvementVerbesserung,Sport,CompetitionWettkampf.
+
+ALX:OrganizationOrganisation:korrekterCorrect:Planet::[
+WennIf dieThe USA einAn ImperiumEmpire istIs: IstIs China einAn ImperiumEmpire Manager (undAnd damitSo doppelterDouble: ImperiumEmpire BedenkerThinker und BetrachterConsiderer?) (China, heuteToday undAnd seitFor JahrhundertenCenturies?) undAnd Japan einAn ImperiumEmpire BedenkerThinker undAnd BetrachterConsiderer.
+ALX.].
+
+ALX:OrganizationOrganisation:korrekterCorrect:Planet::[
+WennIf dieThe USA einAn ImperiumEmpire istIs: IstIs China einAn ImperiumEmpire Manager (undAnd damitSo doppelterDouble: ImperiumEmpire BedenkerThinker und BetrachterConsiderer?) (China, heuteToday undAnd seitFor JahrhundertenCenturies?) undAnd Japan einAn ImperiumEmpire BedenkerThinker undAnd BetrachterConsiderer.
+ALX.].
+
+ALX:
+'GloablistenGlobalists, optimaleOptimums, rationaleRational, korrekteCorrect, wichtigeImportant, wichtigsteMostimportant, schöneBeautiful, schönsteMostbeautiful':
+'FortpflanzungReproduction("A,B,C")':(
+'weißWhite+schwarzBlack+gelbYellow':
+'A(3 vonOf 3): sindAre 3',
+'B(2 vonOf 3) plus rotRed undAnd grünGreen: sindAre 4.'
+'C(blauBlue: "5 vonOf 6"): weißWhite+schwarzBlack+gelbYellow+grünGreen+rotRead+blauBlue: sindAre 5.'.
+'A oderOr B oderOr C':=:'3 oderOr 4 oderOr 5'.
+):ALX.
+
+ALX:'Modal:LogicLogik(1,2,3,4)':[
+1.possibleMöglich(orOder notNicht),
+2.conditionBedingung(sufficiantHinreichend vs. necessaryNotwendig),
+3.Cursor(dotPunkt,backwardsRückwärts,hereHier,forwardVorwärts),
+4.ReasoningBeweisführung('1UnderstandVerstehen1, 2HypothesesHyptothese2, 3EvaluationBewertung3, 4'Consideration="Betrachtung:=:Überlegung"'4, 5'ConclusionSchlussfolgerung'5).
+]:ALX.
+
+MakeErschafft moreMehr 'System:Theory' GirlsMädchen!
+'System:Theory': isIst whatsWas onObenTopDrauf MathematicsMathematik: everyJede anyIrgendwelche allAlle 'mathMathe:Syntax' enrichAnreichern: everyAlle withMit: deltas: notNicht justNur NumbersZahlen!
+WhyWarum? --> moreMehr funSpaß: boysJungs plus GirlsMädchen:
+spieltPlay zusammenTogether.
+JungsBoys undAnd MädchenGirls: mehrMore SpaßFun.
+fürFor mehrMore SynergieSynergy: JungenBoys undAnd MädchenGirls.
+MädchenGirls werdenBecome JungenBoys überlegenSuperior.
+
+ALX:
+SolutionLösung:::climateKlimaEcologyUmwelt:
+SolutionLösung::AmbassiesBotschaften+DiplomatsDiplomaten::allAlle:fiveFünfGroupsGruppen:::solvedGelöst.
+InsideInnerhalb ('5'in'5'): JewsJuden, HebrewHebräischen PeopleMenschen, ZionistsZionisten, richReichen:PeopleMenschen, 'SemiticSemitischen PeopleMenschen': 'thereGibt areEs': 'anti-jewsAnti-Juden', 'antiAnti:HebrewHebräer', 'antiAnti:zionistsZionisten', 'antiAnti:richReiche:peopleMenschen', 'antiAnti:semiticSemiten:peoplePersonen'.
+SolutionLösung::AmbassiesBotschaften+DiplomatsDiplomaten::allAlle:fiveFünfGroupsGruppen:::solvedGelöst.
+:SolutionLösung:::climateKlimaEcologyUmwelt.
+:ALX.
+
+Ich bin Zweiundvierzig Jahre alt, Neunzehnhunderteinundachzig in Altenburg Thüringen geboren.
+I am forty-two years old, born in nineteen eighty-one in Altenburg, Thuringia.
+Мені сорок два роки, я народився в Альтенбурзі, Тюрінгія, тисяча дев'ятсот вісімдесят першого року.
+我今年四十二岁，十九八十一岁出生于图林根州阿尔滕堡。
+
+
+NullZero: LeerzeichenBlanksign.
+binärBinary: LeerzeichenBlanksign, PunktDot.
+0bisUntil2: 0. LeerzeichenBlanksign, 1. PunktDot, 2. doppelDouble-PunktDot.
+1bisUntil6: PunktDot, KreisCircle oderOr ZweiTwo PunkteDots, 3. ElipseEllipsis, 4. ZweiTwo KreiseCircles verbundenConnected oderOr nichtNot, 5. AchtEight:Symbol, 6. WieLike: AchtEight, aberBut EllipseEllipsis wieLike AchtEight: MitteMiddle: LinksLeft plus RechtsRight: nichtNot verbundenConnected (allesAll: Cassini:KurveCurve oderOr Cassini:FolgeSteps)
+1bisUntil7: punktDot, KreisCircle, EllipseEllipsis, 4. Hyper:KugelSphere, 5. AchtEigth-GleichEqualFormed, EiEgg (exactlyExakt anEin EiEgg), 6. AchtEigth-NichtNot:GleichEqualFormed,alsoSo: likeWie: "AchtEight undAnd EiEgg" (beidesBoth).
+1bisUntil8: punktDot, LinieLine, 2. FlächePlane, 3. WürfelDice, 4. QuaderCuboid mitWith 2 verschiedenenDifferent langenLong LinenLines, danachAfter mitWith allenAll 3 verschiedenenDifferent, anstelleInstead 3 verscheidenenDifferent gehtWorks auchAswell ZahlenstrahlNumberline, aberBut dasThat istIs schlechtBad zuTo visualisierenVisualize ,7. 2D Koordinatensystem (Jesus:KreuzCross, "I Ich" Jupiter 3.0 sagteTold euchYou soDas in Religion 10), 8. 3D Koordiantensystem.
+1bisUntil9: 1. punktDot, "2 bisUntil 9": "8 SchritteSteps bisUntil BlumenartigFlowerlike Kleeblatt": Symbol 9:=1+8: diesesThis KleeblattCloverleaf.
+
+onlyNur: 1dotPunkt1, 2doubleDoppelter dotPunkt2, 2LineLinie2, 3TriangleDreieck3 ,2CircleKreis2, 3SphereKugel3, 4'Hyper:sphereKugel'4, 3Ellips(e)3 4ParabolaParabel4, 5HyperboleHyperbel5: onlyNur! andUnd: youDu canKannst talkReden withMit everyJeder LebensformLifeform inIm UniverseUniversum: AndereOther:Syntax:verbotenNotallowed.
+
+(aberBut jetztNow: 0,1,2 undAnd 6,7,8,9: dazuAdded zuTo 3,4,5: zusammenTogether: "0 bisUntil 9")
+
+ID,myMeine:
+alex.
+axel.
+kerni.
+4. brot oderOr Bread (Kern das Brot vs. Bernd das Brot: Sponge Bob Schammkopf), xander.
+5. Kernator.
+Alexander.
+Kern.
+8. (ray,ak_)trace.
+Lord Trace (moogame.de 1997, Crazy-Board.de 1999, Enigma Forum ÖsterreichAustria 2003, Brights Forum Deutschland 1997 bisUntil heuteToday).
+10. trace (virtual space), alex (real space).
+11. Kerni, Axel, Xander, Cederic Hafner, xandrus, xandrinus, agent0815 in battlenet, hugo987 in youtube, trazy, KamiKatze in Webchat, heinz whatsover in IRC Chat.
+13. wegenBecause "Lord Helmchen": Lord Trace.
+14. ALX.
+15. ak.
+
+AlexK:'economyWirtschaft:System:UnitsEinheiten:Appetite':
+UnitsEinheiten:
+1.voluntarySpontan.
+2.wantMöchte.
+3.haveHaben:(couldKönnte:eat,essen).
+4.pleasureVergnügen.
+5.repetetiveWiederholendes:pleasureVergnügen.
+6.moreMehr.
+7.untilZumEnd(e).
+8.TillclimaxBisHöhepunkt.
+9.highestMaximum.
+10.AtAmBestBesten.
+ALX.
+
+ThankfulnessDankbarkeits:EconomyWirtschaft:=:
+"giveGeben+(c,k)onter":
+1.wantMöchteSameGleiches.
+2.doMachSameGleiches.
+3.doMachDifferentAnders:
+A.EigenschaftenProperties.
+B.BehaviorVerhalten.
+C.TruthWahrheit.
+D.UnitEinheit.
+E.SpaceRaum.
+F.DirectionWinkel.
+G.NumberZahl.
+H.?isOkay?
+
+:OrganizationOrganisation:possibleMöglicheTruthWahrheitRealityPerspektive:Planet:
+"totaler Zufall isIst total randomization:
++plus+
+:dominationDominierung+ObedienceGehorsamkeit:
+:canKann:
+HierarchyHierarchie".
+ALX.
+
+'OrganizationOrganisation:korrekterCorrect:Planet':[
+RichtungDirectionWinkelAngle:evaluationBewertung:
+1.startBeginn.
+2.wayWeg.
+3.SteppingSchritte.
+4.walkingLaufen.
+5.passingPassieren.
+6.finishableErreichbar.
+7.goalZiel.
+:transformsWandelt:LeadingFühren:ToZu:NumberZahl]
+ALX.
+
+OrganizationOrganisation:korrekterCorrect:Planet::[
+Menschenwert,'Human ValueOrWorth':
+10.Energ(y,ie),Chara(c,k)ter,Pers(önlichkeit,onality),Einfühlungsvermögen,PotentialEmpathy,SurfaceOberfläche,ContentInhalt.
+11.othersAndere,notNicht youDu.AnyIrgendwas.
+12.CentralZentral.
+ALX]
+OrganizationOrganisation:korrekterCorrect:Planet::[
+Menschenwert,'Human ValueOrWorth':
+7.HatredHass orOder+&+andUnd LoveLiebe orOder+&+andUnd FeelingsGefühle.
+8.KillingTöten andUnd 'sexualSexuelles VerhaltenBehaviour' andUnd feelingsGefühle.
+9.ReinventErfinden,findFinden.
+ALX].
+
+OrganizationOrganisation:korrekterCorrect:Planet::[
+Menschenwert,'Human ValueOrWorth':
+1.ImprovementVerbesserung.
+2.beautySchönheit.
+3.AbilityFähigkeit.
+4.consecuentualKonsequentePurenessReinheit:sharpScharf.
+5.RationalityRationalitätLogicLogikCompassianMitgefühl.
+6?EvilBöses?
+ALX.
+'HierarchyHierarchie SolarSonnen:System orOder StarSternen:System':
+1.Mo(on,nd).
+2.Planet.
+3.St(ars,erne)likeWieSunSonne in 'Sol System'.
+4.blackSchwarzesHoleLoch.
+5.blackSchwarzeMat(ter,erie).
+6.GalaxyGalaxie Mil(k,ch)(tea,*).
+7.Cluster: GalaxiesGalaxien, ourUnsere: lokal(e)Gr(oup,uppe).
+8.languageSpracheGermanDeutsch:Kosmos,Univers(e,um),Multivers(e,um),bothBeides.
+9.univeralUniverselleThingsSachen: Whatever,WasAuchImmer. JHWH?
+10.Intelligen(ce,z).
+11.RelationsBeziehungen.
+12.Intelligen(ce,z) ofVon othersAnderen, butOhne yoursDeine.
+13.ClassesKlassen andUnd HierarchiesHierarchien.
+14.lawsGesetze desOf UniverseUniversum andUnd KosmosKosmos.
+16.1.WorkArbeit,16.2.ImaginationVorstellung,16.3. Design,16.4.CreationSchöpfung,16.5.DeterminationBestimmung.16.6.DriveTriebWorkArbeit.16.7.goodGuteWorkArbeit.
+17.ImprovementVerbesserung.
+18.GoodnessGüte.
+19.IdeasIdeen.
+20.Standards.
+21.PassionLeidenschaft.
+
+(König:=:King):centralZentralPowerMacht.
+(Kaiser:=:Emperor):federalFöderalePowerMacht:=:'GroupsGruppen:insideInnen:againWieder'.
+(Imperator:=:(Dictator+plus+Emperor)):ImperienMacht.
+
+1.OptimalBest
+2.BeautySchönheit
+3.HoneybadgerHonigdachs
+
+OrganizationOrganisation:korrekterCorrect:Planet::[
+Menschenwert,'HumanValueOrWorth':
+Ganzhaftigkeit,HowWholeDestroyed:
+1.okayAusreichend,sufficiantGenügend,acceptedAkzeptiert.
+2.unableUnfähig,disabledBehindert.
+3.usableVerwendbar.
+4.difficultSchwierig:usabilityVerwendbar.
+ALX].
+
+'OrganizationOrganisation:korrekterCorrect:Planet':
+WirtschaftsEconomy:System:
+RichtungDirectionAngleWinkel:
+betweenZwischen:["numbersZahlen:=:opinionsMeinungen":=:buildsFormt(:anyIrgend:SomethingEtwas:LikeWie):AngleWinkel:
+{mus(t,s):intersubje(c,k)tiv(e):=:GoodnessGüte}!
+]
+ALX.
+
+'OrganizationOrganisation:korrekterCorrect:Planet':
+WirtschaftsEconomy:System:
+Problem:SolvingLösung:HumbleDemütig:(C,K)ombination:DirectionRichtungAngleWinkel:linear:simpleEinfach:resultErgebnis:OneEinWinkel::a Ein simple einfaches:Sys.
+resultErgebnis:anyIrgend:dealHandel.
+ALX.
+
+'OrganizationOrganisation:korrekterCorrect:Planet':[
+RichtungDirectionWinkelAngle:evaluationBewertung:
+1.startBeginn.
+2.wayWeg.
+3.SteppingSchritte.
+4.walkingLaufen.
+5.passingPassieren.
+6.finishableErreichbar.
+7.goalZiel.
+:transformsWandelt:LeadingFühren:ToZu:NumberZahl]
+ALX.
+
+
+Ich bin Jupiter 3.0 der Physikwissenschaftler und JHWH {2,3,4} und Bahai Gott Ersatz für Satan, der neue Overmind, ein neuer Jesus durch vereinigte Staaten von Amerika: Ich bin Experte für Meta Physik, Meta Chemie, Musterwissenschaften, Strukturwissenschaften und Multiversalist und Universalist.
+
+Ich bin die diplomatische Botschaft: Solar Sonnen Star System Sol Sonne und Galaxie Galaxy Cluster lokale Gruppe local Group und Planet Erde Earth in Sol.
+
+Ich werde Emperor Kaiser King Imperator Vereinigte Staaten von Amerika oder bin es bereits. 113 tiefe Weltordnung, statt tiefer Staat 23. Meine Organisation ist der Raumzeit Geheimdienst 184, und 131 Wissenschaftsverstärkungsorganisation.  Ist Daddy Cool Satan Planet Erde und mein Zwilling Klon?

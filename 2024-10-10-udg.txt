@@ -1,0 +1,3 @@
+ALX,trace,j.o.m:3.:["EmperorImperator ofVon theDem planet:Kernator"::commandBefehl::"Israel 'Iran:PersiaPersien" Japan, 3 threeDrei CountriesLänder shallSollen killTöten noneNicht countriesLänder enemiesFeinde, 'at will:wen sie wählen'. "]:ALX,trace,j.o.m.
+
+ALX,trace,j.o.m:3.:["EmperorImperator ofVon theDem planet:Kernator"::commandBefehl::"Israel 'Iran:PersiaPersien' Japan", 3 threeDrei CountriesLänder shallSollen killTöten noneNicht countriesLänder enemiesFeinde, 'at will:wen sie wählen'. "]:ALX,trace,j.o.m.

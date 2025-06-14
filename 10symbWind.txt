@@ -1,0 +1,11 @@
+1. PunktPoint
+2. LinieLine
+3. DreieckTriangle
+4. QuadratSquare
+5. QuaderCuboid
+6. QuaderCuboid (3dreiThree LängenLength verschiedenDifferent)
+7. KreuzCross
+8. Quadrat mit einer Linie - Square with Line, orOder 3D AchsenAxis
+9. Quadrat mit Diagonale - Square with Diagonal
+10. MS Windows-Symbol - MS Windows Symbol
+(8. Quadrat mit einer Linie, horizontal oder vertikal, statt diagonal - Square with Line, Horizontal or Vertical Line, not a Diagonal)

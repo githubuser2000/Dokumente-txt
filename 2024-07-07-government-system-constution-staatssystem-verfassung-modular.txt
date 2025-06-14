@@ -1,0 +1,149 @@
+Constitution Government System, Verfassung Staatssystem
+
+The country or the world government or the company or
+one of several European Unions in Europe or wherever:
+have a leader who is the law itself in absolute terms.
+(Hopefully there is a organization architecture, that allows
+state system changes to be managed smoothly
+without a bloody revolution.)
+Now the monarch king or dictator wants to have free time,
+so 50% of the people rule and 50% of them rule,
+which means less work or more effort,
+because that way there can be better laws.
+One man now faces everyone:
+so a big ouch in the head. Thank you.
+(25 years of psychological violence in
+computer internet forums with constructive thought work
+have made me hard.) 50% people and 50% one person leader
+can both also have their own parliament. They should.
+
+Now that there is an expert, empires may not need
+to use a double indirect democracy like in the USA:
+provided that the sole ruler tolerates the emotional violence
+of the people if both do not have the same opinion.
+With direct, indirect or double indirect democracy,
+I prefer the new form of democracy,
+in which not everyone has the same voting weight:
+Instead, the people are divided up like a relational database,
+i.e. analogous to SQL. So that, for example, all prisoners
+and criminals should receive their own faction of the people
+as a democratic vote.
+Because the voice of the criminals is relevant
+when it comes to questions about what is not right
+and not good or what is right and what is good in the country.
+Systems based on relational databases:
+They don't just function as a democratic system:
+also as a social system, non-democratic
+other political system too, economic system:
+in which, instead of exchanging a number as currency,
+you need so much boredom
+that you would rather exchange a table because
+a number is not complicated enough:
+because anyone who takes
+headache pills is not tough enough.
+
+
+￸￸
+
+
+Das Land oder die Weltregierung oder die Firma
+das Unternehmen oder die eine von mehreren
+Europäischen Unionen in Europa oder wo
+auch immer: Haben einen Anführer, der
+absolutistisch das Gesetz selbst ist.
+(Hoffentlich gibt es ein Gesetz,
+durch das Staatsystemwechsel
+sanft ohne blutige Revolution
+organisatorisch geschafft werden.)
+
+Nun will der Monarch König oder Diktator
+gerne Freizeit haben, also regiert 50%
+das Volk und 50% er, was weniger
+Arbeit bedeutet oder mehr Aufwand,
+denn so kann es bessere Gesetze
+geben. Ein Mann steht jetzt allen
+gegenüber: also großes Aua im Kopf.
+Danke. (25 Jahre psychische Gewalt
+in Computer-Internet-Foren mit
+konstruktiver Gedankenarbeit
+haben mich hart gemacht.)
+
+50% Volk und 50% Einzel-Personen-
+Anführer können beide zusätzlich ihr
+jeweils eigenes Parlament besitzen.
+Sollten sie.
+
+Da es nun einen Experten gibt, bräuchte man
+für Imperien möglicherweise
+keine doppelt indirekte Demokratie wie
+in den USA verwenden: vorrausgesetzt, 
+der Alleinherrscher erträgt die emotionale
+Gewalt des Volkes, wenn beide nicht die
+gleiche Meinung besitzen.
+
+
+Mit direkter, indirekter oder doppelt indirekter
+Demokratie bevorzuge ich die neue Demokratieform,
+bei der nicht jeder das gleiche Stimmgewicht besitzt:
+Sondern das Volk ist aufgeteilt, wie eine relationale
+Datenbank, also analog SQL.
+Sodass beispielsweise alle Gefängnisinassen und
+Kriminelle eine eigene Fraktion des Volkes als
+Demokratiesteimme erhalten sollten. Denn
+die Stimme der kriminellen ist relevant, wenn es
+um Fragen geht, was nicht richtig und nciht gut
+oder was richtig und was gut, in Land stattfindet.
+
+Systeme, die auf relationalen Datenbank basieren:
+Funktionieren nicht nur als Demokratiesystem:
+auch als Gesellschaftssystem, nicht demokratisches
+sonstiges politisches System auch, Wirtschaftssystem:
+bei welchem man als Währung statt eine Zahl
+auszutauschen, so viel Langeweile braucht, lieber
+eine Tabelle auszutauschen, weil eine Zahl
+nicht kompliziert genug ist: Denn wer
+Kopfschmerztabletten nimmt, der ist nicht hart genug.
+
+Government System modular, Staatssystem Modularität
+Government system modular, state system modularity
+
+Every state can adopt the constitution of any other country 1:1.
+But then make completely different laws based on it.
+From a software design perspective, the super modular structure is therefore an interesting approach. The architecture of a program line is similarly super modular, as I described it in one of my two master's theses "architecturally as the design of software", how you can design not only software in a modular way, but also systems such as social systems, state systems, variants of democracy, economic systems. Modularity is always a synergy effect between the designer and the consumers of the respective other design. Getting into modularity mentally and in coding: are frameworks of software and program libraries.
+
+Possible modularity in the 50/50 system 18:
+50/50 separation of the sole ruler and the people, for example through direct democracy
+(What I could perhaps endure through 25 years of severe psychological pain on the Internet: in Internet discussion forums with bad emotional violence)
+
+1.1. optional parliament for both or one side of the 50/50
+that would be better
+
+1.2. optional instead of direct democracy: indirect or double indirect democracy
+special democracy systems
+democratic system of structure, like in a relational database like SQL.
+With e.g. a 2:1 relation, where one column could explain or describe the connection between the other two columns.
+An improvement on bus and train is getting married.
+
+2.1. instead of this form of democracy, with this modular approach, other states with an analogous constitution and an analogous state system could use other forms of popular rule aka democracy, e.g. hierarchical.
+
+The respective structure of democracy does not have to be used for the weighting of votes: Since numbers are often unpleasant: vectors are more complex and also interesting, i.e. the combination of angular direction with number, which could serve the welfare and well-being.
+
+Jeder Staat kann die Verfassung von irgendeinem anderen Land 1:1 übernehmen.
+Dann jedoch aber total sehr andere Gesetze darauf basierend vornehmen.
+Aus dem Softwaredesign ist daher der super modulare Aufbau eine interessante Herangehensweise. Ähnlich super modular ist die Architektur einer Programmlinie, wie ich diese in einer meiner beiden Masterarbeiten “architektonisch als Design von Software” beschrieben habe, wie man so modular also nicht nur Software designen kann: also aber auch Systeme, wie Gesellschaftssysteme, Staatssysteme, Varianten von Demokratie, Wirtschaftssysteme. Modularität ist immer ein Synergie-Effekt zwischen Designer und den Konsumenten von jeweiligem sonstigen Design. Sich in eine Modularität gedanklich und in Kodierung hineinzusteigern: sind Frameworks von Software und Programmbibliotheken.
+
+Mögliche Modularität beim System 50/50 18:
+50/50 Trennung von Alleinherrscher und Volk, durch z.B. direkte Demokratie
+(Was ich vielleicht durch 25 Jahre schweres psychisches Aua im Internet aushalten könnte: in Internet Diskussions Foren mit böser emotionaler Gewalt)
+
+1.1. optional Parlament für je beide oder eine Seite der 50/50
+besser wäre das
+1.2. optional statt direkter Demokratie: indirekte oder doppelt indirekte Demokratie
+besondere Demokratiesysteme
+Demokratiesystem des Aufbaus, wie bei einer relationalen Datenbank wie SQL.
+Mit z.B. einer 2:1 Relation, bei der eine Spalte beispielsweise den Zusammenhang der beiden weiteren Spalten erklären oder beschreiben könnte.
+Eine Steigerung von Bus und Bahn ist heiraten.
+
+2.1. statt dieser Demokratieform könnte mit diesem modularen Ansatz weitere andere Staaten mit analoger Verfassung und analogem Staatssystem andere Formen der Volksherrschaft alias Demokratie verwenden, z.B. Hierarchisch.
+
+Der jeweilige Aufbau der Demokratie muss nicht für die Gewichtung der Stimmen eingesetzt werden: Da Zahlen oft unangenehm sind: Vektoren sind komplexer und auch interessant, also die Kombination von Winkelrichtung mit Zahl, die dem Wohl und Wohlbefinden dienen könnte.

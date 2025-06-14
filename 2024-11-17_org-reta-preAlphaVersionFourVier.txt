@@ -1,0 +1,28 @@
+Reta 4.0 pre alpha u1/10,128
+
+Außen u64 Entwurfsmuster Template Haskell Matrix aus Monaden, 1/18u total.
+
+Darunter Python mit Haskell u32 kategorial.
+
+Darin drüber und drunter 36,37u sqlite.
+
+Unter u24 Haskell kaum, nur Python.
+
+24bis20 nur Python.
+Ab 32u oder 36u Python möglich.
+
+Ab unter 20u Rust oder C++.
+Vielleicht auch: zig, D, C, Go, Java, Kotlin.
+Besser kein .NET., C#, V.B.
+
+32u unterteilt Programmteile.
+64u definiert Programm.
+128u definiert Programme, also Produktlinie: (3(1reta, 2Notitzen.NET, 3etc.)3), d.h. abstraktes Programm (Terminal will ich für alles, minimal).
+36u betrifft alle Tabellen: (3(1Haskell, 2Python, 3sqlite)3).
+25u ist der Strom io Tabellen in out, besser in Haskell.
+
+U28m24 definiert Tabellen Ströme.
+U32 definiert Umgangsformen u.a. mit Tabellen oder Richtext oder TUI, GUI, CLI, Formate für io EVA.
+
+Bis u21 Rechnen, Verarbeiten
+

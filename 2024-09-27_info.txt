@@ -1,0 +1,6 @@
+Fazit:
+
+    Eine Datenbank mit mehreren relationalen Tabellen ähnelt einer relationale Algebra, da die Daten als Relationen organisiert sind, die durch algebraische Operationen manipuliert werden können. Alternativ können Tabellen auch als Mengen von Tupeln in der Mengentheorie oder als Knoten in der Graphentheorie beschrieben werden.
+    Ein DBMS ähnelt einem endlichen Automaten oder einem algorithmischen System, das für die Verwaltung und Manipulation von Daten zuständig ist. Alternativ kann es als eine Funktion oder ein formales System interpretiert werden, das Anfragen in Operationen umwandelt.
+
+ALX:[((DB(sql):Operation: equalsGleicht 'naturalNatürliche:Transfomation':=:'n Transfor' (math)):+plus+1oneEine loopSchleife:=:DatabaseDatenbank:=:Relation(s,en):System (isIst:Relation(s,en))):+plus+anotherWeitere: "istIst DBMS (manage DB):=: ModellModelKategoryKategorie".]:ALX.

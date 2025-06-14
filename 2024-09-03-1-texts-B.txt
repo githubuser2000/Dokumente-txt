@@ -1,0 +1,2 @@
+ALX,T:"everythingAlles isIst aEine datastructureDatenstruktur likeWie: {Tuple(ofVon Tuples), SetMenge(ofVon SetsMengen),OrderOrdnung,HierarchyHierarchie}".isIst:firstErstesLawGesetz:networkingNetzwerkende:HierarchyHierarchie 'SolarSonnen:System' aEin StarSternen:System.
+:ALX,T.

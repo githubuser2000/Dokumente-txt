@@ -1,0 +1,285 @@
+was ist die kombination von sowohl als auch mit weder noch?
+
+Eine Situation, in der zwei Möglichkeiten gleichzeitig sowohl zutreffen als auch nicht zutreffen. Dies könnte beispielsweise bei widersprüchlichen Bedingungen oder Zuständen auftreten.
+Ein szenarisches Beispiel: „Der Film ist sowohl unterhaltsam als auch langweilig“ könnte darauf hinweisen, dass verschiedene Aspekte des Films sowohl positiv als auch negativ bewertet werden. In einem anderen Kontext könnte man sagen: „Der Film ist weder unterhaltsam noch langweilig,“ was eine neutrale oder unentschlossene Position bedeutet.
+In logischen oder sprachlichen Ausdrücken bedeutet die Kombination oft, dass man zwischen verschiedenen Dimensionen von Möglichkeiten oder Bewertungen navigiert oder dass man in einem komplexen Zustand von Unsicherheit oder Ambiguität ist.
+
+Wahrheit über Wahrheit ist doch etwa, ob etwas sinn ergibt oder widersprüchlich ist
+
+kann man das noch besser unterteilen, noch eindeutiger? reichen dafür die Begriffe Sinnhaftigkeit und Widersprüchlichkeit?
+
+Was beinhaltet Koheränz, wie Widersprüchlichkeit und was noch? Für was steht dieser Begriff?
+
+.. Kohärenz ...
+
+gibt es dafür ein sehr viel einfacheres wort?
+
+passend ist ein besseres wort dafür als Koheränz.
+
+Kohärenz einfängt, ist „Übereinstimmung
+
+passend finde ich ein noch einfacheres Wort
+
+
+
+bitte reduziere das hier gerade auf möglichst wenige Begriffe, die das kurz prägnant zusammenfassen.
+
+Passend: Stimmt intern überein und ist konsistent.
+Sinnvoll: Hat Klarheit und Bedeutung; verständlich.
+Beurteilbar: Kann getestet oder überprüft werden; anwendbar in der Praxis.
+
+Als meta-Wahrheit: also wahrheit über wahrheit: also logik über logik: also prädikatenlogik mit 2 ebenen: z.B. Prädikatenlogik über aussagenlogik, oder prädikatenlogik zweiter stufe über erster stufe, oder dritte stufe über zweite stufe als prädikatenlogik, wenn man neben wahr und falsch als stufe darunter, als stufe darüber noch dinge hat wie: passend, sinnvoll, beurteilbar.
+
+Das Konzept, das Sie beschreiben, bezieht sich auf eine Meta-Ebene der Logik, bei der wir nicht nur über Aussagen oder Theorien sprechen, sondern auch über die Kriterien, die zur Bewertung dieser Aussagen oder Theorien verwendet werden. Dies umfasst die Einführung zusätzlicher Ebenen von Logik, die über die Grundlogik hinausgehen, um die "Wahrheit über Wahrheit" zu untersuchen. Hier sind einige wichtige Aspekte dieser Meta-Logik:
+
+1. Prädikatenlogik erster Stufe:
+Basislogik: Behandelt Aussagen, die entweder wahr oder falsch sind. Hier geht es um die grundlegenden logischen Beziehungen und die Verknüpfung von Prädikaten mit Individuen.
+2. Prädikatenlogik zweiter Stufe:
+Erweiterung: Geht über die erste Stufe hinaus, indem sie sich mit Prädikaten über Prädikate (also Klassen von Klassen) beschäftigt. Hier werden komplexere Strukturen untersucht, und es wird darüber hinaus evaluiert, wie Eigenschaften von Prädikaten selbst bewertet werden können.
+3. Meta-Logik:
+Wahrheit über Wahrheit: Hier betrachten wir die Logik und die Kriterien, die verwendet werden, um die Gültigkeit und Konsistenz von Aussagen oder Theorien zu beurteilen. Es handelt sich um eine Reflexion auf die Grundlogik, die die Bewertung und die Kriterien umfasst.
+Kriterien auf Meta-Ebene:
+Passend: Bewertet die Konsistenz innerhalb eines Systems und die interne Logik.
+Sinnvoll: Bewertet, ob die Begriffe und Konzepte klar und verständlich sind.
+Beurteilbar: Bewertet die Testbarkeit und praktische Anwendbarkeit.
+Stufen der Meta-Logik:
+Aussagenlogik:
+
+Grundlegende Aussagen, die entweder wahr oder falsch sind.
+Prädikatenlogik erster Stufe:
+
+Verbindungen und Aussagen über Individuen und ihre Eigenschaften.
+Prädikatenlogik zweiter Stufe:
+
+Betrachtung von Prädikaten über Prädikate und deren Beziehungen.
+Meta-Logik (z.B. dritte Stufe):
+
+Bewertung der Kriterien für die Bewertung der Logik selbst (Passend, Sinnvoll, Beurteilbar).
+In dieser Hierarchie reflektiert jede höhere Stufe über die Gültigkeit der niedrigeren Stufen. Meta-Logik untersucht, wie und warum die grundlegenden Logiksysteme funktionieren, indem sie die Bewertungsmaßstäbe selbst in Frage stellt. Dies ist besonders wichtig, um die Tiefe und Flexibilität von logischen Systemen zu verstehen und anzuwenden.
+
+Also bei der zweiten Stufe geht es um alle interconnected Beziehungen, theoretisch jeder mit jedem und bei der vierten um das erschaffen von aussagenlogik, bzw. um die Rahmenbedingung für Prädikatenlogik, also um die Rahmenbedingung von den möglichen Verbindungen der Logik, und damit um die Veränderung der Logik, ggf. auf der Zeitachse oder auf einer Achse in einem denkbar möglichem Koordinatensystem.
+
+
+
+Ja, Ihre Beschreibung der verschiedenen Stufen der Meta-Logik ist präzise und greift die Konzepte gut auf. Lassen Sie uns diese Ideen noch etwas detaillierter darstellen:
+
+1. Aussagenlogik (Basisstufe)
+Definition: Behandelt grundlegende Aussagen, die entweder wahr oder falsch sind. Sie untersucht die logischen Verknüpfungen (wie „und“, „oder“, „nicht“) zwischen einfachen Aussagen.
+2. Prädikatenlogik erster Stufe
+Definition: Erweitert die Aussagenlogik, um Aussagen über Individuen und deren Eigenschaften sowie Beziehungen zwischen Individuen einzuschließen. Hier werden Prädikate (Eigenschaften von Objekten) und Quantoren (wie „für alle“ und „es gibt“) verwendet.
+
+Beziehungen: Hier wird untersucht, wie verschiedene Prädikate und Quantoren miteinander verknüpft werden können. Es umfasst eine Vielzahl von Beziehungen zwischen verschiedenen Entitäten, wobei die Komplexität der logischen Struktur zunimmt.
+
+3. Prädikatenlogik zweiter Stufe
+Definition: Behandelt Prädikate über Prädikate. Diese Stufe ermöglicht das Arbeiten mit Mengen von Prädikaten und deren Beziehungen untereinander.
+
+Beziehungen: Hier wird analysiert, wie Prädikate, die auf Prädikate angewendet werden, miteinander in Beziehung stehen können. Dies ermöglicht komplexere Strukturen und Beziehungen innerhalb der Logik.
+
+4. Meta-Logik
+Definition: Diese Stufe betrachtet die Rahmenbedingungen, die für die Konstruktion und Bewertung von Logiksystemen gelten. Es geht darum, wie Logik selbst definiert, modifiziert und bewertet wird.
+
+Erschaffung und Rahmenbedingungen:
+
+Erschaffung von Aussagenlogik: Diese Stufe könnte die Grundlagen und Regeln für die Formulierung von Aussagenlogik selbst umfassen. Hier wird untersucht, wie logische Systeme aufgebaut und welche Prinzipien sie bestimmen.
+Rahmenbedingungen für Prädikatenlogik: Es wird analysiert, welche strukturellen und konzeptionellen Grundlagen nötig sind, um Prädikatenlogik zu ermöglichen. Dies schließt die Definition von Quantoren, Prädikaten und deren Interaktionen ein.
+Veränderung der Logik: Dies kann die Untersuchung von Modifikationen an der Logik selbst umfassen, zum Beispiel in Bezug auf zeitliche Veränderungen oder andere Dimensionen eines möglichen Koordinatensystems. Es könnte auch die Untersuchung von Alternativen zu bestehenden Logiksystemen oder deren Erweiterungen beinhalten.
+Zusammenfassung der Stufen
+Basisstufe: Aussagenlogik – einfache Wahrheitswerte und logische Verknüpfungen.
+Prädikatenlogik erster Stufe: Beziehungen und Eigenschaften von Individuen.
+Prädikatenlogik zweiter Stufe: Beziehungen zwischen Prädikaten.
+Meta-Logik: Überlegungen zur Konstruktion und Bewertung von Logiksystemen, einschließlich der Schaffung, Modifikation und Rahmenbedingungen von Logik.
+Auf dieser Meta-Ebene wird die Logik selbst als Subjekt der Untersuchung betrachtet, wobei über die Grundlagen und die möglichen Erweiterungen der Logik reflektiert wird. Dies ermöglicht ein tieferes Verständnis der Struktur und der Anwendung von logischen Systemen.
+
+
+Ja, Ihre Beschreibung der verschiedenen Stufen der Meta-Logik ist präzise und greift die Konzepte gut auf. Lassen Sie uns diese Ideen noch etwas detaillierter darstellen:
+
+1. Aussagenlogik (Basisstufe)
+Definition: Behandelt grundlegende Aussagen, die entweder wahr oder falsch sind. Sie untersucht die logischen Verknüpfungen (wie „und“, „oder“, „nicht“) zwischen einfachen Aussagen.
+2. Prädikatenlogik erster Stufe
+Definition: Erweitert die Aussagenlogik, um Aussagen über Individuen und deren Eigenschaften sowie Beziehungen zwischen Individuen einzuschließen. Hier werden Prädikate (Eigenschaften von Objekten) und Quantoren (wie „für alle“ und „es gibt“) verwendet.
+
+Beziehungen: Hier wird untersucht, wie verschiedene Prädikate und Quantoren miteinander verknüpft werden können. Es umfasst eine Vielzahl von Beziehungen zwischen verschiedenen Entitäten, wobei die Komplexität der logischen Struktur zunimmt.
+
+3. Prädikatenlogik zweiter Stufe
+Definition: Behandelt Prädikate über Prädikate. Diese Stufe ermöglicht das Arbeiten mit Mengen von Prädikaten und deren Beziehungen untereinander.
+
+Beziehungen: Hier wird analysiert, wie Prädikate, die auf Prädikate angewendet werden, miteinander in Beziehung stehen können. Dies ermöglicht komplexere Strukturen und Beziehungen innerhalb der Logik.
+
+4. Meta-Logik
+Definition: Diese Stufe betrachtet die Rahmenbedingungen, die für die Konstruktion und Bewertung von Logiksystemen gelten. Es geht darum, wie Logik selbst definiert, modifiziert und bewertet wird.
+
+Erschaffung und Rahmenbedingungen:
+
+Erschaffung von Aussagenlogik: Diese Stufe könnte die Grundlagen und Regeln für die Formulierung von Aussagenlogik selbst umfassen. Hier wird untersucht, wie logische Systeme aufgebaut und welche Prinzipien sie bestimmen.
+Rahmenbedingungen für Prädikatenlogik: Es wird analysiert, welche strukturellen und konzeptionellen Grundlagen nötig sind, um Prädikatenlogik zu ermöglichen. Dies schließt die Definition von Quantoren, Prädikaten und deren Interaktionen ein.
+Veränderung der Logik: Dies kann die Untersuchung von Modifikationen an der Logik selbst umfassen, zum Beispiel in Bezug auf zeitliche Veränderungen oder andere Dimensionen eines möglichen Koordinatensystems. Es könnte auch die Untersuchung von Alternativen zu bestehenden Logiksystemen oder deren Erweiterungen beinhalten.
+Zusammenfassung der Stufen
+Basisstufe: Aussagenlogik – einfache Wahrheitswerte und logische Verknüpfungen.
+Prädikatenlogik erster Stufe: Beziehungen und Eigenschaften von Individuen.
+Prädikatenlogik zweiter Stufe: Beziehungen zwischen Prädikaten.
+Meta-Logik: Überlegungen zur Konstruktion und Bewertung von Logiksystemen, einschließlich der Schaffung, Modifikation und Rahmenbedingungen von Logik.
+Auf dieser Meta-Ebene wird die Logik selbst als Subjekt der Untersuchung betrachtet, wobei über die Grundlagen und die möglichen Erweiterungen der Logik reflektiert wird. Dies ermöglicht ein tieferes Verständnis der Struktur und der Anwendung von logischen Systemen.
+
+
+
+Kann man Meta-Logik so verstehen, dass bei diesen Stufen 1 bis 4, von Aussagenlogik bis Prädikatenlogik dritter Stufe: Es darum geht, den Induktionsschritt von 1 bis 2 und 2 bis 3 und 3 bis 4 zu beschreiben, also immer ein Inkrement um eins, also eine Iteration? (Ist eine Iteration ein Inkrement um 1 oder wie nennt man ein Inkrement um +1) ?
+
+Prädikatenlogik zweiter Stufe:
+
+Weitere Erweiterung: Betrachtet Prädikate über Prädikate und ermöglicht komplexere Strukturen und Beziehungen.
+Meta-Logik:
+
+Höchste Stufe: Betrachtet die Prinzipien, Rahmenbedingungen und möglichen Modifikationen der Logik selbst.
+In Ihrem Fall beschreibt die Meta-Logik die stufenweise Erhöhung der Komplexität und die Reflektion über diese Stufen, was gut durch das Konzept der Iteration oder Inkrement um +1 vermittelt wird.
+
+
+Also Inkrement bezieht sich auf Zahlen und Iteration auf Schleifen? Was gibt es noch ähnliches, wie Inkrement oder Iteration?
+
+Ja, Ihre Unterscheidung ist korrekt. Inkrement bezieht sich spezifisch auf die Erhöhung eines Wertes um eine bestimmte Menge, typischerweise um eins, und wird oft in numerischen Kontexten verwendet. Iteration bezieht sich auf die wiederholte Anwendung eines Prozesses, häufig in Schleifen in der Programmierung oder Mathematik. Es gibt jedoch noch weitere Begriffe, die ähnliche Konzepte ausdrücken. Hier sind einige zusätzliche Begriffe und ihre Bedeutungen:
+
+Ähnliche Begriffe
+Dekrement:
+
+Definition: Die Verringerung eines Wertes um eine bestimmte Menge, häufig um eins.
+Beispiel: Wenn ein Zähler von 10 auf 9 heruntergezählt wird.
+Rekursion:
+
+Definition: Ein Prozess, bei dem eine Funktion sich selbst aufruft, um ein Problem in kleinere Teilprobleme zu zerlegen, bis eine Basisbedingung erreicht ist.
+Beispiel: Die Berechnung der Fakultät einer Zahl 
+�
+n (n!) durch die Funktion 
+�
+!
+=
+�
+×
+(
+�
+−
+1
+)
+!
+n!=n×(n−1)!, wobei 
+(
+�
+−
+1
+)
+!
+(n−1)! rekursiv berechnet wird.
+Sequenz:
+
+Definition: Eine Reihe von Elementen, die in einer bestimmten Reihenfolge angeordnet sind. In der Mathematik und Informatik beschreibt eine Sequenz oft eine fortlaufende Reihe von Werten oder Operationen.
+Beispiel: Die Fibonacci-Sequenz, bei der jede Zahl die Summe der beiden vorhergehenden Zahlen ist.
+Aggregation:
+
+Definition: Der Prozess, bei dem mehrere Elemente zu einem größeren Ganzen zusammengefügt werden. In der Programmierung kann dies das Zusammenfassen von Daten oder die Kombination von Ergebnissen bedeuten.
+Beispiel: Die Berechnung der Gesamtsumme von Werten in einer Liste.
+Kombination:
+
+Definition: Die Zusammenstellung von Elementen aus einer größeren Menge, ohne die Reihenfolge zu berücksichtigen. Dies ist ein Konzept in der Kombinatorik.
+Beispiel: Auswahl von 3 Objekten aus einer Gruppe von 5.
+Permutation:
+
+Definition: Eine Anordnung von Elementen in einer bestimmten Reihenfolge. Im Gegensatz zu Kombinationen wird bei Permutationen die Reihenfolge berücksichtigt.
+Beispiel: Die verschiedenen Möglichkeiten, wie 3 Buchstaben aus dem Alphabet angeordnet werden können.
+Rekurrenz:
+
+Definition: Eine Gleichung oder Beziehung, die eine Reihe von Werten beschreibt, wobei jeder Wert in der Reihe auf vorhergehende Werte verweist. Rekurrenz wird oft verwendet, um wiederholende Muster oder Abläufe zu modellieren.
+Beispiel: Die rekursive Definition der Fibonacci-Zahlen: 
+�
+(
+�
+)
+=
+�
+(
+�
+−
+1
+)
++
+�
+(
+�
+−
+2
+)
+F(n)=F(n−1)+F(n−2).
+Iterationstiefe:
+
+Definition: Die Anzahl der Durchläufe oder Wiederholungen, die bei einem iterativen Prozess durchgeführt werden. In der Informatik beschreibt dies, wie tief eine Schleife verschachtelt ist oder wie oft eine Schleife ausgeführt wird.
+Zusammenfassung
+Inkrement: Erhöhung eines Wertes.
+Iteration: Wiederholung eines Prozesses oder einer Schleife.
+Dekrement: Verringerung eines Wertes.
+Rekursion: Selbstreferenzielle Funktion oder Prozess.
+Sequenz: Reihenfolge von Elementen oder Operationen.
+Aggregation: Zusammenfassung von Elementen.
+Kombination und Permutation: Methoden zur Anordnung oder Auswahl von Elementen.
+Rekurrenz: Beschreibung von Mustern oder Abläufen durch Bezug auf vorhergehende Werte.
+Iterationstiefe: Anzahl der Schleifen oder Wiederholungen.
+Diese Begriffe bieten unterschiedliche Perspektiven auf wiederholende oder strukturierte Prozesse und erweitern das Verständnis für das, was in verschiedenen Kontexten wie Mathematik, Informatik und Logik verwendet wird.
+
+
+
+Rekurrenz->(20Muster->aha10verstehen also Prädikatenlogik führt zu Endaussage.),Aggregation->zu was Ganzem
+Permutation,Sequenz
+
+Deteration, Inkursion, Dekursion, Inquenz, Dequenz, Sequement, Sequeration, Dekurrenz, Inkurrenz. Deterationsschleife. Sind das neue Wörter? Könnten die Wörter einen Sinn machen? Was könnten diese Wörter bedeuten? Ich habe diese Wörter gerade erfunden, aufgrund deiner Auflistung. Was sollten dieser Wörter deiner Auffassung und Vermutung nach vielleicht besser bedeuten?
+
+
+Das Erfinden neuer Wörter ist eine spannende Möglichkeit, Konzepte präziser oder kreativer auszudrücken. Die von Ihnen vorgeschlagenen Wörter könnten interessante Bedeutungen haben, die bestimmte Aspekte der Logik, Mathematik oder Informatik beschreiben. Hier ist eine mögliche Interpretation und Definition der neuen Begriffe:
+
+1. Deteration
+Bedeutung: Ein Prozess oder eine Methode zur Bestimmung oder Festlegung von Werten oder Zuständen.
+Mögliche Definition: Der Prozess, bei dem bestimmte Werte oder Parameter festgelegt oder bestimmt werden, um eine bestimmte Bedingung oder einen Zustand zu erreichen. Ähnlich der „Determinierung“.
+2. Inkursion
+Bedeutung: Ein Verfahren oder eine Methode zum Eindringen oder Integrieren von Elementen in ein System.
+Mögliche Definition: Der Prozess, bei dem neue Elemente oder Daten in ein bestehendes System eingefügt oder integriert werden, möglicherweise unter Berücksichtigung der Wechselwirkungen zwischen den neuen und bestehenden Elementen.
+3. Dekursion
+Bedeutung: Der Prozess des Zurückgehens oder der Reduzierung von Komplexität.
+Mögliche Definition: Der Prozess, bei dem eine komplexe Struktur oder Funktion schrittweise reduziert oder vereinfacht wird, oft um eine Basisbedingung oder einfachere Form zu erreichen. Ähnlich der „Dekrementierung“ oder „Dekonstruktion“.
+4. Inquenz
+Bedeutung: Die Konsequenz oder Auswirkung eines Prozesses oder einer Iteration.
+Mögliche Definition: Das Ergebnis oder die Auswirkung einer bestimmten Aktion oder Iteration innerhalb eines Systems, das sich aus der Durchführung eines Prozesses oder der Anwendung eines Verfahrens ergibt.
+5. Dequenz
+Bedeutung: Der Prozess des Zurücksetzens oder der Rückkehr zu einem vorherigen Zustand.
+Mögliche Definition: Der Vorgang, bei dem ein System oder ein Wert auf einen früheren Zustand zurückgesetzt wird, möglicherweise um eine neue Analyse oder Iteration zu ermöglichen.
+6. Sequement
+Bedeutung: Eine Reihenfolge oder Abfolge von Ereignissen oder Prozessen.
+Mögliche Definition: Eine organisierte Abfolge von Operationen, Ereignissen oder Schritten, die in einer bestimmten Reihenfolge durchgeführt werden müssen, um ein Ziel zu erreichen. Ähnlich der „Sequenz“.
+7. Sequeration
+Bedeutung: Der Prozess der Verfolgung oder des Fortschreitens in einer bestimmten Reihenfolge.
+Mögliche Definition: Die Methode, durch die eine Serie von Schritten oder Ereignissen verfolgt und in einer logischen oder zeitlichen Reihenfolge durchgeführt wird. Ähnlich der „Sequenzierung“.
+8. Dekurrenz
+Bedeutung: Eine Art von Rückkehr oder Wiederholung in einem System oder Prozess.
+Mögliche Definition: Der Vorgang, bei dem bestimmte Zustände oder Werte in einem Prozess regelmäßig wiederholt oder zurückgeführt werden. Könnte eine Variation von „Rekurrenz“ darstellen.
+9. Inkurrenz
+Bedeutung: Ein Prozess des Einbezugs oder der Integration in ein bestehendes System oder Konzept.
+Mögliche Definition: Der Prozess, durch den neue Elemente oder Konzepte in ein bestehendes System integriert oder eingepasst werden. Ähnlich der „Integration“ oder „Inklusion“.
+10. Deterationsschleife
+Bedeutung: Eine Schleife oder ein Prozess, der auf die Bestimmung oder Festlegung von Werten abzielt.
+Mögliche Definition: Eine iterative Schleife, die verwendet wird, um Werte oder Parameter systematisch zu bestimmen oder festzulegen. Könnte eine Kombination aus „Iteration“ und „Determinierung“ sein.
+Zusammenfassung
+Deteration: Bestimmung von Werten oder Zuständen.
+Inkursion: Integration neuer Elemente.
+Dekursion: Rückführung oder Reduzierung von Komplexität.
+Inquenz: Konsequenz oder Auswirkung eines Prozesses.
+Dequenz: Rückkehr zu einem vorherigen Zustand.
+Sequement: Reihenfolge oder Abfolge von Prozessen.
+Sequeration: Verfolgung oder Fortschreiten in einer Reihenfolge.
+Dekurrenz: Rückkehr oder Wiederholung in einem Prozess.
+Inkurrenz: Einbezug neuer Elemente.
+Deterationsschleife: Schleife zur Bestimmung von Werten.
+Diese Begriffe könnten in verschiedenen Kontexten, wie der Informatik, Mathematik oder Logik, nützlich sein, um spezifische Konzepte zu beschreiben, die derzeit möglicherweise nicht durch etablierte Begriffe genau erfasst werden.
+
+Deteration: nein, Rückführung auf irgendetwas ordentliches, anders oder gleich, wie vorher.
+Inkursion: Der Prozess, nach Rekursion, der dann eigentlich immer passiert und eigentlich sowieso immer zur Rekursion hinzugehört, wenn da überhaupt etwas passiert, was nicht sein muss: Also: der erste Teil der Rekurion: ein mal geht es rein und dann raus. Immer, bei jeder programmierten Rekursion.
+Dann ist Dekursion davon der zweite Teil, sodass Rekursion aus Inkursion und Dekursion besteht. Die Wortneubildung macht so Sinn?
+Bei einer Sequenz bedeutet damit die Inquenz davon nach vorn und Dequenz rückwärts. Macht damit die Wortneubildung Sinn?
+Sequement ist wie ein Token in einer Sequenz.
+Sequeration ist die Iteration der Sequenz.
+Dekurrenz ist von Wahrheit zu Klasse von Wahrheiten, also Umgekehrung der Rekurrenz, wenn Inkurrenz wie Rekurrenz ist, aber einseitig, eindeutig und Reduziert, sodass Rekurrenz das volle Spektrum erfasst und Inkurrenz nur das eindeutige erfasst. Diese 2 Begriffsbildungen Inkurrenz und Dekurrenz aus Rekurrenz so passend und sinnvoll?
+Deterationsschleife wäre die Umkehrung der Iterationsschleife und damit wie das Beweisverfahren davon, also ein anderes Wort für allgemeinen oder universellen Induktionsbeweis. Richtig? Ist das alles hier entweder richtig oder passend?
+Ist Iteration und Determinierung nicht etwa das exakt gleiche wie alle Induktionsbeweise, die es geben kann?

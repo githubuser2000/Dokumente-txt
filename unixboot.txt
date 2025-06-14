@@ -1,0 +1,11 @@
+menuentry "Boot ISO from ZFS" { set root='zfs:rpool/ROOT/debian' set isofile='/boot/iso/distribution.iso' loopback loop $root$isofile linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=$isofile noprompt noeject initrd (loop)/casper/initrd } 
+
+
+menuentry "Boot ISO from ZFS" { set root='zfs:rpool/ROOT/debian' set isofile='/boot/iso/distribution.iso' loopback loop $root$isofile linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=$isofile noprompt noeject initrd (loop)/casper/initrd }
+
+
+menuentry "Boot USB Image Partition 1" { set imgfile="/boot/usb/usbimage.img" loopback loop $imgfile linux (loop,msdos1)/boot/vmlinuz boot=live initrd (loop,msdos1)/boot/initrd.img }
+
+
+menuentry "Boot USB Image" { set imgfile="/boot/usb/usbimage.img" loopback loop $imgfile linux (loop)/boot/vmlinuz boot=live iso-scan/filename=$imgfile noprompt noeject initrd (loop)/boot/initrd.img }
+

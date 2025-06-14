@@ -1,0 +1,118 @@
+Architektur- bzw. Entwurfs-Anti-Pattern
+
+Big Ball of Mud
+keine erkennbare Softwarearchitektur 
+
+Gasfabrik
+unnötig komplexe Systementwürfe
+
+Gottobjekt
+
+Innere-Plattform-Effekt
+weitreichende Konfigurationsmöglichkeiten
+
+Spaghetticode
+
+Sumo-Hochzeit
+stark abhängig von der Datenbank 
+müssen auf beiden Schichten
+Die Systeme sind nicht entkoppelt.
+
+Programmierungs-Anti-Pattern
+
+Doppelt überprüfte Sperrung
+
+Zwiebel
+
+Copy and Paste
+ja (aber nicht zugeben) 
+
+Lavafluss
+toter Quelltext
+
+Magische Werte
+weg machen
+
+Reservierte Wörter
+
+Unbeabsichtigte Komplexität
+
+---------------------------
+
+Smells
+
+duplizierter Code
+
+lange Methoden
+
+große Klassen
+
+lange Parameterlisten
+
+Schrotkugeln
+ Für eine Änderung müssen weitere Änderungen
+
+Datenklumpen
+Eine Gruppe von Objekten kommt häufig zusammen vor
+
+Neigung zu elementaren Typen (engl. Primitive Obsession)
+
+Case-Anweisungen in objektorientiertem Code
+  wenn da duplizierter Code dabei ist
+
+Parallele Vererbungshierarchien
+
+Neid
+
+Klasse zu viel von anderer
+
+Faule Klasse
+
+Spekulative Allgemeinheit
+alle möglichen Spezialfälle vorgesehen, die gar nicht benötigt werden
+
+Temporäre Felder
+    Ein Objekt verwendet eine Variable nur unter bestimmten Umständen 
+
+Nachrichtenketten
+Gesetz von Demeter -  Objekte nur mit Objekten in ihrer unmittelbaren Umgebung
+
+
+Middle Man (Vermittler)
+
+Unangebrachte Intimität
+
+Alternative Klassen mit verschiedenen Schnittstellen
+    Zwei Klassen machen das gleiche, verwenden hierfür aber unterschiedliche Schnittstellen.
+
+Inkomplette Bibliotheksklasse
+
+Datenklasse
+
+Ausgeschlagenes Erbe
+
+Kommentare
+
+--------------------------------------
+
+Weitere Smells und Programmierungs-Anti-Pattern
+
+Nichtssagender Name (engl. Uncommunicative Name)
+    Aussagekräftige Namen sind wesentlich für das Verständnis von Programmcode.
+Redundanter Code
+    Ein Stück Code, das nicht (mehr) verwendet wird.
+Indecent Exposure (engl.)
+    Interne Details einer Klasse sind unnötigerweise Teil ihrer Schnittstelle nach außen.
+Contrived complexity (engl.)
+    Erzwungene Verwendung von Entwurfsmustern, wo einfacheres Design ausreichen würde.
+Zu lange Namen
+    Insbesondere die Verwendung von Architektur- oder Designbestandteilen in den Namen von Klassen oder Methoden.
+Zu kurze Namen
+    Der Name einer Variable sollte ihre Funktion beschreiben. Die Verwendung von „x“, „i“ oder Abkürzungen ist zu vermeiden.
+Über-Callback
+    Ein Callback, der versucht, alles zu tun.
+Komplexe Verzweigungen
+    Verzweigungen, die eine Menge von Konditionen abprüfen, die mit der Funktionalität des Codeblocks nichts zu tun haben.
+Tiefe Verschachtelungen
+    Verschachtelte if/else/for/do/while-Statements machen den Code unlesbar. 
+

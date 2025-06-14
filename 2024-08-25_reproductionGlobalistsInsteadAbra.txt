@@ -1,0 +1,18 @@
+
+
+ALX:
+'GloablistenGlobalists, optimaleOptimums, rationaleRational, korrekteCorrect, wichtigeImportant, wichtigsteMostimportant, schöneBeautiful, schönsteMostbeautiful':
+'FortpflanzungReproduction("A,B,C")':(
+'weißWhite+schwarzBlack+gelbYellow':
+'A(3 vonOf 3): sindAre 3',
+'B(2 vonOf 3) plus rotRed undAnd grünGreen: sindAre 4.'
+'C(blauBlue: "5 vonOf 6"): weißWhite+schwarzBlack+gelbYellow+grünGreen+rotRead+blauBlue: sindAre 5.'.
+'A oderOr B oderOr C':=:'3 oderOr 4 oderOr 5'.
+):ALX.
+
+ALX:'Modal:LogicLogik(1,2,3,4)':[
+1.possibleMöglich(orOder notNicht),
+2.conditionBedingung(sufficiantHinreichend vs. necessaryMotwendig),
+3.Cursor(dotPunkt,backwardsRückwärts,hereHier,forwardVorwärts),
+4.ReasoningBeweisführung('1UnderstandVerstehen1, 2HypothesesHyptothese2, 3EvaluationBewertung3, 4'Consideration="Betrachtung:=:Überlegung"'4, 5'ConclusionSchlussfolgerung'5).
+]:ALX.

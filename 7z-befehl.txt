@@ -1,0 +1,29 @@
+maximale kompression
+4 threads
+lzma2
+1GB Teile
+
+7z a -t7z -m0=lzma2 -mmt4 -mx=9 -mfb=64 -md=32m -v1g -ms=on archive.7z dir1
+7z a -t7z -m0=lzma2 -mmt4 -mx=9 -mfb=64 -md=32m -v1g -ms=on /media/alex/1800/ak_dirsys_4/data/lese/Linux-Magazin-15-Jahre-DVD.7z Linux Magazin 15 Jahre DVD
+
+
+Entpacken:
+7z x -y -mmt4 Ct-Rom-1990-2009.7z.001
+
+
+xz:
+tar -cf - foo/ | xz -9 -c - > foo.tar.xz 
+ 
+
+
+-z, --compress 
+C check, --check=check Inegritätscheck
+--fast and --best 
+-e, --extreme 
+-T threads, --threads=threads 
+--lzma2[=options] 
+  dict=size  64 KiB to 64 MiB
+  mode=9
+
+tar -cf - foo/ | xz - -c --threads=4 -e -9 --lzma2=dict=16MiB - > foo.tar.xz
+tar -cf - Linux-Magazin-15-Jahre-DVD/ | xz - -c --threads=4 -e -9 --lzma2=dict=64MiB - | split --bytes=1700MB - Linux-Magazin-15-Jahre-DVD.tar.xz.

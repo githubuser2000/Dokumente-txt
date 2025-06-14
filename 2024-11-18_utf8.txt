@@ -1,0 +1,39 @@
+Genealogische Symbole und Abkürzungen
+Bearbeiten
+
+Folgende Tabelle erläutert die familiengeschichtlichen Zeichen, die laut Duden in entsprechenden Texten zur Raumersparnis verwendet werden können.[1] Bei Computerprogrammen werden je nach Webbrowser und System einige Symbole vielleicht nicht richtig dargestellt.
+Verbreitete genealogische Symbole und Abkürzungen Symbol und Codepoint 	Alternativen 	Bedeutung 	Englisch 	Beschreibung
+* (U+002A) 	∗ (U+2217), ✶ (U+2736), ＊ (U+FF0A), ⁎ (U+204E) 	geboren (geb.) 	b (born) 	Sternchen (Schriftzeichen) / Asterisk
+〰 (U+3030) 	~ (U+007E), ≈ (U+2248), ﹏ (U+FE4F) 	getauft (get.) 	bp, bapt (baptized) 	Welliger Strich, Tilde, vgl. fast gleich, Welliger Strich unten
+† (U+2020) 	✝ (U+271D), + (U+002B), ✠ (U+2720), ✝us 	gestorben (gest.), mortuus (lateinisch für „verstorben“) 	d (died) 	Lateinisches Kreuz (Unicode), Kreuz (Satzzeichen), ähnlich dem Pluszeichen
+▭ (U+25AD) 	⚰︎ (U+26B0 U+FE0E), ⚰ (U+26B0), [] (U+005B + U+005D), ▯ (U+25AF) 	begraben (begr.) 	t, bur (buried) 	(liegender) Sarg, ersatzweise zwei eckige Klammern oder stehendes Rechteck
+⚱ (U+26B1) 		eingeäschert 	cremated 	Bestattungsurne
+⚭ (U+26AD) 	oo (2 × U+006F), ∞ (U+221E), ✕ (U+2715) 	verheiratet (verh.), Ehe 	m (married) 	Zwei weiße, einander überlappende Kreise, zwei kleine „o“ ohne Leerzeichen, ähnlich dem Unendlichzeichen
+I ⚭ (I + U+26AD) 	I oo I + o (U+006F), 	1. Ehe 	1st marriage 	vorangestellte römische Ordnungszahl „I“
+II ⚭ (II + U+26AD), 	II oo II + o (U+006F), 	2. Ehe 	2nd marriage 	vorangestellte römische Ordnungszahl „II“
+⚬ (U+26AC) 	o (U+006F), ° (U+00B0), 	verlobt (verl.) 	engaged 	Kleiner weißer Kreis, einzelnes kleines „o“
+⚮ (U+26AE) 	o|o, o/o, %, ⧞ (U+29DE) 	geschieden (gesch.) 	divorced 	Zwei weiße Kreise mit Trennstrich, zwei „o“ mit einem Trennungsstrich dazwischen, ähnlich dem Prozent- bzw. dem „nicht unendlich“-Zeichen
+⚯ (U+26AF) 	o-o, ⧟ (U+29DF) 	uneheliche/freie Verbindung (unehel.) 	nm (illegitimate or common law union) 	Zwei weiße Kreise mit Bindestrich, zwei „o“ mit einem Minuszeichen dazwischen, Multimengenzeichen mit zwei Enden
+(*) 	(⁎) ("(" + U+204E + „)“) 	außerehelich geboren 	born illegitimate 	Sternchen in runden Klammern
+†* (U+2020 + U+002A) 	✝*, +* (s. o.) 	tot geboren 	stillborn 	Kreuz oder Plus-Zeichen mit Sternchen
+*† (U+002A + U+2020) 	*✝, *+ (s. o.) 	am Tag der Geburt gestorben 	died on the day of birth 	Sternchen mit Kreuz oder mit Plus-Zeichen
+⚔ (U+2694) 	X (U+0058) 	gefallen (gef.) 	killed in action at war 	Gekreuzte Schwerter, ein großes „X“
+
+Gelegentlich wurden weitere Zeichen benutzt, deren Gebrauch sich nicht allgemein verbreitete:
+seltene genealogische Symbole Symbol 	Alternativen 	Bedeutung 	Beschreibung
+ᛉ U+16C9 		geboren 	Elhaz, „Lebensrune“
+ᛣ U+16E3 		gestorben 	„Todesrune“
+⚵ 	(✶ auf +) 	getauft 	
+	(† auf △) 	begraben 	Kreuz auf Grabhügel
+✝⚔ U+271D + U+2694 	†⚔ +X 	tödlich verwundet 	Kreuz und Schwerter
+✝✝ U+271D + U+271D 	†† ++ ‡ 	diese Linie ausgestorben 	zwei benachbarte Kreuze
+ !! 		Pfarrer 	zwei Ausrufezeichen
+/Name 		Kind von „Name“ 	Name des Elternteils nach Querstrich
+(✝) U+271D 	(†) (+) 	vermisst 	Kreuz in runden Klammern
+(⚔) U+2694 (9876) 	(X) 	Im Kriegseinsatz vermisst 	Schwerter in runden Klammern
+✡ U+2721 		jüdisch gestorben 	Davidstern
+☪ U+262A (9770) 		muslimisch gestorben 	Mondsichel mit Stern (Mondstern)
+☸ U+2638 (9784) 		buddhistisch gestorben 	Dharmarad
+		Bahai 	Neunzackiger Stern
+☬ U+262C (9772) 		Sikh 	Khanda
+Deutschland

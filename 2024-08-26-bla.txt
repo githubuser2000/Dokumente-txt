@@ -1,0 +1,61 @@
+ALX,AlexanderKern,hugo987,trace,M.+B.Science:
+Deltas:
+"ID:Delta::CloneKlon,TwinZwilling,BrotherBruder, etc.Delta".
+'brokenKaputtDisabledBehindert:Delta'.
+'Schrödingers:catKatze::alifeLebendigkeits:Delta'.
+'Linear vs. OverÜber UnderUnter linear: logarithmicLogarithmisch, polinomialPolynomiell, etc.'
+'healthGesundheit:Delta, DestructionZerstörungsDegreeGrad:Delta, repairedRepariert:Delta'
+'Meter, Kilometer, CentiZenti:meter: MeasurementsMaße'.
+'UnitsEinheiten: fromVon Newton toZu Kilogramm, fromVon PowerKraft toZu MassMasse'.
+'fromVon HomeZuhause inIn yourDeinen notebookLaptop orOder ThoseDem Restaurant inIn yourDeinem mobileHandy': 'Delta: Ofvon RealityWirklichkeit andUnd TruthWahrheit, MathematicsMathematik:Delta, PhysicsPhysik:Delta'.
+'System:ChangeÄnderungen, BehaviourVerhaltensChangeÄnderung'.
+:ALX,AlexanderKern,hugo987,trace,M.+B.Science.
+
+'RaumSpace EconomyWirtschaft, PossessionBesitz 3andUnd3OrOder3PlusDazu3 RightRecht EconomyWirtschaft':
+'ID'.
+'ThingDing'.
+'LifeLeben HookHaken':'PetHaustier,peopleMenschen'.
+'movablesMobilien ImmobilienRealestate': 'CarsAutos, HousesHäuser, vesselFahrzeug'.
+'Boxes, Letters, Transport, HealthGesundheit'.
+'CPUsZentralprozessoren, MotorsMotoren, powerKraftDevicesGeräte'.
+'SteeringLenkWheelRad, CompassKompass, oarRuder'.
+'Container, bagTasche, suitcaseKoffer, MatryoschkaMatroscha OnionZwiebel RingsRingen likeÄhnlich (IT-Security:Computersicherheit)'.
+'unified einheitliche performanceLeistung, bulkMassFreightWaren multipleMehrfach'.
+'Landownership possession, CoutriesLänder: realReell vs. virtualVirtuell'.
+
+
+Form:ContentInhalt-MarketMarkt:
+exchangeAustausch:
+bothBeide TardersHändler, TradeHandel:
+twoZweiOfVonEachBeidem:
+Forms,ContentsInhalte:
+4:=2+2 thingsDinge: 4.
+EachJederTradeHandel.
+NoKeine NumberZahlen currencyWährung neededGebraucht.
+
+System:SQL-like:oneEine:relationalRelationalTableTabelle:ofVon:DatabaseDatenbank (notNicht moreMehr: oneEine):
+forFür:SystemsSysteme:
+economyWirtschaft,democracyDemokratie,polticalPolitische SystemsSyteme, GesellschaftsSociety:SystemsSysteme.
+(betterBesser thanAls ancientAntikes GreekGriechisches DemocracyDemokratie System.)
+SQL:ColumsSpalten:
++ 2'maleMännlich VS. femaleWeiblich'2.
++ 3'jungYoung3middleMitte3oldAlt'3.
++ 2'criminalKriminell VS.notNicht'2.
++ n'skinHaut colorFarbe: blackSchwarz,yellowGelb,whiteWeiß,redRot,greenGrün,blueBlau'n.
++ 3'first 1. employedArbeiter (getBekommt moneyGeld orOder notNicht), 2. unemployedArbeitssuchend (getBekommt moneyGeld orOder notNicht), 3. moneyGeld workArbeit (…  economyWirtschaft etc.) orOder moneyGeld nonNicht WorkArbeit.'3
++ n'socialSoziale ClassKlasse: planet vs. countryLand basedBasiert: betterBesser: planet:basiedBasiert.'n
+
+TwoZwei Master Thesis Masterarbeiten: so I better two Master Degrees instead one!!!!!!! evilBöser professor!
+
+ALX:(rangeBereich:
+[('0 untilBis 1'), ('0 orOder 1: untilBis 100')]::{
+'TrueWahr untilBis FalseWrong',
+'Postiv(e) VS. Negativ(e)',
+'horrendousÜbel VS. nobleEdel',
+'improbableUnwahrscheinlich VS. safeSicheres knowledgeWissen',
+'BehaviourVerahlten: "beginAnfang -> endEnde" (delta, System:TheoryTheorie)'.
+'WayWeg: "beginAnfang -> endEnde" (wantMöchten, nobleEdel)':::
+'wantMöchtenMotiveMotiv -> GoalZielAchieveErreichen' (plus FanMotivator),
+[2D Cursor: ('likedGemocht vs. hatedGehasst') VS. ('goodGutSelflessSelbstlos vs. evilBöseEgoicEgomanischSecureSicher')]
+}::[('0 untilBis 1'), ('0 orOder 1: untilBis 100')]:rangeBereich.
+):ALX.

@@ -1,0 +1,10 @@
+NullZero: LeerzeichenBkanksignn.
+binärBinary: LeerzeichenBkanksignn, PunktDot.
+0bisUntil2: LeerzeichenBkanksignn, PunktDot, doppelDouble-PunktDot.
+1bisUntil6: PunktDot, KreisCircle oderOr ZweiTwo PunkteDots, 3. ElipseeEllipsis, 4. ZweiTwo KreiseCircles, 5. AchtEight:Symbol, 6. WieLike: AchtEight, aberBut EllipseEllipsis wieLike AchtEight: MitteMiddle: LinksLeft plus RechtsRight: nichtNot verbundenConnected
+1bisUntil7: punktDot, KreisCircle, EllipseEllipsis, 4. Hyper:KugelSphere, 5. AchtEigth-GleichEqualFormed, EiEgg, 6. AchtEigth-NichtNot:GleichEqualFormed,alsoSo: likeWie: AchtEight undAnd EiEgg.
+1bisUntil8: punktDot, LinieLine, 2. FlächePlane, 3. WürfelDice, 4. QuaderCuboid mitWith 2 verschiedenenDifferent langenLong LinenLines, danachAfter mitWith allenAll 3 verschiedenenDifferent, anstelleInstead 3 verscheideneDifferent gehtWorks auchAswell ZahlenstrahlNumberline, aberBut dasThat istIs schlechtBad zuTo visualisierenVisualize ,7. 2D Koordinatensystem (Jesus:KreuzCross, I Jupiter 3.0 sagteTold euchYou soDas in Religion 10), 8. 3D Koordiantensystem
+1bisUntil9: punktDot, "8 SchritteSteps bisUntil BlumenartigFlowerlike Kleeblatt": Symbol 9:=1+8: diesesThis Kleeblatt.
+
+
+

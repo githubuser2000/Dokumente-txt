@@ -1,0 +1,200 @@
+Monogon, Henagon, Hengon, Punkt  
+Digon, Dyogon, Linie  
+Trigon, Triagon, Dreieck  
+Tetragon, Tessaragon, Quadrat  
+Pentagon, Pentgon, Pentagon  
+Hexagon, Hexgon, Hexagon  
+Heptagon, Septagon, Heptagon  
+Oktagon, Octagon, Oktagon  
+Enneagon, Nonagon, Nonagon  
+Dekagon, Decagon, Dekagon  
+Hendekagon, Endekagon, Hendegon  
+Dodekagon, Dodegon  
+Tridekagon, Triskaidekagon, Tristaidegon  
+Tetradekagon, Tetraidegon  
+Pentadekagon, Pentadegon  
+Hexadekagon, Hexadegon  
+Heptadekagon, Heptadegon  
+Oktadekagon, Oktadegon  
+Enneadekagon, Nonadegon  
+Icosagon, Ikosagon, Ikodegon  
+HenaIcosigon  
+DyoIcosigon  
+TriaIcosigon  
+TessaraIcosigon  
+PenteIcosigon  
+HexIcosigon  
+HeptaIcosigon  
+OktaIcosigon  
+EnneaIcosigon  
+Triacontagon  
+HenaTriacontagon  
+DyoTriacontagon  
+TriaTriacontagon  
+TessaraTriacontagon  
+PenteTriacontagon  
+HexTriacontagon  
+HeptaTriacontagon  
+OktaTriacontagon  
+EnneaTriacontagon  
+Tetracontagon 
+HenaTetracontagon  
+DyoTetracontagon  
+TriaTetracontagon  
+TessaraTetracontagon  
+PenteTetracontagon  
+HexTetracontagon  
+HeptaTetracontagon  
+OktaTetracontagon  
+EnneaTetracontagon  
+Pentacontagon  
+HenaPentacontagon  
+DyoPentacontagon  
+TriaPentacontagon  
+TessaraPentacontagon  
+PentePentacontagon  
+HexPentacontagon  
+HeptaPentacontagon  
+OktaPentacontagon  
+EnneaPentacontagon  
+Hexacontagon  
+HenaHexacontagon  
+DyoHexacontagon  
+TriaHexacontagon  
+TessaraHexacontagon  
+PenteHexacontagon  
+HexHexacontagon  
+HeptaHexacontagon  
+OktaHexacontagon  
+EnneaHexacontagon  
+Heptacontagon  
+HenaHeptacontagon  
+DyoHeptacontagon  
+TriaHeptacontagon  
+TessaraHeptacontagon  
+PenteHeptacontagon  
+HexHeptacontagon  
+HeptaHeptacontagon  
+OktaHeptacontagon  
+EnneaHeptacontagon  
+Octacontagon  
+HenaOctacontagon  
+DyoOctacontagon  
+TriaOctacontagon  
+TessaraOctacontagon  
+PenteOctacontagon  
+HexOctacontagon  
+HeptaOctacontagon  
+OktaOctacontagon  
+EnneaOctacontagon  
+Enneacontagon  
+HenaEnneacontagon  
+DyoEnneacontagon  
+TriaEnneacontagon  
+TessaraEnneacontagon  
+PenteEnneacontagon  
+HexEnneacontagon  
+HeptaEnneacontagon  
+OktaEnneacontagon  
+EnneaEnneacontagon
+Hekatontagon  
+HenaHekatontagon  
+DyoHekatontagon  
+TriaHekatontagon  
+TessaraHekatontagon  
+PenteHekatontagon  
+HexHekatontagon  
+HeptaHekatontagon  
+OktaHekatontagon  
+EnneaHekatontagon  
+DecaHekatontagon  
+HenaDecaHekatontagon  
+DyoDecaHekatontagon  
+TriaDecaHekatontagon  
+TessaraDecaHekatontagon  
+PenteDecaHekatontagon  
+HexDecaHekatontagon  
+HeptaDecaHekatontagon  
+OktaDecaHekatontagon  
+EnneaDecaHekatontagon  
+IcosiHekatontagon  
+HenaIcosiHekatontagon  
+DyoIcosiHekatontagon  
+TriaIcosiHekatontagon  
+TessaraIcosiHekatontagon  
+PenteIcosiHekatontagon  
+HexIcosiHekatontagon  
+HeptaIcosiHekatontagon  
+OktaIcosiHekatontagon  
+EnneaIcosiHekatontagon  
+TriacontaHekatontagon  
+HenaTriacontaHekatontagon  
+DyoTriacontaHekatontagon  
+TriaTriacontaHekatontagon  
+TessaraTriacontaHekatontagon  
+PenteTriacontaHekatontagon  
+HexTriacontaHekatontagon  
+HeptaTriacontaHekatontagon  
+OktaTriacontaHekatontagon  
+EnneaTriacontaHekatontagon  
+TetracontaHekatontagon  
+HenaTetracontaHekatontagon  
+DyoTetracontaHekatontagon  
+TriaTetracontaHekatontagon  
+TessaraTetracontaHekatontagon  
+PenteTetracontaHekatontagon  
+HexTetracontaHekatontagon  
+HeptaTetracontaHekatontagon  
+OktaTetracontaHekatontagon  
+EnneaTetracontaHekatontagon  
+PentacontaHekatontagon  
+HenaPentacontaHekatontagon  
+DyoPentacontaHekatontagon  
+TriaPentacontaHekatontagon  
+TessaraPentacontaHekatontagon  
+PentePentacontaHekatontagon  
+HexPentacontaHekatontagon  
+HeptaPentacontaHekatontagon  
+OktaPentacontaHekatontagon  
+EnneaPentacontaHekatontagon  
+HexacontaHekatontagon  
+HenaHexacontaHekatontagon  
+DyoHexacontaHekatontagon  
+TriaHexacontaHekatontagon  
+TessaraHexacontaHekatontagon  
+PenteHexacontaHekatontagon  
+HexHexacontaHekatontagon  
+HeptaHexacontaHekatontagon  
+OktaHexacontaHekatontagon  
+EnneaHexacontaHekatontagon  
+HeptacontaHekatontagon  
+HenaHeptacontaHekatontagon  
+DyoHeptacontaHekatontagon  
+TriaHeptacontaHekatontagon  
+TessaraHeptacontaHekatontagon  
+PenteHeptacontaHekatontagon  
+HexHeptacontaHekatontagon  
+HeptaHeptacontaHekatontagon  
+OktaHeptacontaHekatontagon  
+EnneaHeptacontaHekatontagon  
+OctacontaHekatontagon  
+HenaOctacontaHekatontagon  
+DyoOctacontaHekatontagon  
+TriaOctacontaHekatontagon  
+TessaraOctacontaHekatontagon  
+PenteOctacontaHekatontagon  
+HexOctacontaHekatontagon  
+HeptaOctacontaHekatontagon  
+OktaOctacontaHekatontagon  
+EnneaOctacontaHekatontagon  
+EnneacontaHekatontagon  
+HenaEnneacontaHekatontagon  
+DyoEnneacontaHekatontagon  
+TriaEnneacontaHekatontagon  
+TessaraEnneacontaHekatontagon  
+PenteEnneacontaHekatontagon  
+HexEnneacontaHekatontagon  
+HeptaEnneacontaHekatontagon  
+OktaEnneacontaHekatontagon  
+EnneaEnneacontaHekatontagon
+Diakosioigon

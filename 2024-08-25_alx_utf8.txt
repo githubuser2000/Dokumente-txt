@@ -1,0 +1,174 @@
+2-Byte-Bereich (0xC2 bis 0xDF)
+Bereich: 0xC2 80 bis 0xDF BF (U+0080 bis U+07FF)
+Währungssymbole:
+¢ (Cent, U+00A2)
+£ (Pfund, U+00A3)
+¥ (Yen, U+00A5)
+Mathematische Operatoren:
+± (Plus-Minus, U+00B1)
+÷ (Division, U+00F7)
+× (Multiplikation, U+00D7)
+Satzzeichen und andere Symbole:
+© (Copyright, U+00A9)
+® (Registered, U+00AE)
+° (Gradzeichen, U+00B0)
+§ (Paragraphenzeichen, U+00A7)
+3-Byte-Bereich (0xE0 bis 0xEF)
+Unterteilung in Bereiche:
+0xE2 80 bis 0xE2 BF (U+2000 bis U+20FF)
+
+Satzzeichen:
+– (Halbgeviertstrich, U+2013)
+— (Geviertstrich, U+2014)
+„ “ (Typografische Anführungszeichen, U+201C/U+201D)
+Währungssymbole:
+€ (Euro, U+20AC)
+Mathematische Symbole:
+† (Dolch, U+2020)
+‡ (Doppeldolch, U+2021)
+Andere Symbole:
+‰ (Promille, U+2030)
+0xE2 A0 bis 0xE2 AF (U+2200 bis U+22FF)
+
+Mathematische Operatoren:
+∀ (Allquantor, U+2200)
+∂ (Partielle Ableitung, U+2202)
+∃ (Existenzquantor, U+2203)
+∆ (Delta, U+2206)
+∇ (Nabla, U+2207)
+∈ (Element von, U+2208)
+∉ (Nicht-Element von, U+2209)
+∏ (Produktzeichen, U+220F)
+∑ (Summenzeichen, U+2211)
+√ (Quadratwurzel, U+221A)
+∞ (Unendlichkeit, U+221E)
+∧ (Und, U+2227)
+∨ (Oder, U+2228)
+∩ (Durchschnitt, U+2229)
+∪ (Vereinigung, U+222A)
+∫ (Integral, U+222B)
+∴ (Deshalb, U+2234)
+≈ (Ungefähr gleich, U+2248)
+≠ (Ungleich, U+2260)
+≤ (Kleiner gleich, U+2264)
+≥ (Größer gleich, U+2265)
+0xE2 B0 bis 0xE2 BF (U+2300 bis U+23FF)
+
+Technische Symbole:
+⌂ (Haus, U+2302)
+⌛ (Sanduhr, U+231B)
+⌘ (Befehlstaste, U+2318)
+⍟ (Stern, U+235F)
+Pfeile und Linien:
+← (Linkspfeil, U+2190)
+↑ (Aufwärtspfeil, U+2191)
+→ (Rechtspfeil, U+2192)
+↓ (Abwärtspfeil, U+2193)
+↔ (Bidirektionaler Pfeil, U+2194)
+⇒ (Implikation, U+21D2)
+⇔ (Äquivalenz, U+21D4)
+4-Byte-Bereich (0xF0 bis 0xF4)
+Unterteilung in Bereiche:
+0xF0 90 80 bis 0xF0 9F BF (U+1D400 bis U+1D7FF)
+
+Mathematische Alphanumerische Symbole:
+𝛼 (Griechisches Alpha, U+1D6FC)
+𝜋 (Griechisches Pi, U+1D70B)
+𝜎 (Griechisches Sigma, U+1D70F)
+𝜇 (Griechisches Mu, U+1D707)
+Mathematische Zeichen in verschiedenen Schriftarten:
+𝑨 (Mathematisches Großbuchstabe A in fetter Serifenschrift, U+1D400)
+𝑎 (Mathematisches Kleinbuchstabe a in fetter Serifenschrift, U+1D44E)
+𝒜 (Mathematisches Großbuchstabe A in kalligrafischer Schrift, U+1D49C)
+0xF0 9F 80 bis 0xF0 9F 8F (U+1F000 bis U+1F0FF)
+
+Spielkarten und Dominosteine:
+🂠 (Spielkarte Rückseite, U+1F0A0)
+🃏 (Joker, U+1F0CF)
+🁲 (Dominostein Zwei-Null, U+1F032)
+0xF0 9F 90 bis 0xF0 9F BF (U+1F300 bis U+1F5FF)
+
+Emojis und Piktogramme:
+🌍 (Erdkugel Europa-Afrika, U+1F30D)
+🌟 (Glänzender Stern, U+1F31F)
+🔋 (Batterie, U+1F50B)
+🔧 (Schraubenschlüssel, U+1F527) Wichtige Unicode-Blöcke für mathematische Symbole
+1. Mathematical Operators (U+2200 bis U+22FF)
+Zeichenbereich: 0xE2 A0 bis 0xE2 AF
+Typische Symbole:
+∀ (Allquantor, U+2200)
+∃ (Existenzquantor, U+2203)
+∇ (Nabla, U+2207)
+∈ (Element von, U+2208)
+∉ (Nicht-Element von, U+2209)
+∏ (Produktzeichen, U+220F)
+∑ (Summenzeichen, U+2211)
+− (Minuszeichen, U+2212)
+√ (Quadratwurzel, U+221A)
+∞ (Unendlichkeit, U+221E)
+∧ (Und, U+2227)
+∨ (Oder, U+2228)
+∩ (Durchschnitt, U+2229)
+∪ (Vereinigung, U+222A)
+∫ (Integral, U+222B)
+≠ (Ungleich, U+2260)
+≤ (Kleiner gleich, U+2264)
+≥ (Größer gleich, U+2265)
+2. Supplemental Mathematical Operators (U+2A00 bis U+2AFF)
+Zeichenbereich: 0xE2 A9 80 bis 0xE2 AF BF
+Typische Symbole:
+⨀ (Kreisförmiger Punkt, U+2A00)
+⨂ (Tensorprodukt, U+2A02)
+⨄ (Vereinigte Summe, U+2A04)
+⨉ (Kreuzprodukt, U+2A09)
+⨊ (Summenintegral, U+2A0A)
+⨁ (Direktes Summenzeichen, U+2A01)
+⨍ (Faltungsintegral, U+2A0D)
+3. Miscellaneous Mathematical Symbols-A (U+27C0 bis U+27EF)
+Zeichenbereich: 0xE2 B1 80 bis 0xE2 B7 BF
+Typische Symbole:
+⟀ (Zentroid, U+27C0)
+⟂ (Orthogonal, U+27C2)
+⟖ (Kreisbogen mit Pfeil, U+27D6)
+⟗ (Vektor- oder Kreuzprodukt, U+27D7)
+⟡ (Diamant und Pfeil, U+27E1)
+⟢ (Dreieckiger Winkel mit Punkt, U+27E2)
+⟣ (Dreieckiger Winkel mit zwei Punkten, U+27E3)
+4. Miscellaneous Mathematical Symbols-B (U+2980 bis U+29FF)
+Zeichenbereich: 0xE2 BC 80 bis 0xE2 BF BF
+Typische Symbole:
+⦀ (Mondreieck, U+2980)
+⦁ (Schwarzer Punkt, U+2981)
+⦂ (Zirkelschritt, U+2990)
+⦾ (Kreis mit kleinem Kreis in der Mitte, U+29BE)
+⧀ (Double Less-Than, U+2A7B)
+⧁ (Double Greater-Than, U+2A7C)
+5. Mathematical Alphanumeric Symbols (U+1D400 bis U+1D7FF)
+Zeichenbereich: 0xF0 9D 80 bis 0xF0 9F BF
+Typische Symbole:
+𝐀 (Mathematisches Großbuchstabe A, U+1D400)
+𝐚 (Mathematisches Kleinbuchstabe a, U+1D41A)
+𝜋 (Mathematisches Pi, U+1D70B)
+𝜎 (Mathematisches Sigma, U+1D70F)
+𝜇 (Mathematisches Mu, U+1D707)
+𝒜 (Kalligrafisches Großbuchstabe A, U+1D49C)
+6. Geometric Shapes (U+25A0 bis U+25FF)
+Zeichenbereich: 0xE2 96 A0 bis 0xE2 97 BF
+Typische Symbole:
+■ (Voll ausgefülltes Quadrat, U+25A0)
+▢ (Leer ausgefülltes Quadrat, U+25A1)
+▲ (Dreieck, U+25B2)
+▽ (Dreieck, U+25BD)
+◆ (Raute, U+25C6)
+● (Voll ausgefüllter Kreis, U+25CF)
+◯ (Leer ausgefüllter Kreis, U+25CB)
+7. Letterlike Symbols (U+2100 bis U+214F)
+Zeichenbereich: 0xE2 84 80 bis 0xE2 85 8F
+Typische Symbole:
+ℂ (Komplexe Zahlen, U+2102)
+ℇ (Exponentialkonstante, U+2107)
+ℋ (Hilbertraum, U+210B)
+ℕ (Natürliche Zahlen, U+2115)
+ℝ (Reelle Zahlen, U+211D)
+ℤ (Ganze Zahlen, U+2124)
+Ω (Ohm, U+2126)

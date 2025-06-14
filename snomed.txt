@@ -1,0 +1,1375 @@
+nutrition:
+Cholesterol reduction program, function (observable entity)
+...
+
+
+Nutrition therapy 
+     Breastfeeding support (regime/therapy)
+     Nutrition management (regime/therapy)
+     Nutrition therapy for congestive heart failure (regime/therapy)
+     Nutrition therapy for hypertension (regime/therapy)
+     Nutritional monitoring (regime/therapy)
+     Nutritional support (regime/therapy)
+     Weight maintenance regimen (regime/therapy) 
+
+
+Nutritional anemia (disorder)
+     Anemia due to starvation (disorder)
+     Iron deficiency anemia (disorder)
+≡   Megaloblastic anemia due to folate deficiency (disorder)
+≡   Megaloblastic anemia due to vitamin B>12< deficiency (disorder)
+     Megaloblastic anemia of premature infant (disorder)
+     Non megaloblastic anemia associated with nutritional deficiency (disorder) 
+
+Nutritional status
+     Body mass index (observable entity)
+     Malnutrition universal screening tool score (observable entity)
+     Nutritional status: biochemical measures (observable entity)
+     Nutritional status: energy (observable entity)
+     Nutritional status: essential nutrient intake (observable entity)
+     Nutritional status: food and fluid intake (observable entity) 
+
+Nutrition education
+Advice about food product label (procedure)
+Child feeding advice (procedure)
+     Diet education (procedure)
+     Infant nutrition education (procedure)
+     Nutritional counseling for control of dental disease (procedure)
+     Toddler nutrition education (procedure) 
+
+Nutritional disease
+(da drin noch mehr aufklappbar)  
+
+[X]Other nutritional deficiencies (disorder)
+     Disorder of hyperalimentation (disorder)
+     Effects of hunger (disorder)
+     Failure to thrive (disorder)
+     Imbalance of constituents of food intake (disorder)
+     Nutritional deficiency (disorder)
+     Nutritional desexing syndrome (disorder)
+     Nutritional disorder due to calcium-phosphorus imbalance (disorder)
+     Nutritional stunting (disorder)
+     Synthetic defect of bile acids (disorder)
+     Vitamin disease (disorder) 
+
+Nutritional myopathy
+      Potassium depletion myopathy (disorder)
+≡   Protein deficiency myopathy (disorder) 
+
+ Intravenous feeding of patient (regime/therapy) 
+     Parenteral alimentation procedure (regime/therapy)
+     Peripheral line feeding (regime/therapy)
+     Total parenteral nutrition (regime/therapy) 
+
+
+Nutritional stunting
+     Arrested development following protein-calorie malnutrition (disorder)
+     Physical retardation due to protein-calorie malnutrition (disorder) 
+
+ Disorder of nutrition
+[X]Other nutritional deficiencies (disorder)
+     Disorder of hyperalimentation (disorder)
+     Effects of hunger (disorder)
+     Failure to thrive (disorder)
+     Imbalance of constituents of food intake (disorder)
+     Nutritional deficiency (disorder)
+     Nutritional desexing syndrome (disorder)
+     Nutritional disorder due to calcium-phosphorus imbalance (disorder)
+     Nutritional stunting (disorder)
+     Synthetic defect of bile acids (disorder)
+     Vitamin disease (disorder) 
+
+
+Nutritional education
+    
+Advice about food product label (procedure)
+Child feeding advice (procedure)
+     Diet education (procedure)
+     Infant nutrition education (procedure)
+     Nutritional counseling for control of dental disease (procedure)
+     Toddler nutrition education (procedure) 
+
+
+ Nutritional deficiency
+     Deficiency of selenium AND/OR vitamin E (disorder)
+     Deprivation of food (disorder)
+     Inanition (disorder)
+≡   Nutritional deficiency associated with acquired immunodeficiency syndrome (disorder)
+     Nutritional deficiency in mother complicating childbirth (disorder)
+     Nutritional deficiency in pregnancy (disorder)
+     Nutritional edema without dyspigmentation of skin AND/OR hair (disorder)
+     Starvation (disorder)
+     Undernutrition (disorder)
+     Wasting disease (disorder) 
+
+Nutritional supplement
+Nahrungsergänzung
+     Fortified milk (substance)
+     Lactobacillus bulgaricus agent (substance)
+     Oryzanol (substance)
+     Protein supplement (substance)
+     Trace element supplementation (substance) 
+
+Nutritional deficiency
+     Acute nutritional deficiency (finding)
+     Chronic nutritional deficiency (finding) 
+
+ Nutritional supplement
+   Amino acid derivative (product)
+     Glutathione (product)
+     Hyperalimentation (product)
+     Infant formula (product)
+     L-Carnitine product (product)
+     Manganese (product)
+     Nutrient supplementation (product)
+     Nutritional product supplementation (product)
+     Oryzanol (product)
+     Whey globulin concentrate (product) 
+
+
+ Nutritional observable
+     Nutrient requirement (observable entity)
+     Amino acid requirement (observable entity)
+     Carbohydrate requirement (observable entity)
+     Dietary fiber requirement (observable entity)
+     Energy requirement (observable entity)
+     Fat requirement (observable entity)
+     Mineral requirement (observable entity)
+     Nitrogen requirement (observable entity)
+Prescribed calorie intake (observable entity)
+     Protein requirement (observable entity)
+     Recommended alcohol intake (observable entity)
+     Trace element requirement (observable entity)
+     Vitamin requirement (observable entity)
+     Water requirement (observable entity) 
+
+
+
+   Nutritional status (observable entity)
+     Body mass index (observable entity)
+     Malnutrition universal screening tool score (observable entity)
+     Nutritional status: biochemical measures (observable entity)
+     Nutritional status: energy (observable entity)
+     Nutritional status: essential nutrient intake (observable entity)
+     Nutritional status: food and fluid intake (observable entity) 
+
+
+Nutritional therapy
+     Breastfeeding support (regime/therapy)
+     Nutrition management (regime/therapy)
+     Nutrition therapy for congestive heart failure (regime/therapy)
+     Nutrition therapy for hypertension (regime/therapy)
+     Nutritional monitoring (regime/therapy)
+     Nutritional support (regime/therapy)
+     Weight maintenance regimen (regime/therapy) 
+
+Nutrition, function
+     Alimentary aid, function (observable entity)
+     Child nutrition, function (observable entity)
+     Cholesterol reduction program, function (observable entity)
+     Infant nutrition, function (observable entity)
+     Nutritional value, function (observable entity)
+     Water-electrolyte balance, function (observable entity) 
+
+Nutrition education
+Advice about food product label (procedure)
+Child feeding advice (procedure)
+     Diet education (procedure)
+     Infant nutrition education (procedure)
+     Nutritional counseling for control of dental disease (procedure)
+     Toddler nutrition education (procedure) 
+
+Nutritional disease
+[X]Other nutritional deficiencies (disorder)
+     Disorder of hyperalimentation (disorder)
+     Effects of hunger (disorder)
+     Failure to thrive (disorder)
+     Imbalance of constituents of food intake (disorder)
+     Nutritional deficiency (disorder)
+     Nutritional desexing syndrome (disorder)
+     Nutritional disorder due to calcium-phosphorus imbalance (disorder)
+     Nutritional stunting (disorder)
+     Synthetic defect of bile acids (disorder)
+     Vitamin disease (disorder) 
+
+Nutritional disorder
+[X]Other nutritional deficiencies (disorder)
+     Disorder of hyperalimentation (disorder)
+     Effects of hunger (disorder)
+     Failure to thrive (disorder)
+     Imbalance of constituents of food intake (disorder)
+     Nutritional deficiency (disorder)
+     Nutritional desexing syndrome (disorder)
+     Nutritional disorder due to calcium-phosphorus imbalance (disorder)
+     Nutritional stunting (disorder)
+     Synthetic defect of bile acids (disorder)
+     Vitamin disease (disorder) 
+
+
+ Disorder of nutrition
+[X]Other nutritional deficiencies (disorder)
+     Disorder of hyperalimentation (disorder)
+     Effects of hunger (disorder)
+     Failure to thrive (disorder)
+     Imbalance of constituents of food intake (disorder)
+     Nutritional deficiency (disorder)
+     Nutritional desexing syndrome (disorder)
+     Nutritional disorder due to calcium-phosphorus imbalance (disorder)
+     Nutritional stunting (disorder)
+     Synthetic defect of bile acids (disorder)
+     Vitamin disease (disorder) 
+
+Nutritional education
+Advice about food product label (procedure)
+Child feeding advice (procedure)
+     Diet education (procedure)
+     Infant nutrition education (procedure)
+     Nutritional counseling for control of dental disease (procedure)
+     Toddler nutrition education (procedure) 
+
+ Nutritional deficiency
+     Deficiency of selenium AND/OR vitamin E (disorder)
+     Deprivation of food (disorder)
+     Inanition (disorder)
+≡   Nutritional deficiency associated with acquired immunodeficiency syndrome (disorder)
+     Nutritional deficiency in mother complicating childbirth (disorder)
+     Nutritional deficiency in pregnancy (disorder)
+     Nutritional edema without dyspigmentation of skin AND/OR hair (disorder)
+     Starvation (disorder)
+     Undernutrition (disorder)
+     Wasting disease (disorder) 
+
+Body nutrition deficit
+      Inadequate food diet (finding) 
+
+Nutritional supplement
+     Fortified milk (substance)
+     Lactobacillus bulgaricus agent (substance)
+     Oryzanol (substance)
+     Protein supplement (substance)
+     Trace element supplementation (substance) 
+
+Nutritional assessment
+     Assessment of nutritional status (procedure)
+     Dietary intake assessment (procedure)
+     Dietary history assessment using written intake record (procedure)
+     Dietary intake assessment using food diary (procedure)
+     Dietary intake assessment using food frequency questionnaire (procedure)
+     Dietary intake assessment using food models (procedure)
+     Dietary intake assessment using food photographs (procedure)
+     Nutrient intake assessment (procedure)
+     Review of current diet (procedure)
+     Weighed dietary intake assessment (procedure)
+     Osteoporosis - dietary assessment (procedure) 
+
+Nutritional supplement
+     Amino acid derivative (product)
+     Glutathione (product)
+     Hyperalimentation (product)
+     Infant formula (product)
+     L-Carnitine product (product)
+     Manganese (product)
+     Nutrient supplementation (product)
+     Nutritional product supplementation (product)
+     Oryzanol (product)
+     Whey globulin concentrate (product) 
+
+Nutritional observation
+
+
+≡   Alteration in nutrition (finding)
+
+     Alteration in nutrition: less than body requirements (finding)
+
+     Inadequate food diet (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+             Inadequate oral food intake for physiological needs (finding)
+
+         Alteration in nutrition: more than body requirements (finding)
+
+≡   Decreased nutritional requirement (finding)
+     Dietary finding (finding)
+
+     Atkins diet (finding)
+     Balanced diet (finding)
+     Calorie diet (finding)
+
+     Calorie restricted diet (finding)
+
+         Very low energy diet (finding)
+
+         Increased calorie diet (finding)
+
+     Carbohydrate diet (finding)
+
+     High protein, high fat, low carbohydrate diet (finding)
+     Modified carbohydrate diet (finding)
+
+     Carbohydrate restricted diet (finding)
+
+     Carbohydrate-free diet (finding)
+     Lactose controlled diet (finding)
+
+         Lactose free diet (finding)
+
+     Low complex carbohydrate diet (finding)
+     Low fructose diet (finding)
+     Low galactose diet (finding)
+     Low glucose diet (finding)
+     Low simple carbohydrate diet (finding)
+     Low sucrose diet (finding)
+     Low sugar diet (finding)
+
+             No added sugar diet (finding)
+
+     High carbohydrate diet (finding)
+
+     High complex carbohydrate diet (finding)
+     High simple carbohydrate diet (finding)
+
+             High sugar diet (finding)
+
+         Restricted carbohydrate fat controlled diet (finding)
+
+     Diet - medical (finding)
+     Diet high intake - oily fish (finding)
+     Diet not appropriate for age (finding)
+     Dietary history (finding)
+
+     Diet average (finding)
+     Diet good (finding)
+     Diet poor (finding)
+     Inappropriate diet and eating habits (finding)
+     Restricted diet pattern (finding)
+
+     Ovo-lacto-vegetarian (finding)
+    
+Pescetarian (finding)
+     Vegan or strict vegetarian (finding)
+
+     Strict vegetarian (finding)
+
+         Vegan dietary (finding)
+
+             Vegetarian (finding)
+
+     Fat diet (finding)
+
+     Fat controlled diet (finding)
+
+     High fat diet (finding)
+
+     Diet high in saturated fats (finding)
+     High monounsaturated fat diet (finding)
+
+     Diet high in monounsaturates (finding)
+
+         High monounsaturated fatty acid diet (finding)
+
+     High polyunsaturated fat diet (finding)
+
+     Diet high in polyunsaturates (finding)
+     High polyunsaturated fatty acid diet (finding)
+
+     High alpha-linolenic acid diet (finding)
+     High fish oil diet (finding)
+     High linoleic acid diet (finding)
+     High n-3 polyunsaturated fatty acid diet (finding)
+
+             High n-6 polyunsaturated fatty acid diet (finding)
+
+         Ketogenic diet (finding)
+
+     High protein, high fat, low carbohydrate diet (finding)
+     Hyperlipoproteinemia diet (finding)
+
+     Hyperlipoproteinemia diet, type I (finding)
+     Hyperlipoproteinemia diet, type IIa (finding)
+     Hyperlipoproteinemia diet, type IIb and type III (finding)
+     Hyperlipoproteinemia diet, type IV (finding)
+
+         Hyperlipoproteinemia diet, type V (finding)
+
+     Lipid-lowering diet (finding)
+
+     Cholesterol-lowering diet (finding)
+     Low density lipoprotein-lowering diet (finding)
+
+         Triglyceride-lowering diet (finding)
+
+     Low fat diet (finding)
+
+     30 gram fat diet (finding)
+     50 gram fat diet (finding)
+     70 gram fat diet (finding)
+     Low monounsaturated fat diet (finding)
+     Low polyunsaturated fat diet (finding)
+
+         Minimal long chain triglyceride diet (finding)
+
+     Low saturated fat diet (finding)
+
+         Low cholesterol-low saturated fat diet (finding)
+
+     Very low fat diet (finding)
+
+             Minimal fat diet (finding)
+
+             Restricted carbohydrate fat controlled diet (finding)
+
+     Food exchange list (finding)
+
+     Bread exchange list (finding)
+     Fat exchange list (finding)
+     Fruit exchange list (finding)
+     Milk exchange list (finding)
+     Protein exchange list (finding)
+
+     High fat meat exchange list (finding)
+     Lean meat exchange list (finding)
+
+         Medium fat meat exchange list (finding)
+
+         Vegetable exchange list (finding)
+
+     General diet (finding)
+
+     General diet for adult (finding)
+     General diet for child (finding)
+
+         General diet for pregnancy and lactation (finding)
+
+    
+Glycaemic index diet (finding)
+     Healthy diet (finding)
+     Inadequate food diet (finding)
+     Infant diet AND/OR formula (finding)
+
+     Infant diet (finding)
+
+         Infant formula (finding)
+
+    
+Intravenous feeding regime (finding)
+     Liquid AND/OR soft diet (finding)
+
+     Liquid diet (finding)
+
+     Clear fluid diet (finding)
+     Dental liquid diet (finding)
+     General liquid diet (finding)
+     T & A liquid diet (finding)
+     Thickened fluids diet (finding)
+
+    
+Nutrition and Diet Resources United Kingdom stage 1 thickened fluid diet (finding)
+    
+Nutrition and Diet Resources United Kingdom stage 2 thickened fluid diet (finding)
+
+            
+        Nutrition and Diet Resources United Kingdom stage 3 thickened fluid diet (finding)
+
+     Soft diet (finding)
+
+     Dental soft diet (finding)
+
+             T & A soft diet (finding)
+
+     Meal substitute used (finding)
+     Non-therapeutic diets (finding)
+
+     Afro-Caribbean diet (finding)
+     Asian diet (finding)
+
+     Hindu diet (finding)
+
+         Sikh diet (finding)
+
+     Bristol diet (finding)
+     Chinese diet (finding)
+
+         Cantonese diet (finding)
+
+     Food combining diet (finding)
+     Halal meat diet (finding)
+     Kosher diet (finding)
+     Macrobiotic diet (finding)
+     Muesli belt diet (finding)
+     Muslim diet (finding)
+     No red meat diet (finding)
+
+     No beef diet (finding)
+
+         No pork diet (finding)
+
+     Rastafarian diet (finding)
+     Seventh day adventist diet (finding)
+     Stone age diet (finding)
+     Vegan (finding)
+     Vegetarian diet (finding)
+
+     Lacto-ovo-vegetarian diet (finding)
+
+         Lacto-vegetarian diet (finding)
+
+     Vietnamese diet (finding)
+
+         West African diet (finding)
+
+     Normal diet (finding)
+
+     Mechanical regular diet (finding)
+     Regular wired jaw diet (finding)
+
+         Wired jaw diet (finding)
+
+     Patient-initiated diet (finding)
+     Slimming diet (finding)
+     Sodium, potassium AND/OR calcium diet (finding)
+
+     Calcium diet (finding)
+
+     150 milligram calcium diet (finding)
+     200 milligram calcium diet (finding)
+     Calcium restricted diet (finding)
+
+         High calcium diet (finding)
+
+     Controlled potassium, controlled sodium and controlled protein diet (finding)
+     Low sodium diet (finding)
+
+     No added salt diet (finding)
+     Sodium restricted diet for use during pregnancy (finding)
+
+     Cardiac semi-soft 2 gram sodium diet (finding)
+
+         Liquid cardiac diet (finding)
+
+     Sodium restricted diet, 20 milliequivalents (finding)
+     Sodium restricted diet, 40 milliequivalents (finding)
+     Sodium restricted diet, 90 milliequivalents (finding)
+
+         Very low sodium diet (finding)
+
+     Potassium diet (finding)
+
+     Potassium increased diet (finding)
+
+         Potassium restricted diet (finding)
+
+     Sodium diet (finding)
+
+             High sodium diet (finding)
+
+     Test AND/OR disease related diet (finding)
+
+     Adult diabetes diet (finding)
+     Child diabetes diet (finding)
+     Diet for special test (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+     Test diet (finding)
+
+     Protein-rich meal (finding)
+     Renin test diet (finding)
+
+             Standard meal (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Disease-related diet (finding)
+
+     Burn patient diet, high calorie, high protein (finding)
+     Monoamine restricted diet (finding)
+     Oxalate restricted diet (finding)
+     Phenylalanine restricted diet (finding)
+
+         Vitamin K restricted diet during anticoagulation therapy (finding)
+
+     Burn patient diet, high calorie, high protein (finding)
+     Monoamine restricted diet (finding)
+     Oxalate restricted diet (finding)
+     Phenylalanine restricted diet (finding)
+
+         Vitamin K restricted diet during anticoagulation therapy (finding)
+
+     Burn patient diet, high calorie, high protein (finding)
+     Monoamine restricted diet (finding)
+     Oxalate restricted diet (finding)
+     Phenylalanine restricted diet (finding)
+
+         Vitamin K restricted diet during anticoagulation therapy (finding)
+
+     Food allergy diet (finding)
+
+     Chocolate-free diet (finding)
+     Cocoa-free diet (finding)
+     Egg-free diet (finding)
+     Elemental diet (finding)
+     Elimination diet (finding)
+     Gluten-free diet (finding)
+     Low allergen diet (finding)
+     Low salicylate diet (finding)
+     Low tyramine diet (finding)
+     Milk-free diet (finding)
+
+     Cow's milk-free diet (finding)
+
+             Cow's milk protein-free diet (finding)
+
+     Nut-free diet (finding)
+
+         Brazil nut-free diet (finding)
+
+     Peanut-free diet (finding)
+     Soya-free diet (finding)
+     Wheat-free diet (finding)
+
+         Yeast-free diet (finding)
+
+     Hypoglycemia diet (finding)
+     Miscellaneous diet (finding)
+     Purine diet (finding)
+
+         Purine restricted diet (finding)
+
+     Radiation diet (finding)
+     Renal disease diet (finding)
+
+     Acute renal failure diet (finding)
+     Chronic renal failure diet (finding)
+
+     Chronic hemodialysis diet (finding)
+
+                     Continuous ambulatory peritoneal dialysis diet (finding)
+
+     Therapeutic diets (finding)
+
+     Basic hospital diet (finding)
+
+         Hard diet (finding)
+
+     Biliary stone dissolving diet (finding)
+     Bland diet (finding)
+
+     Bland diet, stage 1 (finding)
+     Bland diet, stage 2 (finding)
+     Bland diet, stage 3 (finding)
+
+         Bland diet, stage 4 (finding)
+
+     Clean diet (finding)
+     Diabetic diet (finding)
+
+     Adult diabetes diet (finding)
+     Child diabetes diet (finding)
+     Diabetic lipid lowering diet (finding)
+
+         Diabetic weight reducing diet (finding)
+
+     Diet for special test (finding)
+     Disease-related diet (finding)
+     Fat controlled diet (finding)
+     Food additive modified diet (finding)
+     Food allergy diet (finding)
+     Hemodialysis diet (finding)
+     Hyperalimentation formula (finding)
+     Hypoglycemia diet (finding)
+     Light diet (finding)
+     Low fat wired jaw diet (finding)
+     Modified alcohol diet (finding)
+     Modified basic hospital diet (finding)
+     Modified carbohydrate diet (finding)
+     Modified energy diet (finding)
+     Modified fiber diet (finding)
+     Modified mineral diet (finding)
+     Modified texture diet (finding)
+     Modified trace element diet (finding)
+     Modified vitamin diet (finding)
+     Post-laryngectomy diet (finding)
+     Postoperative progressive diet (finding)
+     Protein diet (finding)
+     Regular wired jaw diet (finding)
+     Renal disease diet (finding)
+     Sterile diet (finding)
+     Weight gain diet (finding)
+     Weight maintenance regimen (finding)
+     Weight reduction diet (finding)
+
+         Wired jaw diet (finding)
+
+     Unbalanced diet (finding)
+
+         Weaning diet (finding)
+
+     Dietary intake finding (finding)
+     Dietary requirement finding (finding)
+≡   Finding of nutritional status (finding)
+     Impaired nutrient utilization (finding)
+≡   Increased nutritional requirement (finding)
+     Nutritional deficiency (finding)
+    
+Nutritional problem (finding)
+    
+Vegetarian nutrition (finding) 
+
+
+≡   Alteration in nutrition (finding)
+
+     Alteration in nutrition: less than body requirements (finding)
+
+     Inadequate food diet (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+         Inadequate oral food intake for physiological needs (finding)
+
+             Inadequate oral food intake for physiological needs (finding)
+
+         Alteration in nutrition: more than body requirements (finding)
+
+≡   Decreased nutritional requirement (finding)
+     Dietary finding (finding)
+
+     Atkins diet (finding)
+     Balanced diet (finding)
+     Calorie diet (finding)
+
+     Calorie restricted diet (finding)
+
+         Very low energy diet (finding)
+
+         Increased calorie diet (finding)
+
+     Carbohydrate diet (finding)
+
+     High protein, high fat, low carbohydrate diet (finding)
+     Modified carbohydrate diet (finding)
+
+     Carbohydrate restricted diet (finding)
+
+     Carbohydrate-free diet (finding)
+     Lactose controlled diet (finding)
+
+         Lactose free diet (finding)
+
+     Low complex carbohydrate diet (finding)
+     Low fructose diet (finding)
+     Low galactose diet (finding)
+     Low glucose diet (finding)
+     Low simple carbohydrate diet (finding)
+     Low sucrose diet (finding)
+     Low sugar diet (finding)
+
+             No added sugar diet (finding)
+
+     High carbohydrate diet (finding)
+
+     High complex carbohydrate diet (finding)
+     High simple carbohydrate diet (finding)
+
+             High sugar diet (finding)
+
+         Restricted carbohydrate fat controlled diet (finding)
+
+     Diet - medical (finding)
+     Diet high intake - oily fish (finding)
+     Diet not appropriate for age (finding)
+     Dietary history (finding)
+
+     Diet average (finding)
+     Diet good (finding)
+     Diet poor (finding)
+     Inappropriate diet and eating habits (finding)
+     Restricted diet pattern (finding)
+
+     Ovo-lacto-vegetarian (finding)
+    
+Pescetarian (finding)
+     Vegan or strict vegetarian (finding)
+
+     Strict vegetarian (finding)
+
+         Vegan dietary (finding)
+
+             Vegetarian (finding)
+
+     Fat diet (finding)
+
+     Fat controlled diet (finding)
+
+     High fat diet (finding)
+
+     Diet high in saturated fats (finding)
+     High monounsaturated fat diet (finding)
+
+     Diet high in monounsaturates (finding)
+
+         High monounsaturated fatty acid diet (finding)
+
+     High polyunsaturated fat diet (finding)
+
+     Diet high in polyunsaturates (finding)
+     High polyunsaturated fatty acid diet (finding)
+
+     High alpha-linolenic acid diet (finding)
+     High fish oil diet (finding)
+     High linoleic acid diet (finding)
+     High n-3 polyunsaturated fatty acid diet (finding)
+
+             High n-6 polyunsaturated fatty acid diet (finding)
+
+         Ketogenic diet (finding)
+
+     High protein, high fat, low carbohydrate diet (finding)
+     Hyperlipoproteinemia diet (finding)
+
+     Hyperlipoproteinemia diet, type I (finding)
+     Hyperlipoproteinemia diet, type IIa (finding)
+     Hyperlipoproteinemia diet, type IIb and type III (finding)
+     Hyperlipoproteinemia diet, type IV (finding)
+
+         Hyperlipoproteinemia diet, type V (finding)
+
+     Lipid-lowering diet (finding)
+
+     Cholesterol-lowering diet (finding)
+     Low density lipoprotein-lowering diet (finding)
+
+         Triglyceride-lowering diet (finding)
+
+     Low fat diet (finding)
+
+     30 gram fat diet (finding)
+     50 gram fat diet (finding)
+     70 gram fat diet (finding)
+     Low monounsaturated fat diet (finding)
+     Low polyunsaturated fat diet (finding)
+
+         Minimal long chain triglyceride diet (finding)
+
+     Low saturated fat diet (finding)
+
+         Low cholesterol-low saturated fat diet (finding)
+
+     Very low fat diet (finding)
+
+             Minimal fat diet (finding)
+
+             Restricted carbohydrate fat controlled diet (finding)
+
+     Food exchange list (finding)
+
+     Bread exchange list (finding)
+     Fat exchange list (finding)
+     Fruit exchange list (finding)
+     Milk exchange list (finding)
+     Protein exchange list (finding)
+
+     High fat meat exchange list (finding)
+     Lean meat exchange list (finding)
+
+         Medium fat meat exchange list (finding)
+
+         Vegetable exchange list (finding)
+
+     General diet (finding)
+
+     General diet for adult (finding)
+     General diet for child (finding)
+
+         General diet for pregnancy and lactation (finding)
+
+    
+Glycaemic index diet (finding)
+     Healthy diet (finding)
+     Inadequate food diet (finding)
+     Infant diet AND/OR formula (finding)
+
+     Infant diet (finding)
+
+         Infant formula (finding)
+
+    
+Intravenous feeding regime (finding)
+     Liquid AND/OR soft diet (finding)
+
+     Liquid diet (finding)
+
+     Clear fluid diet (finding)
+     Dental liquid diet (finding)
+     General liquid diet (finding)
+     T & A liquid diet (finding)
+     Thickened fluids diet (finding)
+
+    
+Nutrition and Diet Resources United Kingdom stage 1 thickened fluid diet (finding)
+    
+Nutrition and Diet Resources United Kingdom stage 2 thickened fluid diet (finding)
+
+            
+        Nutrition and Diet Resources United Kingdom stage 3 thickened fluid diet (finding)
+
+     Soft diet (finding)
+
+     Dental soft diet (finding)
+
+             T & A soft diet (finding)
+
+     Meal substitute used (finding)
+     Non-therapeutic diets (finding)
+
+     Afro-Caribbean diet (finding)
+     Asian diet (finding)
+
+     Hindu diet (finding)
+
+         Sikh diet (finding)
+
+     Bristol diet (finding)
+     Chinese diet (finding)
+
+         Cantonese diet (finding)
+
+     Food combining diet (finding)
+     Halal meat diet (finding)
+     Kosher diet (finding)
+     Macrobiotic diet (finding)
+     Muesli belt diet (finding)
+     Muslim diet (finding)
+     No red meat diet (finding)
+
+     No beef diet (finding)
+
+         No pork diet (finding)
+
+     Rastafarian diet (finding)
+     Seventh day adventist diet (finding)
+     Stone age diet (finding)
+     Vegan (finding)
+     Vegetarian diet (finding)
+
+     Lacto-ovo-vegetarian diet (finding)
+
+         Lacto-vegetarian diet (finding)
+
+     Vietnamese diet (finding)
+
+         West African diet (finding)
+
+     Normal diet (finding)
+
+     Mechanical regular diet (finding)
+     Regular wired jaw diet (finding)
+
+         Wired jaw diet (finding)
+
+     Patient-initiated diet (finding)
+     Slimming diet (finding)
+     Sodium, potassium AND/OR calcium diet (finding)
+
+     Calcium diet (finding)
+
+     150 milligram calcium diet (finding)
+     200 milligram calcium diet (finding)
+     Calcium restricted diet (finding)
+
+         High calcium diet (finding)
+
+     Controlled potassium, controlled sodium and controlled protein diet (finding)
+     Low sodium diet (finding)
+
+     No added salt diet (finding)
+     Sodium restricted diet for use during pregnancy (finding)
+
+     Cardiac semi-soft 2 gram sodium diet (finding)
+
+         Liquid cardiac diet (finding)
+
+     Sodium restricted diet, 20 milliequivalents (finding)
+     Sodium restricted diet, 40 milliequivalents (finding)
+     Sodium restricted diet, 90 milliequivalents (finding)
+
+         Very low sodium diet (finding)
+
+     Potassium diet (finding)
+
+     Potassium increased diet (finding)
+
+         Potassium restricted diet (finding)
+
+     Sodium diet (finding)
+
+             High sodium diet (finding)
+
+     Test AND/OR disease related diet (finding)
+
+     Adult diabetes diet (finding)
+     Child diabetes diet (finding)
+     Diet for special test (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+     Test diet (finding)
+
+     Protein-rich meal (finding)
+     Renin test diet (finding)
+
+             Standard meal (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Bowel preparation diet (finding)
+     Diet for balance study (finding)
+     Low vanillyl mandelic acid diet (finding)
+     Metabolic diet (finding)
+     Research diet (finding)
+
+         Test diet (finding)
+
+     Disease-related diet (finding)
+
+     Burn patient diet, high calorie, high protein (finding)
+     Monoamine restricted diet (finding)
+     Oxalate restricted diet (finding)
+     Phenylalanine restricted diet (finding)
+
+         Vitamin K restricted diet during anticoagulation therapy (finding)
+
+     Burn patient diet, high calorie, high protein (finding)
+     Monoamine restricted diet (finding)
+     Oxalate restricted diet (finding)
+     Phenylalanine restricted diet (finding)
+
+         Vitamin K restricted diet during anticoagulation therapy (finding)
+
+     Burn patient diet, high calorie, high protein (finding)
+     Monoamine restricted diet (finding)
+     Oxalate restricted diet (finding)
+     Phenylalanine restricted diet (finding)
+
+         Vitamin K restricted diet during anticoagulation therapy (finding)
+
+     Food allergy diet (finding)
+
+     Chocolate-free diet (finding)
+     Cocoa-free diet (finding)
+     Egg-free diet (finding)
+     Elemental diet (finding)
+     Elimination diet (finding)
+     Gluten-free diet (finding)
+     Low allergen diet (finding)
+     Low salicylate diet (finding)
+     Low tyramine diet (finding)
+     Milk-free diet (finding)
+
+     Cow's milk-free diet (finding)
+
+             Cow's milk protein-free diet (finding)
+
+     Nut-free diet (finding)
+
+         Brazil nut-free diet (finding)
+
+     Peanut-free diet (finding)
+     Soya-free diet (finding)
+     Wheat-free diet (finding)
+
+         Yeast-free diet (finding)
+
+     Hypoglycemia diet (finding)
+     Miscellaneous diet (finding)
+     Purine diet (finding)
+
+         Purine restricted diet (finding)
+
+     Radiation diet (finding)
+     Renal disease diet (finding)
+
+     Acute renal failure diet (finding)
+     Chronic renal failure diet (finding)
+
+     Chronic hemodialysis diet (finding)
+
+                     Continuous ambulatory peritoneal dialysis diet (finding)
+
+     Therapeutic diets (finding)
+
+     Basic hospital diet (finding)
+
+         Hard diet (finding)
+
+     Biliary stone dissolving diet (finding)
+     Bland diet (finding)
+
+     Bland diet, stage 1 (finding)
+     Bland diet, stage 2 (finding)
+     Bland diet, stage 3 (finding)
+
+         Bland diet, stage 4 (finding)
+
+     Clean diet (finding)
+     Diabetic diet (finding)
+
+     Adult diabetes diet (finding)
+     Child diabetes diet (finding)
+     Diabetic lipid lowering diet (finding)
+
+         Diabetic weight reducing diet (finding)
+
+     Diet for special test (finding)
+     Disease-related diet (finding)
+     Fat controlled diet (finding)
+     Food additive modified diet (finding)
+     Food allergy diet (finding)
+     Hemodialysis diet (finding)
+     Hyperalimentation formula (finding)
+     Hypoglycemia diet (finding)
+     Light diet (finding)
+     Low fat wired jaw diet (finding)
+     Modified alcohol diet (finding)
+     Modified basic hospital diet (finding)
+     Modified carbohydrate diet (finding)
+     Modified energy diet (finding)
+     Modified fiber diet (finding)
+     Modified mineral diet (finding)
+     Modified texture diet (finding)
+     Modified trace element diet (finding)
+     Modified vitamin diet (finding)
+     Post-laryngectomy diet (finding)
+     Postoperative progressive diet (finding)
+     Protein diet (finding)
+     Regular wired jaw diet (finding)
+     Renal disease diet (finding)
+     Sterile diet (finding)
+     Weight gain diet (finding)
+     Weight maintenance regimen (finding)
+     Weight reduction diet (finding)
+
+         Wired jaw diet (finding)
+
+     Unbalanced diet (finding)
+
+         Weaning diet (finding)
+
+     Dietary intake finding (finding)
+     Dietary requirement finding (finding)
+≡   Finding of nutritional status (finding)
+     Impaired nutrient utilization (finding)
+≡   Increased nutritional requirement (finding)
+     Nutritional deficiency (finding)
+    
+Nutritional problem (finding)
+    
+Vegetarian nutrition (finding) 

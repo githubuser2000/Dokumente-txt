@@ -1,0 +1,27 @@
+ALX:[ontologisches Dateisystem durch Semantik (Erfindung)
+
+Was es nicht gibt 
+    • Ordnerhierarchie, kein Verzeichnisbaum.
+    • Dateien, stattdessen eine Box bzw. eine Kapselung oder Kapsel, in und außerhalb alles und nichts sein könnte oder kann, also extrem beliebig definiert.
+    • Dateinamen wahrscheinlich sogar noch nicht einmal, sondern alles andere, das Dateinamen ersetzen könnte, also alle Formen von Daten, die es heute gibt, könnten Dateinamen aus Text ersetzen. Dateinamen wird es als Möglichkeit zwar auch geben, als eine Form eines Bezeichners, der nicht nur ein Text oder Name sein kann, sondern fast alles: Sondern sogar ein Bezeichner oder eine ID kann wegfallen.
+
+Heutige Dateisysteme sind
+    • Hierarchien (12)
+    • durch Symlinks und Hardlinks auch Graphen bzw. Netze (24)
+    • noch irgendwelche anderen Sachen
+
+Was muss man können, um ontologische Dateisysteme zu beherrschen
+    • Grundschule reicht nicht mehr, erst mit Mitte 20 ist man schlau genug dieses viel zu komplizierte Dateisystem zu benutzen (Sarkasmus)
+    • Ja ist aber wirklich schlimm, dass wenn Dinge besser werden, dass dann alles immer wieder komplizierter wird
+
+Bsp. 1
+    • angenommen es gibt die Datei Dateiname.tar.xz.gpg
+    • Heute sind das ja einfach nur Zeichen und Zeichenketten, denen wir gedanklich eine Bedeutung zuordnen und außerdem wird innerhalb der Datei noch mal extra erkannt, ob das auch wirklich dieses Format ist.
+    • In einem ontologischen Dateisystem wären das dann Verkettungen von Bedeutungszuordnungen also tar xz und gpg würden dann einfach solche ontologischen Verkettungen sein
+    • und diese Verkettung ist dann auch verkettet mit der Software, die diese Datei laden können
+    • Bsp. gibt es statt der Endung .mp3 eine ontotogische Information, die die mp3 mit dem Mediaplayer verknüpft.
+
+Sonstiges
+    • Die Idee dazu hatte ich bereits 2006, 2007. Da habe ich gehört, dass Microsoft daran arbeitet. Die haben dann damit aber aufgehört, mit der Begründung, dass es unendliche Bedeutungszuordnungen gibt. Naja.
+    • Ihr wisst ja auch von wem die Idee vom Brotli Kompressionsformat kam (mein Nachname ist Kern.). (Zig kommt von Leipzig, wo ich seit 2007 wohne.)
+    • Ideen zu haben ist sowieso totaler Unsinn, wenn man mal schaut, wie sinnlos das Patentrecht ist. Da kann man als Erfinder gleich aufgeben.]:ALX.

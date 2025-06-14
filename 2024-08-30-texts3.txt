@@ -1,0 +1,2 @@
+ALX:[HierarchyHierarchie:SolarSonnen:System:byDurch:propertiesEigenschaften+OrientationOrientierung+Society];[
+Planet:ClassKlassen:System:(SocietyGesellschaft:placesOrte:planet:EarthErde):byDurch:TruthWahrheit+RealityRealität+PerceptionWahrnehmnung+ErkenntnisEpistemology]:ALX.

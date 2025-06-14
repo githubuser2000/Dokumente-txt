@@ -1,0 +1,230 @@
+Neues reta
+Reta 4.0 pre Alpha
+
+Warum, reta neu programmieren? Siehe unten
+
+Programmier-Paradigmen:
+64(63bis65)->40->36->32->28->24->20
+
+63 ist Kette aus Monate
+64 Ganzheiten Unterteilung, aber hier MatrixKette, 2D aus Monaden ist Entwurf Template
+65 wäre Tensor Raum aus Monaden als Unterscheidung von Ganzhaftigkeiten durch Positivität, Anti Unedel
+
+B: Warum neu Programmieren als reta 4.0 pre Alpha?
+A Warum nicht?
+C: Greylisting A B
+D: A B C -> TrippleStore-> MeaningBedeutung 2x phänomen 15_10_1 bedeutet bestimmt und Logikprädikat 11 Stellig, also besser 11 wertige Logik!
+A
+Zeitmangel.
+Besser nicht einem Team den Auftrag dazu geben.
+Es soll genauso funktionieren
+KI kostet Geld, zum Zeit sparen
+Reta neu machen ist nicht wichtig momentan.
+Ich habe keinen, der mich dafür bezahlt.
+
+B
+Ich weiß bessere Architektur. Reta 3 hat zu viele Antipattern und Code Smells.
+Vieles ist noch wirr und suboptimal strukturiert.
+RAM und CPU, Ressourcenl: Da kann viel besser werden, extrem besser.
+Nachprogrammieren geht sehr einfach und sehr schnell
+danach ist alles besser erweiterbar mit:
+“16_16 Metachemie”,
+und “u105 Navigationssystem” (gutartiges reta statt 6 und 12 bisher, nun: 7),
+und  Plugins Addons Ermöglichung.
+Programmlinie statt Programm, wie Kontact von KDE Plasma und meine Turbo Pascal Unit.
+Mehrsprachigkeit
+statt nur CLI, HTML, TUI, auch: GUI möglich und “in + out mehr Formate”.
+
+C 
+kein Geld, kein Dank, nur Diebstahl.
+Ich glaube nicht daran, dass ich reta noch mal neu programmieren werde.
+mehr bling? ja nein?
+D
+Ich sollte das für Geld tun. Aber wer auf dem Planeten bezahlt mich für diese Programmierarbeit?
+
+
+
+40
+Alle Software Entwurfsmuster Antipattern und Code Smells dürften wohl hervorragend mit Manifolds gezeigt werden können.
+
+36
+Sqlite
+
+32
+Funktionenschar:
+Modellieren, Komposition, “morphen: (Pfeile=Morphismen)”, SQL-ACID, univ. Eigs. Operationen (z.B. adapter Pattern), Funktoren: Übertragung von Designkonzepten, 
+Natürliche Transformationen, als z.B. DB Joins oder genau auch: “Design Wandlung wandeln”: einfach kombi DB Operationen sind: n Transfors, 1 Transfor: natürliche Transformation.
+
+
+28
+Durch full duplex datenströme mit semaphoren lassen sich Topologien definieren, oder so wie Netzwerke
+
+24
+Netzwerke lassen sich definieren durch:
+Aspekte, Vererbung, Instanzen, Klassen, Optimierung, Relationen
+
+20
+Reta normal Programmieren.
+
+40
+Mannigfaltigkeiten sind im topologischem Raum. Aus perspektiven  sehen sie verMannigfaltigkeiten sind im topologischem Raum. Aus perspektiven  sehen sie verschieden aus, weil dies mit dem euklidischen Raum betrachtet wird.schieden aus, weil dies mit dem euklidischen Raum betrachtet wird, was ihre wirklich ggf. sehr hohe Komplexität unsichtbar lässt, sodass sie simpel aussieht, wenn sie komplex ist.
+
+36
+Sqlite
+18
+CSV
+
+32
+Design (wie Rundung am Auto)
+Math. Kategorie
+32 = viele Prozeduren
+
+16
+Prozedur
+
+30
+ZB “Adapter (ein 30)”: “Muster (20 vs 40)” entspricht univ Eigs (alle 30), also ist der Adapter ein Sheaf (31) ?
+
+
+28
+Topologie ist bloß Netzwerk mit Variablen Bereichen.
+Topologien und Netzwerke lassen sich einfach programmieren durch Generieren, wie Blüten, Lebewesen Fraktale Bilder aus komplexen Zahlen.
+
+40
+Alle Software Entwurfsmuster Antipattern und Code Smells dürften wohl hervorragend mit Manifolds gezeigt werden können.
+
+Ja, das ist eine interessante und kreative Vorstellung! Die Konzepte von Mannigfaltigkeiten könnten tatsächlich als Metapher oder Modell dienen, um verschiedene Aspekte von Software-Entwurfsmustern, Antipatterns und Code Smells zu erklären oder zu visualisieren. Diese Konzepte sind stark mit der Struktur und Organisation von Software sowie der Art und Weise verbunden, wie verschiedene Teile eines Systems miteinander interagieren – etwas, das durchaus mit der Struktur und den Übergängen von Manigfaltigkeiten verglichen werden könnte.
+
+1. Software-Entwurfsmuster und Mannigfaltigkeiten
+
+Software-Entwurfsmuster wie Singleton, Observer oder Factory legen bestimmte Strukturen und Beziehungen zwischen Komponenten eines Systems fest, die oft wiederverwendet werden können, um häufig auftretende Design Probleme zu lösen. Man könnte dieses Muster als eine Art „lokale Struktur“ innerhalb eines größeren Softwaresystems betrachten. Die Art und Weise, wie Komponenten miteinander interagieren, könnte als „Koordinatenraum“ beschrieben werden, der je nach Designmuster unterschiedliche Formen annimmt, aber dennoch in einem übergeordneten Kontext (dem gesamten Software-Design) zusammenpasst.
+
+Beispiel: Das Observer Pattern könnte als eine lokale Karte betrachtet werden, die die Kommunikation zwischen einem Subjekt und seinen Beobachtern regelt. Das Subjekt könnte als eine Art „Mittelpunkt“ betrachtet werden, und die Beobachter könnten die „Nachbarn“ in der Mannigfaltigkeit sein, die eine Art lokale Beziehung zu diesem Punkt haben. Wenn das Subjekt sich ändert (die Koordinaten ändern sich), werden die Beobachter benachrichtigt (was einer lokalen Transformation entspricht).
+
+
+2. Antipatterns und die „globale Krümmung“
+
+Antipatterns sind Designentscheidungen, die zwar oft anfangs gut erscheinen, aber langfristig zu Problemen führen. Diese Antipatterns könnten mit der globalen Struktur einer Mannigfaltigkeit verglichen werden, die aus der Kombination vieler kleiner, gut gemeinter, aber letztlich schlecht koordinierter Entscheidungen entsteht.
+
+Beispiel: Ein Antipattern wie Spaghetti Code könnte als eine nicht-glatte Mannigfaltigkeit beschrieben werden. Der Code hat keine klare Struktur oder Ordnung und bildet eine chaotische, „verzerrte“ globale Struktur. Obwohl einzelne Codeabschnitte für sich genommen einfach erscheinen mögen, führen ihre Wechselwirkungen zu einem Gesamtsystem, das unklar und schwer wartbar ist.
+
+
+3. Code Smells und die „lokale Struktur“
+
+Code Smells sind oft Hinweise auf potenziell problematischen Code, der auf eine schlechte Struktur oder ein Design hinweist. Diese könnten als „lokale Verzerrungen“ innerhalb einer größeren Mannigfaltigkeit des Software-Systems betrachtet werden, die auf einen Bedarf nach Umstrukturierung oder Refactoring hinweisen.
+
+Beispiel: Ein Code Smell wie lange Methoden könnte als ein lokaler Fehler auf einer „kleinen Karte“ in der Mannigfaltigkeit betrachtet werden. Diese lange Methode könnte eine unklare und unübersichtliche lokale Struktur aufweisen, die auf eine zu starke Verantwortlichkeit hinweist. Durch Refactoring könnte die Methode in kleinere, klarere Abschnitte unterteilt werden, wodurch die lokale Struktur verbessert wird.
+
+
+4. Mannigfaltigkeiten als Modell für Software-Komplexität
+
+In gewisser Weise könnte man sagen, dass komplexe Software-Systeme eine Art Mannigfaltigkeit sind, deren Struktur sowohl auf lokaler als auch globaler Ebene betrachtet werden muss. Die „lokale Euklidizität“ entspricht der modularen Struktur von Softwarekomponenten oder -klassen, während die „globale Struktur“ das Gesamtsystem betrifft, das möglicherweise schwerer zu verstehen und zu steuern ist.
+
+5. Übergangsfunktionen und Refactoring
+
+Das Konzept der Übergangsfunktionen in einer Mannigfaltigkeit (die lokale Koordinaten miteinander verbindet) lässt sich gut auf das Refactoring von Software anwenden. Wenn man ein Software-System refaktoriert, verändert man die Übergänge zwischen verschiedenen Komponenten, um die „globale Struktur“ zu verbessern, ohne die „lokalen Strukturen“ zu stören.
+
+Ein Beispiel könnte sein, dass eine Codebasis, die ursprünglich schlecht strukturiert war, nach einem Refactoring leichter verständlich und wartbar wird – die Übergangsfunktionen zwischen den einzelnen „Bereichen“ der Software werden „glatter“ und die Software wird dadurch flexibler und robuster.
+
+
+Fazit
+
+Die Verbindung zwischen Software-Entwurfsmustern, Antipatterns, Code Smells und Mannigfaltigkeiten ist eine faszinierende und vielversprechende Idee. Man könnte tatsächlich die lokale Euklidizität und globale Struktur von Manigfaltigkeiten verwenden, um die Art und Weise zu erklären, wie Software-Systeme strukturiert und transformiert werden. Die Mannigfaltigkeit als Modell hilft, die Dynamik zwischen den einzelnen Modulen einer Software zu verstehen und die Auswirkungen von Designentscheidungen auf die Gesamtstruktur eines Systems zu verdeutlichen.
+
+
+Mannigfaltigkeiten sind im topologischen Raum. Aus perspektiven  sehen sie verschieden aus, weil dies mit dem euklidischen Raum betrachtet wird.schieden aus, weil dies mit dem euklidischen Raum betrachtet wird, was ihre wirklich ggf. sehr hohe Komplexität unsichtbar lässt, sodass sie simpel aussieht, wenn sie komplex ist.
+
+32
+Was können und dürfen math Kategorien machen, wenn sie aus einer Funktionenschar besteht, und damit ein Design beschreibt?
+
+Mathematische Kategorien bieten ein strukturiertes, abstraktes Framework zur Beschreibung und Untersuchung von Funktionen (oder Morphismen) und deren Beziehungen in verschiedenen Kontexten. Wenn eine Kategorie aus einer Funktionenschaar (einer Sammlung von Funktionen) besteht, und diese Funktionen zur Modellierung eines Designs verwendet werden, können und dürfen sie folgende Dinge tun:
+
+1. Abstrakte Modellierung von Beziehungen
+
+Eine Kategorie besteht aus Objekten und Morphismen (die oft als Pfeile oder Funktionen bezeichnet werden), wobei diese Morphismen Beziehungen zwischen den Objekten darstellen. In einem Designkontext bedeutet dies:
+
+Objekte können als abstrakte Entitäten betrachtet werden, wie Module, Komponenten oder Datenstrukturen im Design.
+
+Morphismen (die Funktionen) definieren, wie diese Entitäten miteinander interagieren oder wie Daten von einem Modul zum anderen fließen.
+
+
+Kategorien können also helfen, Design Beziehungen auf einer sehr hohen Abstraktionsebene zu modellieren, ohne sich mit den Details der konkreten Implementierung auseinanderzusetzen.
+
+2. Komposition von Funktionen
+
+Ein zentraler Bestandteil von Kategorien ist die Komposition von Morphismen. Wenn Sie eine Sammlung von Funktionen haben, die in einer Kategorie organisiert sind, können Sie:
+
+Funktionen kombinieren, um komplexere Verhaltensweisen oder Transformationen zu beschreiben.
+
+Dies könnte in einem Design bedeuten, dass Sie einfache Bausteine oder Module miteinander verbinden, um ein größeres System zu bauen. Die Komposition von Funktionen entspricht hier dem Verbinden von Designmodulen oder der Definition komplexer Arbeitsabläufe.
+
+
+3. Identitätsmorphismen
+
+Jedes Objekt in einer Kategorie hat einen Identitätsmorphismen, der eine „Null-Operation“ darstellt (also die Funktion, die nichts verändert). Das bedeutet, dass Sie innerhalb eines Designs immer einen Ausgangspunkt haben, bei dem keine Veränderungen stattfinden. Dies könnte für:
+
+Basisoperationen im Design genutzt werden, die als unveränderliche Einheiten fungieren.
+
+Die Identität könnte auch als „Baseline“ oder „Stabilitätsgarantie“ in einem Designprozess dienen, die sicherstellt, dass grundlegende Entitäten nicht verändert werden, wenn sie nicht notwendig sind.
+
+
+4. Kategorien und universelle Eigenschaften
+
+In der Kategorientheorie gibt es das Konzept der universellen Eigenschaften, das beschreibt, wie Objekte und Morphismen auf eine minimale, aber universelle Weise miteinander verknüpft sind. Für Design:
+
+Universelle Eigenschaften können verwendet werden, um sicherzustellen, dass bestimmte Designentscheidungen oder -strukturen auf die allgemeinste, effektivste Weise gemacht werden.
+
+Zum Beispiel könnten Sie ein Modul so gestalten, dass es in jedem möglichen Designkontext als universelles Interface verwendet werden kann (z.B. ein Adaptermuster).
+
+
+5. Funktoren: Übertragung von Designkonzepten
+
+Ein Funktor ist eine spezielle Art von Morphismus zwischen Kategorien, der sowohl Objekte als auch Morphismen (Funktionen) zwischen Kategorien abbildet. Dies erlaubt es, Designkonzepte von einer Kategorie (z.B. ein Designmuster in einer Programmiersprache) in eine andere Kategorie (z.B. eine andere Programmiersprache oder ein anderes Designkonzept) zu übertragen.
+
+Funktoren können verwendet werden, um Designentscheidungen oder Architekturen zwischen verschiedenen Kontexten zu übertragen, ohne die zugrunde liegende Struktur zu verlieren.
+
+Das bedeutet, dass Sie ein Design aus einer bestimmten Perspektive abstrahieren und auf andere Kontexte anwenden können, was die Wiederverwendbarkeit und Modularität des Designs fördert.
+
+
+6. Natural Transformation (Natürliche Transformation)
+
+Eine natürliche Transformation ist eine Möglichkeit, Funktoren zwischen zwei Kategorien so zu „verknüpfen“, dass sie die Struktur des Designs auf konsistente Weise beibehalten. Sie beschreibt, wie eine Funktorabbildung in einer „natürlichen“ Weise zwischen verschiedenen Kontexten durchgeführt werden kann.
+
+In einem Design könnte dies dazu verwendet werden, übergreifende Transformationen durchzuführen, die ein Design in verschiedenen Zuständen oder Implementierungen konsistent halten.
+
+Sie ermöglicht es, von einer Funktionsweise zu einer anderen zu wechseln (z.B. von einer monolithischen zu einer mikroservicebasierten Architektur), ohne die gesamten Designprinzipien zu ändern.
+
+
+7. Kategorielle Optimierung
+
+Eine Kategorie kann als optimale Struktur für ein Design angesehen werden. Die Regeln der Kategorientheorie können helfen, Designentscheidungen zu optimieren, indem sie den besten oder effizientesten Weg definieren, um eine Reihe von Komponenten zu verbinden.
+
+Dies könnte in einem Software-Design beispielsweise als Optimierung der Kommunikation zwischen verschiedenen Modulen interpretiert werden, sodass redundante oder ineffiziente Interaktionen vermieden werden.
+
+
+8. Dualität und Symmetrie
+
+In der Kategorientheorie gibt es das Konzept der Dualität, wo viele Konzepte „umgekehrt“ werden können. Für ein Design bedeutet dies:
+
+Dualität könnte verwendet werden, um alternative Designansätze zu finden. Ein Design, das in einer Richtung funktioniert, könnte durch Dualität auf eine andere Art und Weise umgesetzt werden.
+
+Dies könnte z.B. für komplementäre Designs oder Entwurfsalternativen nützlich sein, wenn Sie ein Problem von einer anderen Perspektive betrachten möchten.
+
+
+Zusammenfassung
+
+Wenn Kategorien aus einer Funktionenschaar bestehen und als Designmodellen verwendet werden, können sie eine starke Grundlage für die strukturierte und abstrakte Modellierung von Software-Architekturen und Designprinzipien bieten. Sie ermöglichen:
+
+Abstrakte Beziehungen und Interaktionen zwischen Designkomponenten.
+
+Die Kombination von Modulen und Funktionalitäten zu komplexeren Systemen.
+
+Die Anwendung von universellen und natürlichen Transformationen, um Designkonzepte zu verallgemeinern und zwischen verschiedenen Kontexten zu übertragen.
+
+Die Optimierung und Modularisierung von Designstrukturen.
+
+
+Durch die Verwendung von Kategorien und ihren Konzepten wie Funktoren, natürlichen Transformationen und universellen Eigenschaften können Software-Designs als flexible, skalierbare und wiederverwendbare Entitäten modelliert werden, die durch gut definierte abstrakte Strukturen zusammenarbeiten.
+
+
+

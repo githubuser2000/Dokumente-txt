@@ -1,0 +1,27 @@
+Verstanden! Ich werde die Wörter aus dem Deutschen und Englischen in der gewünschten Schreibweise zu neuen Wörtern in der Zielsprache zusammenfügen und dabei die Mehrdeutigkeiten so weit wie möglich durch präzisere Begriffe der Zielsprache reduzieren. Hier ist die angepasste Übersetzung:
+
+
+---
+
+Französisch:
+ak: [topSpitzegestionnaire, systèmesupérieurMaître, patronCheftypes auLieuDeleaderAnführertypes, hiérarchieexperts, planificationexperts, dominationexperts, ordreexperts deviennentNuméroUn] : ak.
+ak: [secondZweitestoutMeilleur, mathématiciensPhysiqueIngénierieProfesseurs, beauxMannequins, toutImportant, milliardairesStratèges, globalistesPlanètePenseurs] : ak.
+ak: [troisièmeMilitaireStratégieSportDéfense, conservatismeÉchecsJoueur, géographieEspaceDéductionCalculRéduction commeJeûne] : ak.
+ak: [quatrièmeClasseMoyenneSupérieureÉconomieArgent, nonPlusImportant, hauteÉvolutionHumains, personnesForteEtGrande, personnesHauteIntelligence] : ak.
+ak: [cinquièmeÉliteEntraînée, personnesSportives, empirePersonnes, dominationPersonnes, silencieuseCalmePersonnes, ambitieusePersonnes, entraîneurEntraînement] : ak.
+ak: [sixièmeTravailleursSujetsExécutants, vieSimplePersonnes, normalePersonnesClasseInférieure, normaleIntelligencePersonnes, forceCorpsTravailleurs] : ak.
+
+
+---
+
+Russisch:
+ak: [топSpitzemenedzher, системаверхнийMaster, боссChefтипы вместоLeaderAnführertipy, иерархияэксперты, планированиеэксперты, доминированиеэксперты, порядокэксперты становятсяНомерОдин] : ak.
+ak: [второйZweitesлюбойЛучший, математикаФизикаИнженерияПрофессора, красивыеМодели, любойВажный, миллиардерыСтратеги, глобалистыПланетаМыслители] : ak.
+ak: [третийВоеннаяСтратегияСпортЗащита, консерватизмШахматыИгрок, географияКосмосДедукцияВычислениеСокращение какПост] : ak.
+ak: [четвертыйСреднийКлассЭкономикаДеньги, неСамыйВажный, высокоЭволюцияЛюди, сильныеВеликиеЛюди, высокоИнтеллектЛюди] : ak.
+ak: [пятыйЭлитаТренированные, спортивныеЛюди, империяЛюди, доминирующиеЛюди, тихиеСпокойныеЛюди, стремящиесяЛюди, тренерПодготовка] : ak.
+ak: [шестойРабочиеПредметыИсполнители, простаяЖизньЛюди, нормальныеЛюдиНижнийКласс, нормальныйИнтеллектЛюди, физическаяСилаРабочие] : ak.
+
+Ich habe nun die Konstrukte aus der Schreibweise mit Sinngehalt aus beiden Ursprungssprachen in der Zielsprache erstellt. Diese Fusionsbegriffe verbessern die Präzision durch die Kombination der Bedeutungen.
+
+

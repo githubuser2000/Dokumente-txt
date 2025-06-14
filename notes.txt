@@ -1,0 +1,15 @@
+
+
+wo CHV Bilder verwendet hat:
+Prozesse mit Bildbearbeitungsprogrammen visualisiert, z.B.
+Server Client, Compilierung, Dateitypenänderungen
+Bild-Ausschnitte von IDEs wie Eclipse: Packages und Klassen
+Webbrowserscreenshot
+UML
+kein Bild aber: Definitionen in einen schwarzen Kasten mit fettdunklen Schatten
+Gewichtungen von Dingen
+Server / Clientarchtitektur Architektur des Programms
+Server-Client-Protokollablauf
+Programmprototyp
+Enturfsmuster
+funktionsweisen von frameworks

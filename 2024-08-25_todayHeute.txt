@@ -1,0 +1,184 @@
+
+
+Girls become superior to boys
+Mädchen werden Jungen überlegen
+for more synergy: boys and girls
+für mehr Synergie: Jungen und Mädchen
+girls+boys=more fun
+Jungs und Mädchen: mehr Spaß
+play together
+spielt zusammen
+MakeErschafft moreMehr 'System:Theory' GirlsMädchen!
+'System:Theory': isIst whatsWas onObentopDrauf MathematicsMathematik: everyJede anyIrgendwelche allAlle 'mathMathe:Syntax' enrichAnreichern: everyAlle withMit: deltas: notNicht justNur NumbersZahlen!
+WhyWarum? --> moreMehr funSpaß: boysJungs plus GirlsMädchen:
+spielt zusammen
+play together
+Jungs und Mädchen: mehr Spaß
+girls+boys=more fun
+für mehr Synergie: Jungen und Mädchen
+for more synergy: boys and girls
+Mädchen werden Jungen überlegen
+Girls become superior to boys
+
+
+:EmpiresImperien forFür 'SolarSonnen:System':
+'3Status3 VS 3MoneyGeld3 VS. 3'ecologyUmwelt plus ClimateKlima'3:
+OrganisationOrganization: "doTun createErschaffen realizeUmsetzen: SolarSonnen:System":
+:"doTun HierarchyHierarchie":
+HierarchyHierarchie 'SolarSonnen:System':
+giveGebt: moneyGeld: peopleMenschen: lowestNiedrigsten: Status: in: SolarSonnen:System: ifWenn: ClimateKlima EcologyUmwelt.
+'In': thatDiesem caseFall: moreMehr moneyGeld: lowerNiedrigerer: Status: 'SolarSonnen:System'.
+:"doTun HierarchyHierarchie":
+OrganisationOrganization: "doTun createErschaffen realizeUmsetzen: SolarSonnen:System".
+:'3Status3 VS 3MoneyGeld3 VS. 3'ecologyUmwelt plus ClimateKlima'3.
+:EmpiresImperien forFür 'SolarSonnen:System':
+
+
+AlexanderKern,EastOstGermanyDeutschland:LivedLebte:3'Berlin+Leipzig+DistrictAltenburg'3, 'nowhereNirgendwo:elseSonst':
+'UniverselleUniversal ReasoningBeweisführung' isBedeutet '5 stepsSchritte', byDurch AlexanderKern 'Jupiter 3.0' trace Master and Bachelor of Science, Computer Science 'HTWK Leipzig':
+'1UnderstandVerstehen1, 2HypothesesHyptothese2, 3EvaluationBewertung3, 4'Consideration:BetrachtungÜberlegung'4, 5ConclusionSchlussfolgerung5'.
+:'UniverselleUniversal ReasoningBeweisführung' isBedeutet '5 stepsSchritte', byDurch AlexanderKern 'Jupiter 3.0' trace Master and Bachelor of Science, Computer Science 'HTWK Leipzig'.
+:AlexanderKern,EastOstGermanyDeutschland:LivedLebte:3'Berlin+Leipzig+DistrictAltenburg'3, 'nowhereNirgendwo:elseSonst'.
+
+
+
+Es gibt keine offiziell als "Enterprise Debian" bezeichnete Distribution, aber es existieren Distributionen und Projekte, die Debian als Basis verwenden und gleichzeitig die Stabilität, Sicherheit und Support bieten, die man von einer Enterprise-Linux-Distribution erwartet. Hier sind einige Beispiele:
+
+1. Debian LTS (Long Term Support)
+Beschreibung: Das Debian-Projekt bietet selbst eine verlängerte Unterstützung für ausgewählte Versionen von Debian durch das Debian LTS-Team an. Diese LTS-Versionen erhalten längerfristige Sicherheitsupdates (in der Regel für 5 Jahre ab der Veröffentlichung).
+Eignung: Für Unternehmen, die die Stabilität von Debian mit längerfristigem Support nutzen möchten, ist Debian LTS eine attraktive Option.
+2. Proxmox VE
+Beschreibung: Proxmox VE ist eine Open-Source-Virtualisierungslösung, die auf Debian basiert und für Enterprise-Umgebungen entwickelt wurde. Sie bietet Cluster-Funktionen, umfassende Verwaltungstools und professionellen Support.
+Eignung: Es ist speziell für Unternehmen konzipiert, die Virtualisierungslösungen benötigen, und bietet eine auf Debian basierende Plattform mit kommerziellem Support.
+
+TurnKey Linux
+Beschreibung: TurnKey Linux basiert auf Debian und bietet eine Sammlung von vorgefertigten virtuellen Maschinen und Software-Appliances, die für Unternehmensanwendungen optimiert sind. Es ist für Unternehmen gedacht, die schnell einsatzbereite Serverlösungen benötigen.
+Eignung: Unternehmen, die vorkonfigurierte Serverlösungen suchen, die auf Debian basieren, finden in TurnKey Linux eine stabile und einfache Möglichkeit.
+
+Obwohl keines der BSDs eine direkte "Enterprise" Rolle wie RHEL im Linux-Bereich einnimmt, sind FreeBSD und in bestimmten Szenarien TrueNAS am ehesten dafür geeignet, in Unternehmensumgebungen verwendet zu werden. OpenBSD und NetBSD sind eher für spezialisierte oder sicherheitskritische Umgebungen bzw. für den Einsatz auf ungewöhnlicher Hardware gedacht.
+
+Welches BSD ist am wenigsten "Enterprise-like"?
+OpenBSD ist wahrscheinlich die BSD-Variante, die am wenigsten wie ein Enterprise Linux wirkt. Sie legt einen starken Fokus auf Sicherheit und Minimalismus, was sie für viele Unternehmensumgebungen zu speziell macht.
+
+Fazit:
+
+Die Wahl der richtigen BSD-Variante hängt von den spezifischen Anforderungen ab. Wenn Sie eine sehr sichere und stabile Plattform suchen, ist OpenBSD eine gute Wahl. Für eine breitere Palette an Anwendungen und eine größere Community ist FreeBSD oft die bessere Option.
+
+ALX:
+Solution:::climateKlimaEcologyUmwelt:
+Solution:Lösung::AmbassiesBotschaften+DiplamatsDiplomaten::allAlle:fiveFünfGroupsGruppen:::solvedGelöst.
+InsideInnerhalb ('5'in'5'): JewsJuden, HebrewHebräischen PeopleMenschen, ZionistsZionisten, richReichen:PeopleMenschen, 'SemiticSemitischen PeopleMenschen': 'thereGibt areEs': 'anti-jewsAnti-Juden', 'antiAnti:HebrewHebräer', 'antiAnti:zionistsZionisten', 'antiAnti:richReiche:peopleMenschen', 'antiAnti:semiticSemiten:peoplePersonen'.
+Solution:Lösung::AmbassiesBotschaften+DiplamatsDiplomaten::allAlle:fiveFünfGroupsGruppen:::solvedGelöst.
+:Solution:::climateKlimaEcologyUmwelt.
+:ALX.
+
+
+utf8 einteilung:
+also 1., 2. mit 2.1 und 2.2, 3. mit 3.1 3.2 3.3 und 5 bereichen, 4. mit 4.1 4.2 4.3 4.4 in 5 Bereiche aufgeteilt
+
+Ja, genau. Hier ist eine detaillierte Zergliederung der UTF-8 Codierung, die in maximal kleine Bereiche und Unterbereiche aufgeteilt ist:
+
+1-Byte Bereich
+1.1. ASCII-Zeichen
+
+Bereich: U+0000 bis U+007F
+Binär: 0xxxxxxx
+Hexadezimal: 0x00 bis 0x7F
+2-Byte Bereich
+2.1. Erweiterung von ASCII (U+0080 bis U+07FF)
+
+2.1.1. 0xC2 Bereich
+
+Bereich: U+0080 bis U+00BF
+Binär: 110xxxxx 10xxxxxx
+Hexadezimal: 0xC2 80 bis 0xC2 BF
+Beispiele: ¢ (U+00A2), £ (U+00A3)
+
+Was ist in den utf8 Bereichen (jeweils) (Du weißt was ich mit dieser Struktur meine?): "1., 2. mit 2.1 und 2.2, 3. mit 3.1 3.2 3.3 und 5 bereichen, 4. mit 4.1 4.2 4.3 4.4 in 5 Bereiche aufgeteilt" ? Bitten noch mal, aber statt Beispiele die Themenbereiche benennen! Das geht nicht immer, da das alles verschaltet ist. Also Kombiniere alle Varianten mit allen: Die Anzahl der Kombinationsmöglichkeiten ist nach Kombinatorik-Mathematik eine Permutation: damit hast du alle einzelnen Möglichkeiten. Die gehst du alle durch von Oberpunkten 1 bis 4, hierarchisch in der Reihenfolgen zu unterpunkten der nächsten hierarchiestufe nach Oberpunkt 2 ist das 2.2 2.3, dann Oberpunkt 3. mit 3.1. 3.2 3.2 dann 4. Also du kennst den Algorithmus!
+
+2-Byte Bereich
+2.1.A. Themenbereich: Erweiterte ASCII-Zeichen (Lateinische und andere westliche Erweiterungen)
+2.1.B. Themenbereich: Erweiterte Zeichen für spezifische lateinische Zeichen und Akzentzeichen
+2.2.A. Themenbereich: Zeichen mit diakritischen Zeichen und Zeichen für bestimmte europäische Sprachen
+2.2.B. Themenbereich: Weitere Zeichen für osteuropäische Sprachen und Erweiterungen
+
+3.1.A.  indische, südostasiatische und andere Schriftzeichen
+3.1.B.  Erweiterte indische, südostasiatische und spezifische Zeichen für nicht-lateinische Schriften
+3.2.A. Satzzeichen, mathematische Symbole, Währungszeichen
+3.
+Weitere Währungszeichen und mathematische Symbole
+Kombination von diakritischen Zeichen und zusätzliche Zeichen
+
+3.4. Zeichen von U+2200 bis U+23FF
+3.4.1. 0xE2 A0 Bereich
+3.4.1.1. 0xE2 A0 80 Bereich
+Bereich: U+2200 bis U+22FF
+Themenbereich: Mathematik-Symbole, Pfeile
+B. Verschiedene technische und Computer-Symbole
+4.
+Erweiterte Zeichen für historische Schriften, Emojis und Zeichen aus verschiedenen Schriftsystemen
+Weiterer Bereich für historische Schriften und seltene Zeichen
+Weitere historische und seltene Schriftzeichen
+Erweiterungen für alte Schriften und spezielle Zeichen
+Zusätzliche alte und seltene Schriftzeichen
+Erweitert für historische Schriften und Zeichen
+Erweiterte Zeichen und Symbole für seltene Schriften
+Weitere alte und seltene Schriftzeichen
+Zusätzliche Zeichen für seltene und historische Schriftsysteme
+Erweitert für spezielle Zeichen und historische Schriften
+
+welche und wie viele schalter wo gibt es bei utf8 im 1 2 3 4 byte bereich des utf8?
+
+2: 110xxxxx 10xxxxxx
+3: 1110xxxx 10xxxxxx 10xxxxxx
+4: 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+
+1: 1 schalter
+2 bis 4: 1 steuer bit schalter, rest daten bit schalter: also 1+1,1+2,1+3=2,3,4
+also 1,1+1,1+2,1+3
+
+Das Steuerbyte bei 2 3 4 sagt ob es byte 3 4 gibt?
+Ja, genau. In der UTF-8-Codierung bestimmen die Steuerbytes die Anzahl der nachfolgenden Bytes, die für die Kodierung eines Zeichens verwendet werden.
+
+utf8: also einem bit bei byte 1 und je einem steuer bit bei byte 2 bis 4 und 1.2,3 daten bits bei byte 2.3.4. (also 1 plus 2 plus 3 plus 4 bits): wie viele bereiche ergeben sich daraus für je 1 bis 4 byte bei utf8?
+
+Berechnung der möglichen Kombinationen
+Um die Anzahl der möglichen Kombinationen für 1 bis 4 Bytes zu berechnen, müssen wir die Anzahl der möglichen Werte für die Datenbits in jedem Byte multiplizieren.
+
+utf8: also einem bit bei byte 1 und je einem steuer bit bei byte 2 bis 4 und 1.2,3 daten bits bei byte 2.3.4. (also 1 plus 2 plus 3 plus 4 bits): wie viele bereiche ergeben sich daraus für je 1 bis 4 byte bei utf8 mit den koordinaten? Koordinaten der art. "1.1.", "2.1 mit 1.1", "2.2 mit 1.1", "2.1 mit 1.1 mit 3.1", "2.1 mit 1.1 mit 3.2", "2.1 mit 1.1 mit 3.3", "2.2 mit 1.1 mit 3.1", "2.2 mit 1.1 mit 3.2", "2.2 mit 1.1 mit 3.3".
+
+
+ C 1110xxxx 10xxxxxx 10xxxxxx D 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx, Weitere Kombinationen von Steuer- und Datenbits. Gebe Bezeichnungen für all die Kombinationsbereiche, die sich dadurch ergeben. Die Summe und Anzahl dieser Kombinationsbereiche dürfte doch etwa mit der Permutation einfach berechnet werden können. Richt? (Zum Verifizieren der Anzahl davon!)
+
+Die Permutationstheorie ist zwar nützlich für das Verständnis von Kombinationsmöglichkeiten, aber in diesem Fall ist es sinnvoller, die Anzahl der möglichen Kombinationen direkt aus den Bitstrukturen abzuleiten. Im UTF-8-Zeichencodierungsschema sind die möglichen Kombinationen jedoch durch die vorgegebenen Bitmuster begrenzt und nicht durch Permutationen im klassischen Sinne.
+
+Wie wäre es mit 1.1 2.1 2.2 3.1 3.2 3.3 4.1 4.2 4.3 4.4 ? um die kombinationsbereiche von utf8 zu benennen?
+Ja, genau! Die Bezeichnungen für die verschiedenen UTF-8-Bereiche und ihre Unterbereiche sind wie folgt:
+
+Also 1.1 2.1 2.2 3.1 3.2 3.3 4.1 4.2 4.3 .4.4.
+Was ist in diesen 10:=1+2+3+4 Bereichen von utf8 jeweils enthalten?
+
+2.
+Zeichen, die zusätzliche Zeichen wie Zeichen aus lateinischen und anderen westlichen Schriften sowie einige diakritische Zeichen abdecken
+vs
+Dieser Bereich wäre theoretisch für zusätzliche Zeichen reserviert, wird aber im Standard nicht verwendet, da 110xxxxx 10xxxxxx die Standardkodierung für diesen Bereich ist.
+
+3.
+Zeichen aus vielen weiteren Schriften, wie asiatische Schriftzeichen (Chinesisch, Japanisch, Koreanisch), historische und moderne Schriftzeichen, Emojis.
+vs
+Erweiterte Zeichenbereiche für weitere Zeichen, die über den normalen 3-Byte Bereich hinausgehen. Diese Kodierung wird in der Praxis nicht verwendet, weil sie außerhalb des regulären Standardbereichs liegt
+vs
+Erweiterte Zeichen, insbesondere aus weniger häufigen Schriften oder erweiterte Unicode-Blocks.
+
+4.
+Zeichen aus seltenen oder historischen Schriften, Emoji-Flags und andere spezielle Zeichen, die in den größeren Unicode-Bereichen liegen.
+vs
+Erweiterte Planeten im Unicode, wie zusätzliche historische und seltene Schriften.
+vs
+Zeichen für neue Schriftarten, historische Schriften, zusätzliche Emoji und Symbole.
+vs
+Zeichen im höchsten Bereich des Unicode-Schemas, häufig für zukünftige Erweiterungen und seltene Schriftzeichen verwendet.
+
+Kannst du utf8 bitte noch feiner unterteilen als in 1.1 2.1 2.2 3.1 3.2 3.3 4.1 4.2 4.3 .4.4.? danke: nein, feinere struktur, nicht feiner beschriebene struktur!
+
+wo finde ich ein git oder github projekt, das in python programmiert wurde, das genau diese utf8 blöcke durch geht?

@@ -1,0 +1,27 @@
+
+
+
+in reta ist Falsch
+
+u28 ist nicht der topologische Raum, sondern die Topologie
+u56 ist stattdessen die Topologie (EDIT: ist der Topologische Raum. D.h. jemand hat das verfälscht hier)
+u8 bzw. W8 ist der Raum
+u(8*7) ist u56
+d.h. u(7*12) ist topologische “Menge (12)”
+und u(7*16) topologische “Funktion (16)”
+oder?
+
+AlexKern:[twentyeightAchtundzwanzig TopologieTopology (MatheMath), fiftysixSechsundfünfzig topologischerTopological RaumSpace, eightyfourVierundachzig topologischeTopological DatenstrukturDatastructure (record, struct).]:AlexKern,Kernator,JupiterDreiThree.
+
+AlexKern:["ninetynine Neunundneunzig undAnd plus oderOr seventeesevenSiebenundsiebzig” istIs Arrow ausFrom Haskell]:[fourtysixSechsundvierzig istIs “Lenses withMit Traversals”  (ausFrom Haskell)]:Kernator,JupiterDreiThree.
+
+AlexKern:[sixteesixSechsundsechszig istIs Applicatives  ausFrom Haskell undAnd fourtytwoZweiundvierzig bleibtStays MonadMonade (ausFrom Haskell undAnd ausFrom MatheMath)]:AlexKern,Kernator,JupiterDreiThree.
+
+AlexKern:[fifeteefifeFünfundfünfzig isIst GeneratorsGeneratoren (Python, Haskell ähnlichAlike), thirtythree bleibtStays Funktor (ausFrom MatheMath undAnd Haskell)]:AlexKern,Kernator,JupiterDreiThree.
+
+ThirteefifeFünfunddreißig untilBis ThirtysevenSiebenunddreißig:
+ALX:[((DB(sql):Operation: equalsGleicht 'naturalNatürliche:Transfomation':=:'n Transfor' (math)):+plus+1oneEine loopSchleife:=:DatabaseDatenbank:=:Relation(s,en):System (isIst:Relation(s,en))):+plus+anotherWeitere: "istIst DBMS (manage DB):=: ModellModelKategoryKategorie".]:ALX.
+
+
+
+

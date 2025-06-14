@@ -1,0 +1,4 @@
+ak,alex,Kernator:ImperatorEmperor:[GlobalistsGlobalisten: "GlobalistsGlobalisten
+cadreKader" isIst aboveÜber
+"GlobalistsGlobalisten MinisterMinister" isIst aboveÜber "GlobalistsGlobalisten EntertainmentUnterhaltung" isIst aboveÜber "GlobalistsGlobalisten planetPlanet EarthErde" isIst aboveÜber "GlobalistsGlobalisten Libertin" isIst aboveÜber "GlobalistsGlobalisten Territorialisti" isIst aboveÜber "GlobalistsGlobalisten
+NobleEdleLeadersAnführer" isIst aboveÜber "GlobalistsGlobalisten upperOberClassSchicht".]:ak,alex,Kernator:ImperatorEmperor.

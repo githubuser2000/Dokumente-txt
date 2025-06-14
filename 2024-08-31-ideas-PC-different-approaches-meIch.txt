@@ -1,0 +1,9 @@
+
+
+1. Netzwerkboot
+2. "Kombi Netzwerk Boot" mit VM
+2.a. schnell jedes OS net boot in VM.
+2.b. jedes OS NW bootfähig, wenn run any VM anywhere remote or whereever
+2.b.1. in local VM nicht alle remote OS NW bootfähig, aber mit viel aufwand z.B. Haiku 
+
+3. dieses web OS oder eyeOS: hat sicher jemand kaput gemacht, am wahrscheinlichsten: also nein

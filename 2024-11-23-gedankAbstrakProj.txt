@@ -1,0 +1,13 @@
+Gedanken Abstraction Project
+
+Multi User über Protege möglich. 
+Was können die anderen Tools? 
+Dann sind wir eben die Plattform, die User zusammen bringt. 
+Mit Stefans Tool können wir die Ontologie als Text repräsentieren. 
+NLP - ist das eigentlich - gibt es noch andere NLP Tools? 
+Und Text als Ontologie machen. 
+Wörter müssten farbig unterschiedlich gemacht werden können und das durch vieldimensionale Kategorien, das zu bewirken. 
+DL + Sparql schöner mit Boxen repräsentieren und auch die Ontologien. 
+Das soll sich wie Text lesen lassen. 
+Ggf. Eine Textlesbarkeits-Umsetzungsmöglichkeit selbst erfinden oder finden, ob es so etwas schon gibt
+

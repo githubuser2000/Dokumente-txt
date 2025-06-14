@@ -1,0 +1,3 @@
+ak,ALX,trace:[twoThree zweiDrei seventeenSiebzehn QQ QQQ
+qq2:(4(1trueWahr1,2correctRichtig2,3evidenceErwiesen3,4aftermathNachgewiesen4)4):2qq.
+qqq3:(7(1dotPunkt1 2actualFactIndeedFaktTatsache2 3factualFaktor3 4dimensionDimension4 5continuumKontinuum5 6criteriaKriterium6 7conceptKonzept7)7):3qqq]:ak,ALX,trace.

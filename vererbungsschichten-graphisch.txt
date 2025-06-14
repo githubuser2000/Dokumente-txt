@@ -1,0 +1,6 @@
+Ich brauche ein SVG über abstr Prodl und Prodlinst.
+Ich mache es mit KDE UML
+
+in der Mitte Viereck mit 4 Klassen drin, mit je 3 Methoden mit Attrappennamen
+außen mehrere Vierecke mit auch 4 Klassen drin, mit 2-4 Methoden, die manchmal den gleichen
+Namen haben wie im Zentrum oder das Wort Alternative drin haben

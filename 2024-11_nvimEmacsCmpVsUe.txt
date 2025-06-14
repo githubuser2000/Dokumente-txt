@@ -1,0 +1,700 @@
+wie macht man für neovim verschiedene configs auswahlfähig? warum vim statt neovim heute?
+
+1. Verschiedene Konfigurationen in Neovim auswählbar machen
+
+Um in Neovim mehrere Konfigurationen nutzen und zwischen ihnen wählen zu können, gibt es verschiedene Ansätze:
+
+Methode 1: Nutzung von Umgebungsvariablen
+
+1. Setze eine Umgebungsvariable, die die gewünschte Konfiguration angibt, z. B. NVIM_CONFIG.
+
+
+2. Modifiziere deine init.lua oder init.vim, um basierend auf dieser Variable die richtige Konfiguration zu laden:
+
+local config = os.getenv("NVIM_CONFIG") or "default"
+local config_path = vim.fn.stdpath("config") .. "/" .. config .. "/init.lua"
+if vim.fn.filereadable(config_path) == 1 then
+    dofile(config_path)
+else
+    print("Configuration not found: " .. config)
+end
+
+
+3. Lege unterschiedliche Konfigurationsordner an, z. B.:
+
+~/.config/nvim/default/init.lua
+~/.config/nvim/alternative/init.lua
+
+
+4. Starte Neovim mit:
+
+NVIM_CONFIG=alternative nvim
+
+
+
+Methode 2: Separate Startskripte
+
+Erstelle eigene Startskripte, die verschiedene Konfigurationen laden:
+
+Beispiel:
+
+alias nvim-default="XDG_CONFIG_HOME=~/.config/nvim/default nvim"
+alias nvim-alt="XDG_CONFIG_HOME=~/.config/nvim/alternative nvim"
+
+Damit kannst du Neovim mit spezifischen Konfigurationen starten.
+
+
+Methode 3: Plugins wie "lazy.nvim"
+
+Nutze lazy.nvim, um Profile für Plugins und Konfigurationen zu verwalten. Du kannst Profile definieren und basierend darauf verschiedene Setups aktivieren.
+
+
+
+---
+
+2. Warum Vim statt Neovim heute?
+
+Obwohl Neovim moderne Features und eine aktivere Community hat, gibt es Szenarien, in denen Vim bevorzugt wird:
+
+Gründe für Vim:
+
+1. Stabilität und Langlebigkeit:
+
+Vim ist extrem stabil und hat seit Jahrzehnten eine bewährte Codebasis.
+
+In konservativen oder sicherheitskritischen Umgebungen wird oft Vim bevorzugt, da es selten signifikante Änderungen erfährt.
+
+
+
+2. Kompabilität:
+
+Viele ältere Skripte und Plugins sind speziell für Vim entwickelt und funktionieren möglicherweise nicht vollständig in Neovim.
+
+Vim läuft nativ auf nahezu allen Systemen, einschließlich sehr alter oder spezialisierter Plattformen.
+
+
+
+3. Performance:
+
+In bestimmten Szenarien (z. B. bei minimaler Konfiguration) kann Vim schneller starten und weniger Ressourcen benötigen.
+
+
+
+4. Standardinstallation:
+
+Vim ist auf vielen Unix-ähnlichen Systemen (z. B. Linux-Servern) standardmäßig installiert und steht sofort zur Verfügung.
+
+
+
+
+Gründe für Neovim:
+
+Bessere Erweiterbarkeit:
+
+Lua-Skripting ermöglicht eine deutlich leistungsfähigere und modernere Plugin-Entwicklung.
+
+
+Asynchrone Aufgaben:
+
+Neovim unterstützt native Asynchronität, was es für moderne Workflows (z. B. LSPs) geeigneter macht.
+
+
+Community und Innovation:
+
+Neovim wird aktiv weiterentwickelt und bietet ständig neue Features.
+
+
+
+
+---
+
+Fazit:
+
+Verwende Vim, wenn Stabilität, Legacy-Kompatibilität oder minimalistische Nutzung wichtig sind.
+
+Verwende Neovim, wenn du moderne Tools, Performance-Verbesserungen und eine aktivere Community bevorzugst.
+
+
+
+
+
+gibt es eine Alternative zu emacs oder deutet meine Frage eher dahin, dass ich für emacs besser keine fertigen Lösungen, wie doom Emacs verwenden sollte?
+
+Deine Frage deutet auf zwei mögliche Überlegungen hin:
+
+1. Suche nach Alternativen zu Emacs: Vielleicht suchst du nach Tools, die ähnliche Möglichkeiten bieten, aber einen anderen Ansatz verfolgen.
+
+
+2. Hinterfragen von vorgefertigten Lösungen wie Doom Emacs: Du fragst dich, ob der Einsatz von vorkonfigurierten Lösungen sinnvoll ist oder ob du besser eine eigene Konfiguration erstellen solltest, um die volle Kontrolle zu haben.
+
+
+
+Lass uns beide Aspekte genauer beleuchten:
+
+
+---
+
+1. Gibt es Alternativen zu Emacs?
+
+Ja, es gibt Alternativen zu Emacs, aber sie bieten unterschiedliche Schwerpunkte. Hier ein Überblick:
+
+a) Vim/Neovim:
+
+Vorteile:
+
+Minimalistisch und schnell.
+
+Einfach für reine Textbearbeitung und Code-Editing.
+
+Erweiterbar mit Plugins (z. B. vim-plug oder packer.nvim).
+
+
+Nachteile:
+
+Kein direkter Fokus auf "Alles-in-einem"-Workflows wie in Emacs.
+
+Braucht viele Plugins, um Emacs-ähnliche Fähigkeiten zu erreichen.
+
+
+
+b) Kakoune:
+
+Vorteile:
+
+Moderner und minimalistischer Ansatz, inspiriert von Vim.
+
+Fokus auf Interaktivität und Multicursor-Unterstützung.
+
+
+Nachteile:
+
+Weniger Ökosystem und Community als Emacs oder Vim.
+
+
+
+c) Helix (neue Alternative):
+
+Vorteile:
+
+Extrem moderne und effiziente UX, inspiriert von Kakoune und Neovim.
+
+Native Unterstützung für LSP (Language Server Protocol).
+
+Eingebauter Baumstruktur-Browser.
+
+
+Nachteile:
+
+Noch jung, nicht so flexibel wie Emacs.
+
+
+
+d) Zettlr oder Logseq (für spezifische Aufgaben):
+
+Wenn du Emacs für Organisation, Notizen oder Zettelkasten nutzt, könnten spezialisierte Tools wie Zettlr, Obsidian oder Logseq Alternativen sein.
+
+Vorteile:
+
+Benutzerfreundlich und für spezifische Workflows optimiert.
+
+
+Nachteile:
+
+Weniger flexibel und keine allgemeine Entwicklungsumgebung.
+
+
+
+e) IntelliJ IDEA oder VS Code:
+
+Vorteile:
+
+IDE-ähnliche Funktionalität für viele Programmiersprachen.
+
+Viele Erweiterungen verfügbar (insbesondere in VS Code).
+
+
+Nachteile:
+
+Kein Fokus auf textbasierte Anpassung und Automatisierung.
+
+Eingeschränkte Möglichkeiten für benutzerdefinierte Workflows im Vergleich zu Emacs.
+
+
+
+
+---
+
+2. Solltest du Doom Emacs oder ähnliche vorkonfigurierte Lösungen vermeiden?
+
+Pro Doom Emacs:
+
+Schneller Einstieg: Doom Emacs bringt eine durchdachte Standardkonfiguration, die viel Zeit bei der Einrichtung spart.
+
+Modularität: Die modularen Konfigurationsdateien von Doom erleichtern Anpassungen.
+
+Große Community: Viele Lösungen und Ideen sind direkt für Doom Emacs verfügbar.
+
+Stabilität: Doom basiert auf jahrelanger Erfahrung und ist in der Regel stabil.
+
+
+Contra Doom Emacs:
+
+Geringeres Verständnis: Wenn du Doom nutzt, lernst du die Interna von Emacs möglicherweise weniger gut kennen.
+
+Weniger Kontrolle: Du bist von Entscheidungen der Doom-Entwickler abhängig. Änderungen oder Abweichungen vom Standard können frustrierend sein.
+
+Overhead: Doom bringt viele Features mit, die du vielleicht nie nutzt.
+
+
+Für wen ist Doom Emacs geeignet?
+
+Wenn du effizient starten willst und nicht die Absicht hast, tief in die Interna von Emacs einzutauchen, ist Doom eine hervorragende Wahl.
+
+Wenn du mit Emacs bereits vertraut bist oder einen bestimmten Workflow optimieren möchtest, solltest du deine eigene Konfiguration erstellen.
+
+
+Eigene Konfiguration erstellen:
+
+Das Erstellen einer eigenen Emacs-Konfiguration hat den Vorteil, dass du alles von Grund auf verstehst und vollständig kontrollierst. Starte minimal und füge nach und nach nur das hinzu, was du brauchst.
+
+Beispiel:
+
+(setq inhibit-startup-message t)  ; Startup-Message deaktivieren
+(package-initialize)             ; Package-System aktivieren
+(require 'use-package)           ; Plugin-Manager installieren
+
+
+
+---
+
+Zusammenfassung:
+
+Alternativen: Es gibt Alternativen zu Emacs wie Vim, Kakoune, Helix, oder spezialisierte Tools (Logseq, Zettlr). Für IDEs wie IntelliJ oder VS Code bist du in einer ganz anderen Kategorie.
+
+Doom Emacs vs. eigene Konfiguration: Doom Emacs ist ideal, wenn du schnell loslegen willst, aber eine eigene Konfiguration lohnt sich, wenn du langfristig tiefgehende Anpassungen und Optimierung anstrebst.
+
+
+Falls du eher experimentell unterwegs bist, könnte es für dich sogar lehrreich sein, erst Doom zu verwenden und später eine eigene Konfiguration aufzubauen, um beides zu kombinieren.
+
+
+
+gibt es für org mode nur emacs?
+
+
+Ja, Org Mode ist eine Kernkomponente von Emacs und wurde ursprünglich speziell für Emacs entwickelt. Trotzdem gibt es inzwischen Tools und Alternativen, die Teile von Org Mode auch außerhalb von Emacs verfügbar machen oder ähnliche Funktionalitäten bieten.
+
+Hier eine Übersicht:
+
+
+---
+
+1. Emacs und Org Mode
+
+Org Mode in Emacs:
+
+Org Mode ist ein integraler Bestandteil von Emacs und bietet die vollständigste Erfahrung, insbesondere durch die nahtlose Integration in die Emacs-Umgebung.
+
+Features wie Agenda-Ansichten, Tabellenkalkulation, Org Babel (für Code-Ausführung) und vieles mehr sind eng mit Emacs verknüpft.
+
+
+
+
+---
+
+2. Org-Mode-Alternativen außerhalb von Emacs
+
+Wenn du Org Mode verwenden möchtest, ohne Emacs direkt zu nutzen, gibt es folgende Optionen:
+
+a) Orgzly (für Android)
+
+Beschreibung: Eine mobile Anwendung, die Org-Dateien lesen und bearbeiten kann.
+
+Einschränkungen: Bietet nur eine grundlegende Org Mode-Unterstützung (z. B. TODO-Listen, Notizen), keine komplexen Funktionen wie Babel oder Agenda.
+
+
+b) Logseq
+
+Beschreibung: Ein modernes Notiz- und Wissensmanagement-Tool, das stark von Org Mode inspiriert ist.
+
+Features: Markdown-ähnliche Syntax, Inline-Aufgabenverwaltung, und Org-Mode-Kompatibilität beim Import/Export.
+
+Einschränkungen: Nicht alle Org-Mode-Funktionen werden unterstützt, insbesondere keine komplexen Tabellen oder Agenda-Ansichten.
+
+
+c) Obsidian mit Plugins
+
+Beschreibung: Obsidian ist ein Markdown-basiertes Tool, das mit Plugins eine gewisse Org-Mode-Unterstützung bietet.
+
+Features: Aufgabenverwaltung, einfache Notizen und Verlinkungen zwischen Dateien.
+
+Einschränkungen: Keine direkte Unterstützung für Org-Syntax, sondern eher ein Ersatz für bestimmte Workflows.
+
+
+d) Neovim mit Org-Mode-Plugins
+
+Beschreibung: Plugins wie vim-orgmode bringen Org-Mode-Funktionen nach Vim/Neovim.
+
+Features: Grundlegende Unterstützung für Org-Syntax (TODOs, Schlagwörter, Überschriften).
+
+Einschränkungen: Sehr eingeschränkt im Vergleich zu Emacs. Keine Agenda, kein Org Babel.
+
+
+e) Org Mode in VS Code
+
+Beschreibung: Mit Plugins wie vscode-org-mode kannst du Org-Dateien in VS Code bearbeiten.
+
+Features: Grundlegende Unterstützung für Org-Syntax, jedoch ohne komplexe Funktionen.
+
+Einschränkungen: Keine tiefe Integration wie in Emacs. Agenda- oder Babel-Funktionen fehlen vollständig.
+
+
+f) plaintext-tools (CLI)
+
+Beschreibung: Es gibt einige Command-Line-Tools wie org-todo.txt oder orgparse, die grundlegende Org-Funktionen unterstützen.
+
+Einschränkungen: Kein Ersatz für komplexe Workflows wie in Emacs.
+
+
+
+---
+
+3. Warum bleibt Emacs führend für Org Mode?
+
+Nahtlose Integration: Viele Funktionen von Org Mode, wie das Ausführen von Code (Org Babel), komplexe Agenda-Ansichten oder Tabellenkalkulationen, nutzen direkt die Flexibilität und Erweiterbarkeit von Emacs.
+
+Erweiterbarkeit: Org Mode ist extrem anpassbar und profitiert von der mächtigen Lisp-Umgebung in Emacs.
+
+Komplexe Workflows: Nur Emacs kann die volle Funktionalität von Org Mode abbilden, insbesondere in Kombination mit anderen Emacs-Erweiterungen.
+
+
+
+---
+
+4. Fazit
+
+Nur Emacs bietet die vollständige Org Mode-Funktionalität.
+
+Für eine leichtere Version von Org Mode oder ähnliche Workflows kannst du Tools wie Logseq, Obsidian, Orgzly, oder vim-orgmode ausprobieren.
+
+Wenn du die vollständige Leistungsfähigkeit von Org Mode nutzen möchtest (Agenda, Babel, Tabellenkalkulation, etc.), bleibt Emacs der Goldstandard.
+
+
+Falls du keine Lust auf die Emacs-Lernkurve hast, könntest du Emacs einfach als "Org Mode-Editor" verwenden, ohne dich in andere Aspekte von Emacs einzuarbeiten.
+
+
+
+Was ist Helix, Logseq, Zettlr, Org Babel?
+
+Hier eine Erklärung zu den genannten Begriffen:
+
+
+---
+
+1. Helix
+
+Helix ist ein moderner Texteditor, der auf Performance, Einfachheit und Effizienz fokussiert ist. Er wurde inspiriert von Kakoune und Neovim, bietet aber einige einzigartige Features.
+
+Merkmale:
+
+Interaktiver Multicursor: Jeder Befehl arbeitet interaktiv mit mehreren Cursorn, was effizientes Editieren ermöglicht.
+
+Eingebaute LSP-Unterstützung: Helix hat eine native Unterstützung für das Language Server Protocol (LSP), was Syntax-Highlighting, Autovervollständigung und Code-Navigation out of the box ermöglicht.
+
+Minimalismus: Es gibt keine Plugins. Stattdessen sind viele Features direkt in den Editor integriert.
+
+Performance: Helix ist in Rust geschrieben, was Geschwindigkeit und Zuverlässigkeit garantiert.
+
+
+Einschränkungen:
+
+Noch jung und weniger anpassbar als Emacs oder Neovim.
+
+Kein Plugin-System, was bedeutet, dass du mit den eingebauten Features auskommen musst.
+
+
+Helix eignet sich für Nutzer, die einen schnellen, modernen Editor ohne komplexe Einrichtung suchen.
+
+
+---
+
+2. Logseq
+
+Logseq ist eine Notiz- und Wissensmanagement-Software, die auf die Methode des vernetzten Denkens und der Wissensorganisation setzt. Es ist ähnlich wie Roam Research, aber kostenlos und quelloffen.
+
+Merkmale:
+
+Markdown-/Org-Syntax: Du kannst deine Notizen in einer einfachen Textdatei (Markdown oder Org Mode) speichern.
+
+Zettelkasten-Workflow: Unterstützt die Methode des Zettelkastens, bei der du Informationen in kleinen, vernetzten Einheiten speicherst.
+
+Task-Management: Integrierte TODO-Listen und Aufgabenverwaltung.
+
+Graph-Ansicht: Visualisiert die Beziehungen zwischen deinen Notizen in einem interaktiven Diagramm.
+
+Offline-fähig: Alles wird lokal gespeichert, keine Cloud-Abhängigkeit.
+
+
+Einsatzmöglichkeiten:
+
+Wissensmanagement (Personal Knowledge Management, PKM).
+
+Aufgabenverwaltung (ähnlich wie ein leichtgewichtiger Ersatz für Org Mode).
+
+
+Logseq ist besonders geeignet für Nutzer, die ihre Gedanken vernetzen möchten, ohne eine komplexe Software wie Emacs zu nutzen.
+
+
+---
+
+3. Zettlr
+
+Zettlr ist ein Markdown-basierter Texteditor, der speziell für Wissenschaftler, Autoren und Zettelkasten-Nutzer entwickelt wurde.
+
+Merkmale:
+
+Zettelkasten-Unterstützung: Bietet ein Workflow-System für vernetzte Notizen, ähnlich wie ein digitaler Karteikasten.
+
+Markdown-Editor: Einfaches Schreiben mit Unterstützung für Tabellen, Listen und mathematische Formeln.
+
+Export-Optionen: Exportiert Notizen in verschiedene Formate (z. B. PDF, LaTeX, HTML).
+
+Referenzmanagement: Integrierte Unterstützung für Zitationsdatenbanken wie BibTeX.
+
+
+Einsatzmöglichkeiten:
+
+Wissenschaftliches Schreiben (Artikel, Paper, Dissertationen).
+
+Wissensorganisation für Akademiker oder Autoren.
+
+
+Zettlr ist ideal, wenn du eine benutzerfreundliche Alternative zu Emacs suchst, um deine Notizen und wissenschaftlichen Arbeiten zu verwalten.
+
+
+---
+
+4. Org Babel
+
+Org Babel ist ein Feature von Emacs' Org Mode, das es ermöglicht, Code innerhalb von Org-Dateien auszuführen und die Ergebnisse direkt im Dokument anzuzeigen.
+
+Merkmale:
+
+Code-Ausführung: Du kannst Code in verschiedenen Sprachen (z. B. Python, R, Bash, LaTeX) in einem Org-Dokument ausführen.
+
+Reproduzierbare Workflows: Ideal für Wissenschaft und Forschung, da du Code, Daten und Ergebnisse in einer einzigen Datei dokumentieren kannst.
+
+Integration mit Tabellen: Du kannst Daten direkt in Tabellen speichern und mit Code manipulieren.
+
+Mehrsprachigkeit: Unterstützt Dutzende von Programmiersprachen.
+
+
+Beispiel:
+
+#+BEGIN_SRC python
+print("Hello, Org Babel!")
+#+END_SRC
+
+#+RESULTS:
+: Hello, Org Babel!
+
+Einsatzmöglichkeiten:
+
+Wissenschaftliche Dokumentation (z. B. Forschungsberichte, Jupyter-Notebook-ähnliche Workflows).
+
+Automatisierung von Aufgaben direkt in Org Mode.
+
+
+Org Babel ist ein mächtiges Tool für Nutzer, die Code in ihre Dokumentation integrieren wollen.
+
+
+---
+
+Zusammenfassung der Unterschiede:
+
+Falls du tiefer einsteigen willst, kann ich bei einem der Tools detaillierter helfen!
+
+
+
+Was hat man beim Programmieren mehrfach praktisch direkt davon, wenn der Editor oder die IDE mehrfach Cursor bietet?
+
+
+Ein Multicursor in einem Editor oder einer IDE bietet erhebliche Vorteile beim Programmieren, insbesondere wenn es um repetitive oder parallele Änderungen in einer Datei geht. Hier sind die praktischen Anwendungsfälle und Vorteile:
+
+
+---
+
+1. Simultanes Bearbeiten ähnlicher Strukturen
+
+Mit mehreren Cursorn kannst du gleichartige Änderungen an verschiedenen Stellen im Code gleichzeitig durchführen:
+
+Beispiel:
+
+Du möchtest mehrere Variablen von var auf let ändern:
+
+var a = 1;
+var b = 2;
+var c = 3;
+
+→ Mit Multicursor kannst du alle var-Schlüsselwörter gleichzeitig durch let ersetzen.
+
+
+Vorteil: Kein wiederholtes Navigieren oder Suchen/Ersetzen nötig.
+
+
+
+---
+
+2. Bulk-Erstellung von Code
+
+Beim Schreiben von Boilerplate-Code oder wiederholten Strukturen kannst du mit mehreren Cursorn effizienter sein:
+
+Beispiel:
+
+Du möchtest Getter- und Setter-Methoden für mehrere Felder generieren:
+
+private int age;
+private String name;
+private double salary;
+
+→ Mit Multicursor kannst du gleichzeitig get und set für jedes Feld schreiben.
+
+
+Vorteil: Schneller als manuelles Kopieren und Anpassen.
+
+
+
+---
+
+3. Refactoring ohne Suchen/Ersetzen
+
+Multicursor ermöglicht zielgerichtetes Refactoring, ohne unbeabsichtigt andere Stellen im Code zu ändern:
+
+Beispiel:
+
+Du willst mehrere Funktionsaufrufe in einer Datei anpassen:
+
+calculate_sum(a, b)
+calculate_sum(x, y)
+
+→ Füge mit Multicursor jeweils ein drittes Argument hinzu.
+
+
+Vorteil: Sicherer und präziser als automatisches Suchen/Ersetzen.
+
+
+
+---
+
+4. Vertikales Bearbeiten (z. B. Spaltenweise Änderungen)
+
+In Sprachen mit spaltenähnlichem Code (z. B. Tabellen, Array-Deklarationen) ist der Multicursor besonders nützlich:
+
+Beispiel:
+
+Änderungen in einer Tabelle:
+
+{ "name": "Alice", "age": 25 }
+{ "name": "Bob", "age": 30 }
+
+→ Füge mit Multicursor jeweils ein weiteres Feld hinzu:
+
+{ "name": "Alice", "age": 25, "active": true }
+{ "name": "Bob", "age": 30, "active": true }
+
+
+Vorteil: Ermöglicht Änderungen, ohne jedes Element einzeln zu bearbeiten.
+
+
+
+---
+
+5. Schreiboperationen in Schleifen oder Arrays
+
+Mit einem Multicursor kannst du ähnliche Codezeilen erstellen oder bearbeiten, ohne Schleifen manuell aufzubauen:
+
+Beispiel:
+
+Füge mehrere Einträge zu einem Array hinzu:
+
+let fruits = ["apple", "banana"];
+
+→ Mit Multicursor:
+
+let fruits = ["apple", "banana", "orange", "grape"];
+
+
+Vorteil: Spart Zeit, da du nicht bei jeder Zeile den Cursor manuell setzen musst.
+
+
+
+---
+
+6. Komplexe Texte oder Daten in Code umwandeln
+
+Wenn du strukturierten Text, JSON oder andere Formate in Code übersetzen musst, hilft der Multicursor:
+
+Beispiel:
+
+Wandlung von CSV-Daten in Variablendeklarationen:
+
+id,name,age
+1,Alice,25
+2,Bob,30
+
+→ Ergebnis mit Multicursor:
+
+users = [
+    {"id": 1, "name": "Alice", "age": 25},
+    {"id": 2, "name": "Bob", "age": 30},
+]
+
+
+Vorteil: Beschleunigt den Konvertierungsprozess drastisch.
+
+
+
+---
+
+7. Intelligentes Alignment
+
+Mit Multicursor kannst du Elemente im Code besser ausrichten:
+
+Beispiel:
+
+Du möchtest mehrere Zuweisungen einheitlich formatieren:
+
+name     = "Alice"
+age = 25
+city   = "Berlin"
+
+→ Mit Multicursor korrekt ausgerichtet:
+
+name = "Alice"
+age  = 25
+city = "Berlin"
+
+
+Vorteil: Einheitliche Struktur erhöht die Lesbarkeit.
+
+
+
+---
+
+Zusammenfassung der Vorteile:
+
+1. Zeitersparnis: Weniger manuelle Arbeit bei repetitiven Aufgaben.
+
+
+2. Präzision: Zielgerichtete Änderungen ohne unbeabsichtigte Fehler.
+
+
+3. Lesbarkeit: Vereinfachung von Refactoring und Strukturierung.
+
+
+4. Flexibilität: Effizientes Arbeiten mit Boilerplate- oder strukturiertem Code.
+
+
+
+Ein Multicursor ist besonders nützlich für Entwickler, die oft mit sich wiederholenden Strukturen arbeiten oder viel Boilerplate-Code schreiben müssen.
+
+

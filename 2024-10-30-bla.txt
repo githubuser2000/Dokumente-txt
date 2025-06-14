@@ -1,0 +1,7 @@
+ak,trace,jom,ALX:[
+LogicsLogik, Kernator:
+•QuantorsQuatoren: ExistsExistiert, allAlle, fuzzyFusselig, ableFähig.
+•ModalModalOperatorsOperatoren: necessaryNotwendig, sufficiantAusreichend, possibleMöglich.
+•ConnectorsVerbinder:
+contentInhalt, formAussehen. 
+]:ak,trace,jom,ALX.

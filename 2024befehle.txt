@@ -1,0 +1,1 @@
+ssh root@2024.alexkern.de -p 22223 'find -O3 /{root,home/alex}/ -name '.*' -type f -maxdepth 1 > /tmp/todel;find -O3 /{root,home/alex}/.{config,local} >> /tmp/todel;cat /tmp/todel | xargs tar c ' > 2024srv1allHomeDotfiles.tar

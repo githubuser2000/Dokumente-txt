@@ -1,0 +1,10 @@
+AlexKern:[twentyEight Topologie (Mathe), fiftysix topologischer Raum, eightyfour topologische Datenstruktur (record, struct), sixteesix ist Applicatives  aus Haskell und nineteenine ist Arrow aus Haskell, fourtytwo bleibt Monade (aus Haskell und aus Mathe), thirtythree bleibt Funktor (aus Mathe und Haskell)]:AlexKern.
+
+AlexKern:[twentyeightAchtundzwanzig TopologieTopology (MatheMath), fiftysixSechsundfünfzig topologischerTopological RaumSpace, eightyfourVierundachzig topologischeTopological DatenstrukturDatastructure (record, struct).]:AlexKern,Kernator,JupiterDreiThree.
+
+AlexKern:[“nineteenineNeunundneunzig undAnd plus oderOr seventeesevenSiebenundsiebzig” istIs Arrow ausFrom Haskell]:[fourtysixSechsundvierzig istIs “Lenses withMit Traversals”  (ausFrom Haskell)]:Kernator,JupiterDreiThree.
+
+AlexKern:[sixteesixSechsundsechszig istIs Applicatives  ausFrom Haskell undAnd fourtytwoZweiundvierzig bleibtStays MonadMonade (ausFrom Haskell undAnd ausFrom MatheMath)]:AlexKern,Kernator,JupiterDreiThree.
+
+AlexKern:[fifeteefifeFünfundfünfzig isIst GeneratorsGeneratoren (Python, Haskell ähnlichAlike), thirtythree bleibtStays Funktor (ausFrom MatheMath undAnd Haskell)]:AlexKern,Kernator,JupiterDreiThree.
+

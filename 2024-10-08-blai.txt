@@ -1,0 +1,6 @@
+ALX,trace,alex:[[WhereWo richReiche orOder anyoneIrgendwer livesLebt 'formates itself:gestaltet sich' aboutÜber: 'a bit more precisely:ein wenig präziser']: [HierarchyHierarchie 'SolarSonnen:System' +plus+ classesSchichten 'planet:EarthErde'.]]:ALX,trace,alex,'Rothchild:newNeu'.
+
+ALX,trace,alex:[WhereWo richReiche orOder anyoneIrgendwer livesLebt isIst aboutÜber: SolarSonnen:System:SolSonne, aEin starSternen:System, aboutÜber: planet: instanceInstanz, peopleMenschen, networkNetzwerk, secretGeheime ScienceWissenschaft.).]:ALX,trace,alex,'Rothchild:newNeu'.
+
+ALX:[[warfareKriegsführung, myMeine tasksAufgaben, 'in case:für den Fall']:: ['make protocol:Protokollierung', RolesRollen, 'principlesPrinzipien DesignAufbau', 'power of imagination:Vorstellungskraft',attitudesGesinnungen, maybeVielleicht?swarmSchwarm?maybeVielleicht.]]:ALX.
+

@@ -1,0 +1,9 @@
+ALX:["OrganizationOrganisation Planet:CitizenBürger:Planet:EarthErde":
+"1rstFirstErstes lawGesetz andUnd TruthWahrheit": 'Information:isIst:citizenBürger:planet:EarthErde'.
+"2ndSecondZweites ToZum 1stFirstErstem": 
+moreMehrThanAlsOneEiner:isIst:bring:toZu:NowJetztHierHere
+]:ALX.  ALX1025:[OrganizationOrganisation "Planet:CitizenBürger:Planet:EarthErde":[
+"3rdThirdDrittes lawGesetz andUnd TruthWahrheit": isIst3ThreeDrei:CitizenBürger:planet:EarthErde:isIst:planet:EarthErde:ifWenn:inIn:SolSonne:onAuf:EarthErde.
+]]:ALX1025,ak,trace,jupiter3.0,alexkern.
+
+ALX:[despairVerzweiflungsEconomyWirtschaft:asWie:beforeGesagt:DescribedBeschrieben:differencialDifferenzial:ofVon:EquationGleichung:ButAber:withMit:EquationGleichung:HeroHelden:EconomyWirtschaft.]:ALX.

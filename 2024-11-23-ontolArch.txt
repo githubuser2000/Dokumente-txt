@@ -1,0 +1,20 @@
+Ontol based soft arch
+
+Geerbte oder per interface ontologietyp klasse
+Darin eigenschaft ontologie sache laut interface oder superklasse
+Darin nur Ontologie Sachen speicherbar, d.h. triple stores
+In anderen Klassen dieser Art auch triple stores
+Markierung welche sache in triple stores zu dieser klasse gehören. 
+Gleiche Sachen in beiden Triple stores generalisieren und outsorcen automatisiert. 
+Eine klasse kann immer nur ein ontologie etwas sein, also typ, property, concept, etc. 
+Dh triple store lieber einmalig global ü ein framework wie das backend von protege 
+Ü das ontologie Etwas muss auch das Objekt zugreifbar sein oder mehrere, vllt auch ganze ontologie = ein Programmier Obj
+Machbar durch Matching des Musters eineindeutig
+
+Warum das Ganze? 
+Man kann dann ontologie basiert programmieren. 
+Warum sollte man das? 
+Die Ontologie dahinter im Programm kann so verwoben werden mit der, die der User verwendet. 
+Also eine hardcoded ontologie ist kombinierbar mit einer mit dem Hardcode erstellten. 
+Ggf. Kann der User Hardcoded Sachen neu verweben, so dass diese nicht mehr so hard sind
+

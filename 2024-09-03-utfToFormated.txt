@@ -1,0 +1,3 @@
+Kennst du Algorithmen, mit denen man raw Klartext, der nicht formatiert ist, auch nicht mit Markdown, nicht mit BBCode und nicht mit HTML, also bloßer Klartext aus raw Text in utf8 oder ascii als text datei "*.txt" auf primitive oder dann komplexe Art vollautomatisch, ohne Eingreifen in Formatierten Text (irgendeines Formates) umwandeln kann?
+
+Printe mir einen solchen Algorithmus so, dass ich diesen sofort ausführen kann, entweder mit einem Interpreter oder nach dem Compilieren unter Linux als binärdatei!

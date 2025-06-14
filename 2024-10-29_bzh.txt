@@ -1,0 +1,43 @@
+alx:[PlanetaryPlanetare SocietyGesellschafts ClassesSchichten andUnd hierarchieHierarchy:
+
+GlobalistsGlobalisten:planet:EarthErde.
+AboveÜberUnderUnter.
+GlobalistsGlobalisten:Libertin.
+AboveÜberUnderUnter.
+GlobalistsGlobalisten:Territorialisti.
+AboveÜberUnderUnter.
+
+Libertin:planet:EarthErde.
+Territorialisti:planet:EarthErde.
+AboveÜberUnderUnter.
+Classe libertins moyenne.
+Classe territorialisti alta.
+AboveÜberUnderUnter.
+Libertin Territorialisti.
+Territorialisti Libertin.
+AboveÜberUnderUnter.
+
+Classe Libertin de la noblesse et des penseurs politiques.
+Classe Territorialisti della nobiltà e dei pensatori politici.
+AboveÜberUnderUnter.
+
+Classe libertins supérieure.
+Classe territorialisti alta.
+AboveÜberUnderUnter.
+Classe libertins populaire.
+Classe territorialisti bassa.
+AboveÜberUnderUnter.
+
+Classe libertins dominante.
+Classe territorialisti dominante.
+AboveÜberUnderUnter.
+Classe libertins des agriculteurs et des paysans.
+Classe  degli agricoltori e dei contadini.
+AboveÜberUnderUnter.
+Classe libertins ouvrière.
+Classe territorialisti operaia.
+AboveÜberUnderUnter.
+Classe libertins Individu
+Classe territorialisti Individuo.
+]:alx.
+

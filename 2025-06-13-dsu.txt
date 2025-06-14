@@ -1,0 +1,9 @@
+ALX:[
+
+Mangan 25
+Wasser 25
+H2O= 1 + 2 + 1 + 2 + 8 ist H + 2 + H + 2 + O ist 4 + 10 ist 14
+25 minus 14 ist 11
+
+
+]:ALX.

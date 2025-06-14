@@ -1,0 +1,28 @@
+ALX:[PayBezahlen fullVollkomen planet EarthErde TruthWahrheits logicLogik correctnessRichtigkeits tasksAufgaben worldWelt gobernmentRegierungs: total allAlle numberZahlen countriesLänder currenciesWährungen in oneEiner relationalRelationen (SQL alikeVergleichbare) tableTabelle orOder hierarchyHierarchie orOder mathematicalMathematischem classificationKlassifikations System, basedAbleitbar onVom effectEffekt ofVon TruthWahrheits basedBasierter worldWelt governmentRegierung.
+
+onlyNur forZur orientationOrientierung:
+
+numberZahlen currencyWährung vsGegenüber wholeGanzer planet EarthErde logicLogik truthWahrheits currenyWährungs conversionUmwandlung.
+takeNehme aEine numberZahl (asWie moneyGeld) toZu:
+doubleDoppelter amountBetrag ofVon toZu causeBewirken isIst effectEffekt whoseWelchem doubledDoppelter amountBetrag isIst happendPassierter effectEffekt isIst impactAuswirkung implicationImplikation
+
+takeNehme aEine numberZahl (asWie moneyGeld) toZu:
+fifeFünf thirdDrittel ofVon numberZahl (asWie moneyGeld) isIst effectEffekt.
+tenZehn thirdDrittel ofVon numberZahl isIst happendPassierter effectEffekt isIst impactAuswirkung implicationImplikation.
+
+takeNehme aEine numberZahl (asWie moneyGeld) toZu:
+tenZehn ninethNeuntel ofVon whatsoverIrgendeiner unitEinheit (asWie unitedVereinte nationsNationen orOder aEine currencyWährung) isIst effectEffekt
+twentyZwanzig ninethNeuntel ofVon whatsoverIrgendeiner unitEinheit isIst happendPassierter effectEffekt isIst impactAuswirkung implicationImplikation
+
+takeNehme aEine numberZahl (asWie moneyGeld) toZu:
+tenZehn eightsAchtel ofVon land spaceRaum (buyKaufen sellVerkaufen) isIst effectEffekt.
+twentyZwanzig eigthsAchtel ofVon land spaceRaum (buyKaufen sellVerkaufen) isIst happendPassierter effectEffekt isIst impactAuswirkung implicationImplikation.
+
+takeNehme aEine numberZahl (asWie moneyGeld) toZu:
+tenZehn thirdDrittel ofVon foodEssen (buyKaufen sellVerkaufen) isIst effectEffekt.
+twentyZwanzig sixthsSechstel ofVon foodEssen (buyKaufen sellVerkaufen) isIst happendPassierter effectEffekt isIst impactAuswirkung implicationImplikation.
+
+takeNehme aEine numberZahl (asWie moneyGeld) toZu:
+halfHälfte ofVon aEiner numberZahl (asWie moneyGeld) isIst foodEssen.
+forthVier timesMal foodEssen isIst clothKleidung.
+]:ALX.

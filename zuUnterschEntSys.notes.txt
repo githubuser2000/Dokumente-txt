@@ -1,0 +1,22 @@
+Notizen zu Screenshots aus DSS Buch zu Entscheidungsunterstützungssystemen
+
++ GUI Templating mit Vererbungsmustern .. bla
+   - diese Muster spielen bei der Rolle bei verschiedenartigen Repräsentationen für die
+     Ansichten der Entscheidungsunterstüzungssysteme
++ 2 Entscheidungsarten
+   - gewöhnliche Entscheidungspunkt
+   - gewöhnliche Entscheidung gehörend zu einem gewöhnlichen Entscheidungspunktes
++ 3 Möglichkeiten für den Ausschließungs-Contraint
+   - Wahl schließt Wahl aus
+   - Wahl schließt Entscheidungspunkt aus
+   - Entscheidungspunkt schließt Entscheidung aus
+Ich könnte das Ganze so gestalten, wie der Preisvergleicher bei heise
+Unterscheidug
+   - Datenbank, Model-Base, Wissensbasis
+Noch was in MA schreiben über Reasoning und DL-Learning, aber nur am Rande und deren Bedeutung,
+und dass es den Rahmen sprengen würde
+Fragen:
+   - Wie: Gruppieren, Vorhersagen, Kombinieren von Mengen
+Übersetztung Decision Point:
+   - Punkt an dem eine Gabelung sozusagen auftritt und man sich entscheiden muss
+     dh. ein Entscheidungspunkt ist nicht gleich der Pool aus dem man sich entscheiden muss
