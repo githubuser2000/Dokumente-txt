@@ -1,0 +1,14 @@
+ALX:[spokenGesprochene LanguagesSprachen unitEinheit variableVariablen potentialsPotenziale constantsKonstanten categoriesKategorien:
+
+forFür unitedVereinte nationsNationen nineNeun nonagramNonagramm I I continuumKontinuum:
+
+SwahiliSuaheli: coastalKüsten, centralZentral africanAfrikanisches andUnd tansanialTansanitisches SwahiliSuaheli.
+chineseChinesisch: mandarinMandarin, cantoneeseKantonesisch, WuWu chineseChinesisch.
+frenchFranzösisch: africanAfrikanisches, QuébecQuébec, standardStandard hexagonalHexgonales frenshFranzösisch:
+areSind threeDrei timesMal threeDrei areSind nineNeun languagesSprachen unityEinheit humansMenschen.
+
+programmingProgrammier softwareProgramme developmentEntwicklungs languagesSprachen:
+compiledKompiliert C C: C C PlusPlus PlusPlus, RustRust, C C.
+scriptedGeskriptet pythonPython: PyPy3PyPy3, PythonPython, NuitkaNuitka forFür pythonPython.
+JITjit compiledKompiliert bytecodeBytecode in-betweenDazwischen KotlinKotlin, C C sharpSharp, JAVAjava.
+areSind threeDrei timesMal threeDrei areSind nineNeun codingProgrammier languagesSprachen computersRechner machinesMaschinen developmentEntwicklung computer-scienceInformatik applicationsAnwendungen.]:ALX.
