@@ -1,0 +1,6 @@
+ALX:[
+What social classes exist in feudal serfdom?
+Monarch, nobility, clergy, knights, peasants, serfs, townspeople, beggars, servants, Jews, and slaves.
+Welche Gesellschaftsklassen gibt es bei Feudalwesen Leibeigenschaft?
+Monarch, Adel, Klerus, Ritter, Bauern, Leibeigene, Stadtbürger, Bettler, Knechte und Mägde, Juden, Sklaven.
+]:ALX.
