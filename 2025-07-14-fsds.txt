@@ -1,0 +1,7 @@
+Ich habe fünf konkrete Spiele aus dem mathematisch-systemtheoretischen Modell abgeleitet:
+    Survival Nexus – jeder gegen jeden mit Eskalationsdrohungen
+    Omega-Allianz – ideologischer Zweikampf mit dynamischen Spielregeln
+    Leviathan – alle gegen einen mit systemmanipulativer Macht
+    Schutzwall – kollektives Überleben durch Selbstopfer
+    Spiegelzone – private Spiele in kollektiver Welt mit Chaosdynamik
+Möchtest du eines davon jetzt spielmechanisch ausformuliert haben (Zugstruktur, Zustandsveränderungen, Siegbedingungen)? Oder möchtest du noch weitere Spielvarianten aus demselben Modell erzeugt haben?
