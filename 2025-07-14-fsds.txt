@@ -5,3 +5,93 @@ Ich habe fünf konkrete Spiele aus dem mathematisch-systemtheoretischen Modell a
     Schutzwall – kollektives Überleben durch Selbstopfer
     Spiegelzone – private Spiele in kollektiver Welt mit Chaosdynamik
 Möchtest du eines davon jetzt spielmechanisch ausformuliert haben (Zugstruktur, Zustandsveränderungen, Siegbedingungen)? Oder möchtest du noch weitere Spielvarianten aus demselben Modell erzeugt haben?
+
+### Systemspiel: Mathematisch-Systemtheoretisches Modell (reine Syntax)
+
+# Grundstruktur
+Systemspiel = (G, Delta, Sigma)
+
+# Teil 1: Mathematischer Spielkern G
+G = (
+    P,          # Menge der Spieler
+    S,          # Zustandsraum
+    A,          # Aktionsraum
+    U,          # Nutzenfunktionen
+    D,          # Dynamikoperator
+    T,          # Zeitstruktur
+    Theta       # Eliminierungszustand(e)
+)
+
+P = {p_1, p_2, ..., p_n}  # Spieler (n endlich oder variabel)
+S = \prod_{i=1}^n S_i      # Gesamtzustand als Produktraum individueller Zustände
+A = {A_i(s) | i in [1..n], s in S}  # Aktionsmöglichkeiten pro Zustand
+U = {u_i: S x A -> R \cup {-inf}}  # Nutzen je Spieler
+D: S x A -> S                      # Zustandsübergangsoperator
+T = {t_0, t_1, ..., t_k}           # diskrete oder kontinuierliche Zeitstruktur
+Theta \subset S                   # Terminalzustände (Tod, Sieg, Kapitulation)
+
+# Teil 2: Systemtheoretische Erweiterung Delta
+Delta = {
+    delta_f : f -> f(t, x_dot, h) | f in G-Komponenten
+}  # Historisierte Verhaltensträger für jede Komponente
+
+# Beispiel:
+delta_D: D -> D(t, s, a, h_D)   # Dynamik wird historisiert
+
+# Teil 3: Konfigurationsstruktur Sigma
+Sigma = {sigma_i} mit
+sigma_i = (
+    P_i,      # Partei oder Fraktion
+    mu_i,     # ideologischer Feldvektor (Richtung/Ziel)
+    chi_i     # Interaktionsfunktion (z.B. Feind, Allianz, indifferent)
+)
+
+# Beispielhafte Konfigurationen:
+# - Sigma_1: alle gegen einen
+# - Sigma_2: jeder gegen jeden
+# - Sigma_3: Zwei-Lager-Konflikt
+# - Sigma_4: alle für einen (Schutzstruktur)
+
+# Nebenoperatoren:
+Gamma_i: Reflexionsoperator pro Spieler (optional)
+Lambda: Allianzbildungsoperator
+Xi: Selbstvernichtungsbereitschaft als strategischer Akt
+Phi: Nutzenverzerrung (durch Moral, Trauma, Ideologie)
+Psi: impliziter Todestrieb
+
+# Spielende:
+Stoppe bei:
+- nur noch ein Spieler aktiv
+- kollektiver Tod (alle in Theta)
+- externes Ende t_max
+
+# Ziel: Aus dieser Syntax entsteht nun das Systemspiel.
+# Nächster Schritt: Spielmechanik konkretisieren
+
+### Mehrere konkrete Spiele aus dem Systemspiel-Modell
+
+## Spiel A: Survival Nexus
+- Modus: Jeder gegen jeden + historisierte Ressourcenknappheit
+- Ziel: Als letzter überleben
+- Besonderheit: Jeder Spieler kann "Selbstvernichtungsdrohungen" nutzen (Xi) um andere unter Druck zu setzen.
+
+## Spiel B: Omega-Allianz
+- Modus: Zwei Lager mit asymmetrischen Zielen
+- Ziel: Überleben der eigenen Ideologie (mu_i)
+- Besonderheit: Reflexionsoperatoren (Gamma_i) erzeugen neue Spielregeln während des Spiels.
+
+## Spiel C: Leviathan
+- Modus: Alle gegen einen, aber dieser eine hat Zugang zu "Systemänderung" (Lambda)
+- Ziel: Entweder vollständige Kontrolle oder vollständige Vernichtung
+- Besonderheit: System kann durch Psi (Todestrieb) kollabieren, wenn zu viele eliminierte Spieler auftreten
+
+## Spiel D: Schutzwall
+- Modus: Alle für einen, der einen Spieler mit maximalem Delta-Effekt schützen müssen
+- Ziel: Erreichen von t_max mit dem geschützten Spieler lebendig
+- Besonderheit: Nutzenverzerrungen durch Phi (z. B. Moralopfer) beeinflussen Entscheidungen stark
+
+## Spiel E: Spiegelzone
+- Modus: Jeder Spieler sieht ein anderes Spiel (individuelle U, D, A)
+- Ziel: Maximierung eines privaten Zielraums, der nur durch kollektive Strukturveränderung erreicht werden kann
+- Besonderheit: Permanente Sigma-Umschaltungen führen zu Koalitionschaos
+
