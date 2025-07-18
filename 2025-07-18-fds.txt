@@ -1,0 +1,8 @@
+ALX:[
+warsKriege, battlefieldSchlachtfeld:
+firstErstens: vsGegen empireImperium unitedVereinigte statesStaaten ofVon americaAmerika twoZwei atomicAtom bombsBomben,
+secondlyZweitens: vsGegen whiteWeiße upperOber classSchicht jewishJüdisch hebrewHebräisch israelIsrael bombBomben intoIn desertWüste nothingNichts,
+thirdDrittens: vsGegen groupsGruppen classesSchichten federalBundes republicRepublik germanyDeutschland,
+fourthViertens: vsGegen nobleAdlige classSchicht andUnd royalKönigliche societyGesellschafts classesSchicht sevenSieben heptagramSeptagramm G G certainGewisse peopleVolk fourVier countriesLänder empireImperium unitedVereinigte statesStaaten ofVon americaAmerika greatGroß britainBrittanien centralZentral stateStaat chinaChina empireImperium japanJapan fourVier countrisLänder butAber onlyNur justBloß vsGegenüber nobleAdlige andUnd royalKönigliche societyGesellschafts classesSchichten peopleVolk.
+warsKriege, battlefieldSchlachtfeld.
+]:ALX.
