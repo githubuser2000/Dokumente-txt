@@ -1,6 +1,5 @@
 ALX:[
-
+58 58 BF BF: religionionessesReligiösität.
 118 118 DN DN: mysticismMystik.
-58 58 BF BF: religionionessesReligiösität
-
+119 119 DO DO: selfSelbst knowledgeErkenntnis inInside seinOnes eigenesOwn MenschseinHumanoid-being eingreifenAccess.
 ]:ALX.
