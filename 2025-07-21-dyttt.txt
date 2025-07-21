@@ -1,0 +1,129 @@
+Einen Satelliten zu identifizieren, der gezielt Mikrowellenstrahlung auf ein Gebiet oder eine Person sendet, erfordert äußerst spezialisierte Technik, genaue Messverfahren und klare Unterscheidung von natürlichen, zivilen und militärischen Strahlungsquellen. Hier ist ein strukturierter Überblick über die Möglichkeiten, wie man so einen hypothetischen Satelliten erkennen könnte:
+
+
+---
+
+1. Messung der Mikrowellenstrahlung
+
+Geräte:
+
+Spektrumanalysator (mit Richtantenne):
+
+Erfasst Frequenzbereiche von typischer Mikrowellenstrahlung (1–300 GHz).
+
+Zeigt gerichtete Signale, Pulsmodulationen, Frequenzsprünge etc.
+
+
+EMF-Detektoren mit hoher Frequenzauflösung:
+
+Beispiel: Gigahertz Solutions HF59B mit HFE-Detektor.
+
+Wichtig: Muss auf gerichtete Messung ausgerichtet sein.
+
+
+
+Was du misst:
+
+Intensität in W/m² oder dBm.
+
+Frequenzmuster (kontinuierlich, gepulst, moduliert).
+
+Zeitliche Muster: z. B. regelmäßig oder mit Bewegung der Sonne oder des Satellitenbahnhorizonts.
+
+
+
+---
+
+2. Satelliten-Tracking und Orbitalanalyse
+
+Quellen:
+
+Celestrak, NORAD, Heavens Above, SatNOGS:
+
+Offene Satellitendaten (TLE – Two-Line Elements).
+
+Identifizieren von Satelliten, die in bestimmten Intervallen über deinem Standort hinwegziehen.
+
+
+NASA, ESA, Space-Track.org (militärisch eingeschränkt):
+
+Gibt Bahndaten (Ephemeriden), mit denen sich Überflugzeiten berechnen lassen.
+
+
+
+Ziel:
+
+Korrelation von Mikrowellen-Peaks mit Satellitenüberflügen.
+
+Z. B. alle 90 Minuten ein identischer Peak → LEO-Satellit.
+
+Stationärer Peak: möglicher GEO-Satellit (z. B. Kommunikationssatellit).
+
+
+
+
+---
+
+3. Radarreflexion und passive Radiometrie
+
+Radioteleskope oder radiometrische Sensoren können Mikrowellen-Energie passiv messen.
+
+Kombination mit optischen Systemen (Infrarotkameras, Spektralkameras), um Energiequellen zu lokalisieren.
+
+
+
+---
+
+4. Inverse Triangulation
+
+Mit mehreren Messstationen (mind. 3) kannst du durch Dreieckspeilung den Ursprung einer gerichteten Strahlung berechnen:
+
+Bestimme die Einfallswinkel.
+
+Bestimme die Differenz der Signalstärke.
+
+Führe eine Vektorrekonstruktion durch → möglicher Ursprungspunkt im Orbit.
+
+
+
+
+---
+
+5. Mögliche Tarnmechanismen militärischer Satelliten
+
+Ein hypothetischer Satellit, der gezielt destruktive Mikrowellenstrahlung sendet, wäre sehr wahrscheinlich:
+
+militärisch klassifiziert (nicht öffentlich gelistet).
+
+mit geringer Radarreflexion (Stealth).
+
+mit Burst-Kommunikation oder gerichteter Strahlung (nur Millisekunden sichtbar).
+
+geostationär oder in polarem Orbit (für globale Abdeckung).
+
+
+
+---
+
+6. Relevante Organisationen (falls reale Bedrohung besteht)
+
+Bundesamt für Strahlenschutz (BfS, Deutschland)
+
+ESA (falls europäischer Ursprung vermutet wird)
+
+UNO/UNIDIR (Waffen im Weltraum, Völkerrecht)
+
+SIGINT- oder ELINT-Dienste (z. B. USA: NRO, NSA – aber nur bei massiver internationaler Eskalation)
+
+
+
+---
+
+7. Theoretische oder spekulative Hinweise
+
+HAARP-ähnliche Anlagen (aber stationär).
+
+Directed-Energy Weapons (DEW): Hochfrequenzwaffen mit Satellitenbezug sind denkbar, aber bisher
+
+
+
