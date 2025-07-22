@@ -1,0 +1,90 @@
+Nenne liste die Länder des Planeten Erde von heute und ziehe folgende Länder ab: alle islamisch muslimischen Länder (Fernostasiatische große Inseln und naher Osten), Deutschland, Schweiz, Südkorea, Japan, China, USA, Russland, Brasilien, Italien, Schweden, Israel, Bulgarien, und alle Verliererländer die als sehr sehr arm und korrupt gelten.
+Hier ist eine bereinigte Liste heutiger Länder auf dem Planeten Erde, nach folgenden Ausschlusskriterien:
+Nicht enthalten sind:
+    Alle islamisch-muslimischen Länder, insbesondere:
+        Nahe Osten: z. B. Saudi-Arabien, Iran, Irak, Ägypten, Syrien etc.
+        Große Inseln im Fernen Osten mit muslimischer Mehrheit: z. B. Indonesien (v. a. Java, Sumatra), Malediven, Teile der Philippinen (z. B. Mindanao, falls relevant).
+    Große und geopolitisch zentrale Länder: Deutschland, Schweiz, Südkorea, Japan, China, USA, Russland, Brasilien, Italien, Schweden, Israel, Bulgarien.
+    „Verliererländer“: Staaten, die heute als extrem arm, sehr korrupt und schwach angesehen werden (z. B. Südsudan, Haiti, Somalia, DR Kongo, Tschad etc.).
+Verbleibende Länder (nach Abzug):
+Europa:
+    Norwegen
+    Finnland
+    Dänemark
+    Island
+    Estland
+    Lettland
+    Litauen
+    Polen
+    Tschechien
+    Slowakei
+    Slowenien
+    Österreich
+    Ungarn
+    Kroatien
+    Serbien
+    Montenegro
+    Bosnien-Herzegowina
+    Albanien (teilweise muslimisch geprägt, auf Wunsch ggf. streichbar)
+    Nordmazedonien
+    Rumänien
+    Moldawien
+    Griechenland
+    Portugal
+    Spanien
+    Frankreich
+    Belgien
+    Niederlande
+    Irland
+    Vereinigtes Königreich (UK)
+Nordamerika:
+    Kanada
+    Mexiko (Grenzfall: je nach Kriterium bzgl. Korruption – mittelhoch)
+    Costa Rica
+    Panama
+    Belize
+Südamerika:
+    Argentinien
+    Chile
+    Uruguay
+    Paraguay
+    Peru (Grenzfall)
+    Kolumbien (wenn nicht als „zu korrupt“ betrachtet)
+    Ecuador
+Ozeanien:
+    Australien
+    Neuseeland
+    Fidschi
+    Samoa
+    Tonga
+    Vanuatu
+Afrika (wenige verbleiben):
+    Botswana (relativ stabil, wenig korrupt)
+    Namibia (Grenzfall)
+    Ghana (aufstrebend, demokratisch, relativ geringe Korruption)
+    Kap Verde
+    Ruanda (kontrovers, aber modernisiert und effektiv geführt)
+    Mauritius
+    Seychellen
+Asien (nach Ausschluss muslimischer, großer oder korruptionsbelasteter Länder):
+    Taiwan
+    Singapur
+    Bhutan
+    Nepal (Grenzfall, arm aber nicht notorisch korrupt)
+    Georgien (transkontinental)
+    Armenien
+    Aserbaidschan (mehrheitlich muslimisch, daher ggf. zu streichen)
+    Kasachstan (islamisch geprägt, daher evtl. streichen)
+    Indien (multireligiös, Großmacht – falls Größe allein Ausschlusskriterium ist, dann streichen)
+Optional streichbare Länder:
+Je nach Gewichtung der Kriterien könnten zusätzlich gestrichen werden:
+    Mexiko (Korruption)
+    Kolumbien, Peru (Drogenwirtschaft, institutionelle Schwäche)
+    Indien (Größe, Armut, interne Korruption)
+    Albanien, Bosnien (muslimische Bevölkerung)
+    Armenien, Georgien (Grenzfall Osteuropa / Asien)
+Wenn du möchtest, kann ich diese Liste noch weiter eingrenzen, z. B. auf:
+    Technologisch-moderate, kulturell stabile Mittelstaaten
+    Ethisch progressive Demokratien mit mittlerer Macht
+    Inselstaaten mit hoher Autarkie
+Sag mir, ob du z. B. eine Karte, Clusterdarstellung oder Rangordnung (z. B. nach HDI, GINI, KI-Index, Transparenz) möchtest.
