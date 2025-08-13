@@ -99,3 +99,116 @@ Falls du willst, kann ich dir eine einzige Python-Klasse zeigen, bei der alle dr
 Pointcut-Makro wählt alle öffentlichen Methoden,
 mehrere Advice-Schichten sind übereinander gelegt,
 und Fehlerpfade werden bewusst ausgelöst und behandelt.
+wann machen viele joint points Sinn, bei welcher Aehnlichkeit der selben Sache?
+Kurz & präzise – wann viele Join Points sinnvoll sind und welche „Ähnlichkeit“ zählt:
+Wann viele Join Points Sinn machen
+1. Querfunktional & weit gestreut
+– Wenn dieselbe Nicht-Fachlogik an vielen Stellen nötig ist: AuthZ/AuthN, Rate-Limit, Idempotenz, Tracing, Metriken, Caching, Retries, Transaktionen, Input-/Output-Validation.
+Daumenregeln:
+Betrifft ≥ 3 Subsysteme oder ≥ 5 Methoden je Subsystem.
+Änderungen an der Querlogik kommen ≥ 1×/Quartal.
+Ohne AOP müsstest du Copy-Paste oder Boilerplate einbauen.
+2. Klare, wiedererkennbare Schnittstellen
+– Z. B. „alle öffentlichen Service-Methoden“, „alle Repo-Methoden, die DB anfassen“, „alle HTTP-Handler“. Hier ist Weaving robust und bricht nicht bei Kleinigkeiten.
+3. Einheitliche Fehler-Semantik
+– Wenn bei gleicher Fehlerklasse (Timeout, 5xx, Deadlock) überall dieselbe Policy gilt (Retry, Circuit-Breaker, Rollback, Mapping der Exception). Dann lohnen viele Join Points, weil du Fehlerpfade zentral steuerst.
+4. Lebenszyklus-Hooks
+– Konstruktor/Destructor, Request-Begin/-Ende, Task-Start/-Ende. Viele Join Points entlang desselben Lebenszyklus sind sinnvoll, wenn du Setup/Teardown/Scope (z. B. Trace-ID, Tx, Lock) konsistent halten willst.
+5. Nicht-funktionale Ziele mit messbarem Nutzen
+– Du brauchst global Sicht (Latenz-Buckets, Fehlerquoten, Heatmaps). Viele Join Points geben dir deckende Telemetrie ohne Businesscode zu verschmutzen.
+Welche „Ähnlichkeit“ soll gegeben sein?
+Denke in Semantik, nicht in Syntax:
+Gleiche Absicht (Intent): „geschützte Operation“, „externen Dienst callen“, „zustandsverändernd“.
+Gleiche Invarianten/Policies: „muss transaktional“, „muss idempotent“, „muss auditierbar“.
+Gleiches Protokoll/Schicht: „HTTP-Handler“, „SQL-Repo“, „Message-Consumer“.
+Gleiche Fehlerklassen: „netzwerkbedingt retrybar“, „validierungsbedingt nicht-retrybar“.
+Gleiches Timing/Lifecycle: „vor-/nach-Aufruf“, „bei Exception“, „bei Commit“.
+> Wenn die Intent-/Policy-Ähnlichkeit hoch ist (≥ 80 %), rechtfertigt das viele Join Points.
+Wenn die Ähnlichkeit nur oberflächlich ist (gleicher Name/Signatur, aber unterschiedliche Semantik), → lieber lassen oder feiner selektieren.
+Warnzeichen (lieber nicht viele Join Points)
+Order-Sensitivity der Advices (Logger→Retry→Tx) ist fragil und wird oft pro Methode anders gebraucht → droht Coupling.
+Heterogene Business-Semantik hinter gleich benannten Methoden → Pointcut trifft Falsche.
+Punktuelle Spezialfälle dominieren (viele Ausnahmen/Opt-outs) → besser lokale Dekoratoren oder explizite Aufrufe.
+Debugbarkeit leidet: Devs verstehen nicht mehr, woher Verhalten kommt → dokumentiere Pointcuts und halte sie grob-granular.
+Praktische Heuristiken (Python)
+Coarse-grained Pointcuts bevorzugen: klasse-/modulweit statt dutzende Einzelmethoden.
+Explizite Marker statt Namensmagie: z. B. Marker-Baseclass TransactionalService, Decorator @external_io als Selektor.
+Fail-Closed: Wenn Advice nicht appliziert wird, lieber sicher scheitern (z. B. Auth/Zwang).
+Testen per Contract: Property-/Contract-Tests für „jede gematchte Methode erfüllt Policy X“.
+Mini-Beispiele für robuste Ähnlichkeit
+Alle externen Calls (@external_io) → Retry + Timeout + CircuitBreaker + Metrics.
+Alle mutierenden Repos (class UserRepo(RepoBase)) → Tx + Audit + PermissionCheck.
+Alle HTTP-Endpoints (module=handlers.*) → Tracing + RateLimit + Input-Validation.
+Entscheidungsbaum (kompakt)
+1. Betrifft es ≥ 3 Module oder ≥ 5 Methoden je Modul? → Ja
+2. Haben die Ziele/Policies identische Semantik? → Ja
+3. Lässt sich der Satz stabil per Marker/Schicht selektieren? → Ja
+→ Viele Join Points lohnen sich.
+Bei einem Nein an einer Stelle: lieber lokale Dekoratoren oder Refactoring der Schnittstellen.
+Wenn du willst, mappe ich deine konkreten Module/Funktionen auf solche Pointcuts und gebe dir eine empfohlene Advice-Reihenfolge inklusive Fehlerpfad-Policy (Retry-Matrize).
+Welche Interaktionen sollten diese Joint Points mit Gemeinsamkeiten erlaubt haben duerfen?
+Hier ist ein knappes Interaktions‑Regelwerk dafür, welche Interaktionen Join Points mit gemeinsamer Semantik zulassen sollten – und welche nicht. Fokus: Ordnung, Kopplung, Fehlerpfade, Nebenwirkungen.
+1) Erlaubte Interaktionen (gewünscht)
+1. Kontext‑Propagation (lesend)
+Trace‑ID, User/Role, Tenant, Deadline/Timeout, Idempotency‑Key via ContextVar/Request‑Context.
+Rationale: Aspekte bleiben entkoppelt, aber beobachtbar.
+2. Monotone Beobachtung
+Logging/Metriken dürfen alles lesen und schreibfrei beobachten.
+Kein Einfluss auf Rückgabewert/Fehler (außer bewusstem Fallback‑Advice).
+3. Deterministische Reihenfolge
+Feste „Layer“ (siehe §3) sorgen dafür, dass Advice‑Ketten reproduzierbar sind.
+Reihenfolge ist Teil des Contracts.
+4. Idempotente Wiederholung
+Retry/CircuitBreaker dürfen nur um Operationen mit definiertem Idempotenz‑Verhalten liegen (per Key/Token abgesichert).
+5. Transaktions‑Scope als Hülle
+DB‑Transaktion darf innen liegende Mutationen kapseln; reine Beobachter (Log/Metrics) bleiben außen/neutral.
+6. Explizite Policy‑Signale
+Aspekte dürfen Events publizieren (z. B. policy.retry.started, tx.rollback) – andere Aspekte dürfen nur reagieren (lesen), nicht erzwingen.
+7. Zeit‑Budgetteilung
+Timeout/Deadline wird einmal gesetzt und innen nur verengt (never widened).
+Alle inneren Aspekte respektieren die verbleibende Deadline.
+8. Fehlerklassifikation & Mapping
+Aspekte dürfen Exceptions annotieren/taggen (z. B. err.retryable=True) für nachgelagerte Policies.
+Original‑Typ bleibt erhalten, außer es gibt einen dokumentierten Mapping‑Contract.
+2) Verbotene/zu vermeidende Interaktionen
+1. Schreibende Querkopplung
+Ein Aspekt ändert Zustände eines anderen (globale Flags, Mutationen) → verboten. Kommuniziere nur über Kontext/Events.
+2. Reihenfolge‑Inversion ad hoc
+Ein Advice „schiebt“ sich dynamisch vor ein anderes → Debug‑Hölle. Reihenfolge ist statisch festgelegt.
+3. Deadline‑Aufweitung
+Innen längere Timeouts setzen als außen → verboten.
+4. Transaktion um Netzwerk‑Retry
+Lange Retries innerhalb offener DB‑Tx → Lock‑Haltezeiten & Deadlocks. Entweder „retry‑outside‑tx“ oder gezieltes Savepoint‑Pattern.
+5. Side‑Effects in Beobachtern
+Logger/Metrics lösen zusätzliche kritische I/O aus (z. B. blockierende Netz‑Calls) → nur asynchron/puffernd.
+6. Schlucken von Fehlern ohne Vertrag
+Advice konsumiert Exceptions still → nur mit explizitem Fallback‑Contract.
+3) Bewährte Advice‑Reihenfolge (Policy‑Layers)
+[Guard]        FeatureFlag → RateLimit → AuthN/AuthZ → Input-Validation
+[Context]      Tracing/Span → Tenant → Deadline/Timeout (Budget setzen)
+[Policy]       Idempotency/Dedup → Cache (read-through) → Sanitization(pre)
+[Reliability]  Timeout(enforced) → Retry → CircuitBreaker → Backoff/Jitter
+[Tx]           Begin/Commit/Rollback (kurz halten; Outbox/Savepoint falls nötig)
+[Effects]      Audit → Metrics → Logging (strukturiert; non-blocking)
+[Post]         Output-Validation/Sanitization(post) → Response Shaping
+Faustformel: Guards zuerst, Beobachter zuletzt, Retries vor Transaktion (oder Savepoints), Timeout außen setzt Budget.
+4) Kleine Kommutativitäts‑Matrix (✓ = i. d. R. vertauschbar, ✗ = Reihenfolge fix)
+Paar	Kommutativ?	Begründung kurz
+Logging ↔ Metrics	✓	reine Beobachtung
+Tracing ↔ Logging	✓	beide lesen Kontext
+Auth ↔ Validation	✗	meist Validation vor Auth (DoS‑Schutz)
+RateLimit ↔ Auth	✗	RateLimit vor Auth (billiger)
+Timeout ↔ Retry	✗	Timeout außen, Retry innen (Budget)
+Retry ↔ Transaction	✗	Retry außerhalb der Tx
+Cache ↔ Validation	✗	Erst validieren, dann cachen
+CircuitBreaker ↔ Retry	✗	CB außen, begrenzt überhaupt den Retry
+5) Fehlerpfad‑Policy (kurz)
+Retrybar: TimeoutError, ConnectionError, 5xx, Deadlock → Retry (exponentiell, jitter, max‑budget).
+Nicht‑retrybar: ValueError, AuthError, 429 nach RateLimit → sofort durchreichen.
+Tx‑Rollback: bei jedem nicht gefangenen Fehler im Tx‑Scope.
+Audit/Log on error: immer, aber asynchron.
+6) Minimal‑Contracts zwischen Aspekten
+Context Keys: trace_id, tenant, deadline_ts, idempotency_key, authz_scope.
+Error Tags: retryable: bool, sanitized: bool, mapped_to: HTTP_xxx.
+Events (nur lesen): policy.retry.started, policy.retry.gave_up, tx.begin/commit/rollback.
+Wenn du willst, mappe ich deine konkreten Pointcuts auf diese Layers und gebe dir eine konkrete Advice‑Kette plus Retry/Timeout‑Parameter je Kategorie (HTTP‑Handler, Repos, externe Services).
