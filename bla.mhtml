@@ -1,0 +1,324 @@
+MIME-Version: 1.0
+Content-Type: Multipart/related; boundary="boundary";type=Text/HTML
+
+--boundary
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-ID: <1>
+Content-Location: https://chatgpt.com/share/689c9317-0b70-8004-bb2b-b075d0e50b24
+
+<!DOCTYPE html><html lang=3D"en-US" data-build=3D"prod-d43eb0f29fda059529bc=
+a7cdc4012539d566d56f" dir=3D"ltr" class=3D"dark"><head><meta charset=3D"UTF=
+-8"><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1, viewport-fit=3Dcover"><link rel=3D"modulepreload" href=3D"https://cdn=
+.oaistatic.com/assets/manifest-7fa5f3df.js"><link rel=3D"modulepreload" hre=
+f=3D"https://cdn.oaistatic.com/assets/g61dyl9s64urwp5r.js"><link rel=3D"mod=
+ulepreload" href=3D"https://cdn.oaistatic.com/assets/eumpsqtkmf0towzt.js"><=
+link rel=3D"modulepreload" href=3D"https://cdn.oaistatic.com/assets/bet78ci=
+u0q6a8nuh.js"><link rel=3D"modulepreload" href=3D"https://cdn.oaistatic.com=
+/assets/jww5voqw1cbsnajn.js"><link rel=3D"modulepreload" href=3D"https://cd=
+n.oaistatic.com/assets/co0us1k7vt22jzj2.js"><link rel=3D"modulepreload" hre=
+f=3D"https://cdn.oaistatic.com/assets/f65mpvaye46jssbp.js"><link rel=3D"mod=
+ulepreload" href=3D"https://cdn.oaistatic.com/assets/eei2vx0tkpiq6eir.js"><=
+link rel=3D"modulepreload" href=3D"https://cdn.oaistatic.com/assets/f0o6ih9=
+a64n1b7jk.js"><link rel=3D"modulepreload" href=3D"https://cdn.oaistatic.com=
+/assets/n2spoyl7q4dmorrq.js"><link rel=3D"modulepreload" href=3D"https://cd=
+n.oaistatic.com/assets/m5rs6usroci7vglj.js"><link rel=3D"modulepreload" hre=
+f=3D"https://cdn.oaistatic.com/assets/m3d2z6655v0ukgm8.js"><link rel=3D"mod=
+ulepreload" href=3D"https://cdn.oaistatic.com/assets/lh4jx89k5rmbrwzb.js"><=
+link rel=3D"modulepreload" href=3D"https://cdn.oaistatic.com/assets/dh9sa07=
+0zxw60lyn.js"><link rel=3D"modulepreload" href=3D"https://cdn.oaistatic.com=
+/assets/co090oiedxpbbcic.js"><link rel=3D"modulepreload" href=3D"https://cd=
+n.oaistatic.com/assets/ko5ojrx9c1p3evpa.js"><link rel=3D"modulepreload" hre=
+f=3D"https://cdn.oaistatic.com/assets/ox96o305kjas9lps.js"><link rel=3D"mod=
+ulepreload" href=3D"https://cdn.oaistatic.com/assets/vgzlrgz4hzn104yo.js"><=
+link rel=3D"modulepreload" href=3D"https://cdn.oaistatic.com/assets/dpdedi3=
+13hqw26d1.js"><link rel=3D"modulepreload" href=3D"https://cdn.oaistatic.com=
+/assets/eynlt9on2nktvh4p.js"><link rel=3D"modulepreload" href=3D"https://cd=
+n.oaistatic.com/assets/mopkeovgkto3znzt.js"><title>ChatGPT - Aspektorientie=
+rte Programmierung Python</title><meta property=3D"og:site_name" content=3D=
+"ChatGPT"><meta name=3D"robots" content=3D"noindex,nofollow"><meta property=
+=3D"og:title" content=3D"ChatGPT - Aspektorientierte Programmierung Python"=
+><meta property=3D"og:description" content=3D"Shared via ChatGPT"><meta pro=
+perty=3D"og:image" content=3D"https://cdn.oaistatic.com/assets/chatgpt-shar=
+e-og-u7j5uyao.webp"><meta property=3D"og:url" content=3D"https://chatgpt.co=
+m/share/689c9317-0b70-8004-bb2b-b075d0e50b24"><link rel=3D"preconnect" href=
+=3D"https://cdn.oaistatic.com"><link rel=3D"preconnect" href=3D"https://ab.=
+chatgpt.com"><meta http-equiv=3D"Content-Type" content=3D"text/html; charse=
+t=3Dutf-8"><meta name=3D"apple-itunes-app" content=3D"app-id=3D6448311069">=
+<meta name=3D"dd-trace-id" content=3D"13306958710046522948"><meta name=3D"d=
+d-trace-time" content=3D"1755092175125"><link rel=3D"icon" href=3D"https://=
+cdn.oaistatic.com/assets/favicon-eex17e9e.ico" sizes=3D"32x32"><link rel=3D=
+"icon" href=3D"https://cdn.oaistatic.com/assets/favicon-l4nq08hd.svg" type=
+=3D"image/svg+xml"><link rel=3D"icon" href=3D"https://cdn.oaistatic.com/ass=
+ets/favicon-l4nq08hd.svg" type=3D"image/svg+xml" media=3D"(prefers-color-sc=
+heme: dark)"><link rel=3D"apple-touch-icon" sizes=3D"180x180" href=3D"https=
+://cdn.oaistatic.com/assets/favicon-180x180-od45eci6.webp"><link rel=3D"can=
+onical" href=3D"https://chatgpt.com"><link rel=3D"stylesheet" href=3D"https=
+://cdn.oaistatic.com/assets/root-iiux6hdo.css"><link rel=3D"stylesheet" hre=
+f=3D"https://cdn.oaistatic.com/assets/conversation-small-dhmr708a.css"><scr=
+ipt nonce=3D"88f40432-23a1-466c-b0f7-43c688193ebe">!function initScrollTime=
+lineInline(){try{if(CSS.supports("animation-timeline: --works"))return;var =
+t=3Dnew Map;document.addEventListener("animationstart",(n=3D>{if(!(n.target=
+ instanceof HTMLElement))return;const e=3Dn.target.getAnimations().filter((=
+t=3D>t.animationName=3D=3D=3Dn.animationName));t.set(n.target,e)})),documen=
+t.addEventListener("scrolltimelineload",(n=3D>{t.forEach(((t,e)=3D>{t.forEa=
+ch((t=3D>{n.detail.upgradeAnimation(t,e)}))})),t.clear()}),{once:!0})}catch=
+{}}();</script></head><body class=3D""><script>!function(){try{var d=3Ddocu=
+ment.documentElement,c=3Dd.classList;c.remove('light','dark');var e=3Dlocal=
+Storage.getItem('theme');if('system'=3D=3D=3De||(!e&&true)){var t=3D'(prefe=
+rs-color-scheme: dark)',m=3Dwindow.matchMedia(t);if(m.media!=3D=3Dt||m.matc=
+hes){d.style.colorScheme =3D 'dark';c.add('dark')}else{d.style.colorScheme =
+=3D 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e=3D=3D=3D'light'||=
+e=3D=3D=3D'dark')d.style.colorScheme=3De}catch(e){}}()</script><script nonc=
+e=3D"88f40432-23a1-466c-b0f7-43c688193ebe">!function(){try{const t=3DlocalS=
+torage.getItem("oai/apps/chatTheme");document.documentElement.dataset.chatT=
+heme=3D"string"=3D=3Dtypeof t?JSON.parse(t):void 0}catch(e){}}();</script><=
+a data-skip-to-content=3D"" class=3D"bg-token-main-surface-primary fixed st=
+art-1/2 top-1 z-50 mx-auto w-fit -translate-x-1/2 translate-y-[-100lvh] rou=
+nded-full px-3 py-2 focus-visible:translate-y-0" href=3D"cid:1#main">Skip t=
+o content</a><div class=3D"flex h-full w-full flex-col"><div class=3D"relat=
+ive flex h-full w-full flex-1 transition-colors z-0"><div class=3D"relative=
+ flex h-full w-full flex-row"><div class=3D"relative flex h-full max-w-full=
+ flex-1 flex-col"><main class=3D"transition-width relative h-full w-full fl=
+ex-1 overflow-auto -translate-y-[calc(env(safe-area-inset-bottom,0px)/2)] p=
+t-[calc(env(safe-area-inset-bottom,0px)/2)]" id=3D"main" z-index=3D"-1"><di=
+v id=3D"thread" class=3D"group/thread @container/thread h-full w-full"><div=
+ role=3D"presentation" class=3D"composer-parent flex h-full flex-col focus-=
+visible:outline-0 overflow-hidden"><header id=3D"page-header" class=3D"drag=
+gable no-draggable-children sticky top-0 p-2 touch:p-2.5 flex items-center =
+justify-between z-20 h-header-height bg-token-main-surface-primary pointer-=
+events-none select-none [view-transition-name:var(--vt-page-header)] *:poin=
+ter-events-auto motion-safe:transition max-md:hidden @[84rem]/thread:absolu=
+te @[84rem]/thread:start-0 @[84rem]/thread:end-0 @[84rem]/thread:shadow-non=
+e! @[84rem]/thread:bg-transparent [box-shadow:var(--sharp-edge-top-shadow-p=
+laceholder)]"><div class=3D"absolute start-1/2 ltr:-translate-x-1/2 rtl:tra=
+nslate-x-1/2"></div><div class=3D"flex items-center"><button aria-label=3D"=
+" style=3D"" class=3D"group flex cursor-pointer justify-center items-center=
+ gap-1 rounded-lg min-h-9 touch:min-h-10 px-2.5 text-lg hover:bg-token-surf=
+ace-hover focus-visible:bg-token-surface-hover font-normal whitespace-nowra=
+p focus-visible:outline-none"><div>ChatGPT</div><svg width=3D"16" height=3D=
+"16" viewBox=3D"0 0 16 16" fill=3D"currentColor" xmlns=3D"http://www.w3.org=
+/2000/svg" class=3D"icon-sm text-token-text-tertiary"><path d=3D"M12.1338 5=
+.94433C12.3919 5.77382 12.7434 5.80202 12.9707 6.02929C13.1979 6.25656 13.2=
+261 6.60807 13.0556 6.8662L12.9707 6.9707L8.47067 11.4707C8.21097 11.7304 7=
+.78896 11.7304 7.52926 11.4707L3.02926 6.9707L2.9443 6.8662C2.77379 6.60807=
+ 2.80199 6.25656 3.02926 6.02929C3.25653 5.80202 3.60804 5.77382 3.86617 5.=
+94433L3.97067 6.02929L7.99996 10.0586L12.0293 6.02929L12.1338 5.94433Z"></p=
+ath></svg></button></div><div class=3D"flex items-center"><div class=3D"fle=
+x items-center" id=3D"conversation-header-actions"><div class=3D"flex items=
+-center"><div class=3D"flex items-center justify-center gap-2"><button clas=
+s=3D"btn relative btn-primary" data-testid=3D"login-button"><div class=3D"f=
+lex items-center justify-center">Log in</div></button><button class=3D"btn =
+relative btn-secondary screen-arch:hidden md:screen-arch:flex" data-testid=
+=3D"signup-button"><div class=3D"flex items-center justify-center">Sign up =
+for free</div></button></div><button aria-label=3D"Open profile menu" data-=
+testid=3D"profile-button" class=3D"group user-select-none ps-2 focus-visibl=
+e:outline-0" type=3D"button" id=3D"radix-=C2=ABRklqacl6el54mj5=C2=BB" aria-=
+haspopup=3D"menu" aria-expanded=3D"false" data-state=3D"closed"><div class=
+=3D"group-hover:bg-token-interactive-bg-secondary-selected touch:h-10 touch=
+:w-10 flex h-9 w-9 items-center justify-center rounded-full group-focus-vis=
+ible:ring-2"><svg width=3D"20" height=3D"20" viewBox=3D"0 0 20 20" fill=3D"=
+currentColor" xmlns=3D"http://www.w3.org/2000/svg" class=3D"icon-lg"><path =
+d=3D"M16.585 10C16.585 6.3632 13.6368 3.41504 10 3.41504C6.3632 3.41504 3.4=
+1504 6.3632 3.41504 10C3.41504 13.6368 6.3632 16.585 10 16.585C13.6368 16.5=
+85 16.585 13.6368 16.585 10ZM17.915 10C17.915 14.3713 14.3713 17.915 10 17.=
+915C5.62867 17.915 2.08496 14.3713 2.08496 10C2.08496 5.62867 5.62867 2.084=
+96 10 2.08496C14.3713 2.08496 17.915 5.62867 17.915 10Z"></path><path d=3D"=
+M9.81735 11.5962C9.3582 11.5962 9.08812 11.2829 9.08812 10.84V10.7643C9.088=
+12 10.1269 9.41762 9.7056 10.055 9.33288C10.7519 8.91695 10.9625 8.64686 10=
+.9625 8.1499C10.9625 7.62053 10.552 7.25321 9.9578 7.25321C9.42843 7.25321 =
+9.07191 7.51249 8.89906 7.99325C8.76401 8.33896 8.52093 8.49021 8.19142 8.4=
+9021C7.76469 8.49021 7.5 8.22552 7.5 7.81499C7.5 7.58271 7.55402 7.37745 7.=
+66205 7.17218C8.00776 6.45915 8.87205 6 10.0334 6C11.5675 6 12.5993 6.84267=
+ 12.5993 8.10128C12.5993 8.91695 12.2049 9.47333 11.4433 9.92167C10.7248 10=
+.3376 10.5628 10.5699 10.4926 11.0236C10.4115 11.3856 10.2009 11.5962 9.817=
+35 11.5962ZM9.82816 14C9.342 14 8.94767 13.6273 8.94767 13.1519C8.94767 12.=
+6766 9.342 12.3038 9.82816 12.3038C10.3197 12.3038 10.714 12.6766 10.714 13=
+.1519C10.714 13.6273 10.3197 14 9.82816 14Z"></path></svg></div></button></=
+div></div></div></header><div class=3D"relative flex basis-auto flex-col -m=
+b-(--composer-overlap-px) [--composer-overlap-px:55px] grow overflow-hidden=
+"></div><div id=3D"thread-bottom-container" class=3D"relative isolate z-10 =
+w-full basis-auto has-data-has-thread-error:pt-2 has-data-has-thread-error:=
+[box-shadow:var(--sharp-edge-bottom-shadow)] md:border-transparent md:pt-0 =
+dark:border-white/20 md:dark:border-transparent content-fade flex flex-col"=
+><div id=3D"thread-bottom"><div class=3D"text-base mx-auto [--thread-conten=
+t-margin:--spacing(4)] @[37rem]:[--thread-content-margin:--spacing(6)] @[72=
+rem]:[--thread-content-margin:--spacing(16)] px-(--thread-content-margin)">=
+<div class=3D"[--thread-content-max-width:32rem] @[34rem]:[--thread-content=
+-max-width:40rem] @[64rem]:[--thread-content-max-width:48rem] mx-auto max-w=
+-(--thread-content-max-width) flex-1"><div class=3D"flex justify-center emp=
+ty:hidden"></div><div class=3D"max-xs:[--force-hide-label:none] relative z-=
+1 flex h-full max-w-full flex-1 flex-col"><button type=3D"button" class=3D"=
+invisible absolute self-center" aria-hidden=3D"true" tabindex=3D"-1" aria-h=
+aspopup=3D"dialog" aria-expanded=3D"false" aria-controls=3D"radix-=C2=ABR9i=
+9b2cl6el54mj5=C2=BB" data-state=3D"closed" name=3D"context-connector-pasted=
+-link-popover-trigger"></button><div class=3D"absolute start-0 end-0 bottom=
+-full z-20"></div><form class=3D"w-full [view-transition-name:var(--vt-comp=
+oser)]" data-type=3D"unified-composer"><div class=3D"hidden"><input accept=
+=3D"" multiple=3D"" type=3D"file" style=3D"border-top-color: initial; borde=
+r-top-style: initial; border-top-width: 0; border-right-color: initial; bor=
+der-right-style: initial; border-right-width: 0; border-bottom-color: initi=
+al; border-bottom-style: initial; border-bottom-width: 0; border-left-color=
+: initial; border-left-style: initial; border-left-width: 0; clip: rect(0, =
+0, 0, 0); height: 1px; margin-top: 0; margin-right: -1px; margin-bottom: -1=
+px; margin-left: 0; overflow-x: hidden; overflow-y: hidden; padding-top: 0;=
+ padding-right: 0; padding-bottom: 0; padding-left: 0; position: absolute; =
+width: 1px; white-space: nowrap;" tabindex=3D"-1"></div><div class=3D"bg-to=
+ken-bg-primary shadow-short flex w-full cursor-text flex-col items-center j=
+ustify-center overflow-clip bg-clip-padding contain-inline-size dark:bg-[#3=
+03030] rounded-[28px]"><div class=3D"relative flex min-h-14 w-full items-en=
+d"><div class=3D"relative flex w-full flex-auto flex-col"><div class=3D"rel=
+ative mx-5 flex min-h-14 flex-auto bg-transparent items-start" style=3D"tra=
+nsform: none;"><div class=3D"_prosemirror-parent_ebv8s_2 text-token-text-pr=
+imary max-h-[max(35svh,5rem)] max-h-52 flex-1 overflow-auto [scrollbar-widt=
+h:thin] default-browser vertical-scroll-fade-mask"><textarea class=3D"_fall=
+backTextarea_ebv8s_2" name=3D"prompt-textarea" autofocus=3D"" placeholder=
+=3D"Ask anything" data-virtualkeyboard=3D"true"></textarea><script nonce=3D=
+"88f40432-23a1-466c-b0f7-43c688193ebe">window.__oai_logHTML?window.__oai_lo=
+gHTML():window.__oai_SSR_HTML=3Dwindow.__oai_SSR_HTML||Date.now();requestAn=
+imationFrame((function(){window.__oai_logTTI?window.__oai_logTTI():window._=
+_oai_SSR_TTI=3Dwindow.__oai_SSR_TTI||Date.now()}))</script></div></div><div=
+ class=3D"justify-content-end relative ms-2 flex w-full flex-auto flex-col"=
+><div class=3D"flex-auto"></div></div><div style=3D"height: 48px;"></div></=
+div><div data-testid=3D"composer-footer-actions" class=3D"absolute bottom-2=
+.5 flex items-center max-xs:gap-1 gap-2 overflow-x-auto [scrollbar-width:no=
+ne]" style=3D"transform: none;"><div data-testid=3D"composer-action-file-up=
+load" style=3D""><div class=3D"relative"><span class=3D"flex" data-state=3D=
+"closed"><div class=3D"flex" type=3D"button" id=3D"radix-=C2=ABR2pp9i9b2cl6=
+el54mj5=C2=BB" aria-haspopup=3D"menu" aria-expanded=3D"false" data-state=3D=
+"closed"><button aria-label=3D"Add photos &amp; files" class=3D"flex items-=
+center justify-center h-9 rounded-full border border-token-border-default t=
+ext-token-text-secondary min-w-8 w-auto p-2 text-[13px] font-semibold radix=
+-state-open:bg-black/10 hover:bg-token-main-surface-secondary"><svg width=
+=3D"20" height=3D"20" viewBox=3D"0 0 20 20" fill=3D"currentColor" xmlns=3D"=
+http://www.w3.org/2000/svg" aria-label=3D"" class=3D"icon"><path d=3D"M4.33=
+496 12.5V7.5C4.33496 7.13273 4.63273 6.83496 5 6.83496C5.36727 6.83496 5.66=
+504 7.13273 5.66504 7.5V12.5C5.66504 14.8942 7.60585 16.835 10 16.835C12.39=
+42 16.835 14.335 14.8942 14.335 12.5V5.83301C14.3348 4.35959 13.1404 3.1652=
+2 11.667 3.16504C10.1934 3.16504 8.99822 4.35948 8.99805 5.83301V12.5C8.998=
+05 13.0532 9.44679 13.502 10 13.502C10.5532 13.502 11.002 13.0532 11.002 12=
+.5V7.5C11.002 7.13273 11.2997 6.83496 11.667 6.83496C12.0341 6.83514 12.332=
+ 7.13284 12.332 7.5V12.5C12.332 13.7877 11.2877 14.832 10 14.832C8.71226 14=
+.832 7.66797 13.7877 7.66797 12.5V5.83301C7.66814 3.62494 9.45888 1.83496 1=
+1.667 1.83496C13.875 1.83514 15.6649 3.62505 15.665 5.83301V12.5C15.665 15.=
+6287 13.1287 18.165 10 18.165C6.87131 18.165 4.33496 15.6287 4.33496 12.5Z"=
+></path></svg><span class=3D"[display:var(--force-hide-label)] ps-1 pe-1 wh=
+itespace-nowrap" data-is-collapsable-label=3D"">Attach</span></button></div=
+></span></div></div><div data-testid=3D"system-hint-search" style=3D""><div=
+><span class=3D"inline-block" data-state=3D"closed"><div class=3D"radix-sta=
+te-open:bg-black/10 inline-flex h-9 rounded-full border text-[13px] font-me=
+dium text-token-text-secondary border-token-border-default hover:bg-token-m=
+ain-surface-secondary focus-visible:outline-black dark:focus-visible:outlin=
+e-white"><button class=3D"flex h-full min-w-8 items-center justify-center p=
+-2" data-testid=3D"composer-button-search" aria-pressed=3D"false" aria-labe=
+l=3D"Search"><svg width=3D"20" height=3D"20" viewBox=3D"0 0 20 20" fill=3D"=
+currentColor" xmlns=3D"http://www.w3.org/2000/svg" class=3D"icon"><path d=
+=3D"M10 2.125C14.3492 2.125 17.875 5.65076 17.875 10C17.875 14.3492 14.3492=
+ 17.875 10 17.875C5.65076 17.875 2.125 14.3492 2.125 10C2.125 5.65076 5.650=
+76 2.125 10 2.125ZM7.88672 10.625C7.94334 12.3161 8.22547 13.8134 8.63965 1=
+4.9053C8.87263 15.5194 9.1351 15.9733 9.39453 16.2627C9.65437 16.5524 9.860=
+39 16.625 10 16.625C10.1396 16.625 10.3456 16.5524 10.6055 16.2627C10.8649 =
+15.9733 11.1274 15.5194 11.3604 14.9053C11.7745 13.8134 12.0567 12.3161 12.=
+1133 10.625H7.88672ZM3.40527 10.625C3.65313 13.2734 5.45957 15.4667 7.89844=
+ 16.2822C7.7409 15.997 7.5977 15.6834 7.4707 15.3486C6.99415 14.0923 6.6936=
+2 12.439 6.63672 10.625H3.40527ZM13.3633 10.625C13.3064 12.439 13.0059 14.0=
+923 12.5293 15.3486C12.4022 15.6836 12.2582 15.9969 12.1006 16.2822C14.5399=
+ 15.467 16.3468 13.2737 16.5947 10.625H13.3633ZM12.1006 3.7168C12.2584 4.00=
+235 12.4021 4.31613 12.5293 4.65137C13.0059 5.90775 13.3064 7.56102 13.3633=
+ 9.375H16.5947C16.3468 6.72615 14.54 4.53199 12.1006 3.7168ZM10 3.375C9.860=
+39 3.375 9.65437 3.44756 9.39453 3.7373C9.1351 4.02672 8.87263 4.48057 8.63=
+965 5.09473C8.22547 6.18664 7.94334 7.68388 7.88672 9.375H12.1133C12.0567 7=
+.68388 11.7745 6.18664 11.3604 5.09473C11.1274 4.48057 10.8649 4.02672 10.6=
+055 3.7373C10.3456 3.44756 10.1396 3.375 10 3.375ZM7.89844 3.7168C5.45942 4=
+.53222 3.65314 6.72647 3.40527 9.375H6.63672C6.69362 7.56102 6.99415 5.9077=
+5 7.4707 4.65137C7.59781 4.31629 7.74073 4.00224 7.89844 3.7168Z"></path></=
+svg><span style=3D"opacity: 1; transform: none;"><div class=3D"[display:var=
+(--force-hide-label)] ps-1 pe-1 font-semibold whitespace-nowrap">Search</di=
+v></span></button></div></span></div></div></div><div class=3D"absolute end=
+-2.5 bottom-2.5 flex items-center gap-2" data-testid=3D"composer-trailing-a=
+ctions"><div class=3D"ms-auto flex items-center gap-1.5"><div class=3D"min-=
+w-9" data-testid=3D"composer-speech-button-container"><span class=3D"" data=
+-state=3D"closed"><button data-testid=3D"composer-speech-button" aria-label=
+=3D"Start voice mode" class=3D"relative flex h-9 items-center justify-cente=
+r rounded-full disabled:text-gray-50 disabled:opacity-30 min-w-8 p-2 compos=
+er-secondary-button-color hover:opacity-80" style=3D""><div class=3D"flex i=
+tems-center justify-center"><svg width=3D"20" height=3D"20" viewBox=3D"0 0 =
+20 20" fill=3D"currentColor" xmlns=3D"http://www.w3.org/2000/svg" class=3D"=
+icon"><path d=3D"M7.167 15.416V4.583a.75.75 0 0 1 1.5 0v10.833a.75.75 0 0 1=
+-1.5 0Zm4.166-2.5V7.083a.75.75 0 0 1 1.5 0v5.833a.75.75 0 0 1-1.5 0ZM3 11.2=
+5V8.75a.75.75 0 0 1 1.5 0v2.5a.75.75 0 0 1-1.5 0Zm12.5 0V8.75a.75.75 0 0 1 =
+1.5 0v2.5a.75.75 0 0 1-1.5 0Z"></path></svg></div><span class=3D"[display:v=
+ar(--force-hide-label)] ps-1 pe-1 text-[13px] font-semibold whitespace-nowr=
+ap">Voice</span></button></span></div></div></div></div></div></form></div>=
+<input class=3D"sr-only" type=3D"file" tabindex=3D"-1" aria-hidden=3D"true"=
+ id=3D"upload-photos" accept=3D"image/*" multiple=3D""><input class=3D"sr-o=
+nly" type=3D"file" tabindex=3D"-1" aria-hidden=3D"true" id=3D"upload-camera=
+" accept=3D"image/*" capture=3D"environment" multiple=3D""></div></div></di=
+v><div class=3D"text-token-text-secondary relative mt-auto flex min-h-8 w-f=
+ull items-center justify-center p-2 text-center text-xs md:px-[60px]"><span=
+ class=3D"text-sm leading-none">By messaging ChatGPT, you agree to our <a h=
+ref=3D"https://openai.com/terms" target=3D"_blank" class=3D"text-token-text=
+-primary decoration-token-text-primary underline" rel=3D"noreferrer">Terms<=
+/a> and have read our <a href=3D"https://openai.com/privacy" target=3D"_bla=
+nk" class=3D"text-token-text-primary decoration-token-text-primary underlin=
+e" rel=3D"noreferrer">Privacy Policy</a>.</span></div></div></div></div></m=
+ain></div></div></div></div><div aria-live=3D"assertive" aria-atomic=3D"tru=
+e" class=3D"sr-only" id=3D"live-region-assertive"></div><div aria-live=3D"p=
+olite" aria-atomic=3D"true" class=3D"sr-only" id=3D"live-region-polite"></d=
+iv><audio class=3D"fixed start-0 bottom-0 hidden h-0 w-0" autoplay=3D"" cro=
+ssorigin=3D"anonymous"></audio><script nonce=3D"88f40432-23a1-466c-b0f7-43c=
+688193ebe">window.__reactRouterContext =3D {"basename":"/","future":{"unsta=
+ble_middleware":false,"unstable_optimizeDeps":false,"unstable_splitRouteMod=
+ules":false,"unstable_subResourceIntegrity":false,"unstable_viteEnvironment=
+Api":false},"ssr":true,"isSpaMode":false};window.__reactRouterContext.strea=
+m =3D new ReadableStream({start(controller){window.__reactRouterContext.str=
+eamController =3D controller;}}).pipeThrough(new TextEncoderStream());</scr=
+ipt><script nonce=3D"88f40432-23a1-466c-b0f7-43c688193ebe" type=3D"module" =
+async=3D"">import "https://cdn.oaistatic.com/assets/manifest-7fa5f3df.js";
+import * as route0 from "https://cdn.oaistatic.com/assets/jww5voqw1cbsnajn.=
+js";
+import * as route1 from "https://cdn.oaistatic.com/assets/f65mpvaye46jssbp.=
+js";
+  
+  window.__reactRouterRouteModules =3D {"root":route0,"routes/share.$shareI=
+d.($action)":route1};
+
+import("https://cdn.oaistatic.com/assets/g61dyl9s64urwp5r.js");</script><!-=
+-$?--><template id=3D"B:0"></template><!--/$--><script nonce=3D"88f40432-23=
+a1-466c-b0f7-43c688193ebe">$RC=3Dfunction(b,c,e){c=3Ddocument.getElementByI=
+d(c);c.parentNode.removeChild(c);var a=3Ddocument.getElementById(b);if(a){b=
+=3Da.previousSibling;if(e)b.data=3D"$!",a.setAttribute("data-dgst",e);else{=
+e=3Db.parentNode;a=3Db.nextSibling;var f=3D0;do{if(a&&8=3D=3D=3Da.nodeType)=
+{var d=3Da.data;if("/$"=3D=3D=3Dd)if(0=3D=3D=3Df)break;else f--;else"$"!=3D=
+=3Dd&&"$?"!=3D=3Dd&&"$!"!=3D=3Dd||f++}d=3Da.nextSibling;e.removeChild(a);a=
+=3Dd}while(a);for(;c.firstChild;)e.insertBefore(c.firstChild,a);b.data=3D"$=
+"}b._reactRetry&&b._reactRetry()}};$RC("B:0","S:0")</script><script nonce=
+=3D"88f40432-23a1-466c-b0f7-43c688193ebe">$RC("B:1","S:1")</script><script =
+nonce=3D"88f40432-23a1-466c-b0f7-43c688193ebe">$RC("B:2","S:2")</script><sc=
+ript nonce=3D"88f40432-23a1-466c-b0f7-43c688193ebe">$RC("B:3","S:3")</scrip=
+t><script nonce=3D"88f40432-23a1-466c-b0f7-43c688193ebe">$RC("B:4","S:4")</=
+script><script nonce=3D"88f40432-23a1-466c-b0f7-43c688193ebe">(function(){f=
+unction c(){var b=3Da.contentDocument||a.contentWindow.document;if(b){var d=
+=3Db.createElement('script');d.nonce=3D'88f40432-23a1-466c-b0f7-43c688193eb=
+e';d.innerHTML=3D"window.__CF$cv$params=3D{r:'96e899ae1b83e58d',t:'MTc1NTA5=
+MjE3Ni4wMDAwMDA=3D'};var a=3Ddocument.createElement('script');a.nonce=3D'88=
+f40432-23a1-466c-b0f7-43c688193ebe';a.src=3D'/cdn-cgi/challenge-platform/sc=
+ripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);=
+";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=
+=3Ddocument.createElement('iframe');a.height=3D1;a.width=3D1;a.style.positi=
+on=3D'absolute';a.style.top=3D0;a.style.left=3D0;a.style.border=3D'none';a.=
+style.visibility=3D'hidden';document.body.appendChild(a);if('loading'!=3D=
+=3Ddocument.readyState)c();else if(window.addEventListener)document.addEven=
+tListener('DOMContentLoaded',c);else{var e=3Ddocument.onreadystatechange||f=
+unction(){};document.onreadystatechange=3Dfunction(b){e(b);'loading'!=3D=3D=
+document.readyState&&(document.onreadystatechange=3De,c())}}}})();</script>=
+<iframe height=3D"1" width=3D"1" style=3D"position: absolute; top: 0; left:=
+ 0; border-top-color: initial; border-top-style: none; border-top-width: in=
+itial; border-right-color: initial; border-right-style: none; border-right-=
+width: initial; border-bottom-color: initial; border-bottom-style: none; bo=
+rder-bottom-width: initial; border-left-color: initial; border-left-style: =
+none; border-left-width: initial; visibility: hidden;"></iframe></body></ht=
+ml>
+
+--boundary--
