@@ -212,3 +212,185 @@ Context Keys: trace_id, tenant, deadline_ts, idempotency_key, authz_scope.
 Error Tags: retryable: bool, sanitized: bool, mapped_to: HTTP_xxx.
 Events (nur lesen): policy.retry.started, policy.retry.gave_up, tx.begin/commit/rollback.
 Wenn du willst, mappe ich deine konkreten Pointcuts auf diese Layers und gebe dir eine konkrete Advice‑Kette plus Retry/Timeout‑Parameter je Kategorie (HTTP‑Handler, Repos, externe Services).
+Bietet Haskell im Gegensatz zu Python dafuer etwas an?
+Kurzfassung: Haskell hat kein „AspectJ für Haskell“, aber es bietet mehrere stärkere, typsichere Alternativen für Quer­schnitts­belange (Logging, Retry, Auth, Tx, Tracing), die oft besser sind als dynamisches AOP in Python.
+Was Haskell „statt AOP“ bietet
+1. Effekt-Systeme statt Advices (Pointcuts via Typen)
+mtl/ReaderT IO-Pattern, algebraische Effekte (polysemy, fused-effects, effectful):
+Querlogik (Logging, Metrics, Retry, Exceptions, Time) wird als Effekt modelliert.
+„Pointcut“ = jede Funktion, deren Signatur den Effekt verlangt.
+„Multi-Advice“ = Stapeln der Interpreter-Schichten in main.
+-- polysemy: Logging + Retry + Timeouts
+data Log m a where LogMsg :: Text -> Log m ()
+makeSem ''Log
+prog :: Members [Log, Embed IO] r => Sem r ()
+prog = logMsg "start" >> embed (threadDelay 10000) >> logMsg "done"
+main = do
+  runFinal
+  . embedToFinal @IO
+  . interpret (\case LogMsg t -> liftIO (putStrLn (toString t)))
+  $ prog
+Vorteil: typsichere Selektivität: Nur dort „gewebt“, wo der Effekt im Typ steht.
+2. Kontext-Propagation ohne Globalstate
+Reader/ReaderT, implicit-params, CallStack: Trace-ID, Tenant, Deadline sauber tragen.
+f :: (?traceId :: Text) => IO ()
+f = putStrLn ("trace=" <> toString ?traceId)
+3. Fehlerpfade als Typen/Klassen
+Checked-ähnlich via effect rows oder exceptions (MonadThrow/MonadCatch/MonadMask), retry-Package, timeout.
+Transaktionen als bracket/MonadMask-Policy; DB-Libs bieten withTransaction.
+STM = Software Transactional Memory für nebenläufige In-Memory-Tx (etwas, das Python nicht nativ hat).
+4. Middleware statt Weaving
+In WAI/Servant werden Cross-Cutting Concerns als Middleware-Kette ausgeführt (Rate-Limit, Auth, Logging, Tracing).
+Reihenfolge ist explizit, typsicher, leicht testbar.
+5. Automatisierung/„Makros“
+Template Haskell & DerivingVia: Boilerplate-Erzeugung (z. B. alle Public-Funktionen einer Modul-API mit Logging umhüllen).
+GHC-Plugins (Core-to-Core): echtes Weaving auf IR-Ebene ist möglich (schwergewichtig, selten nötig).
+6. Optimierung als Regel, nicht als Advice
+GHC RULES & Inlining steuern Performance-Aspekte deterministisch (kein semantisches AOP, aber „Aspekt“ Performance).
+Mapping zu AOP-Begriffen
+Join Points → Funktionen, deren Typ Effekte/Capabilities fordert (HasLog, MonadReader Ctx, Members [Log, Retry] r).
+Pointcuts → Typklassen-Constraints / Effekt-Listen; auch Servant-Routen/Middleware-Pipelines.
+Multi-Advice → Interpreter-Stack/Middleware-Kette (Reihenfolge explizit in main).
+Fehlerpfade → Typsystem + MonadCatch/MaskingState + retry/timeout-Policies.
+Mini-Vergleich zu Python-AOP
+Explizit vs. implizit: In Haskell ist Querlogik sichtbar im Typ → weniger „magische“ Überraschungen.
+Sicherheit: Compiler erzwingt, dass nur passende Funktionen „instrumentiert“ werden (kein versehentliches Weaving).
+Transaktionen: STM + withTransaction sind First-Class; Retries/Timeouts sind reine Kombinatoren.
+Wenn du „echtes“ AOP willst: geht mit TH oder GHC-Plugins, ist aber unüblich — idiomatisch sind Effekte/Middleware.
+Kurzes, realistisches Beispiel (Reader + Logging + Retry)
+{-# LANGUAGE TemplateHaskell, DataKinds, TypeOperators, FlexibleContexts #-}
+import Polysemy, Polysemy.Time, Polysemy.Error
+import Control.Retry (retrying, constantDelay)
+data Log m a where LogMsg :: String -> Log m ()
+makeSem ''Log
+data Ctx = Ctx { traceId :: String }
+work :: Members [Reader Ctx, Log, Embed IO, Error String] r => Sem r Int
+work = do
+  Ctx tid <- ask
+  logMsg ("enter trace=" <> tid)
+  x <- embed (pure 1)
+  when (x == 1) (throw "flaky")
+  pure x
+main = do
+  let runLog = interpret (\case LogMsg s -> putStrLn s)
+      runRetry m =
+        runM $ do
+          retrying (constantDelay 20000) (\_ e -> pure (either (const True) (const False) e))
+            (\_ -> runError m)
+  res <- runRetry
+       $ runReader (Ctx "abc-123")
+       $ runLog
+       $ work
+  print res
+Fazit:
+Haskell hat kein „AOP-Framework“ wie AspectJ, braucht es aber auch nicht: Mit Effekten, Typklassen, Middleware, bracket/STM und optional TH/Plugins bekommst du klarere Pointcuts, reproduzierbare Reihenfolgen und typsichere Fehlerpfade – meist die robustere Lösung als dynamisches Weaving.
+Ich dachte an Lenses Mit Traversals aus Programmiersprache  Haskell.
+Starker Gedanke. Optics (Lens/Prism/Traversal) in Haskell sind im Kern Pointcuts über Daten, nicht über Control-Flow. Damit bekommst du AOP-artige Selektivität, aber typsicher und gesetzbasiert (Linsen-Gesetze).
+Mapping: AOP ↔ Optics
+Join Points → die Foki einer Optik (alle Ziele, die ein Traversal' s a „sieht“).
+Pointcut → die Optik selbst (z. B. traversed . _Right . _2 . _Just).
+Multi-Advice → Funktions-/Effektkomposition, angewandt „über“ der Optik (z. B. over, traverseOf, zoom).
+Fehlerpfade → entstehen kontrolliert via Traversal mit Applicative/Monad (z. B. Either, Validation, State, Writer).
+Kurz: Optics erlauben dir, viele semantisch ähnliche Datenpunkte in einem Rutsch zu lesen/schreiben/validieren — deine „Join Points“ sind die Ziele des Traversals.
+---
+Minimal-API (Erinnerung)
+Lens Lens' s a – genau ein Ziel (total).
+Prism Prism' s a – Alternative in einer Summe (optional).
+Traversal Traversal' s a – 0..n Ziele (Bulk-Pointcut).
+Kernfunktionen: view, set, over, toListOf, anyOf, allOf, traverseOf, itraverseOf (mit Indizes), folded, each, traversed.
+---
+Beispiel 1 – „Viele Join Points“ über verschachtelte Strukturen
+Ziel: Alle Double-Werte in einer tiefen Struktur clampen und loggen.
+{-# LANGUAGE TemplateHaskell #-}
+import Control.Lens
+import Control.Monad.Writer
+data Leaf   = Leaf { _val :: Double } deriving Show
+data Node a = Node { _name :: String, _children :: [a] } deriving Show
+makeLenses ''Leaf
+makeLenses ''Node
+-- Pointcut: alle Doubles, egal wo sie liegen (Node->children beliebig tief, dann Leaf->val)
+numericCut :: Traversal' (Node (Either Leaf (Node (Either Leaf (Node Leaf))))) Double
+numericCut = children . traversed . _Left . val
+         <>   children . traversed . _Right . children . traversed . _Left . val
+-- Multi-Advice: clamp + logging
+clampLog :: Double -> Writer [String] Double
+clampLog x = tell ["seen:" ++ show x] >> pure (max 0 (min 1 x))
+run :: Node (Either Leaf (Node (Either Leaf (Node Leaf)))) -> (Node (Either Leaf (Node (Either Leaf (Node Leaf)))), [String])
+run t = runWriter (traverseOf numericCut clampLog t)
+Pointcut = numericCut: wählt alle relevanten Zahlen (Join Points).
+Advice = clampLog: side-effectful via Writer.
+Fehlerpfade: hier keiner; mit Either/Validation könntest du Validierungsfehler akkumulieren.
+---
+Beispiel 2 – Effekthafte Traversals als „Fehlerpfade mit Policy“
+Ziel: Validierung aller E-Mails in JSON, Fehler sammeln; korrekte Mails maskieren.
+import Control.Lens
+import Control.Applicative (liftA2)
+import Data.Aeson
+import Data.Aeson.Lens
+import qualified Data.Text as T
+import Data.Semigroup (Semigroup(..))
+newtype Errors = Errors [T.Text] deriving (Show)
+instance Semigroup Errors where (<>) (Errors a) (Errors b) = Errors (a<>b)
+instance Monoid    Errors where mempty = Errors []
+validateEmail :: T.Text -> Either Errors T.Text
+validateEmail t
+  | "@" `T.isInfixOf` t = Right t
+  | otherwise           = Left (Errors ["bad email: " <> t])
+mask :: T.Text -> T.Text
+mask t = let (u,d) = T.breakOn "@" t in T.take 2 u <> "***" <> d
+-- Pointcut: alle JSON-Werte unter key "email" die Strings sind
+emails :: Traversal' Value T.Text
+emails = key "email" . _String
+-- Multi-Advice: (1) validate (2) then mask
+process :: Value -> Either Errors Value
+process = traverseOf emails (\t -> mask <$> validateEmail t)
+Traversal als Pointcut: emails findet alle Mails.
+Fehlerpfade: Either Errors akkumuliert via Applicative bei Traversal mehrere Fehler deterministisch.
+Reihenfolge: Validation vor Maskierung – explizit in der Funktion.
+---
+Beispiel 3 – „Pointcut-Makro“: semantische Selektoren definieren
+-- Alle Felder, deren Name „id“ enthält, über generics:
+import Data.Generics.Product (field')
+-- generic-lens: field' @"userId" :: Lens' s a
+-- Pointcut-Makro: „alle öffentlichen Felder mit ‚Id‘ im Namen“
+-- (mit optics/generic-lens würdest du mehrere Lenses kombinieren)
+ids :: Traversal' s Int
+ids = field' @"userId" <> field' @"orderId" <> field' @"sessionId"
+normalizeIds :: s -> s
+normalizeIds = over ids abs
+---
+Beispiel 4 – Reihenfolge/„Multi-Advice“ als klare Pipeline
+-- Advice-Schichten:
+sanitize   :: T.Text -> T.Text
+validate   :: T.Text -> Either String T.Text
+canonical  :: T.Text -> T.Text
+-- Multi-Advice über dem Pointcut:
+runAll :: Value -> Either String Value
+runAll = traverseOf emails (Right . canonical . sanitize <=< validate)
+---
+Beispiel 5 – Traversal + State/Zoom (kontextuelle Policies)
+import Control.Monad.State
+-- Zähle, wie viele Ziele verändert wurden:
+countChanges :: (Eq a) => Traversal' s a -> (a -> a) -> s -> (s, Int)
+countChanges cut f s = runState (traverseOf cut step s) 0
+  where step a = do
+          let a' = f a
+          when (a' /= a) (modify (+1))
+          pure a'
+---
+Warum Optics hier oft überlegen sind
+Explizite Selektivität im Typ (keine „magischen“ Hooks).
+Gesetzestreue (Lens/Traversal-Gesetze) → Vorhersagbarkeit.
+Komponierbarkeit ((.), <>, beside, both, each, plate) → mächtige Pointcuts.
+Effekt-Neutralität: Du wählst den Effekt (State, Writer, Either, Validation, IO) beim Anwenden, nicht beim Definieren der Optik.
+Testbarkeit: toListOf cut s zeigt dir die „getroffenen Join Points“ vorab.
+---
+Quick-Cheatsheet (was du in der Praxis brauchst)
+Viele Ziele: traversed, each, folded, plate (uniplate-artig).
+Selektoren: filtered, _Just/_Right, _2, ix, at, key, members.
+Kombinatoren: (.) (Komposition), (<>) (Alternative Ziele), beside, both.
+Anwenden: over, set, view, toListOf, anyOf/allOf, traverseOf, itraverseOf.
+---
+Merksatz
+> Traversal ist dein Pointcut über Daten; over/traverseOf ist dein Advice; der gewählte Applicative/Monad bestimmt die Fehlerpfade.
+Wenn du willst, skizziere ich dir für deine Datentypen ein konkretes Traversal-Set (Pointcuts) inkl. Validierungs-/Maskierungs-Pipeline (Multi-Advice) mit Either (NonEmpty Err) als Fehlerpfad.
