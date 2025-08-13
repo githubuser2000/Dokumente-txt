@@ -1,0 +1,101 @@
+svc.slow_add   = logger(timing(svc.slow_add))  warum wird svc.slow_add nicht vollstaendig ueberschrieben?
+Doch – in Python wird svc.slow_add bei
+svc.slow_add = logger(timing(svc.slow_add))
+tatsächlich vollständig überschrieben – der alte Methodenobjekt-Wrapper wird durch einen neuen Funktions-/Callable-Wrapper ersetzt.
+Es gibt danach keinen direkten Verweis mehr auf die ursprüngliche Funktion in svc – außer, du hast sie vorher gesichert.
+---
+Warum es trotzdem „wie vorher“ aufrufbar bleibt
+Das liegt an zwei Punkten:
+1. Methodenbindung in Python
+In einer Klasse wie:
+class Service:
+    def slow_add(self, a, b): ...
+wird slow_add eigentlich in Service.__dict__ gespeichert, nicht in svc.__dict__.
+Wenn du also vor dem Wrapping machst:
+s2 = Service()
+dann benutzt s2.slow_add noch das ursprüngliche Funktionsobjekt aus Service.__dict__.
+Erst durch das direkte Zuweisen an svc.slow_add überschreibst du nur das Bound-Method-Attribut dieses einen Objekts, nicht die Implementierung der Klasse.
+2. Du wrappst das gebundene Method-Objekt
+svc.slow_add ist nicht die rohe Funktion, sondern ein bound method (<bound method Service.slow_add of <Service...>>).
+Wenn du den dekorierst, bekommst du einen Callable, der intern self schon „fest eingebaut“ hat.
+Deshalb gilt:
+svc.slow_add(...) ruft den Wrapper mit festem self=svc auf.
+Andere Instanzen (Service()) sind davon nicht betroffen.
+---
+Wenn du die Klassenmethode selbst überschreiben willst
+Dann musst du an Service.slow_add ran, nicht an svc.slow_add:
+Service.slow_add = logger(timing(Service.slow_add))
+Das wirkt dann auf alle Instanzen.
+---
+Vergleich
+s1 = Service()
+s2 = Service()
+# nur s1 wrappen
+s1.slow_add = logger(timing(s1.slow_add))
+# s1 ist gewrappt, s2 nicht
+# alle wrappen
+Service.slow_add = logger(timing(Service.slow_add))
+# jetzt sind s1, s2 und alle künftigen Instanzen gewrappt
+---
+Wenn du willst, kann ich dir den Unterschied mit einer kleinen Speicher- und id()-Analyse zeigen, wie svc.slow_add und Service.slow_add sich intern unterscheiden – das macht deutlich, warum die Überschreibung bei dir lokal bleibt.
+Was sind Pointcut Makros? Multi Advice? Fehlerpfade?
+Ich erkläre dir die drei Begriffe konkret in Bezug auf AOP und besonders so, wie wir sie eben bei Python/aspectlib gesehen haben.
+---
+1. Pointcut-Makros
+Pointcut = eine Regel, die bestimmt, welche Join Points (z. B. Methoden, Funktionsaufrufe, Objektkonstruktoren) ein Aspekt betrifft.
+Makro = hier kein C- oder Compiler-Makro, sondern einfach eine wiederverwendbare Selektionsfunktion.
+Pointcut-Makro = ein Codebaustein, der diese Selektionslogik kapselt, sodass du nicht jedes Mal alle Filterbedingungen manuell schreiben musst.
+Beispiel:
+def is_public_method(name, attr):
+    return not name.startswith("_") and callable(attr)
+def weave_class(cls, *aspects, predicate=is_public_method):
+    for name, attr in inspect.getmembers(cls):
+        if predicate(name, attr):
+            for asp in reversed(aspects):
+                attr = asp(attr)
+            setattr(cls, name, attr)
+Hier ist is_public_method ein Pointcut-Makro:
+Es definiert einmal zentral, wie du "öffentliche Methoden" auswählst, und du kannst das bei jeder Klasse wiederverwenden.
+---
+2. Multi-Advice
+Advice = der eigentliche Zusatzcode, den ein Aspekt um den Originalcode legt (z. B. Logging vor/nach Funktionsaufruf).
+Multi-Advice = mehrere Advice-Schichten übereinander – die Reihenfolge zählt.
+Manchmal spricht man auch von Advice Stacking oder Chaining.
+Beispiel:
+Service.slow_add = logger(timing(retry(Service.slow_add)))
+Innerster Advice: retry – kümmert sich um Wiederholungen bei Fehlern.
+Darüber: timing – misst die Dauer.
+Äußerster Advice: logger – loggt Start, Ende, Fehler.
+Die Aufrufreihenfolge ist wie bei Zwiebeln schälen:
+Von außen nach innen beim Aufruf,
+von innen nach außen bei return.
+---
+3. Fehlerpfade
+In AOP meint man damit den Verlauf des Programms, wenn eine Exception oder ein Fehler auftritt, während ein Advice oder der Originalcode läuft.
+Gute Aspekt-Implementierungen fangen Fehler gezielt ab, loggen oder behandeln sie, und lassen dann kontrolliert weiterlaufen (oder brechen ab).
+Jeder Advice kann eigene Error-Handling-Strategien haben:
+Fehler durchreichen
+Fehler umwandeln (z. B. in eine andere Exception)
+Fehler unterdrücken und Defaultwert zurückgeben
+Retry starten
+Transaktion zurückrollen
+Beispiel Fehlerpfad in einem Advice:
+@aspectlib.Aspect
+def error_logger(call):
+    try:
+        result = yield call.proceed()
+        yield aspectlib.Return(result)
+    except Exception as e:
+        log_json(logging.ERROR, event="error", func=call.name, detail=str(e))
+        raise  # Fehler bewusst weiterwerfen
+Hier wird der Fehlerpfad protokolliert, aber nicht unterdrückt.
+---
+💡 Zusammenhang der drei Begriffe:
+Pointcut-Makros: Bestimmen wo im Code die Aspekte wirken.
+Multi-Advice: Bestimmt wie viele Schichten Zusatzlogik wirken – und in welcher Reihenfolge.
+Fehlerpfade: Beschreiben, was passiert, wenn in einer dieser Schichten oder im Originalcode etwas schiefgeht.
+---
+Falls du willst, kann ich dir eine einzige Python-Klasse zeigen, bei der alle drei Konzepte gleichzeitig aktiv sind – also:
+Pointcut-Makro wählt alle öffentlichen Methoden,
+mehrere Advice-Schichten sind übereinander gelegt,
+und Fehlerpfade werden bewusst ausgelöst und behandelt.
