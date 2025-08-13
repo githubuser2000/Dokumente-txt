@@ -1,0 +1,92 @@
+Kurz & knackig: Was du mit den Lenses/Traversals (pyoptics.py) praktisch tun kannst — jeweils mit Mini-Snippets.
+
+1) Tief verschachtelte Werte transformieren (ohne Boilerplate)
+
+users  = lens_key("users")
+scores = Traversal(lambda us, f: [{**u, "score": f(u["score"])} for u in us])
+bumped = users.compose(scores).over(data, lambda s: s + 10)
+
+2) Selektiv ändern (Pointcut als Filter)
+
+low = filtered(users.compose(scores), lambda s: s < 30)
+data2 = low.over(data, lambda _: 30)
+
+3) Validierung ohne Partial-Updates (alles-oder-nichts)
+
+def nonneg(x): return Ok(x) if x >= 0 else Err(f"neg: {x}")
+res = users.compose(scores).over_result(data, nonneg)  # -> Ok(updated) | Err([..])
+
+4) PII maskieren (nur vorhandene Felder via Prism)
+
+email_pr = prism_key_optional("email")
+emails   = users.compose(Traversal(lambda us, f: [f(u) for u in us])).compose(email_pr)
+masked   = emails.over({"users":[{"email":"a@b"},{"name":"x"}]}, lambda e: "***@" + e.split("@")[1])
+
+5) Typselektiv arbeiten (nur bestimmte Typen anpacken)
+
+only_ints = prism_isinstance(int)  # 0..1 Fokus je Stelle
+values = values_dict().compose(only_ints)
+cfg    = {"a":1, "b":"x", "c":2}
+cfg2   = values.over(cfg, lambda i: i*10)  # nur ints werden verändert
+
+6) Listen, Dicts, Tuples in einem Rutsch
+
+nums   = each_list()
+lst2   = nums.over([1,2,3], lambda x: x*x)
+
+vals   = values_dict()
+d2     = vals.over({"x":1,"y":2}, lambda v: v+1)
+
+both_xy = both(("L","R"))
+t2      = both_xy.over(("a","b"), str.upper)  # -> ("A","B")
+
+7) Positionsbasiert fokussieren (Index-Lens)
+
+second = index_lens(1)            # Lens auf Listenindex 1
+lst3   = second.over([10,20,30], lambda x: x+5)  # -> [10,25,30]
+
+8) „Bulk-Replace“ nach berechneter Pipeline
+
+scores_cut = users.compose(scores)
+vals       = [s*2 for s in scores_cut.to_list(data)]
+data3      = scores_cut.replace_from_iter(data, vals)
+
+9) Querying/Auditing: alle Ziele einsammeln
+
+all_scores = users.compose(scores).to_list(data)   # -> [42, 17]
+
+10) Konfig-Overlays anwenden (wertweise Merges)
+
+apply_int_over = values_dict().compose(prism_isinstance(int))
+base={"retries":1,"mode":"safe"}; overlay={"retries":3}
+merged = apply_int_over.over(base|overlay, lambda v: v)  # oder eigene Merge-Funktion
+
+11) Regel-Pipelines (Multi-Advice über denselben Pointcut)
+
+cut = users.compose(scores)
+def clamp(x): return max(0, min(100, x))
+def norm (x): return int(round(x))
+data4 = cut.over(data, clamp)
+data5 = cut.over(data4, norm)
+
+12) Zählende/State-Operationen (effects light)
+
+changed = 0
+def step(x):
+    global changed
+    y = x+1
+    changed += (y != x)
+    return y
+data6 = users.compose(scores).over(data, step)
+# changed enthält Anzahl veränderter Ziele
+
+Wenn du willst, baue ich noch:
+
+indizierte Traversals (itraverse) für Position/Key-abhängige Regeln,
+
+JSON-Optics à la key, members, valuesDeep,
+
+Zustands-DSL (State-Monade-light) für atomare Updates mit Zähler/History.
+
+
+
