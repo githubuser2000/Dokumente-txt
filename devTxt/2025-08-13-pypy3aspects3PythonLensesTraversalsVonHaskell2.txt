@@ -1,0 +1,251 @@
+from future import annotations from typing import Any, Callable, Iterable, List, Optional, Tuple, TypeVar, Generic
+
+A = TypeVar("A") B = TypeVar("B") S = TypeVar("S") T = TypeVar("T")
+
+-----------------------------
+
+Result type (Either-like)
+
+-----------------------------
+
+class Result(Generic[A]): slots = ("_ok", "_val")
+
+def __init__(self, ok: bool, val: Any):
+    self._ok = ok
+    self._val = val
+
+@property
+def ok(self) -> bool:
+    return self._ok
+
+@property
+def value(self) -> A:
+    if not self._ok:
+        raise ValueError("Tried to get value from Err")
+    return self._val  # type: ignore
+
+@property
+def errors(self) -> List[Any]:
+    if self._ok:
+        raise ValueError("Tried to get errors from Ok")
+    return self._val  # type: ignore
+
+def map(self, f: Callable[[A], B]) -> "Result[B]":
+    if self._ok:
+        return Ok(f(self._val))
+    return self  # type: ignore
+
+def bind(self, f: Callable[[A], "Result[B]"]) -> "Result[B]":
+    if self._ok:
+        return f(self._val)
+    return self  # type: ignore
+
+@staticmethod
+def collect(rs: Iterable["Result[A]"]) -> "Result[List[A]]":
+    values: List[A] = []
+    errs: List[Any] = []
+    for r in rs:
+        if r.ok:
+            values.append(r.value)
+        else:
+            errs.extend(r.errors)
+    return Ok(values) if not errs else Err(errs)
+
+def Ok(x: A) -> Result[A]: return Result(True, x)
+
+def Err(errs: Iterable[Any] | Any) -> Result[Any]: if isinstance(errs, list): return Result(False, errs) return Result(False, [errs])
+
+---------------------------------
+
+Core Optics: Lens, Prism, Traversal
+
+---------------------------------
+
+class Lens(Generic[S, A]): """A total focus on exactly one value inside S."""
+
+__slots__ = ("_get", "_set")
+
+def __init__(self, getter: Callable[[S], A], setter: Callable[[S, A], S]):
+    self._get = getter
+    self._set = setter
+
+# basic ops
+def get(self, s: S) -> A:
+    return self._get(s)
+
+def set(self, s: S, a: A) -> S:
+    return self._set(s, a)
+
+def over(self, s: S, f: Callable[[A], A]) -> S:
+    return self.set(s, f(self.get(s)))
+
+# composition
+def compose(self, other: Any) -> Any:
+    if isinstance(other, Lens):
+        # Lens . Lens -> Lens
+        return Lens(
+            getter=lambda s: other.get(self.get(s)),
+            setter=lambda s, v: self.set(s, other.set(self.get(s), v)),
+        )
+    elif isinstance(other, Traversal):
+        # Lens . Traversal -> Traversal
+        return Traversal(lambda s, f: self.over(s, lambda x: other.over(x, f)))
+    elif isinstance(other, Prism):
+        # Lens . Prism -> Traversal (0..1 values under the lens)
+        return Traversal(lambda s, f: self.over(s, lambda x: other.over(x, f)))
+    else:
+        raise TypeError("Unsupported composition with Lens")
+
+class Prism(Generic[S, A]): """A partial focus: matches 0 or 1 value inside S. match(s) -> Optional[A] put(s, a) -> S   (replace when present) review(a) -> S   (build from a)  -- optional in many uses """
+
+__slots__ = ("_match", "_put", "_review")
+
+def __init__(
+    self,
+    match: Callable[[S], Optional[A]],
+    put: Callable[[S, A], S],
+    review: Optional[Callable[[A], S]] = None,
+):
+    self._match = match
+    self._put = put
+    self._review = review
+
+def match(self, s: S) -> Optional[A]:
+    return self._match(s)
+
+def over(self, s: S, f: Callable[[A], A]) -> S:
+    m = self.match(s)
+    if m is None:
+        return s
+    return self._put(s, f(m))
+
+def set(self, s: S, a: A) -> S:
+    return self.over(s, lambda _: a)
+
+def review(self, a: A) -> S:
+    if self._review is None:
+        raise TypeError("This prism has no review() defined")
+    return self._review(a)
+
+def compose(self, other: Any) -> Any:
+    # Prism . Lens -> Traversal
+    if isinstance(other, Lens):
+        return Traversal(lambda s, f: self.over(s, lambda x: other.over(x, f)))
+    # Prism . Prism/Traversal -> Traversal
+    if isinstance(other, (Prism, Traversal)):
+        return Traversal(lambda s, f: self.over(s, lambda x: other.over(x, f)))
+    raise TypeError("Unsupported composition with Prism")
+
+class Traversal(Generic[S, A]): """A bulk focus on 0..n values inside S. Implemented by a single mapping function: over(s, f) -> S """
+
+__slots__ = ("_over",)
+
+def __init__(self, over_fn: Callable[[S, Callable[[A], A]], S]):
+    self._over = over_fn
+
+def over(self, s: S, f: Callable[[A], A]) -> S:
+    return self._over(s, f)
+
+# utilities derived from over
+def to_list(self, s: S) -> List[A]:
+    acc: List[A] = []
+    def collect(a: A) -> A:
+        acc.append(a)
+        return a
+    self.over(s, collect)
+    return acc
+
+def replace_from_iter(self, s: S, it: Iterable[A]) -> S:
+    iterator = iter(it)
+    return self.over(s, lambda _a: next(iterator))
+
+def over_result(self, s: S, f: Callable[[A], Result[A]]) -> Result[S]:
+    vals = self.to_list(s)
+    rs: List[Result[A]] = [f(a) for a in vals]
+    coll = Result.collect(rs)
+    if not coll.ok:
+        return Err(coll.errors)
+    return Ok(self.replace_from_iter(s, coll.value))
+
+# composition
+def compose(self, other: Any) -> "Traversal":
+    # Traversal . (Lens|Prism|Traversal) -> Traversal
+    if isinstance(other, (Lens, Prism, Traversal)):
+        return Traversal(lambda s, f: self.over(s, lambda x: other.over(x, f)))
+    raise TypeError("Unsupported composition with Traversal")
+
+---------------------------------
+
+Optic builders for common Python types
+
+---------------------------------
+
+def lens_key(key: Any) -> Lens[dict, Any]: def get(d: dict) -> Any: return d[key] def set_(d: dict, v: Any) -> dict: return {**d, key: v} return Lens(get, set_)
+
+def lens_attr(name: str) -> Lens[Any, Any]: def get(o: Any) -> Any: return getattr(o, name) def set_(o: Any, v: Any) -> Any: # create a shallow copy when possible if hasattr(o, "dict"): new = o.class.new(o.class) new.dict = {**o.dict, name: v} return new # fallback: mutate (last resort) setattr(o, name, v) return o return Lens(get, set_)
+
+def index_lens(i: int) -> Lens[list, Any]: def get(xs: list) -> Any: return xs[i] def set_(xs: list, v: Any) -> list: ys = list(xs) ys[i] = v return ys return Lens(get, set_)
+
+def each_list() -> Traversal[list, A]: def over(xs: list, f: Callable[[A], A]) -> list: return [f(x) for x in xs] return Traversal(over)
+
+def values_dict() -> Traversal[dict, A]: def over(d: dict, f: Callable[[A], A]) -> dict: return {k: f(v) for k, v in d.items()} return Traversal(over)
+
+def filtered(base: Traversal[S, A], pred: Callable[[A], bool]) -> Traversal[S, A]: def over(s: S, f: Callable[[A], A]) -> S: return base.over(s, lambda a: f(a) if pred(a) else a) return Traversal(over)
+
+def prism_key_optional(key: Any) -> Prism[dict, Any]: def match(d: dict) -> Optional[Any]: return d.get(key, None) def put(d: dict, v: Any) -> dict: if key in d: return {**d, key: v} return d # review could build {key: v}, but we omit to avoid surprising merges return Prism(match, put, review=None)
+
+def prism_isinstance(cls: type) -> Prism[Any, Any]: def match(x: Any) -> Optional[Any]: return x if isinstance(x, cls) else None def put(_s: Any, a: Any) -> Any: # when matched, replacement is the new value return a return Prism(match, put)
+
+---------------------------------
+
+Examples / Self-test
+
+---------------------------------
+
+if name == "main": data = { "users": [ {"name": "Alice", "score": 42}, {"name": "Bob",   "score": 17}, ] }
+
+users = lens_key("users")                  # Lens dict -> list
+scores = Traversal(
+    # Traversal over a list of dicts focusing all their "score" fields
+    lambda us, f: [
+        {**u, "score": f(u["score"]) if "score" in u else u.get("score")}
+        for u in us
+    ]
+)
+
+# Compose: scores inside data
+scores_in_data = users.compose(scores)
+
+# 1) over: add +10 to every score
+bumped = scores_in_data.over(data, lambda s: s + 10)
+assert bumped["users"][0]["score"] == 52 and bumped["users"][1]["score"] == 27
+
+# 2) filtered traversal: only scores < 30 -> set to 30
+only_low = filtered(scores_in_data, lambda s: s < 30)
+fixed = only_low.over(data, lambda s: 30)
+assert fixed["users"][0]["score"] == 42 and fixed["users"][1]["score"] == 30
+
+# 3) Validation (no partial updates): all scores must be >= 0
+def must_nonneg(x: int) -> Result[int]:
+    return Ok(x) if x >= 0 else Err(f"neg: {x}")
+
+res_ok = scores_in_data.over_result(data, must_nonneg)
+assert res_ok.ok
+
+bad = {"users": [{"name": "Eve", "score": -5}]}
+res_bad = scores_in_data.over_result(bad, must_nonneg)
+assert not res_bad.ok and "neg: -5" in res_bad.errors
+
+# 4) Prism: optional key "email" in dicts under users
+emails_pr = Prism(
+    match=lambda u: u.get("email"),
+    put=lambda u, v: {**u, "email": v} if "email" in u else u,
+)
+emails_in_users = users.compose(Traversal(lambda us, f: [f(u) for u in us])).compose(emails_pr)
+updated = emails_in_users.over({"users": [{"email": "a@b"}, {"name": "x"}]}, lambda e: e.upper())
+assert updated == {"users": [{"email": "A@B"}, {"name": "x"}]}
+
+print("All checks passed. Example result:")
+print(bumped)
+
+

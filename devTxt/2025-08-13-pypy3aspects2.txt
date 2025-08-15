@@ -1,0 +1,501 @@
+svc.slow_add   = logger(timing(svc.slow_add))  warum wird svc.slow_add nicht vollstaendig ueberschrieben?
+Doch – in Python wird svc.slow_add bei
+svc.slow_add = logger(timing(svc.slow_add))
+tatsächlich vollständig überschrieben – der alte Methodenobjekt-Wrapper wird durch einen neuen Funktions-/Callable-Wrapper ersetzt.
+Es gibt danach keinen direkten Verweis mehr auf die ursprüngliche Funktion in svc – außer, du hast sie vorher gesichert.
+---
+Warum es trotzdem „wie vorher“ aufrufbar bleibt
+Das liegt an zwei Punkten:
+1. Methodenbindung in Python
+In einer Klasse wie:
+class Service:
+    def slow_add(self, a, b): ...
+wird slow_add eigentlich in Service.__dict__ gespeichert, nicht in svc.__dict__.
+Wenn du also vor dem Wrapping machst:
+s2 = Service()
+dann benutzt s2.slow_add noch das ursprüngliche Funktionsobjekt aus Service.__dict__.
+Erst durch das direkte Zuweisen an svc.slow_add überschreibst du nur das Bound-Method-Attribut dieses einen Objekts, nicht die Implementierung der Klasse.
+2. Du wrappst das gebundene Method-Objekt
+svc.slow_add ist nicht die rohe Funktion, sondern ein bound method (<bound method Service.slow_add of <Service...>>).
+Wenn du den dekorierst, bekommst du einen Callable, der intern self schon „fest eingebaut“ hat.
+Deshalb gilt:
+svc.slow_add(...) ruft den Wrapper mit festem self=svc auf.
+Andere Instanzen (Service()) sind davon nicht betroffen.
+---
+Wenn du die Klassenmethode selbst überschreiben willst
+Dann musst du an Service.slow_add ran, nicht an svc.slow_add:
+Service.slow_add = logger(timing(Service.slow_add))
+Das wirkt dann auf alle Instanzen.
+---
+Vergleich
+s1 = Service()
+s2 = Service()
+# nur s1 wrappen
+s1.slow_add = logger(timing(s1.slow_add))
+# s1 ist gewrappt, s2 nicht
+# alle wrappen
+Service.slow_add = logger(timing(Service.slow_add))
+# jetzt sind s1, s2 und alle künftigen Instanzen gewrappt
+---
+Wenn du willst, kann ich dir den Unterschied mit einer kleinen Speicher- und id()-Analyse zeigen, wie svc.slow_add und Service.slow_add sich intern unterscheiden – das macht deutlich, warum die Überschreibung bei dir lokal bleibt.
+Was sind Pointcut Makros? Multi Advice? Fehlerpfade?
+Ich erkläre dir die drei Begriffe konkret in Bezug auf AOP und besonders so, wie wir sie eben bei Python/aspectlib gesehen haben.
+---
+1. Pointcut-Makros
+Pointcut = eine Regel, die bestimmt, welche Join Points (z. B. Methoden, Funktionsaufrufe, Objektkonstruktoren) ein Aspekt betrifft.
+Makro = hier kein C- oder Compiler-Makro, sondern einfach eine wiederverwendbare Selektionsfunktion.
+Pointcut-Makro = ein Codebaustein, der diese Selektionslogik kapselt, sodass du nicht jedes Mal alle Filterbedingungen manuell schreiben musst.
+Beispiel:
+def is_public_method(name, attr):
+    return not name.startswith("_") and callable(attr)
+def weave_class(cls, *aspects, predicate=is_public_method):
+    for name, attr in inspect.getmembers(cls):
+        if predicate(name, attr):
+            for asp in reversed(aspects):
+                attr = asp(attr)
+            setattr(cls, name, attr)
+Hier ist is_public_method ein Pointcut-Makro:
+Es definiert einmal zentral, wie du "öffentliche Methoden" auswählst, und du kannst das bei jeder Klasse wiederverwenden.
+---
+2. Multi-Advice
+Advice = der eigentliche Zusatzcode, den ein Aspekt um den Originalcode legt (z. B. Logging vor/nach Funktionsaufruf).
+Multi-Advice = mehrere Advice-Schichten übereinander – die Reihenfolge zählt.
+Manchmal spricht man auch von Advice Stacking oder Chaining.
+Beispiel:
+Service.slow_add = logger(timing(retry(Service.slow_add)))
+Innerster Advice: retry – kümmert sich um Wiederholungen bei Fehlern.
+Darüber: timing – misst die Dauer.
+Äußerster Advice: logger – loggt Start, Ende, Fehler.
+Die Aufrufreihenfolge ist wie bei Zwiebeln schälen:
+Von außen nach innen beim Aufruf,
+von innen nach außen bei return.
+---
+3. Fehlerpfade
+In AOP meint man damit den Verlauf des Programms, wenn eine Exception oder ein Fehler auftritt, während ein Advice oder der Originalcode läuft.
+Gute Aspekt-Implementierungen fangen Fehler gezielt ab, loggen oder behandeln sie, und lassen dann kontrolliert weiterlaufen (oder brechen ab).
+Jeder Advice kann eigene Error-Handling-Strategien haben:
+Fehler durchreichen
+Fehler umwandeln (z. B. in eine andere Exception)
+Fehler unterdrücken und Defaultwert zurückgeben
+Retry starten
+Transaktion zurückrollen
+Beispiel Fehlerpfad in einem Advice:
+@aspectlib.Aspect
+def error_logger(call):
+    try:
+        result = yield call.proceed()
+        yield aspectlib.Return(result)
+    except Exception as e:
+        log_json(logging.ERROR, event="error", func=call.name, detail=str(e))
+        raise  # Fehler bewusst weiterwerfen
+Hier wird der Fehlerpfad protokolliert, aber nicht unterdrückt.
+---
+💡 Zusammenhang der drei Begriffe:
+Pointcut-Makros: Bestimmen wo im Code die Aspekte wirken.
+Multi-Advice: Bestimmt wie viele Schichten Zusatzlogik wirken – und in welcher Reihenfolge.
+Fehlerpfade: Beschreiben, was passiert, wenn in einer dieser Schichten oder im Originalcode etwas schiefgeht.
+---
+Falls du willst, kann ich dir eine einzige Python-Klasse zeigen, bei der alle drei Konzepte gleichzeitig aktiv sind – also:
+Pointcut-Makro wählt alle öffentlichen Methoden,
+mehrere Advice-Schichten sind übereinander gelegt,
+und Fehlerpfade werden bewusst ausgelöst und behandelt.
+wann machen viele joint points Sinn, bei welcher Aehnlichkeit der selben Sache?
+Kurz & präzise – wann viele Join Points sinnvoll sind und welche „Ähnlichkeit“ zählt:
+Wann viele Join Points Sinn machen
+1. Querfunktional & weit gestreut
+– Wenn dieselbe Nicht-Fachlogik an vielen Stellen nötig ist: AuthZ/AuthN, Rate-Limit, Idempotenz, Tracing, Metriken, Caching, Retries, Transaktionen, Input-/Output-Validation.
+Daumenregeln:
+Betrifft ≥ 3 Subsysteme oder ≥ 5 Methoden je Subsystem.
+Änderungen an der Querlogik kommen ≥ 1×/Quartal.
+Ohne AOP müsstest du Copy-Paste oder Boilerplate einbauen.
+2. Klare, wiedererkennbare Schnittstellen
+– Z. B. „alle öffentlichen Service-Methoden“, „alle Repo-Methoden, die DB anfassen“, „alle HTTP-Handler“. Hier ist Weaving robust und bricht nicht bei Kleinigkeiten.
+3. Einheitliche Fehler-Semantik
+– Wenn bei gleicher Fehlerklasse (Timeout, 5xx, Deadlock) überall dieselbe Policy gilt (Retry, Circuit-Breaker, Rollback, Mapping der Exception). Dann lohnen viele Join Points, weil du Fehlerpfade zentral steuerst.
+4. Lebenszyklus-Hooks
+– Konstruktor/Destructor, Request-Begin/-Ende, Task-Start/-Ende. Viele Join Points entlang desselben Lebenszyklus sind sinnvoll, wenn du Setup/Teardown/Scope (z. B. Trace-ID, Tx, Lock) konsistent halten willst.
+5. Nicht-funktionale Ziele mit messbarem Nutzen
+– Du brauchst global Sicht (Latenz-Buckets, Fehlerquoten, Heatmaps). Viele Join Points geben dir deckende Telemetrie ohne Businesscode zu verschmutzen.
+Welche „Ähnlichkeit“ soll gegeben sein?
+Denke in Semantik, nicht in Syntax:
+Gleiche Absicht (Intent): „geschützte Operation“, „externen Dienst callen“, „zustandsverändernd“.
+Gleiche Invarianten/Policies: „muss transaktional“, „muss idempotent“, „muss auditierbar“.
+Gleiches Protokoll/Schicht: „HTTP-Handler“, „SQL-Repo“, „Message-Consumer“.
+Gleiche Fehlerklassen: „netzwerkbedingt retrybar“, „validierungsbedingt nicht-retrybar“.
+Gleiches Timing/Lifecycle: „vor-/nach-Aufruf“, „bei Exception“, „bei Commit“.
+> Wenn die Intent-/Policy-Ähnlichkeit hoch ist (≥ 80 %), rechtfertigt das viele Join Points.
+Wenn die Ähnlichkeit nur oberflächlich ist (gleicher Name/Signatur, aber unterschiedliche Semantik), → lieber lassen oder feiner selektieren.
+Warnzeichen (lieber nicht viele Join Points)
+Order-Sensitivity der Advices (Logger→Retry→Tx) ist fragil und wird oft pro Methode anders gebraucht → droht Coupling.
+Heterogene Business-Semantik hinter gleich benannten Methoden → Pointcut trifft Falsche.
+Punktuelle Spezialfälle dominieren (viele Ausnahmen/Opt-outs) → besser lokale Dekoratoren oder explizite Aufrufe.
+Debugbarkeit leidet: Devs verstehen nicht mehr, woher Verhalten kommt → dokumentiere Pointcuts und halte sie grob-granular.
+Praktische Heuristiken (Python)
+Coarse-grained Pointcuts bevorzugen: klasse-/modulweit statt dutzende Einzelmethoden.
+Explizite Marker statt Namensmagie: z. B. Marker-Baseclass TransactionalService, Decorator @external_io als Selektor.
+Fail-Closed: Wenn Advice nicht appliziert wird, lieber sicher scheitern (z. B. Auth/Zwang).
+Testen per Contract: Property-/Contract-Tests für „jede gematchte Methode erfüllt Policy X“.
+Mini-Beispiele für robuste Ähnlichkeit
+Alle externen Calls (@external_io) → Retry + Timeout + CircuitBreaker + Metrics.
+Alle mutierenden Repos (class UserRepo(RepoBase)) → Tx + Audit + PermissionCheck.
+Alle HTTP-Endpoints (module=handlers.*) → Tracing + RateLimit + Input-Validation.
+Entscheidungsbaum (kompakt)
+1. Betrifft es ≥ 3 Module oder ≥ 5 Methoden je Modul? → Ja
+2. Haben die Ziele/Policies identische Semantik? → Ja
+3. Lässt sich der Satz stabil per Marker/Schicht selektieren? → Ja
+→ Viele Join Points lohnen sich.
+Bei einem Nein an einer Stelle: lieber lokale Dekoratoren oder Refactoring der Schnittstellen.
+Wenn du willst, mappe ich deine konkreten Module/Funktionen auf solche Pointcuts und gebe dir eine empfohlene Advice-Reihenfolge inklusive Fehlerpfad-Policy (Retry-Matrize).
+Welche Interaktionen sollten diese Joint Points mit Gemeinsamkeiten erlaubt haben duerfen?
+Hier ist ein knappes Interaktions‑Regelwerk dafür, welche Interaktionen Join Points mit gemeinsamer Semantik zulassen sollten – und welche nicht. Fokus: Ordnung, Kopplung, Fehlerpfade, Nebenwirkungen.
+1) Erlaubte Interaktionen (gewünscht)
+1. Kontext‑Propagation (lesend)
+Trace‑ID, User/Role, Tenant, Deadline/Timeout, Idempotency‑Key via ContextVar/Request‑Context.
+Rationale: Aspekte bleiben entkoppelt, aber beobachtbar.
+2. Monotone Beobachtung
+Logging/Metriken dürfen alles lesen und schreibfrei beobachten.
+Kein Einfluss auf Rückgabewert/Fehler (außer bewusstem Fallback‑Advice).
+3. Deterministische Reihenfolge
+Feste „Layer“ (siehe §3) sorgen dafür, dass Advice‑Ketten reproduzierbar sind.
+Reihenfolge ist Teil des Contracts.
+4. Idempotente Wiederholung
+Retry/CircuitBreaker dürfen nur um Operationen mit definiertem Idempotenz‑Verhalten liegen (per Key/Token abgesichert).
+5. Transaktions‑Scope als Hülle
+DB‑Transaktion darf innen liegende Mutationen kapseln; reine Beobachter (Log/Metrics) bleiben außen/neutral.
+6. Explizite Policy‑Signale
+Aspekte dürfen Events publizieren (z. B. policy.retry.started, tx.rollback) – andere Aspekte dürfen nur reagieren (lesen), nicht erzwingen.
+7. Zeit‑Budgetteilung
+Timeout/Deadline wird einmal gesetzt und innen nur verengt (never widened).
+Alle inneren Aspekte respektieren die verbleibende Deadline.
+8. Fehlerklassifikation & Mapping
+Aspekte dürfen Exceptions annotieren/taggen (z. B. err.retryable=True) für nachgelagerte Policies.
+Original‑Typ bleibt erhalten, außer es gibt einen dokumentierten Mapping‑Contract.
+2) Verbotene/zu vermeidende Interaktionen
+1. Schreibende Querkopplung
+Ein Aspekt ändert Zustände eines anderen (globale Flags, Mutationen) → verboten. Kommuniziere nur über Kontext/Events.
+2. Reihenfolge‑Inversion ad hoc
+Ein Advice „schiebt“ sich dynamisch vor ein anderes → Debug‑Hölle. Reihenfolge ist statisch festgelegt.
+3. Deadline‑Aufweitung
+Innen längere Timeouts setzen als außen → verboten.
+4. Transaktion um Netzwerk‑Retry
+Lange Retries innerhalb offener DB‑Tx → Lock‑Haltezeiten & Deadlocks. Entweder „retry‑outside‑tx“ oder gezieltes Savepoint‑Pattern.
+5. Side‑Effects in Beobachtern
+Logger/Metrics lösen zusätzliche kritische I/O aus (z. B. blockierende Netz‑Calls) → nur asynchron/puffernd.
+6. Schlucken von Fehlern ohne Vertrag
+Advice konsumiert Exceptions still → nur mit explizitem Fallback‑Contract.
+3) Bewährte Advice‑Reihenfolge (Policy‑Layers)
+[Guard]        FeatureFlag → RateLimit → AuthN/AuthZ → Input-Validation
+[Context]      Tracing/Span → Tenant → Deadline/Timeout (Budget setzen)
+[Policy]       Idempotency/Dedup → Cache (read-through) → Sanitization(pre)
+[Reliability]  Timeout(enforced) → Retry → CircuitBreaker → Backoff/Jitter
+[Tx]           Begin/Commit/Rollback (kurz halten; Outbox/Savepoint falls nötig)
+[Effects]      Audit → Metrics → Logging (strukturiert; non-blocking)
+[Post]         Output-Validation/Sanitization(post) → Response Shaping
+Faustformel: Guards zuerst, Beobachter zuletzt, Retries vor Transaktion (oder Savepoints), Timeout außen setzt Budget.
+4) Kleine Kommutativitäts‑Matrix (✓ = i. d. R. vertauschbar, ✗ = Reihenfolge fix)
+Paar	Kommutativ?	Begründung kurz
+Logging ↔ Metrics	✓	reine Beobachtung
+Tracing ↔ Logging	✓	beide lesen Kontext
+Auth ↔ Validation	✗	meist Validation vor Auth (DoS‑Schutz)
+RateLimit ↔ Auth	✗	RateLimit vor Auth (billiger)
+Timeout ↔ Retry	✗	Timeout außen, Retry innen (Budget)
+Retry ↔ Transaction	✗	Retry außerhalb der Tx
+Cache ↔ Validation	✗	Erst validieren, dann cachen
+CircuitBreaker ↔ Retry	✗	CB außen, begrenzt überhaupt den Retry
+5) Fehlerpfad‑Policy (kurz)
+Retrybar: TimeoutError, ConnectionError, 5xx, Deadlock → Retry (exponentiell, jitter, max‑budget).
+Nicht‑retrybar: ValueError, AuthError, 429 nach RateLimit → sofort durchreichen.
+Tx‑Rollback: bei jedem nicht gefangenen Fehler im Tx‑Scope.
+Audit/Log on error: immer, aber asynchron.
+6) Minimal‑Contracts zwischen Aspekten
+Context Keys: trace_id, tenant, deadline_ts, idempotency_key, authz_scope.
+Error Tags: retryable: bool, sanitized: bool, mapped_to: HTTP_xxx.
+Events (nur lesen): policy.retry.started, policy.retry.gave_up, tx.begin/commit/rollback.
+Wenn du willst, mappe ich deine konkreten Pointcuts auf diese Layers und gebe dir eine konkrete Advice‑Kette plus Retry/Timeout‑Parameter je Kategorie (HTTP‑Handler, Repos, externe Services).
+Bietet Haskell im Gegensatz zu Python dafuer etwas an?
+Kurzfassung: Haskell hat kein „AspectJ für Haskell“, aber es bietet mehrere stärkere, typsichere Alternativen für Quer­schnitts­belange (Logging, Retry, Auth, Tx, Tracing), die oft besser sind als dynamisches AOP in Python.
+Was Haskell „statt AOP“ bietet
+1. Effekt-Systeme statt Advices (Pointcuts via Typen)
+mtl/ReaderT IO-Pattern, algebraische Effekte (polysemy, fused-effects, effectful):
+Querlogik (Logging, Metrics, Retry, Exceptions, Time) wird als Effekt modelliert.
+„Pointcut“ = jede Funktion, deren Signatur den Effekt verlangt.
+„Multi-Advice“ = Stapeln der Interpreter-Schichten in main.
+-- polysemy: Logging + Retry + Timeouts
+data Log m a where LogMsg :: Text -> Log m ()
+makeSem ''Log
+prog :: Members [Log, Embed IO] r => Sem r ()
+prog = logMsg "start" >> embed (threadDelay 10000) >> logMsg "done"
+main = do
+  runFinal
+  . embedToFinal @IO
+  . interpret (\case LogMsg t -> liftIO (putStrLn (toString t)))
+  $ prog
+Vorteil: typsichere Selektivität: Nur dort „gewebt“, wo der Effekt im Typ steht.
+2. Kontext-Propagation ohne Globalstate
+Reader/ReaderT, implicit-params, CallStack: Trace-ID, Tenant, Deadline sauber tragen.
+f :: (?traceId :: Text) => IO ()
+f = putStrLn ("trace=" <> toString ?traceId)
+3. Fehlerpfade als Typen/Klassen
+Checked-ähnlich via effect rows oder exceptions (MonadThrow/MonadCatch/MonadMask), retry-Package, timeout.
+Transaktionen als bracket/MonadMask-Policy; DB-Libs bieten withTransaction.
+STM = Software Transactional Memory für nebenläufige In-Memory-Tx (etwas, das Python nicht nativ hat).
+4. Middleware statt Weaving
+In WAI/Servant werden Cross-Cutting Concerns als Middleware-Kette ausgeführt (Rate-Limit, Auth, Logging, Tracing).
+Reihenfolge ist explizit, typsicher, leicht testbar.
+5. Automatisierung/„Makros“
+Template Haskell & DerivingVia: Boilerplate-Erzeugung (z. B. alle Public-Funktionen einer Modul-API mit Logging umhüllen).
+GHC-Plugins (Core-to-Core): echtes Weaving auf IR-Ebene ist möglich (schwergewichtig, selten nötig).
+6. Optimierung als Regel, nicht als Advice
+GHC RULES & Inlining steuern Performance-Aspekte deterministisch (kein semantisches AOP, aber „Aspekt“ Performance).
+Mapping zu AOP-Begriffen
+Join Points → Funktionen, deren Typ Effekte/Capabilities fordert (HasLog, MonadReader Ctx, Members [Log, Retry] r).
+Pointcuts → Typklassen-Constraints / Effekt-Listen; auch Servant-Routen/Middleware-Pipelines.
+Multi-Advice → Interpreter-Stack/Middleware-Kette (Reihenfolge explizit in main).
+Fehlerpfade → Typsystem + MonadCatch/MaskingState + retry/timeout-Policies.
+Mini-Vergleich zu Python-AOP
+Explizit vs. implizit: In Haskell ist Querlogik sichtbar im Typ → weniger „magische“ Überraschungen.
+Sicherheit: Compiler erzwingt, dass nur passende Funktionen „instrumentiert“ werden (kein versehentliches Weaving).
+Transaktionen: STM + withTransaction sind First-Class; Retries/Timeouts sind reine Kombinatoren.
+Wenn du „echtes“ AOP willst: geht mit TH oder GHC-Plugins, ist aber unüblich — idiomatisch sind Effekte/Middleware.
+Kurzes, realistisches Beispiel (Reader + Logging + Retry)
+{-# LANGUAGE TemplateHaskell, DataKinds, TypeOperators, FlexibleContexts #-}
+import Polysemy, Polysemy.Time, Polysemy.Error
+import Control.Retry (retrying, constantDelay)
+data Log m a where LogMsg :: String -> Log m ()
+makeSem ''Log
+data Ctx = Ctx { traceId :: String }
+work :: Members [Reader Ctx, Log, Embed IO, Error String] r => Sem r Int
+work = do
+  Ctx tid <- ask
+  logMsg ("enter trace=" <> tid)
+  x <- embed (pure 1)
+  when (x == 1) (throw "flaky")
+  pure x
+main = do
+  let runLog = interpret (\case LogMsg s -> putStrLn s)
+      runRetry m =
+        runM $ do
+          retrying (constantDelay 20000) (\_ e -> pure (either (const True) (const False) e))
+            (\_ -> runError m)
+  res <- runRetry
+       $ runReader (Ctx "abc-123")
+       $ runLog
+       $ work
+  print res
+Fazit:
+Haskell hat kein „AOP-Framework“ wie AspectJ, braucht es aber auch nicht: Mit Effekten, Typklassen, Middleware, bracket/STM und optional TH/Plugins bekommst du klarere Pointcuts, reproduzierbare Reihenfolgen und typsichere Fehlerpfade – meist die robustere Lösung als dynamisches Weaving.
+Ich dachte an Lenses Mit Traversals aus Programmiersprache  Haskell.
+Starker Gedanke. Optics (Lens/Prism/Traversal) in Haskell sind im Kern Pointcuts über Daten, nicht über Control-Flow. Damit bekommst du AOP-artige Selektivität, aber typsicher und gesetzbasiert (Linsen-Gesetze).
+Mapping: AOP ↔ Optics
+Join Points → die Foki einer Optik (alle Ziele, die ein Traversal' s a „sieht“).
+Pointcut → die Optik selbst (z. B. traversed . _Right . _2 . _Just).
+Multi-Advice → Funktions-/Effektkomposition, angewandt „über“ der Optik (z. B. over, traverseOf, zoom).
+Fehlerpfade → entstehen kontrolliert via Traversal mit Applicative/Monad (z. B. Either, Validation, State, Writer).
+Kurz: Optics erlauben dir, viele semantisch ähnliche Datenpunkte in einem Rutsch zu lesen/schreiben/validieren — deine „Join Points“ sind die Ziele des Traversals.
+---
+Minimal-API (Erinnerung)
+Lens Lens' s a – genau ein Ziel (total).
+Prism Prism' s a – Alternative in einer Summe (optional).
+Traversal Traversal' s a – 0..n Ziele (Bulk-Pointcut).
+Kernfunktionen: view, set, over, toListOf, anyOf, allOf, traverseOf, itraverseOf (mit Indizes), folded, each, traversed.
+---
+Beispiel 1 – „Viele Join Points“ über verschachtelte Strukturen
+Ziel: Alle Double-Werte in einer tiefen Struktur clampen und loggen.
+{-# LANGUAGE TemplateHaskell #-}
+import Control.Lens
+import Control.Monad.Writer
+data Leaf   = Leaf { _val :: Double } deriving Show
+data Node a = Node { _name :: String, _children :: [a] } deriving Show
+makeLenses ''Leaf
+makeLenses ''Node
+-- Pointcut: alle Doubles, egal wo sie liegen (Node->children beliebig tief, dann Leaf->val)
+numericCut :: Traversal' (Node (Either Leaf (Node (Either Leaf (Node Leaf))))) Double
+numericCut = children . traversed . _Left . val
+         <>   children . traversed . _Right . children . traversed . _Left . val
+-- Multi-Advice: clamp + logging
+clampLog :: Double -> Writer [String] Double
+clampLog x = tell ["seen:" ++ show x] >> pure (max 0 (min 1 x))
+run :: Node (Either Leaf (Node (Either Leaf (Node Leaf)))) -> (Node (Either Leaf (Node (Either Leaf (Node Leaf)))), [String])
+run t = runWriter (traverseOf numericCut clampLog t)
+Pointcut = numericCut: wählt alle relevanten Zahlen (Join Points).
+Advice = clampLog: side-effectful via Writer.
+Fehlerpfade: hier keiner; mit Either/Validation könntest du Validierungsfehler akkumulieren.
+---
+Beispiel 2 – Effekthafte Traversals als „Fehlerpfade mit Policy“
+Ziel: Validierung aller E-Mails in JSON, Fehler sammeln; korrekte Mails maskieren.
+import Control.Lens
+import Control.Applicative (liftA2)
+import Data.Aeson
+import Data.Aeson.Lens
+import qualified Data.Text as T
+import Data.Semigroup (Semigroup(..))
+newtype Errors = Errors [T.Text] deriving (Show)
+instance Semigroup Errors where (<>) (Errors a) (Errors b) = Errors (a<>b)
+instance Monoid    Errors where mempty = Errors []
+validateEmail :: T.Text -> Either Errors T.Text
+validateEmail t
+  | "@" `T.isInfixOf` t = Right t
+  | otherwise           = Left (Errors ["bad email: " <> t])
+mask :: T.Text -> T.Text
+mask t = let (u,d) = T.breakOn "@" t in T.take 2 u <> "***" <> d
+-- Pointcut: alle JSON-Werte unter key "email" die Strings sind
+emails :: Traversal' Value T.Text
+emails = key "email" . _String
+-- Multi-Advice: (1) validate (2) then mask
+process :: Value -> Either Errors Value
+process = traverseOf emails (\t -> mask <$> validateEmail t)
+Traversal als Pointcut: emails findet alle Mails.
+Fehlerpfade: Either Errors akkumuliert via Applicative bei Traversal mehrere Fehler deterministisch.
+Reihenfolge: Validation vor Maskierung – explizit in der Funktion.
+---
+Beispiel 3 – „Pointcut-Makro“: semantische Selektoren definieren
+-- Alle Felder, deren Name „id“ enthält, über generics:
+import Data.Generics.Product (field')
+-- generic-lens: field' @"userId" :: Lens' s a
+-- Pointcut-Makro: „alle öffentlichen Felder mit ‚Id‘ im Namen“
+-- (mit optics/generic-lens würdest du mehrere Lenses kombinieren)
+ids :: Traversal' s Int
+ids = field' @"userId" <> field' @"orderId" <> field' @"sessionId"
+normalizeIds :: s -> s
+normalizeIds = over ids abs
+---
+Beispiel 4 – Reihenfolge/„Multi-Advice“ als klare Pipeline
+-- Advice-Schichten:
+sanitize   :: T.Text -> T.Text
+validate   :: T.Text -> Either String T.Text
+canonical  :: T.Text -> T.Text
+-- Multi-Advice über dem Pointcut:
+runAll :: Value -> Either String Value
+runAll = traverseOf emails (Right . canonical . sanitize <=< validate)
+---
+Beispiel 5 – Traversal + State/Zoom (kontextuelle Policies)
+import Control.Monad.State
+-- Zähle, wie viele Ziele verändert wurden:
+countChanges :: (Eq a) => Traversal' s a -> (a -> a) -> s -> (s, Int)
+countChanges cut f s = runState (traverseOf cut step s) 0
+  where step a = do
+          let a' = f a
+          when (a' /= a) (modify (+1))
+          pure a'
+---
+Warum Optics hier oft überlegen sind
+Explizite Selektivität im Typ (keine „magischen“ Hooks).
+Gesetzestreue (Lens/Traversal-Gesetze) → Vorhersagbarkeit.
+Komponierbarkeit ((.), <>, beside, both, each, plate) → mächtige Pointcuts.
+Effekt-Neutralität: Du wählst den Effekt (State, Writer, Either, Validation, IO) beim Anwenden, nicht beim Definieren der Optik.
+Testbarkeit: toListOf cut s zeigt dir die „getroffenen Join Points“ vorab.
+---
+Quick-Cheatsheet (was du in der Praxis brauchst)
+Viele Ziele: traversed, each, folded, plate (uniplate-artig).
+Selektoren: filtered, _Just/_Right, _2, ix, at, key, members.
+Kombinatoren: (.) (Komposition), (<>) (Alternative Ziele), beside, both.
+Anwenden: over, set, view, toListOf, anyOf/allOf, traverseOf, itraverseOf.
+---
+Merksatz
+> Traversal ist dein Pointcut über Daten; over/traverseOf ist dein Advice; der gewählte Applicative/Monad bestimmt die Fehlerpfade.
+Wenn du willst, skizziere ich dir für deine Datentypen ein konkretes Traversal-Set (Pointcuts) inkl. Validierungs-/Maskierungs-Pipeline (Multi-Advice) mit Either (NonEmpty Err) als Fehlerpfad.
+Kann man Lenses mit Traversals fuer Python nachbilden?
+Ja – man kann das Prinzip von Lenses und Traversals aus Haskell in Python nachbauen, aber man muss ein paar Einschränkungen akzeptieren:
+Python ist dynamisch → keine Typprüfung auf Ebene der Optik
+keine echten „Lens-Gesetze“ erzwungen (nur diszipliniert nutzbar)
+Performance ist etwas schlechter, da alles zur Laufzeit aufgelöst wird
+Trotzdem lassen sich die drei Kernideen von Optics nachbilden:
+1. Lens – fokussiert auf genau ein Element
+2. Prism – fokussiert optional (wie _Just, _Right)
+3. Traversal – fokussiert auf 0..n Elemente
+---
+1. Mini-Optics-Framework in Python
+from typing import Callable, Any, List, Tuple
+class Lens:
+    def __init__(self, getter: Callable[[Any], Any], setter: Callable[[Any, Any], Any]):
+        self._getter = getter
+        self._setter = setter
+    def get(self, s):
+        return self._getter(s)
+    def set(self, s, v):
+        return self._setter(s, v)
+    def over(self, s, f: Callable[[Any], Any]):
+        return self.set(s, f(self.get(s)))
+    def compose(self, other: 'Lens') -> 'Lens':
+        # Komposition wie Haskell (.)
+        return Lens(
+            getter=lambda s: other.get(self.get(s)),
+            setter=lambda s, v: self.set(s, other.set(self.get(s), v))
+        )
+class Traversal:
+    def __init__(self, getter: Callable[[Any], List[Any]], setter: Callable[[Any, List[Any]], Any]):
+        self._getter = getter
+        self._setter = setter
+    def to_list(self, s):
+        return self._getter(s)
+    def over(self, s, f: Callable[[Any], Any]):
+        xs = self._getter(s)
+        new_xs = [f(x) for x in xs]
+        return self._setter(s, new_xs)
+    def compose(self, other: 'Traversal') -> 'Traversal':
+        return Traversal(
+            getter=lambda s: [y for x in self._getter(s) for y in other._getter(x)],
+            setter=lambda s, vs: self._setter(s, vs)  # vereinfachte Demo
+        )
+---
+2. Beispiel – Lens + Traversal
+# Datenstruktur
+data = {
+    "users": [
+        {"name": "Alice", "score": 42},
+        {"name": "Bob",   "score": 17}
+    ]
+}
+# Lens: dict["users"]
+users_lens = Lens(
+    getter=lambda d: d["users"],
+    setter=lambda d, v: {**d, "users": v}
+)
+# Traversal: über alle User-Scores
+scores_traversal = Traversal(
+    getter=lambda users: [u["score"] for u in users],
+    setter=lambda users, scores: [
+        {**u, "score": s} for u, s in zip(users, scores)
+    ]
+)
+# Kombiniert: scores in data
+scores_in_data = users_lens.compose(scores_traversal)
+# Anwendung: alle Scores +10
+new_data = scores_in_data.over(data, lambda s: s + 10)
+print(new_data)
+# {'users': [{'name': 'Alice', 'score': 52}, {'name': 'Bob', 'score': 27}]}
+---
+3. Traversal mit „Fehlerpfad“ (Validation)
+Man kann den Applicative-Effekt aus Haskell simulieren, z. B. Fehler sammeln statt abbrechen:
+def validate_positive(x):
+    if x < 0:
+        return ("error", f"{x} is negative")
+    return ("ok", x)
+def traverse_with_validation(traversal, s, f):
+    results = [f(x) for x in traversal.to_list(s)]
+    errors = [msg for tag, msg in results if tag == "error"]
+    if errors:
+        return ("error", errors)
+    new_vals = [val for tag, val in results]
+    return ("ok", traversal.over(s, lambda _: new_vals.pop(0)))
+# Beispiel mit Validation
+scores_bad = scores_traversal
+res = traverse_with_validation(scores_bad, data, validate_positive)
+print(res)
+---
+4. Unterschiede zu Haskell
+Haskell	Python-Nachbildung
+Typgesichert	Dynamisch (Runtime-Fehler möglich)
+Lens-Gesetze enforced	Nur durch Disziplin
+Traversal Applicative	Manuell implementiert
+Komposition per (.)	Manuell .compose()
+Performance	Niedriger
+---
+💡 Fazit:
+Ja, man kann Lenses/Traversals in Python nachbauen und so datenzentrierte Pointcuts und Multi-Advice-Transformationen umsetzen. Für große Projekte lohnt sich eine kleine Utility-Bibliothek, damit Komposition und Fehlerpfade bequem nutzbar sind.
+---
+Wenn du willst, kann ich dir eine vollständige Python-Optics-Bibliothek im Stil von lens/optics in Haskell bauen, inkl.:
+Lens, Prism, Traversal
+Komposition
+Traversals mit Either-ähnlicher Fehlerakkumulation
+Generatoren für Objekt-/Dict-/Listenfelder

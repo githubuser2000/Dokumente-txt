@@ -1,0 +1,575 @@
+Wie funktioniert Aspektorientierte Programmierung unter Python?
+Aspektorientierte Programmierung (AOP) in Python funktioniert im Kern so, dass du Querschnittsfunktionen („Aspekte“) – etwa Logging, Caching, Sicherheitsprüfungen oder Metrik-Sammlung – separat vom eigentlichen Code definierst und dann gezielt an definierte Stellen (Join Points) im Programmablauf „einschleust“ (Weaving).
+Das Ziel ist, sich wiederholende, querliegende Logik aus dem eigentlichen Business Code herauszuhalten.
+---
+1. Grundidee
+Aspekt: Ein Modul/Funktion, die an mehreren Stellen im Code eingefügt werden soll (z. B. Logger).
+Join Point: Eine exakte Stelle im Code, an der ein Aspekt ausgeführt werden kann (Funktionsaufruf, Objektinitialisierung etc.).
+Advice: Der zusätzliche Code, der vor, nach oder statt der Originalfunktion ausgeführt wird.
+Weaving: Der Prozess, diese Aspekte an die Join Points zu binden.
+---
+2. Technische Umsetzung in Python
+Python hat kein eingebautes AOP-Framework wie z. B. AspectJ in Java, aber die Dynamik von Python (Dekoratoren, Metaklassen, Monkey Patching) macht AOP einfach umsetzbar.
+Variante A – Dekoratoren
+Der einfachste Weg, um einen Aspekt wie Logging oder Performance-Messung einzufügen.
+import time
+from functools import wraps
+def timing_aspect(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        end = time.perf_counter()
+        print(f"{func.__name__} dauerte {end - start:.6f}s")
+        return result
+    return wrapper
+@timing_aspect
+def arbeite():
+    time.sleep(1)
+arbeite()
+Join Point: Funktionsaufruf von arbeite()
+Advice: Zeitmessung vor und nach dem Aufruf
+---
+Variante B – Monkey Patching
+Du ersetzt zur Laufzeit Methoden/Funktionen durch eine umwickelte Version.
+import math
+_original_sqrt = math.sqrt
+def sqrt_with_log(x):
+    print(f"Berechne sqrt({x})")
+    return _original_sqrt(x)
+math.sqrt = sqrt_with_log
+math.sqrt(9)  # => Berechne sqrt(9) \n 3.0
+---
+Variante C – Metaklassen
+Du fängst das Erzeugen von Klassen ab und versiehst Methoden automatisch mit Aspekten.
+def log_aspect(func):
+    def wrapper(*args, **kwargs):
+        print(f"Rufe {func.__name__} mit {args}, {kwargs}")
+        return func(*args, **kwargs)
+    return wrapper
+class AspectMeta(type):
+    def __new__(cls, name, bases, dct):
+        for key, val in dct.items():
+            if callable(val) and not key.startswith("__"):
+                dct[key] = log_aspect(val)
+        return super().__new__(cls, name, bases, dct)
+class MeineKlasse(metaclass=AspectMeta):
+    def foo(self, x):
+        return x * 2
+obj = MeineKlasse()
+obj.foo(5)
+---
+Variante D – Frameworks
+Es gibt Python-Frameworks für AOP, z. B.:
+aspectlib – Dekorator-/Contextmanager-basiert
+Pytilities – enthält AOP-Hilfsmittel
+Spring Python – inspiriert von Spring AOP in Java
+Mit aspectlib sähe es so aus:
+import aspectlib
+@aspectlib.Aspect
+def logger_aspect(call):
+    print(f"-> {call.name} mit {call.args} {call.kwargs}")
+    result = yield call.proceed()
+    print(f"<- {call.name} Ergebnis: {result}")
+    yield aspectlib.Return(result)
+@logger_aspect
+def add(a, b):
+    return a + b
+add(2, 3)
+---
+3. Typische Einsatzbereiche
+Logging
+Caching (Memoization)
+Sicherheitsprüfungen
+Transaktionen (Datenbank)
+Messung von Performance / Ressourcenverbrauch
+Exception Handling auf globaler Ebene
+---
+Wenn du möchtest, kann ich dir als nächstes ein vollständiges Python-AOP-Beispiel mit aspectlib schreiben, das Logging, Fehlerbehandlung und Zeitmessung kombiniert – also echtes Multi-Advice-Weaving in einem Rutsch.
+Das würde zeigen, wie man in Python sauberen AOP-Code strukturiert.
+Hier ist ein komplettes, lauffähiges AOP-Beispiel mit aspectlib (Logging + Timing + Retry + Fehlerbehandlung + selektives Weaving).
+> Installation: pip install aspectlib
+# aop_demo.py
+import time, random
+import aspectlib
+from functools import wraps
+# ---------- ASPEKTE ----------
+@aspectlib.Aspect
+def logger(call):
+    print(f"[ENTER] {call.name} args={call.args} kwargs={call.kwargs}")
+    try:
+        result = yield call.proceed()
+        print(f"[EXIT ] {call.name} -> {result!r}")
+        yield aspectlib.Return(result)
+    except Exception as e:
+        print(f"[ERROR] {call.name} raised {e.__class__.__name__}: {e}")
+        raise
+@aspectlib.Aspect
+def timing(call):
+    start = time.perf_counter()
+    try:
+        result = yield call.proceed()
+        yield aspectlib.Return(result)
+    finally:
+        dur = time.perf_counter() - start
+        print(f"[TIME ] {call.name} took {dur:.3f}s")
+def retry(retries=2, delay=0.1, retry_on=(Exception,)):
+    @aspectlib.Aspect
+    def _retry(call):
+        for attempt in range(retries + 1):
+            try:
+                result = yield call.proceed()
+                yield aspectlib.Return(result)
+                return
+            except retry_on as e:
+                if attempt >= retries:
+                    print(f"[RETRY] {call.name} giving up after {attempt} retries: {e}")
+                    raise
+                print(f"[RETRY] {call.name} attempt {attempt+1}/{retries} after error: {e}")
+                time.sleep(delay)
+    return _retry
+# ---------- BUSINESS-CODE (ohne Querlogik) ----------
+class Service:
+    def slow_add(self, a: int, b: int) -> int:
+        time.sleep(0.2)
+        return a + b
+    def flaky_double(self, x: int) -> int:
+        # 50% Chance auf Fehler (simuliert externen Dienst)
+        if random.random() < 0.5:
+            raise RuntimeError("flaky downstream")
+        time.sleep(0.05)
+        return 2 * x
+    def divide(self, a: int, b: int) -> float:
+        # absichtlicher Fehler bei b==0, um Fehlerpfade zu zeigen
+        return a / b
+# ---------- WEAVING / POINTCUT-SELEKTION ----------
+svc = Service()
+# 1) Statisches Weaving per Funktionskomposition (stapelbar, lokal fein-granular):
+svc.slow_add   = logger(timing(svc.slow_add))               # Logging + Timing
+svc.flaky_double = logger(retry(retries=3, delay=0.05)(timing(svc.flaky_double)))
+# Reihenfolge: outer(logger) -> retry -> timing -> original
+# 2) Selektives Weaving „ad hoc“ für einzelne Calls via Kontextmanager:
+#    Hier: divide() wird NUR in diesem Block mit logger+timing gewebt.
+def run_divide_demo():
+    with aspectlib.weave(svc.divide, (logger, timing)):
+        try:
+            print("divide(10, 2) =", svc.divide(10, 2))
+            print("divide(1, 0)  =", svc.divide(1, 0))   # ZeroDivisionError -> [ERROR] sichtbar
+        except ZeroDivisionError:
+            pass
+# ---------- DEMO ----------
+if __name__ == "__main__":
+    print("--- slow_add(10, 32) ---")
+    svc.slow_add(10, 32)
+    print("\n--- flaky_double(7) (mit Retry) ---")
+    try:
+        print("Result:", svc.flaky_double(7))
+    except RuntimeError:
+        print("Flaky blieb trotz Retries kaputt.")
+    print("\n--- divide demo (kontextuelles Weaving) ---")
+    run_divide_demo()
+Was das zeigt:
+1. Multi-Advice auf einer Methode (slow_add): timing + logger.
+2. Retry nur auf der flakigen Methode, ohne Business-Code zu berühren.
+3. Kontextuelles Weaving: divide wird nur im with aspectlib.weave(...)-Block instrumentiert.
+4. Fehlerpfade: Exceptions werden geloggt, ohne den Control-Flow zu verschlucken.
+Falls du möchtest, erweitere ich das auf:
+DB-Transaktionsaspekt (Begin/Commit/Rollback),
+Pointcut-Makros (z. B. „alle öffentlichen Methoden einer Klasse“ via Reflection),
+Klar. Hier ist ein kompaktes Komplettbeispiel mit allen drei Erweiterungen:
+(1) DB-Transaktions-Aspekt, (2) Pointcut-Makros (alle öffentlichen Methoden weben), (3) strukturierte JSON-Logs + Prometheus-Metriken.
+> Setup
+pip install aspectlib prometheus-client
+Start: python aop_full_demo.py → Logs auf STDOUT (JSON), Prometheus unter http://localhost:8000/metrics.
+# aop_full_demo.py
+import time, random, json, logging, inspect
+from functools import wraps
+from contextvars import ContextVar
+import aspectlib
+from prometheus_client import Counter, Histogram, start_http_server
+# -------------------- LOGGING (JSON) --------------------
+class JsonFormatter(logging.Formatter):
+    def format(self, record):
+        base = {
+            "ts": self.formatTime(record, datefmt="%Y-%m-%dT%H:%M:%S%z"),
+            "lvl": record.levelname,
+            "msg": record.getMessage(),
+            "logger": record.name,
+        }
+        if record.__dict__.get("extra_fields"):
+            base.update(record.__dict__["extra_fields"])
+        return json.dumps(base, ensure_ascii=False)
+log = logging.getLogger("aop")
+log.setLevel(logging.INFO)
+_handler = logging.StreamHandler()
+_handler.setFormatter(JsonFormatter())
+log.addHandler(_handler)
+def log_json(level, **fields):
+    log.log(level, "", extra={"extra_fields": fields})
+# -------------------- PROMETHEUS --------------------
+REQ_COUNT = Counter(
+    "aop_calls_total", "Total advice-wrapped function calls",
+    ["func", "status"]  # status: success|error
+)
+REQ_TIME = Histogram(
+    "aop_call_seconds", "Duration of advice-wrapped function calls",
+    ["func"]
+)
+# -------------------- DB-TRANSAKTIONS-LAYER --------------------
+class TxManager:
+    """Minimaler Transaktionsmanager (Demo)."""
+    _current_tx: ContextVar[bool] = ContextVar("current_tx", default=False)
+    @classmethod
+    def in_tx(cls) -> bool:
+        return cls._current_tx.get()
+    @classmethod
+    def begin(cls):
+        if cls.in_tx():
+            # Nested begin: Count/stack wäre realistisch; hier no-op.
+            log_json(logging.DEBUG, event="tx.begin.nested")
+            return
+        cls._current_tx.set(True)
+        log_json(logging.INFO, event="tx.begin")
+    @classmethod
+    def commit(cls):
+        if cls.in_tx():
+            cls._current_tx.set(False)
+            log_json(logging.INFO, event="tx.commit")
+    @classmethod
+    def rollback(cls, reason: str):
+        if cls.in_tx():
+            cls._current_tx.set(False)
+            log_json(logging.WARNING, event="tx.rollback", reason=reason)
+# -------------------- ASPEKTE --------------------
+@aspectlib.Aspect
+def logger(call):
+    name = call.name
+    log_json(logging.INFO, event="enter", func=name, args=repr(call.args), kwargs=repr(call.kwargs))
+    try:
+        result = yield call.proceed()
+        log_json(logging.INFO, event="exit", func=name, result=repr(result))
+        yield aspectlib.Return(result)
+    except Exception as e:
+        log_json(logging.ERROR, event="error", func=name, error=type(e).__name__, detail=str(e))
+        raise
+@aspectlib.Aspect
+def timing(call):
+    name = call.name
+    start = time.perf_counter()
+    try:
+        result = yield call.proceed()
+        yield aspectlib.Return(result)
+    finally:
+        dur = time.perf_counter() - start
+        REQ_TIME.labels(func=name).observe(dur)
+        log_json(logging.INFO, event="timing", func=name, seconds=round(dur, 6))
+def retry(retries=2, delay=0.05, retry_on=(Exception,)):
+    @aspectlib.Aspect
+    def _retry(call):
+        name = call.name
+        for attempt in range(retries + 1):
+            try:
+                result = yield call.proceed()
+                yield aspectlib.Return(result)
+                return
+            except retry_on as e:
+                if attempt >= retries:
+                    REQ_COUNT.labels(func=name, status="error").inc()
+                    log_json(logging.ERROR, event="retry.giveup", func=name, attempts=attempt, error=str(e))
+                    raise
+                log_json(logging.WARNING, event="retry", func=name, attempt=attempt+1, error=str(e))
+                time.sleep(delay)
+        # not reached
+    return _retry
+def db_txal(boundary="required"):
+    """
+    boundary: "required" (begin if not in tx) | "requires_new" (always new) | "none" (no tx)
+    Demo-Implementierung: "requires_new" behandelt wie "required".
+    """
+    @aspectlib.Aspect
+    def _tx(call):
+        name = call.name
+        start_new = (boundary in ("required", "requires_new")) and not TxManager.in_tx()
+        if start_new:
+            TxManager.begin()
+        try:
+            result = yield call.proceed()
+            if start_new:
+                TxManager.commit()
+            REQ_COUNT.labels(func=name, status="success").inc()
+            yield aspectlib.Return(result)
+        except Exception as e:
+            if start_new:
+                TxManager.rollback(reason=f"{type(e).__name__}: {e}")
+            REQ_COUNT.labels(func=name, status="error").inc()
+            raise
+    return _tx
+# -------------------- POINTCUT-MAKROS --------------------
+def is_public_method(name, attr):
+    return (not name.startswith("_")) and callable(attr)
+def weave_class(cls, *aspects, predicate=is_public_method):
+    """
+    Webt die gegebenen Aspekte um alle Methoden einer Klasse, die predicate erfüllen.
+    Reihenfolge: outer(aspects[0]) -> ... -> inner(aspects[-1]) -> original
+    """
+    for name, attr in inspect.getmembers(cls, predicate=lambda a: True):
+        if predicate(name, attr) and inspect.isfunction(attr):
+            wrapped = attr
+            for asp in reversed(aspects):  # inner to outer
+                wrapped = asp(wrapped)
+            setattr(cls, name, wrapped)
+    return cls
+def weave_module(module, *aspects, predicate=lambda n, a: (not n.startswith("_")) and callable(a)):
+    for name, attr in inspect.getmembers(module, predicate=lambda a: True):
+        if predicate(name, attr) and inspect.isfunction(attr):
+            wrapped = attr
+            for asp in reversed(aspects):
+                wrapped = asp(wrapped)
+            setattr(module, name, wrapped)
+# -------------------- BUSINESS-CODE (ohne Querlogik) --------------------
+class AccountService:
+    def open_account(self, user_id: int) -> str:
+        time.sleep(0.05)
+        if random.random() < 0.1:
+            raise RuntimeError("KYC failed")
+        return f"acc-{user_id}"
+    def deposit(self, acc: str, amount: float) -> float:
+        time.sleep(0.02)
+        if amount <= 0:
+            raise ValueError("amount>0 required")
+        # (DB write simuliert)
+        return amount
+    def settle_interest(self, acc: str) -> float:
+        time.sleep(0.01)
+        return 0.01  # 1% demo
+# -------------------- DEMO / MAIN --------------------
+if __name__ == "__main__":
+    # Prometheus Endpoint
+    start_http_server(8000)
+    # Pointcut: alle öffentlichen Methoden mit (logger → timing → retry → db_txal)
+    # Reihenfolge: outer(logger) -> timing -> retry -> db_tx -> original
+    weave_class(AccountService,
+                logger,
+                timing,
+                retry(retries=3, delay=0.03, retry_on=(RuntimeError,)),
+                db_txal("required"))
+    svc = AccountService()
+    # Durchläufe
+    for i in range(5):
+        try:
+            acc = svc.open_account(1000 + i)
+            amt = svc.deposit(acc, 100.0 + i)
+            intr = svc.settle_interest(acc)
+            log_json(logging.INFO, event="business.summary", acc=acc, deposited=amt, interest=intr)
+        except Exception as e:
+            log_json(logging.ERROR, event="business.error", detail=str(e))
+    # Negativfall (rollbacks, error-counters)
+    try:
+        svc.deposit("acc-bad", -5)
+    except Exception:
+        pass
+    print("Demo fertig. Prometheus unter :8000/metrics.")
+Was enthalten ist (ohne Bla-Bla):
+1. DB-Transaktions-Aspekt: db_txal("required") mit begin/commit/rollback (ContextVar).
+2. Pointcuts: weave_class() (alle öffentlichen Methoden), weave_module() optional für Modul-Funktionen.
+3. Strukturierte Logs (JSON) + Prometheus (aop_calls_total{func,status}, aop_call_seconds{func}).
+Wenn du magst, passe nur die Aspekt-Reihenfolge im weave_class(...) an – das ist das „Weaving-Design“.
+strukturierte Logs (JSON) und Metriken (Prometheus).
+Klar. Hier ist ein kompaktes Komplettbeispiel mit allen drei Erweiterungen:
+(1) DB-Transaktions-Aspekt, (2) Pointcut-Makros (alle öffentlichen Methoden weben), (3) strukturierte JSON-Logs + Prometheus-Metriken.
+> Setup
+pip install aspectlib prometheus-client
+Start: python aop_full_demo.py → Logs auf STDOUT (JSON), Prometheus unter http://localhost:8000/metrics.
+# aop_full_demo.py
+import time, random, json, logging, inspect
+from functools import wraps
+from contextvars import ContextVar
+import aspectlib
+from prometheus_client import Counter, Histogram, start_http_server
+# -------------------- LOGGING (JSON) --------------------
+class JsonFormatter(logging.Formatter):
+    def format(self, record):
+        base = {
+            "ts": self.formatTime(record, datefmt="%Y-%m-%dT%H:%M:%S%z"),
+            "lvl": record.levelname,
+            "msg": record.getMessage(),
+            "logger": record.name,
+        }
+        if record.__dict__.get("extra_fields"):
+            base.update(record.__dict__["extra_fields"])
+        return json.dumps(base, ensure_ascii=False)
+log = logging.getLogger("aop")
+log.setLevel(logging.INFO)
+_handler = logging.StreamHandler()
+_handler.setFormatter(JsonFormatter())
+log.addHandler(_handler)
+def log_json(level, **fields):
+    log.log(level, "", extra={"extra_fields": fields})
+# -------------------- PROMETHEUS --------------------
+REQ_COUNT = Counter(
+    "aop_calls_total", "Total advice-wrapped function calls",
+    ["func", "status"]  # status: success|error
+)
+REQ_TIME = Histogram(
+    "aop_call_seconds", "Duration of advice-wrapped function calls",
+    ["func"]
+)
+# -------------------- DB-TRANSAKTIONS-LAYER --------------------
+class TxManager:
+    """Minimaler Transaktionsmanager (Demo)."""
+    _current_tx: ContextVar[bool] = ContextVar("current_tx", default=False)
+    @classmethod
+    def in_tx(cls) -> bool:
+        return cls._current_tx.get()
+    @classmethod
+    def begin(cls):
+        if cls.in_tx():
+            # Nested begin: Count/stack wäre realistisch; hier no-op.
+            log_json(logging.DEBUG, event="tx.begin.nested")
+            return
+        cls._current_tx.set(True)
+        log_json(logging.INFO, event="tx.begin")
+    @classmethod
+    def commit(cls):
+        if cls.in_tx():
+            cls._current_tx.set(False)
+            log_json(logging.INFO, event="tx.commit")
+    @classmethod
+    def rollback(cls, reason: str):
+        if cls.in_tx():
+            cls._current_tx.set(False)
+            log_json(logging.WARNING, event="tx.rollback", reason=reason)
+# -------------------- ASPEKTE --------------------
+@aspectlib.Aspect
+def logger(call):
+    name = call.name
+    log_json(logging.INFO, event="enter", func=name, args=repr(call.args), kwargs=repr(call.kwargs))
+    try:
+        result = yield call.proceed()
+        log_json(logging.INFO, event="exit", func=name, result=repr(result))
+        yield aspectlib.Return(result)
+    except Exception as e:
+        log_json(logging.ERROR, event="error", func=name, error=type(e).__name__, detail=str(e))
+        raise
+@aspectlib.Aspect
+def timing(call):
+    name = call.name
+    start = time.perf_counter()
+    try:
+        result = yield call.proceed()
+        yield aspectlib.Return(result)
+    finally:
+        dur = time.perf_counter() - start
+        REQ_TIME.labels(func=name).observe(dur)
+        log_json(logging.INFO, event="timing", func=name, seconds=round(dur, 6))
+def retry(retries=2, delay=0.05, retry_on=(Exception,)):
+    @aspectlib.Aspect
+    def _retry(call):
+        name = call.name
+        for attempt in range(retries + 1):
+            try:
+                result = yield call.proceed()
+                yield aspectlib.Return(result)
+                return
+            except retry_on as e:
+                if attempt >= retries:
+                    REQ_COUNT.labels(func=name, status="error").inc()
+                    log_json(logging.ERROR, event="retry.giveup", func=name, attempts=attempt, error=str(e))
+                    raise
+                log_json(logging.WARNING, event="retry", func=name, attempt=attempt+1, error=str(e))
+                time.sleep(delay)
+        # not reached
+    return _retry
+def db_txal(boundary="required"):
+    """
+    boundary: "required" (begin if not in tx) | "requires_new" (always new) | "none" (no tx)
+    Demo-Implementierung: "requires_new" behandelt wie "required".
+    """
+    @aspectlib.Aspect
+    def _tx(call):
+        name = call.name
+        start_new = (boundary in ("required", "requires_new")) and not TxManager.in_tx()
+        if start_new:
+            TxManager.begin()
+        try:
+            result = yield call.proceed()
+            if start_new:
+                TxManager.commit()
+            REQ_COUNT.labels(func=name, status="success").inc()
+            yield aspectlib.Return(result)
+        except Exception as e:
+            if start_new:
+                TxManager.rollback(reason=f"{type(e).__name__}: {e}")
+            REQ_COUNT.labels(func=name, status="error").inc()
+            raise
+    return _tx
+# -------------------- POINTCUT-MAKROS --------------------
+def is_public_method(name, attr):
+    return (not name.startswith("_")) and callable(attr)
+def weave_class(cls, *aspects, predicate=is_public_method):
+    """
+    Webt die gegebenen Aspekte um alle Methoden einer Klasse, die predicate erfüllen.
+    Reihenfolge: outer(aspects[0]) -> ... -> inner(aspects[-1]) -> original
+    """
+    for name, attr in inspect.getmembers(cls, predicate=lambda a: True):
+        if predicate(name, attr) and inspect.isfunction(attr):
+            wrapped = attr
+            for asp in reversed(aspects):  # inner to outer
+                wrapped = asp(wrapped)
+            setattr(cls, name, wrapped)
+    return cls
+def weave_module(module, *aspects, predicate=lambda n, a: (not n.startswith("_")) and callable(a)):
+    for name, attr in inspect.getmembers(module, predicate=lambda a: True):
+        if predicate(name, attr) and inspect.isfunction(attr):
+            wrapped = attr
+            for asp in reversed(aspects):
+                wrapped = asp(wrapped)
+            setattr(module, name, wrapped)
+# -------------------- BUSINESS-CODE (ohne Querlogik) --------------------
+class AccountService:
+    def open_account(self, user_id: int) -> str:
+        time.sleep(0.05)
+        if random.random() < 0.1:
+            raise RuntimeError("KYC failed")
+        return f"acc-{user_id}"
+    def deposit(self, acc: str, amount: float) -> float:
+        time.sleep(0.02)
+        if amount <= 0:
+            raise ValueError("amount>0 required")
+        # (DB write simuliert)
+        return amount
+    def settle_interest(self, acc: str) -> float:
+        time.sleep(0.01)
+        return 0.01  # 1% demo
+# -------------------- DEMO / MAIN --------------------
+if __name__ == "__main__":
+    # Prometheus Endpoint
+    start_http_server(8000)
+    # Pointcut: alle öffentlichen Methoden mit (logger → timing → retry → db_txal)
+    # Reihenfolge: outer(logger) -> timing -> retry -> db_tx -> original
+    weave_class(AccountService,
+                logger,
+                timing,
+                retry(retries=3, delay=0.03, retry_on=(RuntimeError,)),
+                db_txal("required"))
+    svc = AccountService()
+    # Durchläufe
+    for i in range(5):
+        try:
+            acc = svc.open_account(1000 + i)
+            amt = svc.deposit(acc, 100.0 + i)
+            intr = svc.settle_interest(acc)
+            log_json(logging.INFO, event="business.summary", acc=acc, deposited=amt, interest=intr)
+        except Exception as e:
+            log_json(logging.ERROR, event="business.error", detail=str(e))
+    # Negativfall (rollbacks, error-counters)
+    try:
+        svc.deposit("acc-bad", -5)
+    except Exception:
+        pass
+    print("Demo fertig. Prometheus unter :8000/metrics.")
+Was enthalten ist (ohne Bla-Bla):
+1. DB-Transaktions-Aspekt: db_txal("required") mit begin/commit/rollback (ContextVar).
+2. Pointcuts: weave_class() (alle öffentlichen Methoden), weave_module() optional für Modul-Funktionen.
+3. Strukturierte Logs (JSON) + Prometheus (aop_calls_total{func,status}, aop_call_seconds{func}).
+Wenn du magst, passe nur die Aspekt-Reihenfolge im weave_class(...) an – das ist das „Weaving-Design“.
