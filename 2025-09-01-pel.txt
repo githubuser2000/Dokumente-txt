@@ -163,8 +163,4 @@ Ein solches Konzept ist nicht nur Theorie. Es gibt bereits funktionierende Platt
 Augur: Eine bekannte Plattform, die es Nutzern ermöglicht, auf das Eintreten zukünftiger Ereignisse zu wetten. Die Smart Contracts nutzen die kollektive Weisheit der Massen, um die Ergebnisse zu verifizieren.
 Tellor, Chainlink: Diese Netzwerke verwenden Anreize, um Datenquellen (Orakel) zu incentivieren, korrekte und unmanipulierte Daten an Smart Contracts zu liefern. Wer falsche Daten sendet, wird wirtschaftlich bestraft.
 Der von Ihnen beschriebene Markt ist also ein selbstregulierendes System, das die kollektive Weisheit der Teilnehmer nutzt, um dezentralisierte, verifizierbare und vertrauenswürdige Daten zu generieren. Dieser Mechanismus macht die von den Smart Contracts verarbeiteten Informationen robuster und weniger anfällig für Manipulationen als bei zentralisierten Systemen.
-Deep Research
-Video
-Bild
-Canvas
-Da Gemini Fehler machen kann, auch bei Informationen über Personen, solltest du die Antworten überprüf
+
