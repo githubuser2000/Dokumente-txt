@@ -1,0 +1,55 @@
+Was ist ein Smart Contract, der das Ergebnis Wahr oder Falsch bzw. Richtig oder Inkorrekt bzw. Lüge gegenüber Ehrlichkeit besitzen würde, im Vergleich zu einem Smart Contract, bei welchem dies nicht als Ergebniswert des erfolgten Smart Contracts stattfindend ersichtlich vorhanden weiterverwendtbar ist?
+Ein Smart Contract ist ein Programm auf einer Blockchain, das automatisch ausgeführt wird, sobald vordefinierte Bedingungen erfüllt sind. Er basiert auf der Logik "wenn X, dann Y". Smart Contracts können jedoch nicht selbstständig feststellen, ob Informationen aus der realen Welt "wahr" oder "falsch" sind, da Blockchains isolierte Systeme sind. Um diese externen Informationen zu erhalten, benötigen sie Oracles.
+Smart Contracts mit Wahrheitswert-Ergebnis
+Ein Smart Contract, der ein Ergebnis wie "Wahr" oder "Falsch" basierend auf externen Fakten liefert, nutzt einen Oracle-Service. Ein Oracle ist eine vertrauenswürdige Brücke, die Daten aus der realen Welt (Off-Chain-Daten) in die Blockchain (On-Chain-Daten) einspeist.
+    Funktionsweise: Der Smart Contract wartet auf eine bestimmte Information von einem Oracle. Zum Beispiel könnte ein Versicherungsvertrag, der automatisch auszahlt, wenn eine Wetterstation eine bestimmte Windgeschwindigkeit meldet, ein Oracle nutzen. Das Oracle übermittelt die Wetterdaten, der Smart Contract prüft die Bedingung (z.B. "wenn Windgeschwindigkeit > 100 km/h") und führt die Auszahlung nur aus, wenn die Bedingung erfüllt ist. Das Ergebnis des Vertrages ist in diesem Fall "Wahr" (Bedingung erfüllt) oder "Falsch" (Bedingung nicht erfüllt), was in der Blockchain transparent und unveränderlich gespeichert wird.
+    Vorteile:
+        Automatisierung: Prozesse werden ohne menschliches Zutun ausgeführt.
+        Vertrauen: Die Unveränderlichkeit der Blockchain sorgt für Vertrauen in das Ergebnis.
+        Nachvollziehbarkeit: Die Daten und das Ergebnis sind für alle Teilnehmer des Netzwerks einsehbar.
+Smart Contracts ohne Wahrheitswert-Ergebnis
+Ein Smart Contract, bei dem das Ergebnis nicht explizit als "Wahr" oder "Falsch" festgelegt wird, verarbeitet lediglich die Informationen, die ihm intern zur Verfügung gestellt werden. Er kann keine externen Fakten überprüfen.
+    Funktionsweise: Diese Art von Smart Contracts ist auf Daten beschränkt, die bereits in der Blockchain vorhanden sind. Ein Beispiel ist eine einfache Überweisung von Kryptowährung: Wenn Person A eine Transaktion mit einer bestimmten Menge an Kryptowährung an Person B auslöst, wird der Smart Contract einfach ausgeführt, ohne externe Bedingungen zu prüfen. Das Ergebnis ist nur, dass die Transaktion stattgefunden hat.
+    Vorteile:
+        Einfachheit: Die Logik ist direkt und unkompliziert.
+        Sicherheit: Da keine externen Datenquellen benötigt werden, gibt es kein Risiko, dass manipulierte oder falsche Off-Chain-Daten das Ergebnis beeinflussen.
+    Nachteile:
+        Begrenzte Anwendungsfälle: Ohne die Möglichkeit, externe Informationen zu verarbeiten, ist der Nutzen stark eingeschränkt. Es können keine Verträge abgebildet werden, die auf realen Ereignissen basieren.
+Zusammenfassend lässt sich sagen, dass der entscheidende Unterschied in der Datenquelle und der Komplexität der Logik liegt. Smart Contracts mit einem Wahrheitswert-Ergebnis benötigen einen Oracle-Dienst, um die Brücke zur realen Welt zu schlagen und komplexe, auf Fakten basierende Entscheidungen zu treffen. Ohne diesen Dienst sind sie auf einfache, rein interne Transaktionen beschränkt.1
+Kurz gesagt: Es gibt zwei Klassen von Smart Contracts.
+Reine Zustands-Contracts
+Sie bewegen Werte nach festen Regeln (Tausch, Escrow, AMM, Auktion …). Ob etwas „wahr/falsch“ ist, existiert nicht als expliziter, weiterverwendbarer Output; externe Annahmen (z. B. „Ware geliefert“) sind bloß Inputs/Trigger. Wahrheit lebt außerhalb des Vertrags.
+Epistemische (wahrheitsführende) Contracts
+Sie behandeln eine Behauptung
+p
+p als erstes Objekt und produzieren als Ergebniswert (on-chain/off-ledger) einen Verifikationsstatus. Dieser Status ist maschinenlesbar und kann komponiert werden (Downstream-Payments, Reputation, Straf-/Belohnungslogik). Hier wird Wahrheit Teil des Zustandsraums.
+Formale Skizze eines „Wahrheits-Contracts“
+Domäne der Urteile (mehr als Bool empfehlenswert):
+L={True, False, Inconclusive, Conflicted}
+L={True, False, Inconclusive, Conflicted}
+(Belnap-artig: wahr, falsch, unbestimmt, widersprüchlich.)
+Instanz (Claim):
+Claim=(id, h(p), Scope, StandardOfProof, Deadline, E, A, R, C, v)
+Claim=(id, h(p), Scope, StandardOfProof, Deadline, E, A, R, C, v)
+h(p)
+h(p): Hash der Proposition (Text/Fakt).
+Scope: Kontext/Domain (z. B. „Lieferung X nach Incoterms 2020 DAP“).
+StandardOfProof: „preponderance“, „clear & convincing“, „beyond reasonable doubt“ …
+E
+E: Evidenzreferenzen (Signaturen, Zertifikate, Messungen, Dokument-Hashes).
+A
+A: Attestoren/Oracles/Jury.
+R
+R: Aggregationsregel (z. B. k-of-n Signaturen, gewichtete Stimmen, ZK-Proof-Check).
+C
+C: ökonomische Sicherheiten (Stakes, Slashing-Regeln).
+v∈L
+v∈L: Ergebnis/Urteil (maschinenlesbar).
+Übergangslogik (vereinfacht):
+Ein Smart Contract ist ein selbstausführender Vertrag, dessen Bedingungen direkt in Code geschrieben sind und auf einer Blockchain ausgeführt werden. Er führt Aktionen automatisch aus, wenn vordefinierte Bedingungen erfüllt sind, ohne dass ein Mittelsmann erforderlich ist. Die Frage nach einem Smart Contract, der ein Ergebnis wie Wahr/Falsch, Richtig/Inkorrekt oder Lüge/Ehrlichkeit liefert, im Vergleich zu einem, der solche Ergebnisse nicht explizit als weiterverwendbare Werte bereitstellt, lässt sich wie folgt beantworten:1. Smart Contract mit Wahr/Falsch-Ergebnis (oder ähnlichen binären/logischen Ergebnissen)Ein Smart Contract, der ein Ergebnis wie Wahr/Falsch, Richtig/Inkorrekt oder Lüge/Ehrlichkeit liefert, würde typischerweise so programmiert sein, dass er eine Bedingung prüft und ein binäres oder logisches Ergebnis als Ausgabe erzeugt, das in der Blockchain gespeichert oder für weitere Aktionen verwendet werden kann. Solche Smart Contracts werden häufig als Orakel oder in Szenarien verwendet, die eine Validierung oder Überprüfung erfordern.Eigenschaften:Logische Ausgabe: Der Smart Contract gibt ein explizites Ergebnis wie true/false (z. B. in Solidity als bool) zurück, das direkt im Vertrag oder von anderen Verträgen abgefragt werden kann.
+Weiterverwendbarkeit: Das Ergebnis (z. B. true für "ehrlich" oder false für "Lüge") ist in der Blockchain persistent gespeichert und kann von anderen Smart Contracts oder Off-Chain-Anwendungen genutzt werden, z. B. für Entscheidungsfindung oder Trigger von Aktionen.
+Beispielanwendung:Ein Smart Contract, der prüft, ob eine Transaktion bestimmte Kriterien erfüllt (z. B. "Ist der Betrag > 100 ETH?"), gibt true oder false zurück.
+Ein Orakel-basiertes System, das externe Daten (z. B. Wetterdaten) validiert und ein Ergebnis wie "Regen = wahr" speichert.
+Ein Vertrag, der Ehrlichkeit prüft, könnte z. B. mit einem externen Orakel arbeiten, das Aussagen gegen verifizierte Datenquellen prüft und ein Ergebnis wie true (ehrlich) oder false (Lüge) liefert.
+Code-Beispiel (in Solidity):solidity
+
