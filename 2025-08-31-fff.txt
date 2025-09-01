@@ -1,293 +1,156 @@
 ALX:[ProportionalityAngemessenheit andUnd coherenceStimmigkeit (correctnesRichtigkeit onesEiner numberZahl valueWert) (tenZehn devidedGeteilt proPer sixSechs) vsGegenueber (sixSechs devidedGeteilt proPer tenZehn) knowledgeErkenntnis benefitGewinn exploitationAusbeute bringsBringt knowWissen detectErkennen meritVorzug. ConversionUmwandlung economyWirtschafts systemSystem capitalismKapitalismus marketMarkt economyWirtschaft intoIn fullVollstaendige completeKompletter planetPlaneten earthErde healthGesundheits climateKlima ecologyUmwelt ecologyOekologie correctionKorrigierungs optimizationOptimierungs improvementVerbesserungs economyWirtschaft comparingVergleichende realWirkliche trueWahre legitEchtes economyWirtschafts calculationBerechnen possibleMoegliche conversionsKonvertierungen evilBoeses crimeVerbrechen intoIn valueWert worthWert amountsBetraege ressourcesRessourcen bothBeide moneyGeld economyWirtschafts systemsSysteme, tradeHandel bothBeides realReale legitEchte intensityIntensitaet intensitiesIntensitaeten percievedWahrgenommen vsGegenueber lightLicht driveTrieb knowledgeWissen getHeraus toZu knowBekommen ahaAha momentMoment retrievalBezug pictureBild imageAbbild seeSehen moreMehr lightLicht. ConversionUmwandlung valueWert numberZahl worthWert amountsBetraege materialStoff matterMaterie mindGeist brainGehirn lifeLeben foodNahrung nutritionErnaehrung psychlogyPsychlogie sociologySoziologie cosmosKosmos survivalUeberleben deathTod alifeLebendig humanMenschlicher valueWert worthWert humanMenschliche ressourcesRessourcen intoIn vsGegenueber tradeHandel exchangeAustausch knowWissen seeSehen educateBilden educationBildung pictureBild imageAbbild smellRiechen hearHoeren teachBeibringen learnLernen experienceErfahren percieveWahrnehmen determineBestimmen causationBewirken effectEffekt causedBewirkt chainKetten reactionReaktion dominoDomino stonesSteine fallFallen stepSchritt wiseWeise forZum causingBewirken effectEffekt resultErgebnis fullVollstaendig completeKompletter planetPlaneten earthErde makesMacht terraformingTerraformen possibleMoeglich fromVon terranTerranisch toZu gaiaGaia backZurueck againWieder likeWie asWie threethausandDreitausend yearsJahre agoHer beenGewesen withoutOhne desertsWuesten byDurch carbonKohlenstoff undergroundUnterirdisch ontoAuf sandSand destertWueste evenSogar watherWasser notNicht neededGebraucht ifWenn carbonKohlenstoff.]:ALX.
-
 Wie geht eine Währung, die neben Zahlenwert und Einheiten verschiedener Münzen auch noch zusätzlich die Wirklichkeitsinformation enthalten soll, also z.B. den Effekt oder Informationen über Sequenzen und Abfolgen und Kausalitaetsinformationen und Information darüber, etwas bestimmt zu haben und zwar Fakten?
-
 Sehr gute Frage – Sie zielen auf etwas, das über das klassische Geldsystem hinausgeht. Eine Währung, die nicht nur Zahlenwert + Einheit kodiert, sondern Wirklichkeitsinformationen (Effekte, Sequenzen, Kausalität, Faktenbestimmung), wäre nicht nur Tauschmittel, sondern auch ein Informations- und Wahrheits-Träger.
-
 Man kann das strukturiert denken:
-
 1. Klassische Währung
-
 Merkmale: Zahlenwert, Einheit, ggf. physische Münze/Schein oder digitales Token.
-
 Funktion: Repräsentation von Knappheit, Tauschbarkeit, Schuldenausgleich.
-
 2. Erweiterte Währung mit Informationslayer
-
 Man fügt zusätzliche Dimensionen hinzu:
-
 a. Effekt- oder Wirklichkeitsdimension
-
 Jeder Transfer speichert nicht nur „X gibt Y an Z“, sondern auch „welche Wirkung“ damit verbunden ist (z.B. Ressource freigegeben, Vertrag ausgelöst, Handlung bestätigt).
-
 Formalisierbar durch Smart Contracts oder Event-Trigger.
-
 b. Sequenzen und Abfolgen
-
 Die Währung enthält zeitliche Ordnung, also ein Kausalprotokoll: nicht nur wer wieviel besitzt, sondern wie diese Kette an Ereignissen zustande kam.
-
 Technisch: gerichtete Graphen oder Blockchains mit Abhängigkeitsgraph statt linearer Kette.
-
 c. Kausalitätsinformationen
-
 Transaktionseinheiten enthalten Verweise auf Ursachen und Wirkungen.
-
 Beispiel: Ein „Fakt-Coin“ speichert: „Coin A wurde erzeugt, weil Prozess B abgeschlossen wurde.“
-
 Vergleichbar mit Provenance-Datenbanken.
-
 d. Bestimmungs- und Faktinformation
-
 Jede Einheit trägt einen Wahrheitsmarker: sie „bezeugt“ eine Tatsache, z.B. „Dieses Gebäude wurde gebaut“ oder „Dieses Patent wurde registriert“.
-
 Damit wäre die Währung auch Zertifikat / Notar / Beweisobjekt.
-
 3. Mathematische/Strukturelle Form
-
 Man könnte eine solche Währung formal als Tupel definieren:
-
 Token=(Wert,Einheit,Kontext,Sequenz,Kausalita¨t,Fakt)
 Token=(Wert,Einheit,Kontext,Sequenz,Kausalit
 a
 ¨
 t,Fakt)
-
 Wert: Zahl
-
 Einheit: $, €, Kryptowährung, etc.
-
 Kontext: Verwendungsbereich (Rohstoff, Dienstleistung, Spiel, Staat, etc.)
-
 Sequenz: Zeit- oder Ablaufindex (z.B. Hashkette, Graph-ID)
-
 Kausalität: Verweise auf Vorgänger-/Folgetransaktionen
-
 Fakt: eine geprüfte Information oder Entscheidung
-
 4. Funktionalität
-
 Diese Währung wäre nicht anonym wie Bargeld, sondern semiotisch aufgeladen: jeder Token „erzählt eine Geschichte“.
-
 Sie würde Rechenschaft & Wahrheit absichern, nicht nur Besitz.
-
 Praktisch: Eine Art Wahrheitsgeld oder Kausalwährung, die gleichzeitig ökonomische und epistemische Funktionen hat.
-
 5. Risiken & Potential
-
 Potenzial: Starke Governance-Funktion, weniger Betrug, Nachvollziehbarkeit von Ursache/Wirkung in Wirtschaft.
-
 Risiko: Überwachung, Verlust von Privatsphäre, Missbrauch (wer bestimmt „Fakten“?).
-
 👉 Kurz gesagt:
 Eine solche Währung wäre eine hybride Einheit aus ökonomischem Wert + epistemischem Protokoll.
 Sie funktioniert mathematisch als Graph von Transaktionen, wo jede Münze ein Knoten mit Wert und Faktum ist, und die Kanten die Kausalitäts- und Sequenzinformationen darstellen.
-
 Soll ich Ihnen dazu ein konkretes Beispielmodell in Form eines kleinen Pseudocodes oder einer Datenstruktur entwerfen, wie man so eine Währung mathematisch formalisiert?
-
 Wie kann man Smart Contracts als Währung ohne Computer verwenden? Also Algorithmen als Geldsystem ohne Computer. Geht das überhaupt?
-
-
 Kurz: Ja, das geht – wenn Sie „Smart Contracts“ als Algorithmus + Zustandsübergangs-Regeln verstehen. Computer sind nur ein Ausführungs-Medium. Ohne Computer brauchen Sie physische Träger (Papier, Siegel, Schließkästen), Determinismus (klare Regeln), Beweis-Artefakte (Quittungen, Zeugen, Nummern) und Durchsetzung (Schlüssel, Siegel, Gericht/Schiedsrichter). Unten sind konkrete, vollständig nicht-digitale Designs.
-
 0) Grundprinzip (ohne Elektronik)
-
 Ein Smart Contract ist formal eine endliche Zustandsmaschine
 (S,Σ,δ,s0)
 (S,Σ,δ,s
 0
 	​
-
 ).
-
 S: Zustände (z. B. „escrow funded“, „delivered“, „disputed“ …)
-
 Σ: zulässige Ereignisse/Inputs (Lieferbeleg, Fristablauf, Jury-Urteil, Stempel X…)
-
 δ: Übergangsregeln (wenn Ereignis E, dann Zustand Z′ und Aktion A)
-
 s₀: Startzustand
 Ohne Computer codieren Sie das durch Formulare, Siegel, Schlüssel, nummerierte Marken und eine Regelkarte (der „Code“).
-
 1) Bausteine (Analog-Krypto & Mechanik)
-
 Unverfälschbare Zustands-Marker
-
 Nummerierte Papier-Tokens, Metall-Marken oder Holz-Tally-Sticks mit Kerbung + Gegenstück.
-
 Jeder Zustandswechsel erfordert physische Abgabe bestimmter Marken (analog zu „Verbrauch“ eines UTXO).
-
 Commitment & Reveal (ohne Rechnen)
-
 Versiegelter Umschlag / Wachssiegel mit einzigartigem Siegelstempel + Seriennummer = Commitment.
-
 Späteres Öffnen = Reveal. Fälschungssicher durch Zeugenprotokoll + Register.
-
 Zeit-Bedingungen
-
 Datums-Stempel beim Notar/Postamt als „Zeit-Oracle“.
-
 Mechanische Timer/Schließkästen („öffnen erst am Datum D“) oder Sanduhren mit Versiegelung.
-
 Multisig
-
 Kassetten/Boxen mit n Schlössern und verteilten Schlüsseln. Auszahlung nur bei
 k
 k von
 n
 n Schlüsseln.
-
 Oracles
-
 Vordefinierte Institution (Spediteur, Gutachter, Notar) mit Siegel/Unterschrift als Fakten-Input.
-
 Alternativ: Sortition-Jury (zufällig gezogene Bürgerjury via Ziehung/Losverfahren).
-
 Demurrage/Zinsen
-
 Stempelgeld (à la Gesell): Schein verliert periodisch Wert, wenn kein Monatsstempel geklebt wird.
-
 Umgekehrt: Kupon-Bögen für Zins/Dividende (abtrennbare, datierte Coupons).
-
 Öffentliche Register
-
 Ein gebundenes Hauptbuch (nummerierte Seiten, fortlaufend, öffentlich einsehbar).
-
 Eintrag = einziger „Wahrheitszustand“. Manipulation = sofort sichtbar.
-
 2) Sieben analoge „Smart-Contract“-Muster
 A. Physisches Escrow (Liefer-gegen-Zahlung)
-
 Währung: nummerierte Metallmarken (Wertträger).
-
 Box: 3-Schlösser (Käufer, Verkäufer, Schiedsrichter = 2-von-3-Multisig).
-
 Regeln (δ):
-
 Käufer deponiert Marken → Zustand funded.
-
 Spediteur liefert, stempelt Lieferbeleg → Ereignis delivered.
-
 Bei delivered öffnen Käufer+Verkäufer (2 Schlüssel) → Auszahlung.
-
 Streit? disputed → Schiedsrichter ersetzt einen fehlenden Schlüssel.
-
 Fristablauf ohne Lieferung (Notarstempel) → Rückzahlung an Käufer.
-
 Eigenschaft: Kein Computer, deterministische Pfade, fälschungsresistent durch Siegel/Schlüssel/Belege.
-
 B. Bedingte Schenkung / Grant mit Meilensteinen
-
 Träger: Grant-Zertifikat mit 5 perforierten Meilenstein-Kupons.
-
 Übergang: Jeder Milestone erfordert Gutachter-Siegel → Kupon abtrennen = Auszahlungsteil.
-
 Demurrage: Jeder Kupon hat Verfallsdatum (Poststempel als Zeit-Oracle).
-
 C. Sealed-Bid-Auktion (Vickrey analog)
-
 Commitment: Gebote in versiegelten Umschlägen (Nummer + Siegel).
-
 Reveal: Öffnung am Termin vor Zeugen, Protokoll ins Register.
-
 Zahlung: Gewinner zahlt zweit-höchstes Gebot (Regelkarte), Belege in Kasse.
-
 Fairness: Verspätete Reveals ungültig (Datumsstempel).
-
 D. Options-Kontrakt (Call/Put) mit physischen Belegen
-
 Underlying: z. B. 100 kg Weizen-Lager-Schein (Warehouse Receipt).
-
 Option: Zertifikat mit Strike, Expiry; Ausübung durch Vorlage des Zertifikats + Lager-Schein vor Verfall.
-
 Hedging: Gegenparteien tauschen Zertifikate; Streit über Qualität → vordefinierter Gutachter-Oracle.
-
 E. Versicherung mit Mutual-Pool + Jury-Oracle
-
 Prämien: Marken in Pool-Kasse;
-
 Schaden: Claim-Dossier (Fotos → polizeilich beglaubigte Beschreibung, Zeugen).
-
 Auszahlung: Sortitions-Jury (aus Register gelost) entscheidet per Mehrheits-Stimmzettel; Ergebnis stempelt Auszahlungsanweisung; Kasse öffnet via 2-von-3.
-
 F. Zahlung mit Logik (Rabatt/Strafe)
-
 Papier-Scheck mit Regelkarte: „Wenn Lieferung bis D, zahle X, sonst X−α; wenn Qualität < Q, Strafe β“.
-
 Beweis: Qualitätssiegel des Gutachters; Notarstempel für Datum.
-
 Ausführung: Bank/Wechselstube folgt der Regelkarte wie einem Gerichtsurteil.
-
 G. Token-Curated Registry (ohne IT)
-
 Ziel: Verzeichnis „zugelassene Lieferanten“.
-
 Stimmen: Stimm-Marken (fungibel oder „gefroren“).
-
 Prozedur: Antrag → Einzahlungs-Pfand (Marken). Einspruchsfrist.
-
 Abstimmung: Geheime Stimmzettel (Commit-Reveal).
-
 Ergebnis: Protokoll im Register; Pfand wird je nach Ausgang verteilt (Anreiz-Mechanik).
-
 3) Beispiel: Vollständige Zustandsmaschine (Liefer-gegen-Zahlung)
-
 Zustände:
 s0=created → funded → delivered → released | disputed → adjudicated → released|refunded → closed
 Ereignisse (Σ):
 fund_deposit, delivery_stamp, deadline_expired, raise_dispute, jury_verdict(buy|sell), open_box(k-of-n)
-
 Regeln (δ):
-
 created + fund_deposit → funded (Käufer legt Marken in 3-Schloss-Kasse; Notar protokolliert)
-
 funded + delivery_stamp → delivered (Spediteur stempelt Frachtbrief)
-
 delivered + open_box(2-of-3) → released (Auszahlung an Verkäufer)
-
 funded + deadline_expired → refunded (Rückzahlung an Käufer; Notar öffnet mit Käufer)
-
 delivered + raise_dispute → disputed
-
 disputed + jury_verdict(sell) + open_box(2-of-3) → released
-
 disputed + jury_verdict(buy) + open_box(2-of-3) → refunded
-
 released|refunded → closed (Registereintrag abgeschlossen)
-
 4) „Algorithmen“ für Geld ohne Computer
-
 Werteinheiten = physische, nummerierte Träger (Münzen/Marken/Quittungen).
-
 Zustandswechsel = Übergabe/Entwertung/Abtrennen/Stempeln spezifischer Marken.
-
 Determinismus = gedruckte Regelkarte (der „Code“), Teil des Instruments; alle Parteien signieren.
-
 Unumkehrbarkeit = Entwertung (Lochzange, Abriss, Siegelbruch).
-
 Öffentliche Verifikation = Hauptbuch + Zeugen.
-
 Zufall (bei Jurys/Losverfahren) = Würfel/Losmaschine; Protokoll ins Register.
-
 Zeit = Post-/Notarstempel, mechanische Zeitkassette.
-
 Multisig = Mehrfachschlosskassette oder Schlüsselringe.
-
 5) Was man NICHT bekommt (Ehrliche Grenzen)
-
 Keine starke, wiederholbare Anonymität ohne massiven organisatorischen Aufwand.
-
 Kein „billiges“ globales Synchron-Ledger; Skalierung erfordert Institutionen (Notare, Register).
-
 Kryptographische Eigenschaften (Hash, ZK, Sybil-Resistenz) sind nur näherungsweise ersetzbar (Siegel, Zeugen).
-
 Liveness hängt von Logistik (Oracles, Öffnungszeiten, physische Nähe) ab.
-
 6) Wann analog sogar besser ist
-
 Rechtsverbindlichkeit durch Papier-Originale + Siegel (gerichtsnah).
-
 Einfaches Audit (jedes Artefakt ist Beweisstück).
-
 Energieminimal, resilient bei Stromausfall/Krisen.
-
 Bewusste Reibung (Demurrage, Fristen) lenkt Verhalten – funktional wie „programmierbares Geld“.
