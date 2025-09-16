@@ -1,0 +1,43 @@
+"K Kontinuum oder Hendegramm Elf";"K Kontinuum oder Hendegramm Elf";
+"Auto-Theorie (Das Spiel denkt sich selbst – und ich bin ein Aspekt davon)";
+"Stufe Wandeltyp        Beispiel im Modell Fixes Regelwerk Nur 𝔾 (keine Dynamik)";"Ebene der Einsicht";
+"Reaktion auf Umwelt    D + A abhängig von S";"Reine Regelkenntnis (Was darf ich tun?)";
+"Verhaltenserweiterung  Δ wirkt auf Dynamik und Aktionen";"Strategieverständnis (Wie optimiere ich mein Überleben?)";"Reflexionsfähigkeit (Was bewirkt mein Handeln über mich hinaus?)";
+"Regeländerung durch Spieler    Γ (z. B. Spieler führt Regelbruch als Regel ein)";"Systemisches Denken (Wie beeinflusse ich die Gesamtlage?)";
+"Allianzverschiebung    Λ (z. B. dynamischer Fraktionswechsel)";"Ideologische Durchdringung (Was ist das Ziel, das mich prägt?)";
+"Spielziel-Transformation       Φ (Nutzen wird moralisch, ideologisch oder subjektiv verzerrt)";"Strukturkritik (Wer hat das Spiel gemacht und warum?)";
+"Strukturkollaps        Ξ (Selbstzerstörung, Reset, Löschung)";"Metawandelkompetenz (Wie kann ich das Spiel selbst transformieren?)";
+"Realitätswechsel       Ψ (Spieler erleben unterschiedliche Spiele)";"Ontologische Relativität (Was ist überhaupt Realität?)";"Identitätsauflösung (Was ist mein Ich im Spiel? Habe ich überhaupt eine feste Identität?)";
+"Axiomatische Transformation    Änderung der zugrundeliegenden Logik, Zeit, Kausalität";"Wirklichkeitskritik (Warum akzeptieren andere dieses Spiel?)";
+"Reflexive Selbstsimulation     Das Spiel enthält Teilmodelle seiner selbst (Meta-G im G)";"Ethik der Struktur (Ist dieses Spiel gut oder böse? Wer leidet strukturell?)";
+"Spielgenerierung       System erzeugt aus sich selbst neue Spielinstanzen";"Symbolische Emergenz (Spiele erzeugen Bedeutung über Regeln hinaus)";
+"Spieler-Neuerschaffung Spieler können neu „geboren“ oder „reflektiert“ werden";"Kollektive Reflexivität (Mehrere Spieler erkennen gemeinsam die Struktur)";
+"Ideogenese     Neue Weltanschauungen oder Spielkulturen entstehen aus Spielverlauf";"Systemtranszendenz (Ich bin nicht mehr Teil des Spiels, sondern Beobachter des Modells selbst)";
+"Paradigmenbruch        Der Zweck des Spiels (Überleben, Sieg) verliert seine Gültigkeit";"Auto-Theorie (Das Spiel denkt sich selbst – und ich bin ein Aspekt davon)";
+"Systemische Inversion  Spieler und Regeln tauschen ihre Rollen, Spieler werden zu Operatoren";
+"Logik-Dekohärenz       System verliert konsistente Logik und bleibt trotzdem interaktiv";"";
+
+ALX:[hendecagramHendekagramm elevenElf K K continuumKontinuum:
+Eure Lustigkeit	Your Hilarity / Your Jolliness
+Eure Verspieltheit	Your Playfulness
+Eure Albernheit	Your Silliness
+Eure Schalkhaftigkeit	Your Mischievousness
+Eure Unverschämtheit	Your Outrageousness
+Eure Flatterhaftigkeit	Your Flightiness
+Eure Wankelmütigkeit	Your Capriciousness
+
+dodecagramDodekagramm twelveZwölf L L continuumKontinuum:
+Eure Fürchterlichkeit	Your Dreadfulness
+Eure Schrecklichkeit	Your Horribleness
+Eure Widerlichkeit	Your Vileness
+Eure Abscheulichkeit	Your Abominableness
+Eure Grausamkeit	Your Cruelty
+Eure Dunkelheit	Your Darkness
+Eure Finsternis	Your Gloominess / Your Sinisterness
+Eure Gehässigkeit	Your Spitefulness
+Eure Scheußlichkeit	Your Hideousness
+Eure Monstrosität	Your Monstrosity
+Eure Boshaftigkeit	Your Maliciousness
+Eure Pestilenz	Your Pestilence
+Eure Verderbtheit	Your Corruption
+Eure Unmenschlichkeit	Your Inhumanity.]:ALX.
