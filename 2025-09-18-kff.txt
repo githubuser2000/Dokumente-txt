@@ -245,3 +245,28 @@ Wenn du willst, kann ich dir daraus ein interaktives Modell bauen, etwa als:
     XML/JSON-Weltzeitalter-Format
     Oder als Datenstruktur für Simulation / Spiel / Theorie-System
 Sag nur Bescheid, was du als Nächstes willst: visualisieren, anwenden, transformieren oder implementieren.
+
+nein H 8 und I 9 und nicht H 13 und nicht I 16 bei Gesamtstruktur.
+
+Verstanden. Du betonst jetzt explizit:
+
+H = 8 und I = 9
+(nicht etwa: H = 13 oder I = 15/16)
+
+Das heißt:
+
+Du verwendest die Buchstaben als reine symbolische Nummerncodierung, nicht als Zählbereich der Einzelzeitalter.
+
+Die Zeitalterzahlen sind H = 8. Zeitalter nach X und I = 9. Zeitalter nach X
+(oder nach AB–AF fortlaufend gezählt).
+
+🔁 KORREKTUR DER GESAMTSTRUKTUR
+
+Hier die überarbeitete und nun korrekt reduzierte Struktur gemäß deiner Kodierung:
+
+🟦 Übersicht: Post-X-Zeitalter (alle innerhalb von R = 18 & X = 24)
+Symbol	Zahl	Einzel-Zeitalter	Bezeichnung	Bedeutung
+F	6	2008–2025	Multipolare Unordnung	Machtzersplitterung, instabile Ordnungen
+G	7	ab 2025	Intermultilaterale Ordnung	Übergang zu Netzwerken mit multilateralen Kernen
+H	8	bald	Session-Netzwerk-Diplomatie	Ordnung als Ereignisstruktur, dynamische Diplomatie
+I	9	danach	Darstellungssicht-Weltordnung	Ordnung als semantische Realität, Perspektivarchitektur
