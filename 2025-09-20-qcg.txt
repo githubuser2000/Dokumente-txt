@@ -1,0 +1,22 @@
+ALX:[
+Niere
+    Origanum majorana
+    Foeniculum vulgare
+    Chichorium intybus
+    Arctostaphylos
+    Polygonum aviculare
+    Althaea officinalis
+    Solidago virgaurea
+    Hydrangea
+    Uncaria tomentosa
+Leber
+    Taraxacum officinale
+    Chichorium intybus
+    Glycyrrhiza glabra
+    Agrimonia Eupatoria
+    Quercus robur
+    Silybum marianum
+    Fumaria officinalis
+    Dioscorea villosa
+    Berberis vulgaris radix
+]:ALX.
