@@ -1,0 +1,59 @@
+Hier sind Alternativen zu ffmpeg, unterteilt nach Anwendungsfällen (Videobearbeitung, Transkodierung, Audioextraktion etc.):
+🔧 1. CLI-basierte Tools (wie ffmpeg)
+✅ [1] GStreamer
+    Beschreibung: Multimediasystem-Framework mit CLI-Tools und APIs (z. B. gst-launch-1.0).
+    Stärken: Modular, mächtig, skriptfähig.
+    Eignung: Komplexe Audio/Video-Pipelines.
+    Nachteile: Weniger einfach als ffmpeg.
+✅ [2] libav / avconv
+    Beschreibung: Fork von ffmpeg, inzwischen teils rückgeführt.
+    Befehl: avconv
+    Status: Weniger aktiv gepflegt, inkompatibel zu ffmpeg-Skripten.
+✅ [3] SoX (für Audio)
+    Beschreibung: “Sound eXchange” – CLI für Audiobearbeitung.
+    Stärken: Audiofilter, Konvertierung, Effekte.
+    Befehl: sox input.wav output.mp3
+✅ [4] mencoder
+    Beschreibung: CLI von MPlayer.
+    Stärken: Video-Encoding, Teilbereiche von ffmpeg ersetzbar.
+    Schwächen: Veraltet, schlechtere Codec-Unterstützung.
+🖼️ 2. GUI-Tools (nutzen intern oft ffmpeg oder Alternativen)
+✅ [5] HandBrake
+    GUI: Ja
+    CLI: HandBrakeCLI
+    Eignung: Video-Transkodierung (z. B. DVD → MP4).
+    Stärken: Presets, einfach für Massenkonvertierung.
+✅ [6] Avidemux
+    GUI: Ja
+    Eignung: Einfaches Schneiden, Transkodieren, ohne Re-Encoding (Copy-Modus).
+    Nachteile: Kein Batch-Mode.
+✅ [7] Shotcut / Kdenlive / OpenShot
+    GUI-Videoschnitt
+    Stärken: User-friendly, teilweise ffmpeg-basiert
+    Alternativen für Schnitt, nicht für automatisierte CLI-Jobs.
+💡 3. Programmiersprachen-APIs / Libraries
+✅ [8] PyAV (Python)
+    Beschreibung: Pythonic-Wrapper für libav / ffmpeg.
+    Einsatz: Wenn du direkt in Python mit Streams arbeiten willst.
+    Alternativen: moviepy, scikit-video.
+✅ [9] MediaPipe / OpenCV
+    Stärken: Bei Videoanalyse / Frame-Manipulation / CV.
+    Begrenzung: Kein vollständiger ffmpeg-Ersatz, aber ergänzend.
+☁️ 4. Webbasierte Alternativen
+✅ [10] cloudconvert.com, Zamzar, Online-Convert.com
+    Nutzung: Drag-and-drop Umwandlung online.
+    Achtung: Datenschutz / Dateigröße limitiert.
+🧪 Vergleich nach Aufgaben:
+Aufgabe	Alternative Tools
+Video in anderes Format	HandBrakeCLI, GStreamer, avconv
+Audio extrahieren	SoX, GStreamer, Audacity (GUI)
+Video schneiden (verlustfrei)	Avidemux, mkvtoolnix, LosslessCut (GUI)
+Batch-Konvertierung	HandBrakeCLI, GStreamer mit Skripten
+Videoanalyse	OpenCV, MediaPipe, PyAV
+Live-Streaming	GStreamer, OBS Studio (GUI)
+🔚 Fazit:
+    Für komplexe CLI-Jobs: GStreamer ist die mächtigste Alternative, aber schwerer zu lernen.
+    Für GUI-Nutzer: HandBrake, Avidemux, Shotcut sind einfache Alternativen.
+    Für Audio-only: SoX ist leicht und effizient.
+    Für Scripting in Python: PyAV, moviepy, OpenCV.
+Wenn du deinen konkreten Anwendungsfall nennst (z. B. "Videoton extrahieren", "Batch-Encoding", "Frames analysieren"), kann ich dir eine präzisere Alternative mit Beispiel-Befehlen geben.
