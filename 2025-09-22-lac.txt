@@ -1,0 +1,92 @@
+ALX:[pypy3 conti.py ae
+0.: AE Kontinuum (Einunddreißig)
+1.: feines Detail
+2.: Muster
+3.: Suchen wie Jäger und Sammler, hier Sammler, hier jagen)
+4.: Erweiterte Details jagen (wie Jänger und Sammler, hier jagen)
+5.: finden (wie Jäger und Sammler, hier Sammler)
+6.: Sammeln (wie Jäger und Sammler, hier Sammler)
+7.: Verteilen
+0.: AE Kontinuum (Einunddreißig) ueber fein koerniger detaillierter hoch sensible Feinheit"
+1.: fein "
+2.: Unterschied (Muster) "
+3.: unterscheiden, Suchen wie Jäger und Sammler, hier Sammler, hier jagen)"
+4.: suchen Unterschied, Erweiterte Details jagen (wie Jänger und Sammler, hier jagen) "
+5.: feiner unterschied, finden (wie Jäger und Sammler, hier Sammler) "
+6.: Unterscheidungskritierium, Sammeln (wie Jäger und Sammler, hier Sammler) "
+7.: Unterscheidungsnavigation, Verteilen "
+8.: Unterscheidungsmöglichkeiten der Feinheiten in erster Uebersicht der kombinierbaren Möglichkeiten "
+9.: Horizont weiteress Detail "
+10.: Grundlagen Fundamente der Unterscheidung von Feinheit und Detail durch Sensitivitaet und Sensibilitaet"
+11.: Feinheitsklassifikation und Differenzschemata"
+12.: feinkörnige Tiefendifferenzierung"
+13.: spektrale Verfeinerungsperspektive"
+14.: Kontextuelle Feinabstimmung"
+15.: Unterscheidungskoerner der Feingranularitaet als Basis zu kleineren Koernern zum sensiblen Differenzieren"
+16.: Sensibilitätsstrukturmodellierung"
+17.: Feinheitshuerden Ueberwindungsbroken Grobes gegen feines Detail"
+18.: Systematik von Feinheit und Detail und sensibler Sensitivitaet als Werkzeug Zusammenstellung dafuer"
+19.: Gesuchtes gefundene Feinheit und Detail als Ergebnis"
+20.: Synthese der Feinheiten zu transdifferenzierender Klarheit"
+21.: Transversale Feinheitsrelationen"
+22.: Mikrodifferenzielle Unterscheidungseinheiten"
+23.: Multispektrale Differenzintegration"
+24.: Feinstrukturelle Bedeutungsverschiebung"
+25.: Rekursive Unterscheidungsschleifen"
+26.: Subdifferenzielle Erkennungsnetzwerke"
+27.: Schwellensensitivitätsdynamik"
+28.: Präzisionsverstärkte Unterscheidungslogik"
+29.: Verdichtete Feinheitsmustererkennung"
+30.: Interkonnektive Detailkonstellationen"
+31.: Meta-Differenzialisierung feinster Stufen"
+32.: Hyperfeinheit als Wahrnehmungsmodus"
+33.: Unterscheidungsquantelung in Wahrnehmungsfeldern"
+34.: Schwellenüberschreitung zu ultra-feinen Signaturen"
+35.: Sensibilitätsfraktale und Differenzresonanzen"
+36.: Dynamische Feinheits-Topologie"
+37.: Komplexitätsaufspaltung feiner Unterschiede"
+38.: Singularitäten der Mikrodifferenz"
+39.: Finalität sensitiver Detailklarheit"
+40.: Emergenz eines feinkalibrierten Weltverstehens"
+
+AE Kontinuum (Einunddreißig) ueber fein koerniger detaillierter hoch sensible Feinheit";
+fein ";
+Unterschied (Muster) ";
+unterscheiden, Suchen wie Jäger und Sammler, hier Sammler, hier jagen)";
+suchen Unterschied, Erweiterte Details jagen (wie Jänger und Sammler, hier jagen) ";
+feiner unterschied, finden (wie Jäger und Sammler, hier Sammler) ";
+Unterscheidungskritierium, Sammeln (wie Jäger und Sammler, hier Sammler) ";
+Unterscheidungsnavigation, Verteilen ";
+Unterscheidungsmöglichkeiten der Feinheiten in erster Uebersicht der kombinierbaren Möglichkeiten ";
+Horizont weiteress Detail ";
+Grundlagen Fundamente der Unterscheidung von Feinheit und Detail durch Sensitivitaet und Sensibilitaet";
+Feinheitsklassifikation und Differenzschemata";
+feinkörnige Tiefendifferenzierung";
+spektrale Verfeinerungsperspektive";
+Kontextuelle Feinabstimmung";
+Unterscheidungskoerner der Feingranularitaet als Basis zu kleineren Koernern zum sensiblen Differenzieren";
+Sensibilitätsstrukturmodellierung";
+Feinheitshuerden Ueberwindungsbroken Grobes gegen feines Detail";
+Systematik von Feinheit und Detail und sensibler Sensitivitaet als Werkzeug Zusammenstellung dafuer";
+Gesuchtes gefundene Feinheit und Detail als Ergebnis";
+Synthese der Feinheiten zu transdifferenzierender Klarheit";
+Transversale Feinheitsrelationen";
+Mikrodifferenzielle Unterscheidungseinheiten";
+Multispektrale Differenzintegration";
+Feinstrukturelle Bedeutungsverschiebung";
+Rekursive Unterscheidungsschleifen";
+Subdifferenzielle Erkennungsnetzwerke";
+Schwellensensitivitätsdynamik";
+Präzisionsverstärkte Unterscheidungslogik";
+Verdichtete Feinheitsmustererkennung";
+Interkonnektive Detailkonstellationen";
+Meta-Differenzialisierung feinster Stufen";
+Hyperfeinheit als Wahrnehmungsmodus";
+Unterscheidungsquantelung in Wahrnehmungsfeldern";
+Schwellenüberschreitung zu ultra-feinen Signaturen";
+Sensibilitätsfraktale und Differenzresonanzen";
+Dynamische Feinheits-Topologie";
+Komplexitätsaufspaltung feiner Unterschiede";
+Singularitäten der Mikrodifferenz";
+Finalität sensitiver Detailklarheit";
+Emergenz eines feinkalibrierten Weltverstehens";]:ALX.
