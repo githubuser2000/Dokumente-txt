@@ -1,0 +1,88 @@
+ALX:[❯ python3 conti.py ad                                                            
+0.:   AD Kontinuum (Dreißig) Reflektion
+1.:   Zünden
+2.:   wie pingpong
+3.:   heiß
+4.:   brennen
+5.:   reagieren
+6.:   anstecken
+7.:   Erschaffen
+8.:   Vernichten
+0.:   Aggregatzustand gehört zu TriacontagramTriakontagramm zur Dreißig AD AD continuumKontinuum
+1.:   Flüssig
+2.:   Gasförmig
+3.:   Fest
+4.:   Plasma
+5.:   Bose-Einstein-Kondensat (BEC) – der „klassische“ fünfte Aggregatszustand
+6.:   Fermionen-Kondensat
+7.:   Quark-Gluon-Plasma
+8.:   Suprafester Zustand (Supersolid)
+9.:   Zeitkristall
+10.:   Rydberg-Materie
+11.:   Strange-Matter (Seltsame Materie)
+12.:   Superfluides Helium II (als Sonderform)
+13.:   Photonen-Kondensat
+0.:   ad ad continuumKontinuum protosProtos predatorRaubkrieger predatorPraedator archonArchont powerDie overKraft isIst overwhelmingUeberwaeltigend
+1.:   zünden für Entflammen wie mit Feuerstein oder durch Reibung Urzeit Vorzeit
+2.:   Schmelzen
+3.:   Energetisieren
+4.:   Erhitzen
+5.:   Wärme glühen
+6.:   lodern
+7.:   Verteilen von Feuer oder Energie Uebergreifen in Richtungen
+8.:   Feuer Brennen Verbrauch von Stoff wie Kohle
+9.:   verschmelzen geschweisst zu Eis
+10.:   Hitze
+11.:   Varianten Energetisierung Brenn Verschiedenheit Unterschiede des Loderns
+12.:   Hitzegrad Stufen Arten
+13.:   Feuerweg Energieweg Spektren unipolar
+14.:   Schmelz Reaktion Zusammenkunft z.B. Stoffe oder auch Energiearten etc. usw.
+15.:   Vergluehen
+16.:   Reaktion (nicht nur chemisch und auch physikalisch und universell oder aber auch kosmisch) reagieren Redox reduktion oxidation etc usw Reaktion
+17.:   zerbersten zersplittern
+18.:   Feuer saugen blasen düsen quetschen Energie
+19.:   Protuberanz weite ausschweifungen der Energie
+20.:   Gespeicherte Energie Akku Batterie etc usw
+21.:   glühende heisse Lava
+22.:   zirkulierende Energieformen im Wechsel und Wandel
+23.:   Luken Auswege Feuer Energie verflüchtigen reagieren ueber verstecktes
+24.:   Verbindungswege Moeglichkeiten Energieausdehnung reagieren Umgebung herum
+25.:   Energiefluss Strom auch oder Feuer oder Lawa oder Magnetismus oder humane Lebensenergie Fluss kosmisch statt universell
+26.:   Energie Austausch Wechsel Polaritaet bipolar
+27.:   Verteilung von Geschmolzenem wie Lavafluss
+28.:   Stuecke Happen Koerner von Energie Reaktionslevel
+29.:   Energiewirbel wie Wasserabfluss und wie Wirbelsturm Feuer
+30.:   Kraft Energie Reaktion Exposition erste Stufe hoeheres Energielevel wie ein Rang alle dreissig multipliziert mal ganze natuerliche Zahl Nummer Wert und wie bei Atombombe die Explosion vor der Explosion Detonation zur staerkeren Flamme Reaktion staerker durch Reaktion entfachen analog zu Dragonball Son Goku Super Saiyajin Allah Djinn Morpheus Mace Windu Djinn Daemon Genie Gott Prophet wie Starcraft Archont Predator vs Alien
+░▒▓    ~/E/m/todel-git-dir-fuerUbergangsFiles  on   master *1 
+❯ cat concat-reli-049.csv                                                           ─╯
+ad ad continuumKontinuum protosProtos predatorRaubkrieger predatorPraedator archonArchont powerDie overKraft isIst overwhelmingUeberwaeltigend;
+zünden für Entflammen wie mit Feuerstein oder durch Reibung Urzeit Vorzeit;A;
+Schmelzen;B;
+Energetisieren;C;
+Erhitzen;D;
+Wärme glühen;E;
+lodern;F;
+Verteilen von Feuer oder Energie Uebergreifen in Richtungen;G;
+Feuer Brennen Verbrauch von Stoff wie Kohle;H;
+verschmelzen geschweisst zu Eis;I;
+Hitze;J;
+Varianten Energetisierung Brenn Verschiedenheit Unterschiede des Loderns;K;
+Hitzegrad Stufen Arten;L;
+Feuerweg Energieweg Spektren unipolar;M;
+Schmelz Reaktion Zusammenkunft z.B. Stoffe oder auch Energiearten etc. usw.;N;
+Vergluehen;O;
+Reaktion (nicht nur chemisch und auch physikalisch und universell oder aber auch kosmisch) reagieren Redox reduktion oxidation etc usw Reaktion;P;
+zerbersten zersplittern;Q;
+Feuer saugen blasen düsen quetschen Energie;R;
+Protuberanz weite ausschweifungen der Energie;S;
+Gespeicherte Energie Akku Batterie etc usw;T;
+glühende heisse Lava;U;
+zirkulierende Energieformen im Wechsel und Wandel;V;
+Luken Auswege Feuer Energie verflüchtigen reagieren ueber verstecktes;W;
+Verbindungswege Moeglichkeiten Energieausdehnung reagieren Umgebung herum;X;
+Energiefluss Strom auch oder Feuer oder Lawa oder Magnetismus oder humane Lebensenergie Fluss kosmisch statt universell;Y;
+Energie Austausch Wechsel Polaritaet bipolar;Z;
+Verteilung von Geschmolzenem wie Lavafluss;AA;
+Stuecke Happen Koerner von Energie Reaktionslevel;AB;
+Energiewirbel wie Wasserabfluss und wie Wirbelsturm Feuer;AC;
+Kraft Energie Reaktion Exposition erste Stufe hoeheres Energielevel wie ein Rang alle dreissig multipliziert mal ganze natuerliche Zahl Nummer Wert und wie bei Atombombe die Explosion vor der Explosion Detonation zur staerkeren Flamme Reaktion staerker durch Reaktion entfachen analog zu Dragonball Son Goku Super Saiyajin Allah Djinn Morpheus Mace Windu Djinn Daemon Genie Gott Prophet wie Starcraft Archont Predator vs Alien;AD;]:ALX.
