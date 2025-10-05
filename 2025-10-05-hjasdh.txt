@@ -1,0 +1,22 @@
+ALX:[
+Gerechtigkeit ← Selbsterhalt
+Barmherzigkeit ← Mitgefühl für Nahestehende
+Demut ← Stolz
+Brüderlichkeit ← Stammesloyalität
+Großzügigkeit ← Besitzstolz
+Ehrlichkeit ← Täuschung zu eigenem Vorteil
+Geduld ← Ungeduld
+Dankbarkeit ← Anspruchsdenken
+Respekt ← Dominanzverhalten
+Mitgefühl ← Schutzinstinkt
+Pflichtbewusstsein ← Gehorsam
+Bescheidenheit ← Geltungsbedürfnis
+Solidarität ← Gruppeninstinkt
+Treue ← Besitzdenken
+Verantwortung ← Schuldabwehr
+Gottesfurcht ← Naturfurcht
+Friedfertigkeit ← Kampfgeist
+Reinheit ← Ekel
+Toleranz ← Abgrenzung
+Disziplin ← Impulsivität
+]:ALX.
