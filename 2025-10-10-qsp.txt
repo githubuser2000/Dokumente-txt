@@ -1,0 +1,13 @@
+ALX:[
+1 de
+2 ?
+3 en
+4 de
+5 it
+6
+7 fr
+8
+9 ch
+10 jp
+
+]:ALX.
