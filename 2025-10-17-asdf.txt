@@ -1,0 +1,10 @@
+ALX:[RanksRänge colorsFarben privilegesPrivilegien statusStatus degreeGrad gradeGrad hierarchyHierarchie forFuer twelveZwoelf L L dodecadegramDodekadegramm byDurch multiverseMultiversum P P dimensionDimension thirteenDreizehn signalsSignale soDamit colorsFarben colorfulBunt;;MixtureMischung eitherEntweder additiveAdditiv subtractiveSubtraktiv aboutVon fourteenVierzehn N N tetraidecadegramTetraidekadegramm;;
+yellowGelb;firstErste;MixtureMischung FirstErste secondZweite isIst greenGruen;A;
+blueBlau;secondZweite;MixtureMischung FirstErste secondZweite isIst greenGruen andUnd butAber mixtureMischung secondZweite thirdDritte isIst purpileLila;B;
+redRot;thirdDritte;MixtureMischung secondZweite thirdDritte isIst purpileLila;C;
+violetViolett (representsRepreasentiert ultruUltra violetViolett);fourthVierte;;D;
+DeepTiefen greenGruen (representsRepreasentiert infraInfra redRot) (forFuer usUns normallyNormalerweise blackSchwarz);fifefthFuenfte;;E;
+OrangeOrange withMit redRot, yellowGelb yellowGelb redRot mixedGemischt (representsRepräsentiert microMikro wavesWellen);sixthSechste;;F;
+WhiteWeiss brightHell brownBraun grayishGrau shiningScheinend (mixMischung redRot blueBlau yellowGelb isIst brownBraun)  (representsRepreasentiert x-rayRöntgen beamStrahlen radiationStrahlung)  (forFuer usUns normallyNormalerweise whiteWeiss);seventhSiebte;;G;
+BlackishSchwarzartig whiteWeiß shinyScheinend gancingGlänzend (teraherzTeraherz) (shouldSollte actuallyEigentlich beSein aEine colorFarbe);eigthAchte;;H;
+BlackSchwarz whiteWeiß (radioRadio wavesWellen) (shouldSollte actuallyEigentlich beSein aEine colorFarbe);nineteNeunte;;I;]:ALX.
