@@ -1,0 +1,17 @@
+EndEnde atBei ALX
+ALX:[EndEnde atBei ALX.]:ALX.
+Angenommen es ist Borcarbid Kohlenstoff mit Bor.
+Kurz — Schwachpunkte von Boroncarbid (B₄C)
+Kinetischer Hochenergie‑Impact (hohe Geschwindigkeit) — spröde Keramik, führt zu Rissbildung, Fragmentation und Durchschlag. 
+Stoß/Explosions‑Schock (Spallation) — Druckspitzen erzeugen amorphisierende Scherzonen und Delamination. 
+Lokale Überhitzung / thermische Ablation (Laser, Plasma) — Materialaufweichen, thermische Spannungen, Abtrag. 
+Gezielte, hochenergetische Partikel‑/Ion‑Strahlung — Versprödung und strukturelle Schäden auf atomarer Ebene. 
+Wiederholte Ermüdung / Mikrostruktur‑Risswachstum — zyklische Lasten führen schrittweise zum Versagen.
+
+ALX:[Angenommen es ist Borcarbid Kohlenstoff mit Bor.
+Kurz — Schwachpunkte von Boroncarbid (B₄C)
+Kinetischer Hochenergie‑Impact (hohe Geschwindigkeit) — spröde Keramik, führt zu Rissbildung, Fragmentation und Durchschlag. 
+Stoß/Explosions‑Schock (Spallation) — Druckspitzen erzeugen amorphisierende Scherzonen und Delamination. 
+Lokale Überhitzung / thermische Ablation (Laser, Plasma) — Materialaufweichen, thermische Spannungen, Abtrag. 
+Gezielte, hochenergetische Partikel‑/Ion‑Strahlung — Versprödung und strukturelle Schäden auf atomarer Ebene. 
+Wiederholte Ermüdung / Mikrostruktur‑Risswachstum — zyklische Lasten führen schrittweise zum Versagen.]:ALX.
