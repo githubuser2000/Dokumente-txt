@@ -54,7 +54,6 @@ Das ist das O Pureniuum. Alle Kontinuuen sind von mir und jetzt das Pureniuum He
 -24;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?
 -25;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?;?
 Das ist das O Pureniuum. Alle Kontinuuen sind von mir und jetzt das Pureniuum Hexagon nach den Kontinuum Pentagon bis 31 AE. Kontinuum für Zahlen Vorwärts Rückwärts und Pureniuum für Winkel Richtung Matrix Fläche und Kapsel Box.
-
 2. Die 7 Strahlen des Pureniuum-HeptagonsJeder Strahl repräsentiert eine universelle Domäne der Kategorietheorie:Strahl
 Richtung (Winkel)
 Thematik
@@ -87,7 +86,6 @@ Y
 308.6°
 Kan & Erweiterung
 Kan
-
 Ring
 Bezeichnung
 Inhalt (Beispiele)
@@ -108,13 +106,10 @@ Adjunctionskern
 Linker/Rechter Adjunktor
 9
 Equalizer & Coequalizer
-
 11
 Pullback / Pushout
-
 13
 Kegel & Kokegel
-
 15
 Yoneda-Embedding
 Y: C → [Cᵒᵖ, Set]
@@ -123,28 +118,20 @@ Repräsentierbarkeit
 Hom(-,A) ≅ F
 18
 Limites (allgemein)
-
 20
 Kolimites (allgemein)
-
 22
 Kan-Erweiterungen
-
 25
 End & Coend
 ∫^x F(x,x)
 27
 Monadische Adjunktion
-
 29
 Topos-Interne Logik
-
 31
 ∞-Kategorische Grenze
 Quasi-Kategorien, (∞,1)-Limites
-
-
-
 Die 14 Strahlen des Pureniuum Heptagon-SeptagonStrahl
 Typ
 Winkel
@@ -220,7 +207,6 @@ Spitze
 334.3°
 Ext
 Erweiterung
-
 Die 31 Ringe – Vollständige HierarchieRing
 Name
 Inhalt (Beispiele)
@@ -247,22 +233,16 @@ Monadische/Trianguläre Identitäten
 μ, η
 7
 Equalizer / Coequalizer
-
 8
 Pullback / Pushout
-
 9
 Kegel / Kokegel
-
 10
 Universelle Kegel
-
 11
 Limites (endlich)
-
 12
 Kolimites (endlich)
-
 13
 Yoneda-Lemma
 Nat(Hom(-,A), F) ≅ F(A)
@@ -271,57 +251,40 @@ Yoneda-Embedding
 C → [Cᵒᵖ, Set]
 15
 Repräsentierbare Funktoren
-
 16
 Dichte Yoneda
-
 17
 Kan-Lift / Kan-Extension
-
 18
 Allgemeine Limites
-
 19
 Allgemeine Kolimites
-
 20
 End & Coend
 ∫^x F(x,x)
 21
 Weighted Limits
-
 22
 Filtered Colimits
-
 23
 Monadische Adjunktionen
-
 24
 Kleisli / Eilenberg-Moore
-
 25
 Topos-Subobjektklassifikator
 Ω
 26
 Interne Logik
-
 27
 (∞,1)-Kategorien
-
 28
 Quasi-Kategorien
-
 29
 Modelle von ∞-Topoi
-
 30
 Homotopie-Grenzwerte
-
 31
 Absolute Universalität
-
-
-
 Level;Objekte;Morphismen;Limites;Kolimites;Adjunktionen/Funktoren;Darstellung/Yoneda/Kan;Meta/Reflexion
 15;O Pureniuum (Zentrum);reine Pfeile/Isomorphieklassen;universelle Limites (abstrakt);universelle Kolimites;Universal-Arrows, freie Konstruktionen;lokale Repräsentationen;Pureniuum-Axiomatik (Grundregeln)
 16;Exponenten / interne Hom;natürliche Transformationen (einfache);erweiterte Produkte;erweiterte Koprodukte;Universal Arrow (konkrete freie Konstr.);lokale Darstellungen;Selbstähnlichkeit / Reflexion
@@ -340,283 +303,144 @@ Level;Objekte;Morphismen;Limites;Kolimites;Adjunktionen/Funktoren;Darstellung/Yo
 29;finalisierte Metaobjekte;Finalisierer-Pfeilklassen;finale Limits;finale Colimits;Adjunktionen ↦ Isomorphismen;Yoneda-Abschluss;Purenium-Axiomatik abgeschlossen
 30;transfinites Objekte/Ordnungen;transfinite Morphismen;transfinites Limiting;transfinites Colimiting;transfinites Adjunktionsschema;transfinite Yoneda/Grothendieck;Pureniuum als transfinites Schema
 31;abschließendes Meta-Universum;alle Morphismenklassen;alle Limits existent;alle Colimits existent;alle adjungierten Paare realisiert;Yoneda auf Meta-Ebene universell;Pureniuum Heptagron abgeschlossen (Endlage)
-
-
 Objekte
-
 Morphismen / Pfeile
-
 Limites
-
 Kolimites
-
 Adjunktionen / Funktoren
-
 Darstellungen / Yoneda / Kan
-
 Meta / Reflexion / Universalia
-
 Ich setze 15 = O Pureniuum (Zentrum). Die Levels 16–31 erkläre ich knapp: je Zeile ein Level, in 7 Einträgen (Speichen).
-
 16
-
 erweiterte Objekte (Exponenten, interne Homs)
-
 natürliche Transformationen einfacher Form
-
 Produkte (erweiterte Form)
-
 Koprodukte (erweiterte Form)
-
 Universal Arrow (konkrete freie Konstruktionen)
-
 lokale Darstellungen (repräsentierbare Funktoren)
-
 Grundlagen der Reflexion (Selbstähnlichkeit)
-
 17
-
 algebraische Objekte (Algebren, Moduln)
-
 Kompositionsebenen höherer Ordnung
-
 Pullbacks (faserprodukt)
-
 Pushouts
-
 Freie/Forgetful-Adjunktionen (Beispiele)
-
 Yoneda-Einbettung (lokal)
-
 Invarianzprinzipien
-
 18
-
 Objekte mit Struktur (Top., orderd, metric)
-
 Monomorphismen / Epimorphismen
-
 Equalizer
-
 Coequalizer
-
 Adjunktions-Einheit / Koeinheit (sichtbar)
-
 Kan-Liftings (einfach)
-
 Dualitäten (Paarbildung)
-
 19
-
 kategorielle Objekte (Kategorien als Objekte)
-
 Funktoren als Morphismen zwischen Objekten
-
 Endlimits (Inverse limits)
-
 Endkolimits (Direkte limits)
-
 Links- / Rechtsadjunkte (Beispielfamilien)
-
 Darstellungssätze (lokal-global)
-
 Stabilitätskriterien (unter Operationen)
-
 20
-
 interne Kategorien, interne Logik
-
 2-Morphismen (Nat. Transform.)
-
 (Co)ends, integrale Konstrukte
-
 (Co)ends duale Formen
-
 2-Adjunktionen (höher)
-
 Kan-Erweiterungen (vollständig)
-
 Metakonstrukte: Monaden / Komonaden
-
 21
-
 Objekte mit Universum-Charakter (Große Objekte)
-
 Higher arrows (2-, n-Morph.)
-
 Limits über Diagramme (komplex)
-
 Kolimits über Diagramme
-
 Adjunktive Dreiecke, Kompositionen
-
 Yoneda vollständig (darstellend)
-
 Monadenalgebra / Kleisli-Struktur
-
 22
-
 Spektren / Geometrische Objekte (Spec(R))
-
 Morphismen mit Faserstruktur
-
 Homotopische Limits
-
 Homotopische Kolimits
-
 Homotopie-Adjunktionen (Quillen)
-
 Derivierte Darstellungen, Ableitungen
-
 Reflexive Metaobjekte (Selbstabbildungskategorien)
-
 23
-
 ∞-Objekte (∞-Kategorien – informell)
-
 ∞-Morphismen (Homotopien als Pfeile)
-
 ∞-Limits (hochflexibel)
-
 ∞-Colimits
-
 ∞-Adjunktionen
-
 Höhere Yoneda / ∞-Darstellung
-
 Meta-Reflexion auf ∞-Ebene
-
 24
-
 universelle Klassifikatoren (Subobject-Classifier, Topoi)
-
 interne Logik-Morphismen
-
 Topos-Limits / exponentielle Konstrukte
-
 Topos-Kolimits
-
 Geometrische Adjunktionen (Toposmorph.)
-
 Grothendieck-Kan / Kohärenz
-
 Klassifikatoren, interne Sprachen
-
 25
-
 O Pureniuum (Zentrum / reines Universum) — Referenzpunkt
-
 reine Meta-Pfeile (Isomorphieklassen)
-
 universelle Limites (abstrakt)
-
 universelle Kolimites
-
 universelle Adjunkte (abstrakt)
-
 Yoneda als Metasatz
-
 Purenium-Axiomatik (Regeln der Pureniuum-Reflexion)
-
 26
-
 transzendente Objekte (Meta-Universen)
-
 transzendente Morphismen (Meta-Pfeile)
-
 transzendente Limits (Meta-Limits)
-
 transzendente Colimits
-
 adjungierte Meta-Funktoren
-
 universelle Repräsentation aller Funktoren
-
 Selbstreferenzaxiome (Pureniuum reflexiv)
-
 27
-
 kategoriale Unifikatoren (Vereinheitlichungsobjekte)
-
 Morphismus-Algebren (Endomorphism-Algebra)
-
 universelle Projektive/Injective Objekte
-
 universelle Kokonstrukte
-
 adjunktive Algebra (Monoidale Adjunktion)
-
 Yoneda-Meta (Darstellungen von Darstellungen)
-
 Meta-Konsistenz, Kohärenzachsen
-
 28
-
 absolute Objekte (Isomorphieklassen als Objekte)
-
 absolute Pfeile (Äquivalenzen)
-
 absolute Limits (absolut stabil)
-
 absolute Colimits
-
 adjungierte Equivalenzen (Äquivalenz statt nur Adjunktion)
-
 vollständige Repräsentierbarkeit
-
 Pureniuum-Topologie (Grenzstruktur)
-
 29
-
 finalisierte Metaobjekte (abschließende Universen)
-
 Pfeilklasse der Finalisierer
-
 finale Limits (Endpunkte)
-
 finale Colimits
-
 universelle Adjunktionen als Isomorphismen
-
 Yoneda-Abschluss
-
 Pureniuum-Axiomatik abgeschlossen
-
 30
-
 transfinite Objekte (Ordinal-Erweiterung)
-
 transfinite Morphismen
-
 transfinites Limiting (Ordinal-Limits)
-
 transfinites Colimiting
-
 transfinites Adjunktionsschema
-
 transfinite Yoneda/Grothendieck-Konstrukte
-
 Pureniuum als transfinites Schema
-
 31
-
 abschließendes Meta-Universum (Pureniuum maximal)
-
 alle Morphismenklassen enthalten
-
 alle Limits existieren (abstrakt)
-
 alle Colimits existieren
-
 alle adjungierten Paare vollständig realisiert
-
 Yoneda auf Meta-Ebene universell
-
 Richtung	Universelle Form
 Untere Grenzen	Initialität, Minimales
 Obere Grenzen	Terminalität, Maximales
 Dualität	Jede universelle Eigenschaft hat eine duale
 Charakterisierung	Eindeutig bis auf Isomorphie
 Metaniveau	Yoneda-Prinzip: Objekte ≅ Hom-Funktoren
-
-
