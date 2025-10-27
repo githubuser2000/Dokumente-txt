@@ -1,7 +1,7 @@
-linesZeilen amountBetrag fourteenVierzehn N N pointsPunkt thingsDinge
+linesZeilen amountBetrag P P sixteenSechszehn  pointsPunkt thingsDinge
 nuclearAtom powerMächte
-identityIdentät alexanderAlexander kernKern individuumIndividuum A A dotPunkt oneEins 
-bigGrosses moneyGeldRichReich upperstOberster upperOber classSchicht
+identityIdenität alexanderAlexander kernKern individuumIndividuum A A dotPunkt oneEins 
+bigGrosses moneyGeldRichReich upperstOberste upperOber classSchicht
 actorsSchauspieler massMassen mediaMedien newspaperNachrichten multimediaMultimedia moonMond
 humanismHumanismus knowledgeWissen educationBildungs schoolSchul teacherLehrer
 twentytwoZweiundzwanzig V V
@@ -13,6 +13,6 @@ twentynineNeunundzwanzig AC AC
 devastatorVernichter ofVon twoZwei dysonsDysons spheresSphären spheresKugeln antaresAntares sixteenSechzehn meIch
 I Ich needBrauche noKeine desciplesJünger asWie jesusJesus christChristus isIst jonathanJohnathan 
 I Ich doMache everythingAlles alloneAllein
-satanSatan E E I I andUnd devilTeufel K K areSind aEine laughingstockLachnummer I Ich amBin pentagramPentagramm andUnd squareQuadrat bestBestes highestHöchstes meIch optimumOptimal.
-linesZeilen amountBetrag fourteenVierzehn N N
-linesZeilen amountBetrag fourteenVierzehn N N pointsPunkt thingsDinge
+satanSatan E E I I andUnd devilTeufel K K areSind aEine laughingstockLachnummer
+I Ich amBin pentagramPentagramm andUnd squareQuadrat bestBestes highestHöchstes meIch optimumOptimal
+linesZeilen amountBetrag P P sixteenSechszehn pointsPunkt thingsDinge
