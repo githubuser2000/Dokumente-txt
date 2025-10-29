@@ -1,0 +1,29 @@
+fromVon 0 toZu 7 10 13 14 19 21 28 42 63 84 105 112 126
+0;bondingsBindungen;0;;
+G;loveLiebe;7;;
+J;coalitionKoalition andUnd asAls loveLiebe 
+friendshipFreundschaft;10;;
+M;disireBegehren notNicht loveLiebe butAber alsoAuch 
+loveLiebe highlyHöchstgradig maybeVielleicht;13;;
+N;romanceRomantik;14;;
+S;supportiveUnterstützende goalsZiele benevolentWohlwollen 
+commonGemeinsame aimsZielvorgaben;19;;
+U;passionate-loveVierliebheit haveHat aSich crushVerliebt 
+notNicht loveLiebe butAber alsoAuch loveLiebe highlyHöchstgradig
+ maybeVielleicht;21;masterMeistern masteryMeisterschaft;;
+AB;advantureAbenteuer;28;;
+AR;affectionSchwärmen savorSchwelgen;42;issueAngelegenheits 
+dedicationWidmungs graduatingGraduieren masterMeister;
+BK;willinglyWillentlich unwillinglyUnwillentliches vibratingVibriende 
+thoughtsGedanken investmentInvestierung phantazisePhantasieren;63;
+doctoratePromovieren doctorDr phdDoktor;
+CF;infatuatedVerknallt infatuatedVerzaubert toZu chaoticChaotisches 
+dwellGrübeln aboutÜber whomWen butAber notNicht loveLiebe butAber 
+alsoAuch loveLiebe highlyHöchstgradig maybeVielleicht;84;
+professorProfessor habilitationHabitilitation;
+DA;mercyfulGnadenvolle discerningErkennendes 
+sinkEin inSenkendes investingInvestieren;105;;
+DH;devotionHingabe uxoriousnessHingebungsergebenheit;112;;
+DV;DedicationWidmungs ruttingBrunst flowHin glowingGluten 
+fervencyInbrunst beSein insideInnerhalb decicationWidmungs glutGowing;126;;
+fromVon 0 toZu 7 10 13 14 19 21 28 42 63 84 105 112 126
