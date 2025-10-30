@@ -2,6 +2,6 @@
 7 maleMännlich
 8 femaleWeiblich
 10 maleMännlich
-12 maleMännlich
+11 maleMännlich
 13 femaleWeiblich
-oddUngerade evenGerade doableMachbar
+amountBetrag oddUngerade evenGerade numbersZahlen equalGleich doableMachbar
