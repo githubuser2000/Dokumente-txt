@@ -1,0 +1,7 @@
+6 femaleWeiblich
+7 maleMännlich
+8 femaleWeiblich
+10 maleMännlich
+12 maleMännlich
+13 femaleWeiblich
+oddUngerade evenGerade doableMachbar
