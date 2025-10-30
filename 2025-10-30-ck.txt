@@ -1,7 +1,19 @@
-6 femaleWeiblich
-7 maleMännlich
-8 femaleWeiblich
-10 maleMännlich
-11 maleMännlich
-13 femaleWeiblich
-amountBetrag oddUngerade evenGerade numbersZahlen equalGleich doableMachbar
+1femaleWeiblich
+2femaleWeiblich
+3femaleWeiblich
+4femaleWeiblich
+5maleMännlich
+6femaleWeiblich
+7maleMännlich
+8femaleWeiblich
+9maleMännlich
+10maleMännlich
+11maleMännlich
+12maleMännlich
+13femaleWeiblich
+14maleMännlich
+15maleMännlich
+16femaleWeiblich
+17maleMännlich
+18femaleWeiblich
+amountBetragoddUngeradeevenGeradenumbersZahlenequalGleichdoableMachbar
