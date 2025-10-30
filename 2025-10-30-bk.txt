@@ -1,0 +1,3 @@
+determineBestimmen northNord southSüd earthErde
+causalKausal phenemonasPhänomene 5 colorsFarben skinHaut
+effectsEffekte phenemonasPhänomene areSind bothBeide causalKausal determinationsBestimmungen northNord southSüd earthErde 5 colorsFarben skinHaut withMit redRot greenGrün
