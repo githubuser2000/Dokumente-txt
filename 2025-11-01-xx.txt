@@ -1,0 +1,5 @@
+3 federationFöderation
+4 empireImperium asWie brasilBrasilien sizeGröße
+5 centralZentral stateStaat likeWie China indiaIndien
+6 confederationKonföderation worksArbeitet operatingBetriebs system kernelKern schedulerZeitplaner
+7 democrationDemokration withMit democratorDemokrator
