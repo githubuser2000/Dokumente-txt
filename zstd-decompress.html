@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beispiel</title>
+  </head>
+  <body>
+    <h1>Beispiel</h1>
+    <script src="polyfill.min.js"></script>
+    <script src="zstd-js/decompress/index.js"></script>
+    <script>
+      async function loadAndDecompressData() {
+        const response = await fetch('compressed.zst');
+        const compressedData = await response.arrayBuffer();
+        const decompressedData = await zstd.decompress(compressedData);
+        console.log(decompressedData);
+      }
+
+      loadAndDecompressData();
+    </script>
+  </body>
+</html>
