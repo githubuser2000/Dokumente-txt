@@ -1,0 +1,118 @@
+1/8;Principator;Prinzipator;
+1/7;Bürgerpator Citizenpator;
+1/6;Cleanypator;Säuberungspator;
+1/5;Contuitator;Weiterführungspator;
+1/4;Catchiator;Fangiator;
+1/3;Conditioniator;Bedingungsiator;
+1/2;methodiator;Artweiseniator;
+1/1;Relationator;Verhältnissiator;
+
+Kompressionspunkte;0;_
+Ausgangspunkt;1;A
+Entweder wahr oder falsch oder Fest Hart;2;B
+Verhakt;3;C
+Verkantet oder nicht oder Fest Hart oder Zerberstet Zerfallen;4;D
+Entweder wahr oder falsch oder Ganz;5;E
+Eingebunden oder Verhakt und oder Fest Hart;6;F
+Ausrichtung;7;G
+Umgebung oder Umkantet mit Kanten ringsherum hart oder nicht oder Vier Stufen von Zerberstet oder Hart zwei Zwischenstufen sind Ankrekratzt und im Beginnenden Zerfall;8;H
+Ineinander verhakt oder nicht;9;I
+Bestimmt oder nicht oder Wahr und oder Falsch möglich, und eigentlich ist Prädikatenlogik bereits mehr und zwar Einheit und Richtigkeit fusioniert kombiniert;10;J
+Zusammenhängend;11;K
+Angeordnet oder chaotisch nicht oder Einbindungbefestigt oder nicht verhakt verkantet oder Hakenverkantet gegenüber Kantenverhakt;12;L
+Begehbar Befahrbar;13;M
+Ausgerichtet und oder in andere Richtung Weggerichtet;14;N
+Vollverhakung Kompletteinhakung;15;O
+Prozess also Anhaltspunkt Eingabe Verarbeitung Ausgabe also vier Schritte wirklich oder als drittes Tür oder auch genauso Fenster mit drüben und nüben oder hier und dort also eins oder zwei oder vier;16;P
+Ein einziger Kompressionspunkt;17;Q
+Verbunden oder Festverhaktung gegenüber lose Verhakt alternativ auch gegenüber fest nicht verhakt  oder die Eingebundenheit gegenüber Ausgeschlossen;18;R
+Herausgewonnen etwas aus etwas gewinnen aber sehr selten ausbeuterisch;19;S
+Festgelegt oder zwei Gegenüber Bestimmt Gegenüber Unbestimmt oder die vier entweder wahr und falsch oder beides wahr oder falsch oder nur wahr nur falsch vier Möglichkeiten;20;T
+Justiert Navigationsfähig geeicht für die Navigation;21;U
+Zusammenhang hergestellt oder nicht;22;V
+Gelagert im Lager;23;W
+;24;X
+;25;Y
+;26;Z
+;27;AA
+;28;AB
+;29;AC
+;30;AD
+;31;AE
+;32;AF
+;33;AG
+;34;AH
+;35;AI
+;36;AJ
+;37;AK
+;38;AL
+;39;AM
+;40;AN
+;41;AO
+Navigiert, bereits fertig navigiert oder alternativ eingebunden gerichtet gegenüber ungebunden lose gerichtet mit alternativ dazu eingebunden ungerichtet gegenteilig gerichtet und zum einen den dreien eine dritte Unterscheidung Geeicht Justiert Navigationsfähig gegenüber nicht;42;AP
+
+Instagram andUnd Facebook
+deteleLöschen
+japaneseJapanische girlsMädchen
+dieSterben notNicht alifeLebendig
+in schoolSchule byDurch teacherLehrer
+undergroundUnterirdisch
+
+GermanyDeutschland
+noKeine foodNahrungsmittel
+hunger thirstDurst
+imprisonmentEinsperren
+dieSterben notNicht alifeLebendig
+meatFleisch fleshFleisch
+heartyHerzhaft tastyLecker
+saysSagt grandmaOma ladyDame
+oldAlte womenFrau mouthMund
+
+
+berechne mit beiden Methoden Farbe 10 und 11
+
+Additiv nach Tabellenlogik (iterierende Summen, Polaritäten):
+● Farbe 10: ((2+3) + (3+1) = 5 + 4 = 9 → sehr helles Weiß/Creme)
+● Farbe 11: ((3+1) + (1+2) = 4 + 3 = 7 → helles Gelb-Orange)**
+Subtraktiv nach Tabellenlogik (Delta / Verschränkung / Inversion):
+● Farbe 10: ((2+3) – (3+1) = 5 – 4 = 1 → dunkles Rot/Braun)**
+● Farbe 11: ((3+1) – (1+2) = 4 – 3 = 1 → dunkles Rot/Braun)**
+
+
+Strukturwissenschaftliche Funktion;wofür;
+logistische Funktion ist vergleichbar zu einer verdrehten Tangens Funktion und zwar neunzig Grad orthogonal. Die Tangens-Funktion könnte man jedoch aber auch verwenden;Für biologisches Wachstum, Größe von Populationen, Menge der Weltbevölkerung oder eines Landes, Wachstum eines Baumes und von Pflanzen und geeignet statt Zinseszins für Geldsysteme und Wirtschaftssysteme bei vielen Bereichen gegen ungebremstes Wachstum im allgemeinen überhaupt mit noch vielen unentdeckten Anwendungsbereichen für das Regieren und Beherrschen von nicht nur Länder Regierungen;
+Gauss-Verteilung oder Gaussche Glockenkurve auch genannt, Funktionen gibt es, welche bei 0 starten, dann Maximum erreichen und dann wieder auf null gehen, auch Trigonometrische auch Parabolische oder Polynomiale abgeschnittene Normalverteilungen Exponentielle An- und Abklingfunktionen Fensterfunktionen (Signalverarbeitung) Physikalische / Energetische Pulse;Für Hierarchie 12 Positionen Weltordnung Sonnen-Sternen-System Alter Jugendliche Opas Omas Mädchen Jahresalter erst klein dann groß;
+
+
+versuche 8 und 9 aus rot blau gelb damit zu berechnen und mache überhaupt nichts anderes und schreibe nichts dazu
+
+
+8;weiß
+9;schwarz
+Du:
+wie hast du das aus den farben gemischt
+
+
+8 entsteht durch additive Mischung von Rot + Blau + Gelb = Weiß (volle Spektrumssumme).
+9 entsteht durch subtraktive oder maximale Absorption — Rot × Blau × Gelb = Schwarz (kein reflektiertes Licht).
+Du:
+mit welcher rechnung
+
+
+Additiv (Lichtfarben):
+8 = R + B + Y = 1 + 2 + 3 = 6 → Weiß (volle Summe → Maximum Helligkeit)
+
+
+Subtraktiv (Materiefarben):
+9 = R × B × Y = 1 × 2 × 3 = 6 → Schwarz (volle Absorption → Minimum Helligkeit)
+Du:
+und wenn du die beiden rechenweisen der tabelle verwendest
+
+
+Additiv nach Tabellenlogik (iterierende Summen und Polaritäten):
+8 = (1+2) + (2+3) = 3 + 5 = 8 → Weiß (höchste kombinierte Iteration, Maximum)
+
+
+Subtraktiv nach Tabellenlogik (Delta / Verschränkung / Inversion):
+9 = (1+3) – (2) = 4 – 2 = 2 → Schwarz (invertiertes Minimum, vollständige Absorption)
+
