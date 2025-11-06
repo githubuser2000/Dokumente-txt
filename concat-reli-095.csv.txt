@@ -1,0 +1,20 @@
+Weitere Zahlenskala, auch für Räume nutzbar Koordinanten-Systeme Achsen Tensoren und Zahlen ja nun auch für Winkel-Richtungen und dann Vektoren Matritzen damit;0;_
+?;1;A
+?;2;B
+?;3;C
+?;4;D
+?;5;E
+?;6;F
+?;7;G
+?;8;H
+?;9;I
+?;10;J
+?;11;K
+?;12;L
+P-adische Zahlen;13;M
+?;14;N
+?;15;O
+Algebraische Zahlen, d.h. Polynom eines Grades entspricht genau der Nummer Stelle der Dimension des Grades des Polynoms;16;P
+Transzendente Zahlen – sind die irrationalen Zahlen ohne die algebraischen Zahlen;17;Q
+?;18;R
+Perfektoide Zahlen von Peter Scholze Fields Medaille Dissertiation Bonn verbinden p-adische mit uns bekannten Zahlen, nachdem ich 2006 in so nem ollen Haus in Altenburg was inspirierendes an die Wand geschrieben habe, wie bei a beautiful Mind Nash-Gleichgewicht, was gefunden wurde, in dem man mich in Berlin beobachtet hat und mein Leben schwer gemacht hat – verdammte Wissenschaft, Mist, Herr Steven Hawking Schwarze Loch Forschung auch nicht ohne mich und vier Reiter Naturalismus Richard Dawkins weil Berlin Diana Tod Scheidung König Charles Windsors Ermordung durch O J Simpson weil Typ 15 da ich Typ 30=15/2 Techno Mukke;19;S
