@@ -1,0 +1,45 @@
+Rahmenfäden (Rahmenstruktur):
+Die äußeren Begrenzungsfäden, die das Netz im Raum verankern.
+
+Radialfäden (Speichenfäden):
+Strahlenförmig vom Zentrum nach außen verlaufende Fäden, die das Netz stützen und Schwingungen leiten.
+
+Hilfsspirale (Bauhilfsspirale):
+Provisorische Spirale, die beim Netzbau als Gerüst dient und später oft wieder entfernt wird.
+
+Fangspirale (Klebespirale):
+Die eigentliche, klebrige Spirale, die Beute festhält – sie wird von außen nach innen gelegt.
+
+Nabe (Zentrum, Netzmitte):
+Der Mittelpunkt des Netzes, oft Rückzugsort der Spinne oder Ausgangspunkt für Beutefang.
+
+Anheftungspunkte (Verankerungsfäden):
+Verbindungspunkte, mit denen das Netz an Ästen, Zweigen oder anderen Oberflächen befestigt ist.
+
+Signal- oder Meldefaden:
+Ein Faden, der das Netz mit dem Aufenthaltsort der Spinne verbindet und Vibrationen überträgt.
+
+Brückenfäden:
+Erste Verbindungslinien zwischen Befestigungspunkten; dienen als Grundlage für das spätere Netz.
+
+Stützfäden (Sekundärfäden):
+Zusätzliche Verstärkungen, die das Netz stabilisieren und Spannungen ausgleichen.
+
+Rahmenkreuzungen:
+Punkte, an denen Radial- und Rahmenfäden miteinander verknotet oder verklebt sind – tragende Verbindungsknoten.
+
+Anheftungsschleifen (Verklebungspunkte):
+Kleine Schleifen oder Knäuel, mit denen Fäden sicher aneinander haften oder an Untergründen befestigt werden.
+
+Nr.	Merkmal	Verbundgrad	Begründung
+1	Radialfäden (Speichenfäden)	hoch	Sie verbinden die Nabe mit dem Rahmen, kreuzen viele andere Fäden (Hilfsspirale, Fangspirale) und bilden das tragende Skelett des Netzes.
+2	Rahmenfäden (Rahmenstruktur)	hoch	Umfassen das gesamte Netz und verbinden alle Radialfäden an der Peripherie – wesentlich für Gesamtstabilität und Spannung.
+3	Nabe (Zentrum)	hoch	Zentraler Verbindungspunkt aller Radialfäden; struktureller und funktionaler Mittelpunkt des Netzes.
+4	Fangspirale (Klebespirale)	mittel–hoch	Berührt alle Radialfäden; verknüpft Netzbereiche funktional (Beutefang), stabilisiert aber weniger stark als Rahmen und Speichen.
+5	Hilfsspirale (Bauhilfsspirale)	mittel	Temporäres Verbindungselement, das während des Baus Orientierung und Spannung gibt, danach aber teilweise entfernt wird.
+6	Brückenfäden	mittel	Dienen als erste Verbindungsbasis und tragen nach außen zur Befestigung bei; verbinden äußere Punkte, aber nicht viele interne Elemente.
+7	Stützfäden (Sekundärfäden)	mittel	Verstärken lokale Spannungen und verbinden Teilbereiche, sind aber keine Hauptachsen.
+8	Rahmenkreuzungen	mittel–niedrig	Lokale Verbindungsknoten zwischen Rahmen- und Radialfäden; wichtig für Festigkeit, aber nur punktuell wirksam.
+9	Anheftungspunkte (Verankerungsfäden)	niedrig–mittel	Verbinden das Netz mit der Umgebung; wichtig für Halt, aber nicht für interne Strukturvernetzung.
+10	Signal- oder Meldefaden	niedrig	Verbunden meist nur mit Nabe und Rückzugsort der Spinne; funktional wichtig, strukturell aber kaum verbindend.
+11	Anheftungsschleifen (Verklebungspunkte)	niedrig	Sehr kleine lokale Verbindungen zur Fixierung; kaum Einfluss auf das Gesamtgefüge.
