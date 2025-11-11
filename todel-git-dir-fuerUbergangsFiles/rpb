@@ -1,0 +1,8 @@
+#!/usr/bin/env pypy3
+# -*- coding: utf-8 -*-
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "libs"))
+sys.argv = [sys.argv[0]]+["-vi","-e","-befehl"]+sys.argv[1:]
+import retaPrompt
+retaPrompt.start()

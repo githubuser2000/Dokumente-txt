@@ -1,0 +1,24 @@
+#!/usr/bin/env pypy3
+# -*- coding: utf-8 -*-
+import sys
+
+def classify(mod):
+    if mod == 0:
+        return "ja"
+    elif mod == 1:
+        return "Gegenteil"
+    elif mod == 2:
+        return "ähnlich"
+    elif mod == 3:
+        return "entferntes Gegenteil"
+    elif mod == 4:
+        return "entfernt ähnlich"
+
+for arg in sys.argv[1:]:
+    for var in range(2, 26):
+        print(f"{arg} % {var} = ", end="")
+        mod = int(arg) % var
+        print(f"{mod} {classify(mod)}", end=", ")
+        mod = var - mod
+        print(f"{mod} {classify(mod)}")
+    print()

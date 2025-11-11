@@ -1,0 +1,65 @@
+csv           = record, { newline, record } ;
+record        = field, { separator, field } ;
+field         = unquoted-field | quoted-field ;
+unquoted-field = { textdata } ;
+quoted-field  = DQUOTE, { textdata | separator | newline | escaped-DQUOTE }, DQUOTE ;
+escaped-DQUOTE = DQUOTE, DQUOTE ;    (* "" repräsentiert ein " innerhalb des Feldes *)
+separator     = "," ;                (* oder ";" in manchen Ländern *)
+newline       = CRLF | LF ;           (* Windows: \r\n, Unix: \n *)
+textdata      = %x20-21 | %x23-2B | %x2D-7E ;
+               (* ASCII: alles außer " (0x22), , (0x2C), CR (0x0D), LF (0x0A) *)
+DQUOTE        = %x22 ;                (* ASCII Anführungszeichen  "  *)
+CRLF          = %x0D.0A ;             (* Carriage Return + Line Feed *)
+LF            = %x0A ;
+Nicht ganz – CSV („Comma-Separated Values“) hat kein fest in Stein gemeißeltes Syntax-Standardformat, aber es gibt verbreitete Konventionen und einen offiziellen RFC (RFC 4180).
+Die Grundelemente sind:
+1. Trennzeichen
+Meist , (Komma) – daher der Name
+In Europa oft ; (Semikolon), weil das Komma als Dezimaltrennzeichen verwendet wird
+In manchen Fällen auch Tab (\t), dann spricht man eher von TSV
+2. Textbegrenzer (Feld-Qualifier)
+Meist " (Anführungszeichen)
+Wird genutzt, wenn das Feld selbst Kommas, Semikolons, Zeilenumbrüche oder Anführungszeichen enthält
+Innerhalb von Anführungszeichen werden doppelte "" als ein " interpretiert
+Beispiel:
+"Name","Alter","Bemerkung"
+"Alex","42","Mag ""tiefe"" Syntax"
+3. Zeilenumbrüche
+Jede Zeile = ein Datensatz
+Zeilenende meist \n (Unix) oder \r\n (Windows)
+4. Optionale Kopfzeile
+Enthält Spaltennamen, oft in der ersten Zeile
+Kurz gesagt: " und , (oder ;) sind die üblichen Marker, aber Zeilenumbrüche und Escape-Regeln gehören ebenfalls zur Syntax.
+Falls du willst, kann ich dir die exakte formale CSV-Syntax als BNF/EBNF geben, damit du sie programmatisch parsen könntest.
+Möchtest du das?
+Gut, dann gebe ich dir die exakte CSV-Syntax in EBNF (basierend auf RFC 4180, aber mit Escape-Regeln für "), so dass man sie direkt in Parsern verwenden kann.
+---
+CSV (RFC 4180-konform) – EBNF
+csv           = record, { newline, record } ;
+record        = field, { separator, field } ;
+field         = unquoted-field | quoted-field ;
+unquoted-field = { textdata } ;
+quoted-field  = DQUOTE, { textdata | separator | newline | escaped-DQUOTE }, DQUOTE ;
+escaped-DQUOTE = DQUOTE, DQUOTE ;    (* "" repräsentiert ein " innerhalb des Feldes *)
+separator     = "," ;                (* oder ";" in manchen Ländern *)
+newline       = CRLF | LF ;           (* Windows: \r\n, Unix: \n *)
+textdata      = %x20-21 | %x23-2B | %x2D-7E ;
+               (* ASCII: alles außer " (0x22), , (0x2C), CR (0x0D), LF (0x0A) *)
+DQUOTE        = %x22 ;                (* ASCII Anführungszeichen  "  *)
+CRLF          = %x0D.0A ;             (* Carriage Return + Line Feed *)
+LF            = %x0A ;
+---
+Erklärung der Escape-Logik
+Felder ohne " und ohne Trennzeichen dürfen unquoted bleiben (unquoted-field).
+Felder, die " oder das Trennzeichen enthalten, müssen in " gesetzt werden (quoted-field).
+Innerhalb eines quoted-field wird ein doppeltes "" als ein einzelnes " interpretiert (escaped-DQUOTE).
+Beispiel:
+Name,Alter,Notiz
+"Alex","42","Mag ""tiefe"" Syntax"
+Wird interpretiert als:
+Name = Alex
+Alter = 42
+Notiz = Mag "tiefe" Syntax
+---
+Wenn du willst, kann ich dir daraus gleich eine minimal robuste CSV-Parsing-Funktion in Python schreiben, die genau dieses EBNF befolgt und auch mit ; funktioniert.
+Willst du, dass ich das direkt mache?

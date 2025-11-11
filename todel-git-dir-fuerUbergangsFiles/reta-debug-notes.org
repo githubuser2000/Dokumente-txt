@@ -1,0 +1,69 @@
+
+
+=Welche Features alle in Teilen gefragt sind=
+1. die Features
+2. deren Kombis
+=Was erst mal geht=
+
+=Was noch getestet werden muss=
+1. Hintereinanderausführung von
+   1. Plus syntax
+   2. KommaBereichen
+      1. mit unterschiedlichen Dingen im Komma
+2. Minus-syntax
+   1. in Kombi mit Plus Syntax
+   2. KommaBereichen
+      1. mit unterschiedlichen Dingen im Komma
+   3. mit Vielfachern
+   4. auch bei 1/n und n/m, beides und einzeln
+   5. Hintereinanderausführung von Plus Syntax und Kommabereichen
+   6. alle Kombinationsvarianten davon
+3. Die Sache mit dem Quadrat um 90 Grad drehen
+   1. Für all die oben erwähnten Kombi-Möglichkeiten durchtesten
+=Was noch nicht geht=
++ Unterscheidung der beiden Arten von v Syntax
+  + Programmiere ich später, muss ich, aber ist bestimmt nicht so aufwändig zu programmieren
+
+=Wo noch Fehler da sind=
+
+=Dokumentation des Testings=
+1. Eingabe und Ausgabe
+2. Was wurde dabei Kombiniert
+
+=noch in rp einzuprogrammieren=
++ dass alxp und x als cli Ausgabe Log-Befehle gehen
+  Dann muss ich nicht mit diesen Doofen Prints arbeiten.
+  + Option zum Weiterreichen dieser Programm-Parameter-Option an die ReTa-Befehle einzuprogrammieren ist unnötig.
+
+=was getestet wurde=
++ a v e 1/5-1/6,-1/10-1/12,1/31-1/32
+  hintereinander viele 1/n mit minus dabei
+*Ich muss programmieren, dass bei reta eine Option eingeführt wird, dass nichts ausgegeben werden soll, wenn es sonst nichts werden würde*
+
+
+fehler bei
+
+08cab8de39944bf4c186ed715b8b8c5163a6e02d
+ba53b5805efdd18cd128abd280ada068e9518070
+
+
+
+* neu test 2023-04-20
++ nachdem ich Übersetzbarkeit und stext cursor einprogrammiert habe
+*** Tests
++ einfache befehle
+  + scheinen zu gehen
++ gebrochene Zahlen
+  + scheinen zu gehen
++ reta Befehle
++ Speicherung
+  + scheint erst mal wieder zu gehen
+  + ob reta befehl und dann einzelangabe und mit v und w
+    + scheine ich wieder hinbekommen zu haben
++ sonstige Befehle
+**** was geht sonst noch
++ die Hilfen gehen zu printen
++ EIGR und EIGN gehen jetzt auch wieder
++ abstand geht jetzt mit fance Bereich2 Funktion
++ python und shell befehl geht.
+**** In den Code rein gehen, um zu schauen, was ich noch testen sollte

@@ -1,0 +1,11 @@
+#!/bin/zsh
+echo "${@:1}" 
+for abc in $(ps -e | grep pypy | awk '{print $1}');do;
+	echo /proc/${abc}/fd/0
+	echo "kurzbefehle" > /proc/${abc}/fd/0
+	#echo "${@:1}" > /proc/${abc}/fd/0
+	sleep 0.1
+done;
+#echo "${@:1}" > /proc/$(ps -e | grep pypy | tail -1 | awk '{print $1}')/fd/0
+echo "${@:1}" > /proc/$(ps -e | grep pypy | head -1 | awk '{print $1}')/fd/0
+
