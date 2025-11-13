@@ -12,7 +12,7 @@ Die Ebenen wurden so verteilt:
 
 - *13--16:* hyper-, holistische und kontextuelle Gesamt-Metaebene
 
-�� 16-Wertige Logik-Matrix (semantisch-ontologisch-systemisch)
+🧠 16-Wertige Logik-Matrix (semantisch-ontologisch-systemisch)
 
 | Nr | Interpretation        | Kommunikation            | Grundidee                 | Konsistenzprüfung           | Fehlermanagement           | Machine Learning                   | Entscheidung            | Systemanalyse                  | Ontologie/Semantik                | Interpretation 2. Ordnung | Kommunikation 2. Ordnung | Kohärenzebene           | Reflexionsgrad | Adaptivität  | Systemzustand    |
 | 1  | klar wahr             | Zustimmung               | Basiswahrheit             | stabil                      | kein Fehler                | sicheres Label                     | ausführen               | stabiler Zustand               | gültige Relation                  | selbstkonsistent          | explizit wahrnehmbar     | logisch kohärent        | 0              | konstant     | stationär        |
@@ -26,7 +26,7 @@ Die Ebenen wurden so verteilt:
 | 9  | reflexiv-wahr         | Selbstbestätigung        | Wahrheit zweiter Ordnung  | reflexiv stabil             | keine Reflexionsfehler     | stabile Meta-Labels                | automatisieren          | selbstanalytisch               | Relation zweiter Ordnung gültig   | auto-kohärent             | metasprachlich           | logisch geschlossen     | 5              | hoch         | überstabil       |
 | 10 | reflexiv-falsch       | Negation zweiter Ordnung | Verwerfungsstruktur       | konsistent                  | Reflexionsfehler erkannt   | fehlerhafte Reflexionslabels       | metaverwerfen           | Inkonstanz zweiter Ordnung     | ungültige Relation 2. Ordnung     | auto-negierend            | selbstwidersprechend     | logisch invertiert      | 5              | hoch         | oszillierend     |
 | 11 | rekursiv-offen        | epistemische Offenheit   | Unschärfe höherer Ordnung | instabil                    | unklare Rückkopplung       | unsichere Daten                    | Metawarten              | semineutral                    | Unvollständigkeit höherer Ordnung | semitransparent           | kommunikativ offen       | epistemisch durchlässig | 6              | adaptiv      | diffundierend    |
-| 12 | rekursiv-konfliktär   | dialektische Spannung    | metastabil                | Widerspruch zweiter Ordnung | doppelte Rückkopplung      | Konfliktlösung auf Reflexionsebene | Meta-Deadlock           | Mehrdeutigkeit höherer Ordnung | dialektisch                       | selbstoszillierend        | logisch beidwertig       | 6                       | oszillierend   | metastabil   |                  |
+| 12 | rekursiv-konfliktär   | dialektische Spannung    | metastabil                | Widerspruch zweiter Ordnung | doppelte Rückkopplung      | Konfliktlösung auf Reflexionsebene | Meta-Deadlock           | Mehrdeutigkeit höherer Ordnung | dialektisch                       | selbstoszillierend        | logisch beidwertig       | 6                       | oszillierend   | metastabil   | \\               |
 | 13 | hyper-dinglich        | physisch verankert       | faktische Ganzheit        | überprüfbar                 | Messfehler höherer Ordnung | reale Meta-Messung                 | Hyper-Verifikation      | Ressourcentrace                | physische Hyper-Entität           | empirisch verankert       | sensorisch               | mesologisch             | 7              | gering       | stabilisiert     |
 | 14 | hyper-evolutionär     | rekombinierbar           | Systementwicklung         | reproduzierbar              | Versionsfehler             | iteratives Lernen                  | Optimierung             | Meta-Iteration                 | evolutionäre Hyper-Kohärenz       | hyperprogressiv           | rekursiv adaptiv         | evolutionär offen       | 7              | sehr hoch    | meta-evolutionär |
 | 15 | kontext-ursprünglich  | archaisch-reflexiv       | Ursprung zweiter Ordnung  | rekursiv verankert          | historische Schicht        | Rückkopplungsdaten                 | Ursache höherer Ordnung | Ursprungsrekursion             | Proto-Ontologie                   | archontisch               | retroaktiv               | historisch-reflexiv     | 8              | stabil       | rekursiv         |
@@ -36,6 +36,9 @@ Willst du, dass ich daraus eine *graphische Strukturansicht* (z. B.
 Netzdiagramm oder semantische Achsen-Karte) baue, die die *16 Werte als
 Vektoren oder Felder* im semantischen Raum darstellt (für Visualisierung
 oder ML-Mapping)?
+
+\\
+\\
 
 Sehr gut --- ich ergänze zwei zusätzliche Spalten,
 beide *ontologisch-semantisch*, aber auf *verschiedenen
@@ -52,7 +55,7 @@ Abstraktionsebenen*:
 Hier ist die erweiterte *16-wertige Logik-Matrix* mit diesen zwei neuen
 Spalten:
 
-�� 16-Wertige Logik-Matrix (semantisch-ontologisch-systemisch erweitert)
+🧩 16-Wertige Logik-Matrix (semantisch-ontologisch-systemisch erweitert)
 
 | Nr | Interpretation        | Kommunikation            | Grundidee                 | Konsistenzprüfung           | Fehlermanagement           | Machine Learning                   | Entscheidung            | Systemanalyse                  | Ontologie/Semantik                | Interpretation 2. Ordnung | Kommunikation 2. Ordnung | Kohärenzebene           | Reflexionsgrad | Adaptivität  | Systemzustand         | *Begriffsontologie*            | *Semantische Dynamik*           |
 | 1  | klar wahr             | Zustimmung               | Basiswahrheit             | stabil                      | kein Fehler                | sicheres Label                     | ausführen               | stabiler Zustand               | gültige Relation                  | selbstkonsistent          | explizit wahrnehmbar     | logisch kohärent        | 0              | konstant     | stationär             | Fakt / Proposition             | statisch eindeutig              |
@@ -66,11 +69,17 @@ Spalten:
 | 9  | reflexiv-wahr         | Selbstbestätigung        | Wahrheit zweiter Ordnung  | reflexiv stabil             | keine Reflexionsfehler     | stabile Meta-Labels                | automatisieren          | selbstanalytisch               | Relation zweiter Ordnung gültig   | auto-kohärent             | metasprachlich           | logisch geschlossen     | 5              | hoch         | überstabil            | Selbstreferenz / Reflexion     | zirkulär stabil                 |
 | 10 | reflexiv-falsch       | Negation zweiter Ordnung | Verwerfungsstruktur       | konsistent                  | Reflexionsfehler erkannt   | fehlerhafte Reflexionslabels       | metaverwerfen           | Inkonstanz zweiter Ordnung     | ungültige Relation 2. Ordnung     | auto-negierend            | selbstwidersprechend     | logisch invertiert      | 5              | hoch         | oszillierend          | Widerspruch / Antireflexion    | zirkulär instabil               |
 | 11 | rekursiv-offen        | epistemische Offenheit   | Unschärfe höherer Ordnung | instabil                    | unklare Rückkopplung       | unsichere Daten                    | Metawarten              | semineutral                    | Unvollständigkeit höherer Ordnung | semitransparent           | kommunikativ offen       | epistemisch durchlässig | 6              | adaptiv      | diffundierend         | Möglichkeit / Konzeptfeld      | diffus emergent                 |
-| 12 | rekursiv-konfliktär   | dialektische Spannung    | metastabil                | Widerspruch zweiter Ordnung | doppelte Rückkopplung      | Konfliktlösung auf Reflexionsebene | Meta-Deadlock           | Mehrdeutigkeit höherer Ordnung | dialektisch                       | selbstoszillierend        | logisch beidwertig       | 6                       | oszillierend   | metastabil   | Dialektik / Antinomie | oszillierend divergent         |                                 |
+| 12 | rekursiv-konfliktär   | dialektische Spannung    | metastabil                | Widerspruch zweiter Ordnung | doppelte Rückkopplung      | Konfliktlösung auf Reflexionsebene | Meta-Deadlock           | Mehrdeutigkeit höherer Ordnung | dialektisch                       | selbstoszillierend        | logisch beidwertig       | 6                       | oszillierend   | metastabil   | Dialektik / Antinomie | oszillierend divergent         | \\                              |
 | 13 | hyper-dinglich        | physisch verankert       | faktische Ganzheit        | überprüfbar                 | Messfehler höherer Ordnung | reale Meta-Messung                 | Hyper-Verifikation      | Ressourcentrace                | physische Hyper-Entität           | empirisch verankert       | sensorisch               | mesologisch             | 7              | gering       | stabilisiert          | Materielle Struktur / Körper   | verankert stabil                |
 | 14 | hyper-evolutionär     | rekombinierbar           | Systementwicklung         | reproduzierbar              | Versionsfehler             | iteratives Lernen                  | Optimierung             | Meta-Iteration                 | evolutionäre Hyper-Kohärenz       | hyperprogressiv           | rekursiv adaptiv         | evolutionär offen       | 7              | sehr hoch    | meta-evolutionär      | Entwicklungsraum / Morphologie | progressiv wachsend             |
 | 15 | kontext-ursprünglich  | archaisch-reflexiv       | Ursprung zweiter Ordnung  | rekursiv verankert          | historische Schicht        | Rückkopplungsdaten                 | Ursache höherer Ordnung | Ursprungsrekursion             | Proto-Ontologie                   | archontisch               | retroaktiv               | historisch-reflexiv     | 8              | stabil       | rekursiv              | Archetyp / Urform              | zyklich-konservativ             |
 | 16 | holistisch-systemisch | integrative Ganzheit     | globale Kohärenz          | Konflikt-Regelung           | Layer-Fusion               | Gesamtentscheidung                 | Ganzsystemanalyse       | semantische Hyper-Kohärenz     | holistisch integriert             | intermodal                | hyperkohärent            | total kohärent          | 8              | adaptiv      | global-stabil         | Gesamtsystem / Kontextfeld     | holistisch integrierend         |
+
+\\
+\\
+
+\\
+\\
 
 Hier ist eine kompakte Liste alternativer Begriffe für *„Meta-“*,
 geordnet nach Anwendungsfeldern (Semantik, Ontologie, Fehleranalyse,
@@ -78,31 +87,31 @@ Debugging, Mathematik, Informatik, Ingenieurwesen). Diese können in
 deiner 16-wertigen Logik-Matrix für die „Meta-Spalten“ verwendet oder
 kombiniert werden:
 
-�� *Alternativen zu „Meta-“ für semantische und ontologische Kontexte*
+🔹 *Alternativen zu „Meta-“ für semantische und ontologische Kontexte*
 
 | Bereich   | Ersatz für „Meta-“                                        | Bedeutung / Nuance                                  |
 | Semantik  | *trans-*, *ultra-*, *hyper-*, *kontext-*, *referenz-*     | übergeordnet, bedeutungserweiternd, selbstbezüglich |
 | Ontologie | *ebenen-*, *struktur-*, *relation-*, *essenz-*, *selbst-* | beschreibt das Sein des Seins, oder Systemebenen    |
 
-�� *Für Fehleranalyse / Debugging*
+🔹 *Für Fehleranalyse / Debugging*
 
 | Bereich       | Ersatz für „Meta-“                                             | Bedeutung / Nuance                                                   |
 | Fehleranalyse | *audit-*, *diagnose-*, *prüf-*, *korrektur-*, *verifikations-* | bezeichnet überwachende oder kontrollierende Schichten               |
 | Debugging     | *trace-*, *monitor-*, *rückkopplungs-*, *test-*, *feedback-*   | verweist auf Rückbezug, Laufzeitüberwachung, iterative Selbstprüfung |
 
-�� *Für Mathematik / Logik*
+🔹 *Für Mathematik / Logik*
 
 | Bereich    | Ersatz für „Meta-“                                                    | Bedeutung / Nuance                                       |
 | Logik      | *rekursiv-*, *reflexiv-*, *paralogisch-*, *inferenz-*, *überlogisch-* | betont Selbstbezüglichkeit oder Logik zweiter Ordnung    |
 | Mathematik | *funktions-*, *modell-*, *operator-*, *kategorien-*, *fixpunkt-*      | betont höhere Strukturebenen und Abbildung auf Abbildung |
 
-�� *Für Informatik / Ingenieurwesen*
+🔹 *Für Informatik / Ingenieurwesen*
 
 | Bereich        | Ersatz für „Meta-“                                                  | Bedeutung / Nuance                                     |
 | Informatik     | *system-*, *architektur-*, *protokoll-*, *framework-*, *container-* | beschreibt Überstrukturen oder formale Regelwerke      |
 | Ingenieurwesen | *regel-*, *steuer-*, *regelkreis-*, *kontroll-*, *modellierungs-*   | betont Kontrolle, Selbststeuerung, Konstruktionsrahmen |
 
-�� *Empfohlene systematische Anwendung für deine 16 Werte*
+🔸 *Empfohlene systematische Anwendung für deine 16 Werte*
 
 | Wertebereich                    | Empfohlener Präfix                                    |
 | 1--4 (Grundlogik)               | /(ohne Präfix)/                                       |
@@ -114,3 +123,8 @@ Willst du, dass ich die Tabelle direkt *mit diesen Präfixen
 ersetzt* ausformuliere (z. B. „meta-wahr“ → „reflexiv-wahr“,
 „meta-falsch“ → „paralogisch-falsch“ usw.) --- also eine *16-wertige
 Logik ohne „meta-“*, aber mit variierenden, feldspezifischen Präfixen?
+
+\\
+\\
+
+\\
