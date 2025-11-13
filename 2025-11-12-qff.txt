@@ -1,0 +1,5 @@
+19S=[{2, 15},{3, 14},{4, 13},{5, 12},{6, 11},{7, 10},{8, 9}]=
+[{n1, 17 - n1} for n1 in range(27) if n1 >= 2 and 17 - n1 >= 2 and n1 < 17 - n1]  A,
+[{2, 3, 10},{4,2,9},{2,5,8},{2,6,7}]  B,
+-> A n1+2+n2 ,  -> B  n1+2+n2+2+n3
+SuicideSelbstmord_methodsMethoden_fields_medalMedaille_nobleNobelPricePreis_inventionErfindung_studyStudieren_universityUniversität_otherwiseAnsonsten_tortureFoltern_sufferingLeiden_femaleWeibliche_oldAlte_doctorsÄrztinnen_imprisonmentEinsperren_Pharma_illKrank_disabledBehindert
