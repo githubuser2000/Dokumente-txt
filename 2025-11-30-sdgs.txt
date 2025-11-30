@@ -1,0 +1,86 @@
+# Übersicht aller Themen (Struktur ohne Inhalt)
+
+## 1. Alternativen für strukturierte Notizen
+- Analoge Systeme
+  - Zettelkasten
+  - Karten-Kanban
+  - Mind-Map-Board
+  - Discbound-Systeme
+- Hybride Systeme
+  - ReMarkable / Supernote / Scribe
+  - Smartpens
+- Körperliche Systeme
+  - Time-Boxing
+  - Task Tokens
+- Audiosysteme
+  - Voice-Zettelkasten
+- Rituale
+  - Blockrhythmus
+- Mathematische Systeme
+  - Graph-Planning
+  - Konzeptwürfel
+
+## 2. Alternativen zu Stiften
+- Mechanischer Materialabtrag
+  - Steinmeißel
+  - Holzgravur
+  - Metallgravur
+  - Kratztechniken
+- Thermische Methoden
+  - Brandmalen
+  - Brennglas
+  - Lasergravur
+- Materialauftrag
+  - Siegel
+  - Schablonen
+  - Sand-/Staubmuster
+- Mechanische Formung
+  - Prägen
+  - Embossing
+  - Tonprägung
+- Digitale Alternativen ohne Stift
+  - Finger-Eingabe
+  - Spracheingabe
+  - Luftgesten
+- Chemisch/Physikalisch
+  - Ätzen
+  - Thermopapier
+- Organische Methoden
+  - Knotenschrift
+  - Kerbholz
+  - räumliche Symbolsysteme
+- Biologische/Experimentelle Medien
+  - Pilzmyzel
+  - Arborglyphs
+
+## 3. Sichere Aufbewahrung
+- Grundprinzipien
+- Stein
+- Holz
+- Metall
+- Ton/Keramik
+- Leder
+- Moderne High-End-Materialien
+  - Titan
+  - Keramikverbund
+  - Saphirglas
+- Schutz vor Diebstahl
+  - Tarnung
+  - Versteckte Lagerung
+  - Redundanz
+- Beste Kombinationen
+
+## 4. Schutz vor Geheimdiensten
+- Grundprinzipien
+- Meaning Separation
+- Sicherheitsschichten
+  - Physische Sicherheit
+  - Strukturelle Sicherheit
+  - Organisatorische Sicherheit
+- Nicht funktionierende Methoden
+- Kontextentzug
+- Geeignete Materialien + Tarnung
+- Quintessenz
+
+
+
