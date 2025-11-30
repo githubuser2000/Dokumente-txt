@@ -1,0 +1,173 @@
+# Kausalkette & Hierarchie-Struktur – Markdown Übersicht
+## 1. Grundstruktur
+### Episode
+- `id`: String
+- `beschreibung`: String
+- `timestamp`: optional, Zeitpunkt des Ereignisses
+- `kausalZu`: Liste von direkten Folge-Episoden
+- `position`: 3D-Koordinate `(x, y, z)`
+- `richtungsbewertung`: 2D-Vektor `(x, y)` zur Richtung/Tendenz
+- `zentralität`: numerische Bewertung (0..1)
+### Sequenz
+- `id`: String
+- `name`: String
+- `episoden`: Liste von `Episode`
+- `unterSequenzen`: Liste von `Sequenz` (rekursiv)
+- `position`: 3D-Koordinate
+- `richtungsbewertung`: 2D-Vektor
+- `zentralität`: numerische Bewertung
+### Kausalkette
+- `id`: String
+- `name`: String
+- `hauptSequenz`: `Sequenz`
+---
+## 2. 3D-Raumkonzept
+| Achse | Bedeutung |
+|-------|-----------|
+| X 	| Zeitliche Reihenfolge innerhalb der Sequenz |
+| Y 	| Hierarchieebene (Hauptsequenz = 0, Untersequenz = 1...) |
+| Z 	| Kausale Verbindungen (räumlich sichtbar) |
+### Visualisierung
+- Punkte/Spheres → Episoden
+- Cluster → Sequenzen
+- Linien/Pfeile → kausale Verbindungen
+- Pfeilrichtung → 2D-Richtungsvektor `(x,y)`
+- Größe/Farbe → Zentralität
+---
+## 3. Python-Datenstruktur
+```python
+from datetime import datetime
+class Episode:
+	def __init__(self, id, beschreibung):
+    	self.id = id
+    	self.beschreibung = beschreibung
+    	self.timestamp = datetime.now()
+    	self.kausalZu = []
+    	self.position = (0,0,0)
+    	self.richtungsbewertung = (0.0, 0.0)
+    	self.zentralität = 0.0
+class Sequenz:
+	def __init__(self, id, name):
+    	self.id = id
+    	self.name = name
+    	self.episoden = []
+    	self.unterSequenzen = []
+    	self.position = (0,0,0)
+    	self.richtungsbewertung = (0.0,0.0)
+    	self.zentralität = 0.0
+class Kausalkette:
+	def __init__(self, id, name, hauptSequenz):
+    	self.id = id
+    	self.name = name
+    	self.hauptSequenz = hauptSequenz
+# Beispiel
+e1 = Episode("e1", "Start Ereignis")
+e2 = Episode("e2", "Folge Ereignis")
+e1.kausalZu.append(e2)
+e1.richtungsbewertung = (0.8,0.6)
+e2.richtungsbewertung = (-0.5,0.9)
+seq1 = Sequenz("s1","Hauptsequenz")
+seq1.episoden.extend([e1,e2])
+kette = Kausalkette("k1","Testkette", seq1)
+3. Visualisierungsmöglichkeiten
+Python + Plotly (interaktiv):
+Punkte = Episoden
+Linien = kausale Verbindungen
+Cluster = Sequenzen
+import plotly.graph_objects as go
+# Beispielpunkte
+x = [0,1,2]
+y = [0,1,1]
+z = [0,0,1]
+labels = ["E1","E2","E3"]
+fig = go.Figure(data=[go.Scatter3d(
+    x=x, y=y, z=z,
+    mode='markers+text',
+    marker=dict(size=5),
+    text=labels,
+    textposition='top center'
+)])
+# Kausale Linien
+fig.add_trace(go.Scatter3d(
+    x=[0,1], y=[0,1], z=[0,0],
+    mode='lines',
+    line=dict(color='red', width=2)
+))
+fig.show()
+Unity / Godot / Three.js:
+Jede Episode als Sphere/Box
+Sequenz-Hierarchie als verschachtelte Gruppen
+Kausalbeziehungen als Linien/Pfeile
+Interaktive Drehung, Zoom, Filter nach Ebenen
+Conceptual Layout:
+Ebene Y = Hierarchieebene (Hauptsequenz = Y=0, Untersequenz Y=1 usw.)
+X = zeitlicher Ablauf innerhalb Sequenz
+Z = Kausalverbindungen (optional als Kurven, um Überschneidungen zu vermeiden)
+4. Vorteile 3D-Sicht
+Komplexe Hierarchien sind sofort überschaubar
+Kausale Verbindungen können räumlich “über” Ebenen hinweg dargestellt werden
+Untersequenzen werden als Cluster innerhalb Cluster sichtbar
+Interaktive Navigation möglich
+1. Zentralität in einer Hierarchie
+Zentralität misst die relative Wichtigkeit eines Knotens (Episode/Sequenz) in der Struktur. In deinem Kontext könnte man mehrere Arten unterscheiden:
+Zentralitätstyp
+Bedeutung in Kausal-/Hierarchie-Struktur
+Degree
+Anzahl direkter kausaler Verbindungen eines Knotens
+Betweenness
+Wie oft liegt ein Knoten auf dem kürzesten Pfad zwischen zwei anderen Knoten → Vermittler
+Closeness
+Umgekehrte Summe der Distanzen zu allen anderen Knoten → wie „nah“ ein Knoten allen anderen ist
+Eigenvector
+Knoten ist wichtig, wenn er mit anderen wichtigen Knoten verbunden ist
+Hierarchie-Zentralität
+Kombination aus Level in der Hierarchie + Anzahl von Untersequenzen und Kausalverbindungen
+In deinem 3D-Modell kann Zentralität z. B. als Farbe, Größe oder Opazität visualisiert werden.
+2. Datenstruktur mit Zentralität
+class Episode:
+    def __init__(self, id, beschreibung):
+        self.id = id
+        self.beschreibung = beschreibung
+        self.kausalZu = []
+        self.position = (0,0,0)
+        self.richtungsbewertung = (0.0,0.0)
+        self.zentralität = 0.0  # berechneter Wert
+class Sequenz:
+    def __init__(self, id, name):
+        self.id = id
+        self.name = name
+        self.episoden = []
+        self.unterSequenzen = []
+        self.position = (0,0,0)
+        self.richtungsbewertung = (0.0,0.0)
+        self.zentralität = 0.0
+3. Berechnung der Zentralität
+Degree: len(node.kausalZu) + len(node.von)
+Betweenness: alle Pfade durchlaufen (z. B. mit NetworkX)
+Eigenvector: iterativ über Knoten und kausale Verbindungen
+Hierarchie-Zentralität: z. B. 1/(1+level) * (1 + sum(Untersequenzen))
+Python-Beispiel mit NetworkX:
+import networkx as nx G = nx.DiGraph() # Knoten hinzufügen G.add_node("e1") G.add_node("e2") G.add_edge("e1","e2") # kausale Verbindung # Zentralitäten berechnen degree_centrality = nx.degree_centrality(G) betweenness_centrality = nx.betweenness_centrality(G) print(degree_centrality) print(betweenness_centrality)
+4. Cursor-Interaktion
+Ideen für Cursor/Interaktion:
+Hover: Beim Überfahren eines Knotens werden:
+Beschreibung
+Zentralität
+Kausale Verbindungen
+ angezeigt
+Klicken: Fokus auf:
+Untersequenzen
+Kausalbeziehungen
+Richtungsvektor
+Zoom auf Hierarchie-Level:
+Cursor-Position kann als Zentrum eines „Hierarchie-Fensters“ dienen
+Untersequenzen/kausale Nachbarn hervorgehoben
+Implementierungsmöglichkeiten:
+Plotly: hoverinfo + interaktive 3D-Szene
+Three.js / WebGL: Mausklick → Fokus + Animation
+Unity / Godot: Collider + Kamera auf Knoten zentrieren
+5. Kombination: 3D Hierarchie + 2D Winkel + Zentralität + Cursor
+Position: 3D-Layout (X=time, Y=hierarchy, Z=kausal)
+Richtungsvektor: Pfeil auf XY-Ebene
+Zentralität: Größe/Farbe/Transparenz
+Cursor: Interaktion (Hover/Click) → Details anzeigen, Untersequenzen ein-/ausklappen
