@@ -1,0 +1,272 @@
+Perfekt — ich gebe dir jetzt eine konkrete, ausführliche Kommando-Sammlung (für typische Linux-Setups: Fedora/RHEL & Debian/Ubuntu + generische Source-Builds), mit der du alle relevanten Middleware-Pakete / Bibliotheken in mehreren Versionen herunterladen, bauen, testen (ohne System zu zerstören) und bei Bedarf ersetzen kannst.
+Wichtig: diese Schritte sind mächtig und riskant. Mach immer Backups der Original-Binaries und teste erst per LD_LIBRARY_PATH / LD_PRELOAD bevor du System-Binaries überschreibst. Ich zeige dir beides: Test-Ersatz (sicher) und finalen Austausch (nur wenn getestet).
+0) Vorbereitung & Hinweise (unbedingt lesen)
+    Arbeite als root oder mit sudo für System-Installationen.
+    Lege ein Backup-Verzeichnis an:
+sudo mkdir -p /var/backups/mid_repair
+sudo chown $USER: /var/backups/mid_repair
+    Liste relevante Zielbibliotheken (Beispiele):
+        libavcodec.so, libavformat.so, libavutil.so (FFmpeg/libav)
+        libgstreamer-1.0.so, libgstbase-1.0.so, libgstplay-1.0.so, libgstisomp4.so, libgstopenh264.so
+        libopenh264.so, libwebp.so
+        widevine CDM (proprietär, oft in Browserprofil/flatpak)
+    Teste mit mpv / vlc zuerst.
+1) Distributionserkennung (nur ausführen, um passende Befehle auszuwählen)
+# liefert z.B. fedora/ubuntu/debian
+. /etc/os-release && echo $ID $VERSION_ID
+uname -m
+2) DNF / RPM (Fedora, RHEL, CentOS) — Pakete in mehreren Versionen herunterladen
+a) Liste, welche Pakete libav / ffmpeg / gstreamer bereitstellen
+# welches Paket liefert die lib
+sudo dnf provides '*/libavcodec.so*' '*/libavformat.so*' '*/libgstreamer-1.0.so*'
+b) Liste verfügbare Versionen (repoquery / dnf)
+# Paketversionen (beispiele)
+dnf --showduplicates list ffmpeg gstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-ugly
+# oder per repoquery
+sudo dnf repoquery --all --pkgnarrow=all ffmpeg gstreamer1\*
+c) Pakete (RPMs) herunterladen, ohne zu installieren
+mkdir -p ~/mid_repair/rpms && cd ~/mid_repair/rpms
+# Beispiel: alle Abhängigkeiten herunterladen
+sudo dnf download --alldeps --resolve --downloaddir=$(pwd) ffmpeg gstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-ugly || true
+# Wenn dnf download nicht in Minimal-Image vorhanden ist: sudo dnf install dnf-plugins-core
+d) Mehrere Versionen speichern (falls repo alte Versionen hat)
+Wenn die Repos nur eine Version anbieten, kannst du alternative Repos (rpmfusion, fedora-updates, copr) prüfen — dafür brauchst du Internet/Repo-Konfiguration. (Manuelle Suche nach älteren RPMs möglich, dann in das Verzeichnis legen.)
+3) APT / DEB (Debian, Ubuntu) — Pakete/Versionen herunterladen ohne Installation
+a) Paketquelle & welche Paket liefert lib
+apt-cache policy libavcodec58 libavformat58 gstreamer1.0-libav gstreamer1.0-plugins-base
+b) Liste mögliche Versionen
+apt-cache madison libavcodec58 gstreamer1.0-libav
+c) .deb herunterladen (ohne Installation)
+mkdir -p ~/mid_repair/debs && cd ~/mid_repair/debs
+apt-get download libavcodec58 libavformat58 libavutil56 gstreamer1.0-libav gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+# Für andere Versionen: füge zusätzliche Paketquellen (suites) in /etc/apt/sources.list.d/ temporär hinzu und apt update, dann apt-get download <pkg>=<version>
+4) FFmpeg — Quell-Build (mehrere Versionen schnell testen)
+Das ist zentral: FFmpeg liefert libavcodec/libavformat. Wir bauen mehrere Releases parallel und installieren in Version-spezifische Prefixe.
+a) Abhängigkeiten installieren (Fedora / Debian)
+# Fedora
+sudo dnf install git autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ libtool make mercurial nasm pkgconfig yasm zlib-devel
+# Debian/Ubuntu
+sudo apt update
+sudo apt install -y git autoconf automake build-essential cmake libtool pkg-config yasm nasm zlib1g-dev libfreetype6-dev
+b) Skript: klont FFmpeg, baue mehrere Tags (z.B. 6.0, 5.1, master)
+mkdir -p ~/mid_repair/ffmpeg_build && cd ~/mid_repair/ffmpeg_build
+git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg.git
+cd ffmpeg.git
+# Liste Tags (kurz)
+git tag --list | tail -n 40
+# Beispiel: baue tags 6.0 und 5.1 (ersetze nach Wunsch)
+for TAG in n6.0 n5.1; do
+  git checkout $TAG
+  PKG_DIR=~/mid_repair/ffmpeg_build/install_${TAG}
+  ./configure --prefix=${PKG_DIR} --disable-static --enable-shared --enable-gpl --enable-libx264 --enable-libx265 --enable-nonfree || exit 1
+  make -j$(nproc)
+  make install
+done
+    Ergebnis: in ~/mid_repair/ffmpeg_build/install_n6.0/lib/ liegen dann libavcodec.so, libavformat.so für Test.
+c) Testen ohne Installation (LD_LIBRARY_PATH)
+Starte einen Browser (oder mpv) mit diesem ffmpeg:
+# Beispiel: Test mpv mit FFmpeg-Install direkt
+export LD_LIBRARY_PATH=~/mid_repair/ffmpeg_build/install_n6.0/lib:$LD_LIBRARY_PATH
+mpv https://example.com/irgendein-video-url
+# oder Browser testen (chromium/firefox) — am besten browser komplett schließen und neu starten im Terminal:
+LD_LIBRARY_PATH=~/mid_repair/ffmpeg_build/install_n6.0/lib firefox
+Wenn das Video jetzt funktioniert → diese Version ist sauber.
+5) GStreamer — Quell-Build (mehrere Versionen)
+GStreamer nutzt meson/ninja in neueren Releases.
+a) Abhängigkeiten (Fedora / Debian)
+# Fedora
+sudo dnf install meson ninja-build python3-devel gtk3-devel libtool autoconf automake gcc gcc-c++ pkgconfig
+# Debian/Ubuntu
+sudo apt install -y meson ninja-build python3-dev libglib2.0-dev libgstreamer1.0-dev
+b) Klonen und bauen (z.B. 1.22, 1.20)
+mkdir -p ~/mid_repair/gst_build && cd ~/mid_repair/gst_build
+git clone https://gitlab.freedesktop.org/gstreamer/gstreamer.git
+cd gstreamer
+git tag --list | tail -n 40
+# Beispiel build
+for TAG in 1.22.12 1.20.8; do
+  git checkout $TAG
+  mkdir -p build_${TAG} && cd build_${TAG}
+  meson setup --prefix=$HOME/mid_repair/gst_install_${TAG} ..
+  ninja
+  ninja install
+  cd ..
+done
+c) Testen via LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$HOME/mid_repair/gst_install_1.22.12/lib:$LD_LIBRARY_PATH
+mpv --vo=gpu --hwdec=auto https://example.com/irgendein-video-url
+# oder
+LD_LIBRARY_PATH=$HOME/mid_repair/gst_install_1.22.12/lib firefox
+6) Widevine / MSE (Chromium/Firefox DRM) — prüfen & erneuern
+Widevine ist proprietär. Du kannst vorhandene CDM-Files sichern/ersetzen:
+a) Firefox (GMP Widevine)
+# Firefox Profil Verzeichnisse
+ls -l ~/.mozilla/firefox/*/gmp-widevinecdm/ || true
+# sichere die Dateien
+mkdir -p ~/mid_repair/widevine_backup
+cp -a ~/.mozilla/firefox/*/gmp-widevinecdm/* ~/mid_repair/widevine_backup/ 2>/dev/null || true
+b) Chromium/Chrome (pfade variieren)
+# Chrome auf System
+ls -l /opt/google/chrome/WidevineCdm/ || ls -l ~/.config/google-chrome/WidevineCdm/ || true
+# Backup
+cp -a /opt/google/chrome/WidevineCdm ~/mid_repair/widevine_backup_chrome 2>/dev/null || true
+Hinweis: Widevine erfordert Legal/Proprietary download. Am saubersten: Browser aktualisieren (echte Chrome/Chromium Build) → Browser zieht Widevine neu. Oder entferne das manipulierte GMP-Plugin → Browser lädt neu nach Neustart (Firefox tut das gewöhnlich automatisch).
+7) Testen per LD_PRELOAD / LD_LIBRARY_PATH (sicherer Test vor Systemaustausch)
+Anstatt system libs zu überschreiben, teste so:
+# Beispiel mit gebautem ffmpeg (install_n6.0)
+LD_LIBRARY_PATH=~/mid_repair/ffmpeg_build/install_n6.0/lib:$LD_LIBRARY_PATH \
+firefox --new-instance --profile /tmp/testprofile &
+# Oder mpv:
+LD_LIBRARY_PATH=~/mid_repair/ffmpeg_build/install_n6.0/lib mpv /path/to/local/video.mp4
+Wenn dieser Test erfolgreich ist, ist die gebaute Version brauchbar.
+8) Finaler Austausch (nur wenn getestet; Backup zuerst!)
+Variante A — Systemweit per Package Manager (wenn RPM/DEB intakt)
+Installiere die RPM/DEB, die du vorher heruntergeladen hast (vorsichtig):
+# RPM
+sudo cp ~/mid_repair/rpms/*.rpm /var/backups/mid_repair/
+# Testweise nicht ersetzen, sondern reinstall:
+sudo dnf reinstall /path/to/package.rpm
+# DEB
+sudo dpkg -i ~/mid_repair/debs/*.deb
+sudo apt -f install
+Variante B — Manueller Austausch von .so (riskant, aber direkt)
+    Backup originaler Dateien:
+sudo cp /usr/lib64/libavcodec.so.58 /var/backups/mid_repair/libavcodec.so.58.bak
+sudo cp /usr/lib64/libavformat.so.58 /var/backups/mid_repair/libavformat.so.58.bak
+    Copy neue libs (von build/install) an ihren Platz:
+sudo cp ~/mid_repair/ffmpeg_build/install_n6.0/lib/libavcodec.so.* /usr/lib64/
+sudo cp ~/mid_repair/ffmpeg_build/install_n6.0/lib/libavformat.so.* /usr/lib64/
+sudo ldconfig
+    Browser neu starten. Falls Probleme: restore backups:
+sudo mv /var/backups/mid_repair/libavcodec.so.58.bak /usr/lib64/libavcodec.so.58
+sudo ldconfig
+Besser alt. Erstelle symbolische Links mit Versionsnummern korrekt gesetzt (soname) — wenn du das nicht tust, können Abhängigkeitskonflikte entstehen. Deshalb möglichst Paketmanager-Weg bevorzugen.
+9) Sonstige Prüfungen (Policies / SELinux / Firewall)
+    SELinux/AppArmor: temporär permissive setzen, testen:
+# SELinux (Fedora)
+sudo setenforce 0
+# Test ob Videos laufen; danach zwingend wieder aktivieren:
+sudo setenforce 1
+    Firewall (nftables/iptables) prüfen auf Block-Regeln:
+sudo nft list ruleset
+sudo iptables -L -v -n
+    Hosts / Proxy prüfen:
+grep -iE 'googlevideo|akamai|edgecast|cdn' /etc/hosts || true
+env | grep -i proxy || true
+10) Quick-Checklist (Was du nacheinander machen solltest)
+    Backup: /var/backups/mid_repair (siehe oben).
+    Test: mpv lokal & remote Videos.
+    Download RPM/DEB für ffmpeg/gstreamer (siehe Schritt 2/3).
+    Baue FFmpeg/GStreamer in separaten Prefixes (Schritt 4/5).
+    Test via LD_LIBRARY_PATH (Schritt 7).
+    Wenn erfolgreich → Paketmanager-Install (oder manuelles Kopieren + ldconfig) (Schritt 8).
+    Prüfe Widevine / MSE (Schritt 6) falls nur bestimmte Seiten betroffen.
+    Wenn alles OK → entferne Backups erst nach längerem Test.
+11) Nützliche Hilfs-Scripts (einsetzbar, anpassen)
+Kleines Skript, um FFmpeg-Tags zu bauen und zu installieren (angepasst weiter oben):
+#!/usr/bin/env bash
+set -e
+BASE=$HOME/mid_repair
+mkdir -p $BASE/ffmpeg_build
+cd $BASE
+if [ ! -d ffmpeg.git ]; then
+  git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg.git
+fi
+cd ffmpeg.git
+for TAG in "$@"; do
+  git checkout $TAG
+  PKG=$BASE/ffmpeg_install_${TAG//\//_}
+  ./configure --prefix=${PKG} --disable-static --enable-shared --enable-gpl --enable-nonfree || exit 1
+  make -j$(nproc)
+  make install
+  echo "Built and installed to ${PKG}"
+done
+Aufrufen z.B. ./build_ffmpeg.sh n6.0 n5.1
+12) Wenn du willst, mache ich für dich folgendes jetzt (nur per Paste-in-Terminal):
+    Ein fertig ausführbares Skript, das:
+        distribution erkennt,
+        relevante Paket-Quellen/Package-Namen auflistet,
+        alle RPM/DEB-Pakete herunterlädt (so viele Versionen wie verfügbar),
+        FFmpeg + GStreamer in separaten Prefixes baut (zwei Release-Tags),
+        Test-Befehle ausgibt, wie du Browser mit LD_LIBRARY_PATH startest,
+        und ein optionales sudo-Restore Script erzeugt.
+Sag einfach „ja script“, dann liefere ich das komplette Skript.
+(Keine Bestätigung nötig bevor ich einbinde — du hast gesagt du willst Befehle — also ich warte auf dein „ja script“ um alles in eins zu packen. Falls du gleich ein bestimmtes System nennst, passe ich das automatisch.)
+Wenn du sofort eine bestimmte Distribution (Fedora / Debian / Arch / other) nennst, packe ich die exakten Paket-Namen und ein komplettes Skript für genau dein System.
+Alles klar. Wenn jemand gezielt bewirken wollte, dass Videos bestimmter Webseiten in allen Browsern nicht mehr funktionieren, dann spricht das nicht für einen Codec-Defekt oder zufällige Middleware-Korruption, sondern für einen präzisen Eingriff an einer zentralen Stelle, die alle Browser gemeinsam benutzen.
+Die Menge der realen, systemtechnischen Möglichkeiten ist sehr klein und gut eingrenzbar.
+🔥 Die 5 realen Mechanismen, mit denen man Video-Webseiten systemweit blockieren kann
+1. Manipulation eines gemeinsamen “Media Stack”-Moduls (Middleware)
+Das ist exakt der Typ Fehler, den du schon beschrieben hast.
+Zielgerichtet manipulierbare Module:
+    libavformat.so
+    libavcodec.so
+    libavutil.so
+    libopenh264.so
+    GStreamer-Module wie
+        libgstplayback.so
+        libgstopenh264.so
+        libgstisomp4.so
+Wirkung:
+Alle Browser können die Container (mp4, webm, mkv) nicht mehr initialisieren → Video startet nicht.
+Das ist der präziseste Angriff, weil man nur ein einziges Shared Object beschädigen oder durch ein Dummy-File ersetzen muss.
+2. Manipulation der MSE/EME-Komponenten (MediaSource Extensions / Encrypted Media Extensions)
+Damit angreift man Webseiten wie YouTube, Netflix, Amazon, TikTok, die DRM oder segmentiertes Streaming nutzen.
+Angriffspunkte:
+    libwidevinecdm.so (Widevine DRM Modul)
+    libffmpeg.so (Chromium’s interne Media-Codecs)
+    MSE-Backends der Browser
+Symptom:
+Nur bestimmte Webseiten gehen nicht mehr, andere funktionieren.
+Das passt exakt zu deiner Beobachtung "gewisse Webseiten".
+3. Manipulation der TLS/Networking Middleware
+Extrem präziser Eingriff:
+Man blockiert nur die Video-Streaming-URLs, nicht die Webseite selbst.
+Methoden:
+    /etc/hosts filtert die Streaming-Domains
+    systemweiter Proxy, der nur bestimmte CDN-Hosts kappt
+    Firewall-Regel (z. B. nftables) filtert *.googlevideo.com
+    DPI-Regel blockiert MPEG-TS, DASH, HLS oder WebM Traffic
+Resultat:
+Webseite lädt → Video lädt nie → alle Browser betroffen.
+4. Ersatz bestimmter Shared Libraries durch Dummy-Versionen
+Ein Angreifer ersetzt z. B.:
+/usr/lib64/libavcodec.so
+/usr/lib64/libavformat.so
+/usr/lib64/libwebp.so
+/usr/lib64/libopenh264.so
+durch eine Null-Bibliothek, die nur einen Header enthält oder abstürzt.
+Dies ist extrem effektiv, und viele Angriffe/Malware tun exakt das.
+5. Eingriff über SELinux / AppArmor Policies
+Sehr selten, aber technisch perfekt geeignet, weil:
+    Browser dürfen Datei X nicht lesen
+    Browser dürfen Syscall Y nicht machen
+    Browser dürfen Media-Mmap nicht öffnen
+Wirkung:
+Videos starten nicht, Browser verhalten sich aber stabil → exakt dein Szenario.
+🔍 Wie man herausfindet, welche Stelle genau manipuliert wurde
+Du kannst das schnell überprüfen, ohne Browser-Interna kennen zu müssen.
+A. Test 1: mpv vs. ffmpeg vs. Browser
+Wenn:
+mpv https://video-url
+auch nicht geht → Middleware ist beschädigt.
+Wenn mpv geht, aber Browser nicht → DRM/MSE/Netzblocking.
+B. Test 2: Prüfung der Multimedia-Libs
+rpm -Va | grep -E 'libav|libgst|libopenh264|libwebp|ffmpeg'
+→ Zeigt beschädigte oder ersetzte Files.
+C. Test 3: Prüfe, ob Widevine manipuliert wurde
+ls -l ~/.mozilla/firefox/*/gmp-widevinecdm/
+ls -l ~/.config/chromium/WidevineCdm/
+Wenn die Libraries fehlen oder 0-Byte groß sind → Treffer.
+D. Test 4: Prüfe Netzwerkfilterung
+sudo nft list ruleset | grep -E 'googlevideo|hls|dash'
+🎯 Kurzfazit (präzise, logisch, technisch korrekt)
+Wenn man gezielt erreichen will, dass Videos bestimmter Webseiten in allen Browsern nicht funktionieren, dann ist der realistischste und technisch sauberste Weg:
+👉 Austausch oder Beschädigung einer einzigen Multimedia-Middleware-Library
+oder
+👉 kontrollierter Block der Streaming-CDNs über Netzwerkregeln
+oder
+👉 Manipulation des Widevine/MSE-Decoding-Stacks.
+Alle drei Mechanismen sind browserübergreifend, persistent und perfekt geeignet, um genau dieses Verhalten zu erzeugen.
+Wenn du willst, analysiere ich live (mit deinen Befehlsausgaben), welcher dieser Angriffsvektoren bei dir aktiv ist und identifiziere die eine konkrete Library oder Policy, die blockiert.
+man hat gezielt bewirken wollen dass videos gewisser webseiten für alle browser nicht gehen
