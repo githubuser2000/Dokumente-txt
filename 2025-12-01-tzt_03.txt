@@ -1,0 +1,50 @@
+ansformationen
+Adjunktionen
+universelle Eigenschaften
+⚙️ 6. Beispiel eines vollständigen Programms in Δ
+delegate {
+ intent {
+ goal "compute shortest path"
+ output "route"
+ mode auto
+ }
+ context {
+ domain graph
+ data nodes edges weights
+ }
+ constraints {
+ time fast
+ accuracy high
+ style declarative
+ }
+}
+Da domain graph, erkennt der Delegat:
+→ NET-Mode.
+Er generiert:
+network N {
+ nodes ...
+ edges ...
+}
+route from A to B using dijkstra
+oder komplexer:
+route = shortest_path(N, A, B)
+🧨 Beispiel für CAT-Mode automatisch
+delegate {
+ intent "compose transformations and find universal morphism"
+ context algebraic
+ constraints deep high-accuracy symbolic
+}
+→ Der Delegat entscheidet: Cat-Mode.
+Er erzeugt:
+category C {
+ objects X, Y, Z
+ morphisms f : X -> Y
+ g : Y -> Z
+}
+universal h = g ∘ f
+🔥 7. Charakter der Syntax
+minimalistisch wie Haskell
+deklarativ wie Prolog/SQL
+selbstmodellierend wie Idris
+semantisch intelligent wie ein Meta-Compiler
+paradigmatisch polymorph (A–D)

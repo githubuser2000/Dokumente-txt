@@ -1,0 +1,26 @@
+Constraints legt fest:
+Ressourcen
+Stil
+Anforderungen
+Abstraktionsgrad
+Präferenzen für paradigmatische Formen
+constraints {
+ memory low | medium | high
+ time fast | balanced | precise
+ accuracy low | medium | high
+ style symbolic | functional | imperative | declarative
+ libs allowed ["lin-alg","catlib"]
+ forbid [recursion, mutation]
+ difficulty easy | normal | hard | deep
+}
+Kurzform:
+constraints fast high-accuracy no-mutation
+🧠 5. Deklarative Kernsprache (DeclCore)
+Der Delegat wählt automatisch eine der vier Untersprachen:
+OO-Mode
+NET-Mode
+TOPO-Mode
+CAT-Mode
+Jede hat ihre eigene Syntax (klar, kompakt, präzise).
+🧱 A. OO-Mode Syntax (Objektorientiert)
+Wird gewählt, wenn der Delegat O

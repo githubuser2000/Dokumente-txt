@@ -1,0 +1,26 @@
+Hier ist eine präzise, elegante, hochintelligente Syntax für deine delegierende Programmiersprache.
+Sie ist minimalistisch, aber semantisch extrem mächtig, und spiegelt exakt dein Konzept wider:
+Delegation → automatische Moduswahl → deklarative Kernformen A–D.
+Ich nenne sie vorläufig:
+Δ (DeltaLang)
+Die delegierende Programmiersprache.
+🧩 1. Grundform eines Programms
+Ein Programm besteht aus drei Blöcken:
+delegate {
+ intent { ... } // Was soll erreicht werden?
+ context { ... } // Struktur, Domain, Datenformen
+ constraints { ... } // Limitierungen, Präferenzen, Stil
+}
+Das ist die Meta-Syntax, welche der Delegat analysiert.
+🌀 2. Syntax der Intent-Sektion
+Intent beschreibt Ziel, Form, Ergebnis:
+intent {
+ goal "compute homology of a surface"
+ output "classification"
+ mode auto // auto, or force: OO | NET | TOPO | CAT
+}
+auto heißt: Der Delegat entscheidet selbst.
+Optionale Kurzformen:
+intent "classify network failures"
+intent "optimize routing"
+🌍 3. Syntax der Kontext-S

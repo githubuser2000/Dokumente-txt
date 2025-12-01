@@ -1,0 +1,44 @@
+ie Königsdisziplin:
+category C {
+ objects A, B, C
+ morphisms f : A -> B
+ g : B -> C
+ compose h = g ∘ f
+}
+functor F : C -> D {
+ map A -> X
+ map f -> φ
+}
+Die Sprache versteht:
+Monaden
+natürliche Transformationen
+Adjunktionen
+universelle Eigenschaften
+⚙️ 6. Beispiel eines vollständigen Programms in Δ
+delegate {
+ intent {
+ goal "compute shortest path"
+ output "route"
+ mode auto
+ }
+ context {
+ domain graph
+ data nodes edges weights
+ }
+ constraints {
+ time fast
+ accuracy high
+ style declarative
+ }
+}
+Da domain graph, erkennt der Delegat:
+→ NET-Mode.
+Er generiert:
+network N {
+ nodes ...
+ edges ...
+}
+route from A to B using dijkstra
+oder komplexer:
+route = shortest_path(N, A, B)
+🧨 Bei

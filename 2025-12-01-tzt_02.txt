@@ -1,0 +1,46 @@
+lar, kompakt, präzise).
+🧱 A. OO-Mode Syntax (Objektorientiert)
+Wird gewählt, wenn der Delegat OOP als optimale Struktur erkennt.
+class Name {
+ fields {
+ x : Number
+ y : Number
+ }
+ methods {
+ dist(p : Name) = sqrt((x - p.x)^2 + (y - p.y)^2)
+ }
+}
+Erzeugt vollwertigen OO-Code.
+🌐 B. NET-Mode Syntax (Netzwerkorientiert)
+Der Delegat generiert Graph-Topologien:
+network G {
+ nodes 1..100
+ edges (u,v) where distance(u,v) < 10
+ weight (u,v) = 1 / distance(u,v)
+}
+Mit Ausdrücken:
+route from A to B using dijkstra
+🔺 C. TOPO-Mode Syntax (Topologieorientiert)
+Eine Sprache für Räume, Homologien, Umgebungen:
+space S {
+ points ℝ^3
+ open U(x,r) = { y | dist(x,y) < r }
+ boundary ∂S = ...
+}
+compute homology S
+Minimalistisch und tief mathematisch.
+🧩 D. CAT-Mode Syntax (Kategorieorientiert)
+Die Königsdisziplin:
+category C {
+ objects A, B, C
+ morphisms f : A -> B
+ g : B -> C
+ compose h = g ∘ f
+}
+functor F : C -> D {
+ map A -> X
+ map f -> φ
+}
+Die Sprache versteht:
+Monaden
+natürliche Tr

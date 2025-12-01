@@ -1,0 +1,20 @@
+spiel für CAT-Mode automatisch
+delegate {
+ intent "compose transformations and find universal morphism"
+ context algebraic
+ constraints deep high-accuracy symbolic
+}
+→ Der Delegat entscheidet: Cat-Mode.
+Er erzeugt:
+category C {
+ objects X, Y, Z
+ morphisms f : X -> Y
+ g : Y -> Z
+}
+universal h = g ∘ f
+🔥 7. Charakter der Syntax
+minimalistisch wie Haskell
+deklarativ wie Prolog/SQL
+selbstmodellierend wie Idris
+semantisch intelligent wie ein Meta-Compiler
+paradigmatisch polymorph (A–D)

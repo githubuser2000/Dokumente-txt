@@ -1,0 +1,27 @@
+, Form, Ergebnis:
+intent {
+ goal "compute homology of a surface"
+ output "classification"
+ mode auto // auto, or force: OO | NET | TOPO | CAT
+}
+auto heißt: Der Delegat entscheidet selbst.
+Optionale Kurzformen:
+intent "classify network failures"
+intent "optimize routing"
+🌍 3. Syntax der Kontext-Sektion
+Kontext beschreibt die materielle Welt, in der das Problem existiert:
+context {
+ domain geometric | algebraic | software | graph | category | topology
+ data stream | table | graph | space | object
+ scale small | medium | large | massive
+}
+Beispiele:
+context {
+ domain algebraic
+ data morphisms
+}
+oder:
+context graph
+oder:
+context { space continuous }
+🎛️ 4. Syntax der Constraints-Sektion
