@@ -1,0 +1,214 @@
+alternativen im ausland zu altbekannten social networks und blog ähnlich vergleichbaren seiten wo man text und multimedia stückweise hinterlassen kann.
+Skip to content
+Chat history
+You said:
+alternativen im ausland zu altbekannten social networks und blog ähnlich vergleichbaren seiten wo man text und multimedia stückweise hinterlassen kann
+ChatGPT said:
+Wenn Sie nach Alternativen zu den üblichen sozialen Netzwerken (z. B. Facebook, Instagram, X) bzw. zu Blog-Plattformen suchen, auf denen Sie Texte und Multimedia stückweise hinterlassen können — hier sind ein paar Plattformen mit unterschiedlichen Konzepten, die sich lohnen. Ich stelle jeweils kurz vor, warum sie interessant sein könnten, welche Besonderheiten sie haben und worauf Sie beim Einstieg achten sollten.
+1. Micro.blog
+Warum interessant:
+Micro.blog verbindet Mikrob­logging (kurze Updates) mit längeren Blog-Posts, also eine Mixform zwischen „Tweet“ und traditionellem „Blog“. Wikipedia
+Es unterstützt offene Web-Standards wie Webmention und Micropub, d. h. Sie könnten Inhalte auch eigen-gehostet oder von anderen Plattformen einbinden. Wikipedia
+Weniger Fokus auf Follower-Zahl, Likes oder algorithmische Empfehlung – was die Nutzung atmosphärisch ruhiger machen kann. Wikipedia
+Besonderheiten:
+Kombination aus Blog + Social Feed.
+Möglichkeit, Inhalte auch von Ihrer eigenen Website oder aus RSS-Feeds zu importieren.
+Kleinere Plattform-Größe, eher „nische“, nicht so massenhaft wie Facebook / Instagram.
+Zu beachten:
+Wenn Sie viele Multimedia (Videos, große Bilder) posten wollen, prüfen Sie die Upload-Limits oder Hosting-Modalitäten.
+Da weniger Nutzer als bei den großen Plattformen: Reichweite kann geringer sein – wenn Ihnen Sichtbarkeit wichtig ist, könnten andere Plattformen besser passen.
+2. Are.na
+Warum interessant:
+Are.na sieht sich nicht primär als „sozialer News-Feed“ im klassischen Sinne, sondern als Werkzeug zur Organisation und Verbindung von Ideen („Blocks“ in „Channels“) – Text, Bild, Links, PDFs – alles möglich. Wikipedia
+Es verzichtet bewusst auf typische „Like/Share/Follow“ Mechanismen, wodurch das Gemeinschaftsgefühl anders ist als auf klassischen Social-Media-Plattformen. Wikipedia
+Besonderheiten:
+Besonders geeignet für kreative, forschende oder kuratierende Nutzende (z. B. Designerinnen, Künstlerinnen, akademisch Interessierte).
+Der Fokus liegt mehr auf Sammlung und Reflexion als auf schnellem Broadcast.
+Sie können textliche Elemente mit Multimedia kombinieren, strukturieren und in Channels bündeln.
+Zu beachten:
+Wenn Ihr Ziel primär „viel Reichweite“ oder „viral gehen“ ist – das ist hier wahrscheinlich nicht der Fokus.
+Die Community ist eher Spezialisiert: eher „Qualität“ als „Quantität“.
+3. Pillowfort
+Warum interessant:
+Pillowfort ist eine Plattform, die Blogging und Social Networking miteinander verbindet: Nutzer*innen können Blog-Seiten haben, Inhalte teilen (Text, Bilder, eingebettete Medien). Wikipedia
+Besonders erwähnenswert: starke Community-Funktion, Filtermöglichkeiten (z. B. Sichtbarkeiten, Kommentare etc) – was Kontrolle über den publizierten Inhalt erlaubt. Wikipedia
+Besonderheiten:
+Gute Mischung: Blogformat + soziale Funktionen wie Folgen, Kommentare, Gruppen/Communities.
+Relativ offen für vielfältige Inhalte – nicht nur „Kurzpost“ oder „nur Bild“.
+Zu beachten:
+Registrierung neuer Nutzer*innen kann restriktiver sein (bei Pillowfort war das in der Vergangenheit Thema). Wikipedia
+Wie bei allen kleineren Plattformen: Infrastruktur, Nutzerbasis und langfristige Stabilität sind wichtige Faktoren.
+4. Mastodon (als dezentrale Alternative)
+Warum interessant:
+Mastodon ist nicht genau ein Blog-System, aber ein Microblogging-Netzwerk, dezentral organisiert (mehrere Instanzen/Server) und weniger auf Werbung/Algorithmen ausgelegt. Power Lead Magnet Blog+2DesignRush+2
+Wenn Sie kleinere Stücke Publikation machen wollen – z. B. Updates, Gedanken, Multimedia – kann Mastodon eine gute Plattform sein.
+Besonderheiten:
+Sie wählen eine Instanz (Server), können aber mit Nutzer*innen anderer Instanzen interagieren („Fediverse“).
+Der Fokus liegt auf Nutzerkontrolle, weniger zentralisiertem Betrieb.
+Es gibt weniger Zwänge von „Likes / Viralität“ als auf großen zentralen Plattformen.
+Zu beachten:
+Für längere Blog-Beiträge ist Mastodon weniger ideal (im Vergleich zu echten Blog-Plattformen).
+Einstieg kann technischer sein (Instanz auswählen, Moderationsregeln beachten).
+Reichweite hängt stark von der gewählten Instanz und deren Größe ab.
+Empfehlung für Ihren Fall
+Da Sie als Softwareentwickler, mit Interesse an Kultur, Sprache und Struktur unterwegs sind, und nicht unbedingt auf maximale Popularität sondern auf Tiefgang und Kontrolle setzen, würde ich folgendes Vorgehen empfehlen:
+Zielklarheit: Wollen Sie primär lange Blog-Beiträge veröffentlichen (z. B. Essays, Übersetzungen, Analysen) oder eher kurze Text/Multimedia-Stücke, Kommentare, laufende Updates?
+Für lange Blog-Beiträge: Micro.blog oder Pillowfort könnten besser passen.
+Für eher „Stückweise Publikation“ + Multimedia + Diskurs: Are.na oder Mastodon könnten interessant sein.
+Publikations-Kontrolle: Wenn Ihnen wichtig ist, dass Sie Format, Sichtbarkeit und Struktur weitgehend selbst bestimmen (z. B. Sichtbarkeit einzelner Beiträge, Kombination von Text + Bild + Video), dann Micro.blog oder Pillowfort bieten mehr Kontrolle als z. B. Großplattformen.
+Multimedia-Inhalt: Wenn Sie regelmäßig Bilder, Videos oder interaktive Medien posten wollen, prüfen Sie vorher die Upload-Limits, Formatunterstützung, ob eingebettete Inhalte erlaubt sind.
+Reichweite vs. Qualität: Wenn Ihnen nicht primär geht, möglichst viele Nutzer*innen zu erreichen, sondern eine bestimmte Community mit Tiefgang – dann sind die genannten Plattformen sehr passend. Wenn Sie aber eine breite Masse ansprechen wollen, dann könnte eine Mischung aus Plattformen sinnvoll sein (z. B. Blog + Mikro-Updates auf Mastodon).
+Langfristige Perspektive: Achten Sie darauf, wie stabil die Plattform ist, welche Geschäfts-/Finanzierungsmodelle sie hat, wie Community und Moderation organisiert sind (das beeinflusst z. B. Ihre Freiheit und Sicherheit).
+Wenn Sie möchten – kann ich eine Liste von z. B. 10-15 internationalen Alternativen inkl. stabiler Blog-Plattformen und Multimedia-Netzwerken zusammenstellen (mit Details zu Sprache, Schwerpunkt, Besonderheiten). Möchten Sie das?
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
+Hier ist eine massiv erweiterte Liste internationaler Plattformen, die klassischen Social Networks UND klassischen Blog-/Microblog-Systemen ähneln, aber nicht die üblichen großen US-Plattformen sind. Fokus: Text, Multimedia, Schritt-für-Schritt-Posting, alternative Communities, interessante Architekturen (zentral/dezentral), teils Nischen, teils stabile internationale Player.
+Ich gruppiere nach Typen und nenne jeweils Stärken, Besonderheiten, und wofür sie sich ideal eignen.
+🟦 A. Dezentrale / Fediverse-Systeme
+(Text + Multimedia + kurze Posts oder längere Notizen)
+1. Misskey / Firefish / Foundkey
+Japanischer Ursprung, technisch sehr weit, Feature-reich.
+ Stärken:
+Hypermodernes Interface, Reaktionen, Polls, starke Medienunterstützung
+Längere Texte möglich
+Sehr aktive internationale Communities
+ Ideal für: regelmäßige Multimedia-Updates, Microblog + Blog-Hybrid.
+2. Pleroma (Akkoma)
+Leichtgewichtige Alternative zu Mastodon, extrem konfigurierbar.
+ Stärken:
+Weniger Ressourcenverbrauch
+Instanzen oft kleiner, aber technisch orientierter
+ Ideal für: Nutzer, die mehr Kontrolle + Technik wollen.
+3. Hubzilla
+Mehr als Social Network: vollständiger Web-Suite-Ansatz.
+ Stärken:
+Blogs, Foren, Wikis, Kalender, Cloud-Speicher
+Nomadische Identität: Migration über Instanzen ohne Verlust
+ Ideal für: komplexere, strukturelle Publikation.
+4. WriteFreely / Write.as
+Minimalistische Blog-Plattform, föderierbar.
+ Stärken:
+Sehr klare Textpräsenz, Markdown
+Föderation optional
+ Ideal für: Essays, längere Texte, Projekte.
+5. PeerTube (Videoplattform)
+Video-Hosten + Föderation.
+ Stärken:
+Multimedia-Fokus
+Kein YouTube-Algorithmus
+ Ideal für: Video-Begleitblog, Tutorials, Vlogs, Musik, Präsentationen.
+🟫 B. Internationale Blogging-Plattformen (zentral, aber alternativ)
+6. Ghost (Hosted oder Self-hosted)
+Moderner Blogging/Publishing-Stack, oft von Tech-Leuten verwendet.
+ Stärken:
+Sehr eleganter Editor
+Multimedia-Blöcke
+Newsletter + Blog in einem
+ Ideal für: tiefere Inhalte mit professionellem Look.
+7. Bearblog / Telegra.ph / Blot.im
+Minimalistische Blog-Systeme ohne Social-Noise.
+ Stärken:
+Ultra-schnell
+Markdown
+Anonym oder semi-anonym
+ Ideal für: schnelle, kurze oder lange Publikationen ohne Ablenkung.
+8. Medium (international, aber schwächer geworden)
+Nicht exotisch, aber global und blog-fokussiert.
+ Stärken:
+Editor gut für Essays
+Eingebettete Medien
+ Ideal für: Artikel, Essays, Langform.
+9. Substack (international)
+Blog + Newsletter, sehr textlastig.
+ Stärken:
+Sehr stark für Fokus und Leserschaft
+Kommentare, Podcasts, Videos
+ Ideal für: kontinuierliche Publikationsreihen.
+🟧 C. Text- und Medien-Sammler / Wissensnetzwerke
+(Nicht klassisch Social, aber ideal für stückweisen Content)
+10. Notion (public pages)
+Internationale Publikum-Reichweite über öffentliche Seiten.
+ Stärken:
+Strukturieren wie Are.na, aber funktionaler
+Voll Multimedia
+ Ideal für: Wissensspeicher + Blog-ähnliche Seiten.
+11. Obsidian Publish
+Zahlungsmäßig, aber extrem hochqualitativ.
+ Stärken:
+Markdown-Netzwerk
+Zettelkasten-Style
+Sehr gut für tiefere Inhalte
+ Ideal für: analytischer Content, Forschung, Essays.
+12. World Anvil
+Für Weltbau, Storytelling, Archive, Texte, Bilder.
+ Stärken:
+Kapitel, Artikel, Multimedia, Karten
+Community
+ Ideal für: strukturierte Publikationen / Serien / Ideenarchitektur.
+🟩 D. Internationale Social-Media-Plattformen außerhalb der USA
+13. VK (Russland)
+Facebook-ähnlich, aber extrem Multimedia-stark.
+ Stärken:
+Videos, Texte, Musiklibrary
+Große Nutzerbasis
+ Ideal für: Content-Mix, wenn keine politische Einschränkung.
+14. Odnoklassniki (Russland)
+Mehr Community-orientiert.
+ Stärken:
+Mischung aus Facebook & Foren
+ Ideal für: klassische Social-Updates + Multimedia.
+15. Weibo (China)
+Chinesischer Microblog-Gigant.
+ Stärken:
+Extreme Reichweite
+Text, Bilder, Videos, Livestreams
+ Ideal für: International posten im asiatischen Raum.
+16. Douban (China)
+Kultur-, Literatur-, Musik- und Blogging-Community.
+ Stärken:
+Sehr textlastig
+Rezensionen, Notizen, Gedanken, Listen
+ Ideal für: kulturelle, philosophische, tiefe Inhalte.
+17. Pixiv (Japan)
+Ursprünglich Kunst, aber auch Texte (Fanfiction, Light-Novels).
+ Stärken:
+Multimedia
+Communities in Japan + international
+ Ideal für: Bilder + Text-Serien, experimentelle Publikation.
+18. Ameblo (Ameba Blog, Japan)
+Massive japanische Blog-Plattform.
+ Stärken:
+Sehr aktiv
+Text + Multimedia
+ Ideal für: klassisches Blogging, Asien-Reichweite.
+🟨 E. Alternative „Pinterest/Reddit-artige“ Internationale Systeme
+19. Lemmy / Kbin
+Dezentrales Reddit.
+ Stärken:
+Posts + Bilder + Diskussion
+Föderation
+ Ideal für: diskursive Publikation + Medien.
+20. Pinboard
+Bookmark-Dienst, aber textlastig.
+ Ideal für: linkbasiertes Micro-Blogging, Notizen.
+21. Rumble (Video) / Odysee (Video + Text)
+Alternative Video-Social-Plattformen.
+ Ideal für: Multimedia-Posting + Video-Serien.
+🟩 F. Klassische Blogging-Systeme international (Hosting + Community)
+22. Dev.to / Hashnode
+Für Entwickler – aber offen genug für breitere Inhalte.
+ Stärken:
+Markdown
+Multimedia
+ Ideal für: technische + andere Essays.
+23. Tistory (Südkorea)
+Große Blogplattform in Korea.
+ Stärken:
+Reichlich Multimedia
+Langform-Posts
+ Ideal für: gut strukturiertes Blogging.
+24. Naver Blog (Südkorea)
+Einer der größten Blog-Dienste der Welt.
+ Ideal für: Text + Bilder + Videos, sehr aktiv.
+25. LiveJournal (international, Russland-zentriert)
+Alt, aber noch aktiv.
+ Ideal für: Tagebuchartiges, Community-Writing.
