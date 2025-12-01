@@ -1,0 +1,9 @@
+D4continnumKontinuum
+A1LinearityLiniarität,
+B2BackwardsRückwärts,
+C3HereHier,
+D4ForwardVorwärts,
+E5JumpSpringenHyper,
+F6FastSchnellForwardVorwärts,
+G7SuperOverÜber,
+H8FastSchnellBackwardsRückwärts.
