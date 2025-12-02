@@ -1,0 +1,8 @@
+3. Deine Toolbox-Hierarchie-Struktur-Paradigma
+Du willst ein Paradigma, das wie ein Werkzeugkasten aufgebaut ist, bei dem Elemente klar hierarchisch kombiniert werden können, und zwar in der Reihenfolge, die du vorgibst.
+Haskell/Idris2 tun das funktional:
+Jede Funktion ist ein Werkzeug
+Du kombinierst sie über Funktionskomposition, Currying, Module
+Imperative Reihenfolgen gibt es nur über Monaden
+Imperative Sprachen tun es linear und sequentiell, direkt wie deine „Befehle aneinanderreihen“-Vorstellung.
+Haskell und Idris2 haben deine Toolbox-Hierarchie-Strukturen, nur dass die „Reihenfolge der Werkzeuge“ nicht automatisch linear wie Befehle ist, sondern durch Funktionskomposition od

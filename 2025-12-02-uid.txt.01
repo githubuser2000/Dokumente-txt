@@ -1,0 +1,24 @@
+er monadische Sequenzierung gesteuert wird. Idris2 bietet zusätzlich abhängige Typen, die die Hierarchie auf der Datenebene sehr stark machen.
+Umsetzung in Idris2
+Ebene
+Entsprechung in Idris2
+Kommentar
+Toolbox
+Module, Interfaces
+Sammlung von Funktionen, Typen, Typklassen
+Hierarchie
+Module → Untermodule → Funktionen/Datentypen
+Explizit, sehr ähnlich Haskell
+Strukturen
+record, data, dependent types
+Records + abhängige Typen → mächtige Struktur
+Paradigma
+Funktionskomposition, do-Notation, dependent types
+Sequenzierung bei Effekten, ansonsten deklarativ/abstrakt
+Umsetzung in Haskell
+Ebene
+Entsprechung in Haskell
+Kommentar
+Toolbox
+Module (Data.List, Control.Monad)
+Sammlung von Funktion

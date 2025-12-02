@@ -1,0 +1,10 @@
+en als Werkzeuge
+Hierarchie
+Module → Untermodule → Funktionen
+Klare Struktur, importierbar, hierarchisch
+Strukturen
+Datentypen (data, newtype, record)
+Definieren „Records/Akten“ analog deiner Strukturidee
+Paradigma
+Funktionskomposition (.), Monaden (do)
+Keine imperativen Befehle, sondern Funktionsketten, optional Sequenzierung via IO oder State
