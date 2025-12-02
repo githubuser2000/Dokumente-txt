@@ -1,0 +1,6 @@
+N14Monitoring / Überwachung, Logging / Protokollierung,
+O15Response / Reaktion, Incident Handling / Vorfallbearbeitung,
+P16Policy / Richtlinien, Governance / Verwaltung,
+Q17Audit / Prüfung, Compliance / Regelkonformität,
+R18Threat Intelligence / Bedrohungsinformation, Risk Assessment / Risikoanalyse,
+S19Redundancy / Redundanz, Backup / Wiederherstellung, Continuity / Kontinuität.
