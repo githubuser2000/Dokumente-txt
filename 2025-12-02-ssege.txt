@@ -1,0 +1,2 @@
+MY Haskell capabilies are sind very limited and Idris2 was too complicated for me
+Meine Haskell Fähigkeiten sind sehr begrenzt und Idris2 war viel zu kompliziert für mich.
