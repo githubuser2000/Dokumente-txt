@@ -1,0 +1,11 @@
+men
+Was folgt ist nicht „populärwissenschaftlich", sondern inhaltlich
+korrekt auf dem Niveau der modernen arithmetischen Geometrie (Fontaine,
+Scholze, tilting, perfectoid fields, Huber pairs, diamond-Methoden). 1.
+Ausgangspunkt: Polynome sind elementare Objekte -- aber ihre „Geometrie"
+hängt radikal vom Grundkörper ab Ein Polynom f(x)f(x) ist trivial über
+RR oder CC. Dasselbe Polynom wird jedoch arithmetisch hochgradig
+komplex, sobald der Grundkörper z. B. ein p-adischer Körper ist: QpQp
+ist nicht archimedisch, ultrametrisch Nullstellenverhalten ist völlig
+anders Hensel-Lifting statt Newton Polynome definieren nicht glatte
+reelle Kurven, sondern diskrete, balistische Räume (p-adi

@@ -1,0 +1,11 @@
+Pseudocode, direkt nutzbar) -- Polynom als Liste von
+Koeffizienten a0 + a1 x + a2 x\^2 + ... type Coeffs a = \[a\] --
+Horner-Evaluator (semantics parametrisierbar) evalHorner :: Num a =\>
+Coeffs a -\> a -\> a evalHorner coeffs x = foldr (`\c a`{=tex}cc -\> c +
+x * acc) 0 (reverse coeffs) -- Transformations (delegierende
+Komposition) mapCoeffs :: (a -\> b) -\> Coeffs a -\> Coeffs b mapCoeffs
+= map composePolys :: Num a =\> Coeffs a -\> Coeffs a -\> Coeffs a --
+(konkret: Komposition p(q(x)) könnte hier implementiert werden) 3 ---
+Pipeline-Architektur (Praktische Schritte / Funktionen) Parse/AST: parse
+:: Text -\> PolynomAST Normalize: bringe in Form Coeffs a (0-basiert).
+Embed: embedToQp :: R

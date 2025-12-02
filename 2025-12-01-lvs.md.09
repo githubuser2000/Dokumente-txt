@@ -1,0 +1,12 @@
+(konkret)
+Polynom-artige Kombinatorik = Funktionen sind kleine, zusammensetzbare
+Komponenten f,g,hf,g,h und man baut größere Ausdrücke als reine
+Kompositionen (kein Nebeneffekt). Delegation (z. B. map für
+Koeffizienten, compose/fold für Auswertung) trennt Struktur (Polynom als
+AST / Funktor) von Interpretation (reelle/ p-adische / perfektoide
+Auswertung). Transformationen (z. B. „tilt", „perfektioniere",
+„embedToQp") werden reine, wiederverwendbare Funktionen auf dem AST oder
+auf Koeffizientenlisten --- leicht testbar, beweisbar,
+kompositionsfähig. Horner / fold ist ein Paradebeispiel: derselbe
+fold-Kombinator dient für jede Auswertungssemantik. 2 --- Ein minimales
+DSL (Haskell-

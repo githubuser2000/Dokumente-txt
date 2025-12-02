@@ -1,0 +1,11 @@
+g: das delegierende,
+funktionale (»polynom-artige«) Programmierparadigma macht modellieren,
+kombinieren und transformieren solcher Strukturen erheblich einfacher
+--- weil es Komposition, Rewriting und systematische Transformationen
+(z. B. Einbetten in p-adische Form, Perfektion/Perfektoid-Approximation,
+Tilting) als reine, lokale Operationen handhabbar macht. Ich fasse knapp
+zusammen, präsentiere ein kleines, direkt nutzbares Muster
+(Haskell-Style DSL + Evaluator) und skizziere, wie der Weg „gewöhnlich ↔
+p-adisch ↔ perfektoid ↔ char-p" als Pipeline im delegierenden Paradigma
+implementiert wird --- plus die wichtigen mathematischen
+Vorsichtspunkte. 1 --- Warum das Paradigma hilft 

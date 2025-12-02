@@ -1,0 +1,11 @@
+ige Approximation Scholze's Theorie erlaubt
+p-adische Räume durch grenzenlose inverse Systeme von Polynomen zu
+approximieren: X=lim←⁡Xpn X= lim​Xpn​ Die Grundidee: p-adische Räume sind
+„fraktale" Grenzen von klassischen polynomialen Approximationen. 3.3
+Perfektoid-Felder erlauben Frobenius-invertierung In einem perfektoiden
+Kontext wird die pp-te Potenzkarte x↦xp x↦xp automorph, was über
+gewöhnlichen p-adischen Feldern falsch ist. Warum ist das für Polynome
+explosiv wichtig? Weil f(xp)=g(x) f(xp)=g(x) lösbar und manipulierbar
+wird -- etwas, das über QpQp​ ohne Perfektoidität unmöglich wäre. Das
+betrifft z.B.: Faktorisierung Valuationen
+Weierstrass-Vorbereitungs-Sät

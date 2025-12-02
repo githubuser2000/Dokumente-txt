@@ -1,0 +1,12 @@
+ind nur plug-in Funktionen. Reproduzierbarkeit:
+deterministic pure functions = reproduzierbare Experimente (wichtig bei
+numerischer Approximation). Formalisierbarkeit: leichter
+Beweise/Verifikationen im Typensystem (Idris, Agda), weil
+Zustände/side-effects fehlen.
+Polynome f(x) über p-adischen
+Zahlen können über das Tilting in eine einfachere Welt übersetzt werden,
+wo Frobenius automorph ist. Dadurch werden Nullstellen, Faktorisierung,
+Valuationen und Strukturen wesentlich zugänglicher. Markdown 2
+Delegierendes/funktionales Programmieren macht Modellierung leichter,
+weil Polynome strukturell Listenkombinatoren sind. Ein Polynom wird als
+Koeffizientenliste modelliert, Auswertung über f

@@ -1,0 +1,11 @@
+ebraisch-geometrischer Vorgang
+(perfekt-Perfektion, inverse Limits). Algorithmisch kann man ihn
+approximieren (z. B. durch iteriertes Einführen von p-ten Wurzeln und
+Limitprozesse), aber exakt zu rechnen verlangt meist
+symbolische/infinite-Objekte (Witt-Vektoren etc.). Für viele praktische
+Modellierungs-Zwecke reicht eine kontrollierte Approximation (endliche
+N-Stufen), die das delegierende Paradigma hervorragend modularisiert.
+Man muss explizit die Topologie/Valuation beachten --- p-adische
+Konvergenzregeln unterscheiden sich radikal von reellen. 5 --- Kleines,
+konkretes Beispiel (vollständig durchlaufbar idea) Polynom:
+P(x)=x3−2P(x)=x3−2 Gewöhnliche Semantik: reelle Nullstelle 2332

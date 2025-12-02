@@ -1,0 +1,11 @@
+sche Bäume,
+Berkovich-Linien, Huber-Räume) Die Frage ist also: Wie bringt man die
+Geometrie eines Polynoms über QpQp mit der Geometrie desselben Polynoms
+über RR/CC zusammen? Genau hier treten perfektoide Räume in Szene. 2.
+Perfektoide Räume sind der „Gleichmacher" zwischen p-adischer und
+reell/komplexer Geometrie Perfektoide Räume lösen ein massives Problem:
+p-adische Geometrie und gewöhnliche (archimedische) Geometrie sind a
+priori inkompatibel. Perfektoide Räume erzeugen eine Äquivalenz
+(Tilting) zwischen diesen Welten. Die zentrale Maschine:
+Tilting-Äquivalenz Es gibt eine strukturelle Äquivalenz: K↔K♭ K↔K♭ wenn
+KK perfektoid ist. Dabei ist: KK ein p-adischer perfe

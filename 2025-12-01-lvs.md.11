@@ -1,0 +1,11 @@
+ational -\> QpApprox --- numerische Repr. der
+Koeffizienten als p-adische Approximation. Perfektion: perfectoidApprox
+:: QpApprox -\> PerfectoidObj --- hier baut man inverse Limits /
+p-power-roots bis gewünschte Genauigkeit; praktisch: iteratives
+Konvergenzverfahren (approx). Tilt: tilt :: PerfectoidObj -\> CharPObj
+--- formal: erzeugt das charakteristik-p Gegenstück; praktisch: arbeitet
+auf den Perfektionsdaten (z. B. Koordinaten → Teilschritte mit
+p-potenzen). Eval: verschiedene eval-Semantiken (archimedisch, p-adisch,
+char-p) verwenden denselben evalHorner. 4 --- Wichtige mathematische
+Anmerkungen (keine Vereinfachung) »Tilt« ist kein einfacher numerischer
+Trick. Tilting ist ein alg

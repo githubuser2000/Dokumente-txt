@@ -1,0 +1,10 @@
+old/Horner.
+Transformationen wie Einbettung in Qₚ, Perfektion, Tilting werden reine
+Funktionen. Jede Semantik (archimedisch, p-adisch, char-p) ist ein
+austauschbarer Evaluator. Markdown 3 Pipeline:
+parse→normalize→embedToQp→perfectoidApprox→tilt→eval. Jede Stufe ist
+pure Funktion. Vorteile: Komposition, Testbarkeit, Reproduzierbarkeit,
+formale Verifizierbarkeit. Beispiel Haskell: evalHorner coeffs x = foldr
+(`\c a`{=tex}→c+x\*a) 0 (reverse coeffs). Dieselbe Struktur gilt für
+Lisp, Idris, Scala. Polynome fungieren als universelles AST für alle
+Geometrien. 

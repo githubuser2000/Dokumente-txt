@@ -1,0 +1,10 @@
+z willst: Perfektoide Räume ermöglichen es, Polynome und
+ihre Geometrie gleichzeitig über p-adischen und über gewöhnlichen
+Körpern kohärent zu verstehen --- via Tilting, Frobenius-Automorphie und
+perfektionsartige inverse Limits. 6. Wenn du es in einem Bild willst:
+Polynom f(x)f(x) → p-adischer Raum XpXp​ → perfektoider Lift XX → tilt
+X♭X♭ → charakteristik-p-Raum Xchar pXchar p​ → Vergleich mit klassischer
+Geometrie möglich 7. Nächster Schritt Wenn du willst, mache ich eines
+der folgenden: ein vollständig formalisiertes Diagramm (inkl. Ringe,
+Huber-Paare, Tilt-Funktor, Frobenius-Action) ein konkretes Beispiel →
+z.B. f(x)=x3−2f(x)=x3−2 über QpQp​, Tilt nac

@@ -1,0 +1,12 @@
+ ​.
+p-adische Semantik (z. B. p=3p=3): Hensel-Lift ggf. keine Lösung,
+Struktur anders. Delegierende Pipeline: coeffs = \[ -2, 0, 0, 1 \]
+embedToQp coeffs p prec → Liste von Qp-Approximations bis Präzision
+prec. perfectoidApprox → füge p-power-roots schrittweise hinzu (N
+Schritte). tilt → reduziere modulo p-Power-System → char-p Ausdruck
+(dort ist Frobenius automatisch) evalHorner in jeder Semantik ---
+vergleiche Ergebnisse, untersuche Newton-Polygon, Disken, etc. 6 ---
+Warum das genau »leichter« ist (Engineering-Gründe) Testbarkeit: jede
+Pipeline-Stage ist reine Funktion → property-basierte Tests.
+Komposition: neue Semantiken (z. B. andere p, andere
+Perfektionsstrategien) s
