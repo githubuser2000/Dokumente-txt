@@ -1,0 +1,6 @@
+Q17_
+A1E5ExecuteAusführen,
+B2J10CompilerKompilierer,
+3O15InterpreterInterpretierer,
+D4T20JustBloßInInTimeZeitCompilerKompilierer,TransferTranferierungsCompilerKompilierer,
+E5Y25JustBloßInInTimeZeitInterpreterInterpretierer,TransferTranferierungsInterpreterInterpretierer.
