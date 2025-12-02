@@ -1,0 +1,11 @@
+postmarketOS--Beste Wahl (echtes Linux),
+Mobian--Wie Debian,
+PureOS Mobile--Stabil,
+Ubuntu Touch--Android HAL bremst,
+Sailfish OS--Gute Emulation  schlechte Virtualisierung,
+Android (AOSP)--Emulation top,
+GrapheneOS--(GVM) Pixel only,
+CalyxOS--Solide,
+KaiOS--Webstack,
+OpenHarmony--Microkernel,
+Fuchsia OS--Gute Emulation.
