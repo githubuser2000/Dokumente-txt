@@ -1,0 +1,19 @@
+[user]
+	email = alexgit@alexkern.de
+	name = Alexander Kern
+[alias]
+	pushall = !git remote | xargs -L1 git push --all
+	diffcsv = diff --word-diff
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[color]
+	ui = true
+[diff "csv"]
+	wordRegex = [^,\n]+[,\n]|[,]
+[alias]
+    ap = "!git add -A && git commit -m \"sd\" && git pushall"
+
