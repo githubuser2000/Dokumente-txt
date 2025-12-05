@@ -1,0 +1,18 @@
+Point;System_S;Automation_A;Kernel_K;Combination_C;Geometry_G
+1;Konfigurieren - Zustand definieren;Auto-Konfiguration - selbst Zustände setzen;Operator O1 - Differenz erzeugen;Atom;Basisvektor e1
+2;Verwalten - Ordnung erhalten;Selbst-Verwaltung - autonom stabil halten;Operator O2 - Komplement;Atom;Basisvektor e2
+3;Anwenden - Funktionen nutzen;Auto-Anwendung - selbst Funktionen ausführen;Operator O3 - Gradientenoperator;Molekül (1,2);Linie L1
+4;Bereitstellen - Ressourcen verfügbar machen;Auto-Bereitstellung - selbst Ressourcen aufbauen;Operator O4 - Orthonormalisierung;Molekül (3);Perpendik. L2
+5;Starten - Abläufe initiieren;Auto-Starten - Abläufe automatisch erzeugen;Operator O5 - 3D-Generator;Kontinuum (1-4);Punkt im 3D-Raum
+6;Regeln - Verhalten steuern;Regel-Automation - Regeln selbstständig durchsetzen;Operator O6 - Operatorauswahl;Atom (Operator);Tensor ordnung0
+7;Bereitstellung - Dinge einsatzfähig machen;Auto-Deployment - automatische Einsatzbereitstellung;Operator O7 - Bindungsoperator;Molekül (A+B);2-Punkt-Struktur
+8;Sicherheit - Schutz herstellen;Sicherheits-Automation - Zugriff & Compliance automatisch;Operator O8 - Flächenoperator;Kontinuum (Fläche);2D-Matrix
+9;Beobachten - Zustand erfassen;Auto-Überwachung - Zustand ständig erfassen;Operator O9 - Rotationsoperator;Atom (Winkel);Rotation um e3
+10;Reparieren - Fehler beheben;Selbstheilung - Fehler selbst reparieren;Operator O10 - Tiefengenerator;Molekül (Tiefe);z-Achse
+11;Optimieren - Leistung verbessern;Selbstoptimierung - Leistung selbst anpassen;Operator O11 - Tensoroperator;Kontinuum (Tensorfeld);Tensorfeld Tijk
+12;Koordinieren - Einheiten zusammenführen;Meta-Koordination - selbst Multi-Einheiten steuern;Operator O12 - Dimensionalisierungsoperator;Molekül (nD);nD-Basis
+13;Vorhersagen - zukünftige Zustände einschätzen;Predictive Automation - vorausblickende Automatisierung;Operator O13 - Identitätsoperator;Atom (Isolat);e0 (Isol.)
+14;Strategie - Ziele planen;Strategie-Automation - Ziele automatisch steuern;Operator O14 - Moleküloperator;Molekül (Verbund);Graphstruktur
+15;Selbstanalyse - eigenen Zustand erkennen;Selbstmodellierung - eigenes Modell automatisch bilden;Operator O15 - Sequenzoperator;Kontinuum (geschlossen);Kontinuierliche Kurve
+16;Gesamtsystem - im Umfeld funktionieren;Ökosystem-Autonomie - global autonom funktionieren;Operator O16 - Matrixoperator;Molekülstruktur;Matrix M ∈ R^{m×n}
+

@@ -1,0 +1,44 @@
+Additiv erweitert (mit Violett = Rot + Blau):
+Formel 1 (additiv mit Violett):
+V = R + B = 3 + 2 = 5
+V + Y = 5 + 1 = 6
+Subtraktiv erweitert (mit Violett = Rot × Blau):
+Formel 2 (subtraktiv mit Violett):
+V = R \times B = 3 \times 2 = 6
+V - Y = 6 - 1 = 5
+Additiv (Lichtlogik, wie oben mit V = R + B = 5):
+Nr	Formel (additiv)	Ergebnis	Farbe
+5	Y + B = 1 + 2 = 3	Grün	
+6	R + Y = 3 + 1 = 4	Orange	
+7	Y + B + R = 1 + 2 + 3 = 6	Hellbraun / Weißnah	
+8	R + B = 3 + 2 = 5	Violett	
+9	V + Y = 5 + 1 = 6	Purpur / Magenta	
+10	V + R = 5 + 3 = 8	Rötlich-Violett / Magenta-Rot	
+11	V + B = 5 + 2 = 7	Bläulich-Violett / Indigo	
+Subtraktiv (Materielogik, absorbierende Mischung, V = R × B = 6):
+Nr	Formel (subtraktiv)	Ergebnis	Farbe
+5	Y × B = 1 × 2 = 2	Dunkelgrün / Tiefgrün	
+6	R × Y = 3 × 1 = 3	Rötlich-Orange / Braun	
+7	Y × B × R = 1 × 2 × 3 = 6	Dunkelbraun / Schwarznah	
+8	R × B = 3 × 2 = 6	Violett (dunkel)	
+9	V – Y = 6 – 1 = 5	Purpur / Weinrot	
+10	V – R = 6 – 3 = 3	Dunkelrot	
+11	V – B = 6 – 2 = 4	Tiefblau / Indigoblau	
+
+
+Zgtg
+
+
+
+
+
+
+
+
+
+        14N=schoolSchul teacherLehrer knowledgeWissen educationBildung
+         13M=EconomyWirtschaft richReichMoneyGeld
+          12L=EconomyWirtschaft richReichMoneyGeld
+          11K=EconomyWirtschaft richReichMoneyGeld
+          10J=schoolSchul teacherLehrer knowledgeWissen educationBildung
+

@@ -1,0 +1,18 @@
+Point;Atom_flag;Molecule_flag;Continuum_flag;Combination_descr
+1;Atom_1;;;Atom
+2;Atom_2;;;Atom
+3;;Molecule_3;;Molekül (1,2)
+4;;Molecule_4;;Molekül (3)
+5;;;Continuum_5;Kontinuum (1-4)
+6;Atom_6;;;Atom (Operator)
+7;;Molecule_7;;Molekül (A+B)
+8;;;Continuum_8;Kontinuum (Fläche)
+9;Atom_9;;;Atom (Winkel)
+10;;Molecule_10;;Molekül (Tiefe)
+11;;;Continuum_11;Kontinuum (Tensorfeld)
+12;;Molecule_12;;Molekül (nD)
+13;Atom_13;;;Atom (Isolat)
+14;;Molecule_14;;Molekül (Verbund)
+15;;;Continuum_15;Kontinuum (geschlossen)
+16;;Molecule_16;;Molekülstruktur
+

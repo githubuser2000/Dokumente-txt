@@ -1,0 +1,17 @@
+Point;Geometry;Geom_type
+1;Basisvektor e1;vector
+2;Basisvektor e2;vector
+3;Linie L1;line
+4;Perpendik. L2;line
+5;Punkt im 3D-Raum;point
+6;Tensor ordnung0;tensor
+7;2-Punkt-Struktur;structure
+8;2D-Matrix;matrix
+9;Rotation um e3;rotation
+10;z-Achse;axis
+11;Tensorfeld Tijk;tensor
+12;nD-Basis;basis
+13;e0 (Isol.);scalar
+14;Graphstruktur;graph
+15;Kontinuierliche Kurve;curve
+16;Matrix M ∈ R^{m×n};matrix

@@ -1,0 +1,8 @@
+1/8;Principator;Prinzipator;
+1/7;Bürgerpator Citizenpator;
+1/6;Cleanypator;Säuberungspator;
+1/5;Contuitator;Weiterführungspator;
+1/4;Catchiator;Fangiator;
+1/3;Conditioniator;Bedingungsiator;
+1/2;methodiator;Artweiseniator;
+1/1;Relationator;Verhältnissiator;
