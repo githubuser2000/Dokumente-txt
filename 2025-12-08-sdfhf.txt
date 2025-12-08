@@ -1,0 +1,7 @@
+Sähr gudor mänsch
+@IstUnlustig
+ReligionsReligionen:
+3 MoralsMoral,
+6 LimiterBegrenzer goodGut coldKalt warmWarm,
+9 WebNetz MoralsMoralen interZwischen connectedVerbunden toZur UnityEinheits ProtocolProtokoll categoryKategorie physicsPhysik UnitEinheit,
+12 meta- MoralsMoralen.
