@@ -1,0 +1,212 @@
+﻿C++ / Python
+      ↓
+    C-IR        ← konkrete Transcompilersprache
+      ↓
+   P-FLOW       ← praktische Transcompilersprache
+      ↓
+   C-IR
+      ↓
+C++ / Python
+
+
+for v in nums:
+    if v in selected:
+        selected.remove(v)
+    else:
+        selected.add(v)
+
+
+for (int v : nums) {
+    if (selected.count(v))
+        selected.erase(v);
+    else
+        selected.insert(v);
+}
+FOR v IN nums:
+    TOGGLE selected WITH v
+
+
+S := S ⊕ nums
+S := S ⊕ {v}
+if v in S: remove
+else: add
+flow ToggleSelection:
+    input:
+        nums : sequence
+        selected : set
+
+
+    rule:
+        selected := selected XOR nums
+
+
+    output:
+        selected
+FUNC main():
+    VAR nums = [ … ]
+    VAR selected = SET()
+
+
+    FOR v IN nums:
+        IF contains(selected, v):
+            remove(selected, v)
+        ELSE:
+            add(selected, v)
+
+
+    CALL print(selected)
+
+
+FUNC name(args):
+VAR name = expr
+FOR var IN expr:
+IF cond:
+ELSE:
+CALL func(args)
+RETURN expr
+
+
+econ49b.cpp ─┐
+             ├─► M-FLOW ─► T-CORE ─► M-FLOW ─► econ49b.py
+econ49b.py ──┘
+pipeline Econ49:
+    parse Cpp | Python
+    normalize AST
+    extract T-CORE
+    optional optimize
+    emit Cpp | Python
+
+
+rule EmitToggle_Py:
+    match:
+        S := S ⊕ {v}
+    emit:
+        if v in S:
+            S.remove(v)
+        else:
+            S.add(v)
+rule EmitToggle_Cpp:
+    match:
+        S := S ⊕ {v}
+    emit:
+        if (S.count(v)) S.erase(v);
+        else S.insert(v);
+rule TogglePattern:
+    match:
+        if (v ∈ S):
+            remove(S, v)
+        else:
+            add(S, v)
+    produce:
+        S := S ⊕ {v}
+rule Loop_to_Quantifier:
+    match:
+        ForEach(var v, collection X, body B)
+    produce:
+        ∀ v ∈ X : B
+AST
+Node
+Rule
+Pattern
+Pipeline
+S₁ = Toggle(S₀)
+Toggle : State → State
+transition Toggle(S):
+    ∀ v ∈ S.nums:
+        if v ∈ S.selected:
+            S.selected := S.selected \ {v}
+        else:
+            S.selected := S.selected ∪ {v}
+state S:
+    nums     : Seq[ℤ]
+    selected : Set[ℤ]
+┌───────────────┐
+        │   C++ / Py    │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │    M-FLOW     │  ← Regeln & Steuerung
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │    T-CORE     │  ← Bedeutung
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │ Zielcode      │
+        └───────────────┘
+pipeline EconTranspile:
+    parse Python
+    normalize
+    lower to T-CORE
+    optimize
+    lift to ECO-L
+    emit Cpp
+
+
+rule ForEach_to_Quantifier:
+    match:
+        For(var v in seq X, body B)
+    produce:
+        ∀ v ∈ X : B
+
+
+rule SetAdd_Cpp:
+    match:
+        Add(Set S, v)
+    target: Cpp
+    emit:
+        S.insert(v)
+
+
+rule SetAdd_Py:
+    match:
+        Add(Set S, v)
+    target: Python
+    emit:
+        S.add(v)
+
+
+rule SetAdd_Py:
+    match:
+        Add(Set S, v)
+    target: Python
+    emit:
+        S.add(v)
+
+
+AST
+Node
+Pattern
+Rule
+Pipeline
+
+
+C++ / Python
+      ↓
+   T-CORE
+      ↓
+Beweise / Analyse / Optimierung
+
+
+transition toggle(S):
+    ∀ v ∈ S.nums:
+        if v ∈ S.selected:
+            S.selected := S.selected \ {v}
+        else:
+            S.selected := S.selected ∪ {v}
+
+
+state S:
+    nums : Seq[ℤ]
+    selected : Set[ℤ]
+ℤ        // Integer
+ℝ        // Real
+𝔹        // Boolean
+
+
+Seq[T]   // endliche Sequenz
+Set[T]
+Map[K,V]
+P ∘ S₀ = S₁
+Program : State → State
