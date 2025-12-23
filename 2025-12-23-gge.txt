@@ -1,0 +1,76 @@
+Definition: Die Anzahl der Durchläufe oder Wiederholungen, die bei einem iterativen Prozess durchgeführt werden. In der Informatik beschreibt dies, wie tief eine Schleife verschachtelt ist oder wie oft eine Schleife ausgeführt wird.
+Zusammenfassung
+Inkrement: Erhöhung eines Wertes.
+Iteration: Wiederholung eines Prozesses oder einer Schleife.
+Dekrement: Verringerung eines Wertes.
+Rekursion: Selbstreferenzielle Funktion oder Prozess.
+Sequenz: Reihenfolge von Elementen oder Operationen.
+Aggregation: Zusammenfassung von Elementen.
+Kombination und Permutation: Methoden zur Anordnung oder Auswahl von Elementen.
+Rekurrenz: Beschreibung von Mustern oder Abläufen durch Bezug auf vorhergehende Werte.
+Iterationstiefe: Anzahl der Schleifen oder Wiederholungen.
+Diese Begriffe bieten unterschiedliche Perspektiven auf wiederholende oder strukturierte Prozesse und erweitern das Verständnis für das, was in verschiedenen Kontexten wie Mathematik, Informatik und Logik verwendet wird.
+
+
+
+Rekurrenz->(20Muster->aha10verstehen also Prädikatenlogik führt zu Endaussage.),Aggregation->zu was Ganzem
+Permutation,Sequenz
+
+Deteration, Inkursion, Dekursion, Inquenz, Dequenz, Sequement, Sequeration, Dekurrenz, Inkurrenz. Deterationsschleife. Sind das neue Wörter? Könnten die Wörter einen Sinn machen? Was könnten diese Wörter bedeuten? Ich habe diese Wörter gerade erfunden, aufgrund deiner Auflistung. Was sollten dieser Wörter deiner Auffassung und Vermutung nach vielleicht besser bedeuten?
+
+
+Das Erfinden neuer Wörter ist eine spannende Möglichkeit, Konzepte präziser oder kreativer auszudrücken. Die von Ihnen vorgeschlagenen Wörter könnten interessante Bedeutungen haben, die bestimmte Aspekte der Logik, Mathematik oder Informatik beschreiben. Hier ist eine mögliche Interpretation und Definition der neuen Begriffe:
+
+1. Deteration
+Bedeutung: Ein Prozess oder eine Methode zur Bestimmung oder Festlegung von Werten oder Zuständen.
+Mögliche Definition: Der Prozess, bei dem bestimmte Werte oder Parameter festgelegt oder bestimmt werden, um eine bestimmte Bedingung oder einen Zustand zu erreichen. Ähnlich der „Determinierung“.
+2. Inkursion
+Bedeutung: Ein Verfahren oder eine Methode zum Eindringen oder Integrieren von Elementen in ein System.
+Mögliche Definition: Der Prozess, bei dem neue Elemente oder Daten in ein bestehendes System eingefügt oder integriert werden, möglicherweise unter Berücksichtigung der Wechselwirkungen zwischen den neuen und bestehenden Elementen.
+3. Dekursion
+Bedeutung: Der Prozess des Zurückgehens oder der Reduzierung von Komplexität.
+Mögliche Definition: Der Prozess, bei dem eine komplexe Struktur oder Funktion schrittweise reduziert oder vereinfacht wird, oft um eine Basisbedingung oder einfachere Form zu erreichen. Ähnlich der „Dekrementierung“ oder „Dekonstruktion“.
+4. Inquenz
+Bedeutung: Die Konsequenz oder Auswirkung eines Prozesses oder einer Iteration.
+Mögliche Definition: Das Ergebnis oder die Auswirkung einer bestimmten Aktion oder Iteration innerhalb eines Systems, das sich aus der Durchführung eines Prozesses oder der Anwendung eines Verfahrens ergibt.
+5. Dequenz
+Bedeutung: Der Prozess des Zurücksetzens oder der Rückkehr zu einem vorherigen Zustand.
+Mögliche Definition: Der Vorgang, bei dem ein System oder ein Wert auf einen früheren Zustand zurückgesetzt wird, möglicherweise um eine neue Analyse oder Iteration zu ermöglichen.
+6. Sequement
+Bedeutung: Eine Reihenfolge oder Abfolge von Ereignissen oder Prozessen.
+Mögliche Definition: Eine organisierte Abfolge von Operationen, Ereignissen oder Schritten, die in einer bestimmten Reihenfolge durchgeführt werden müssen, um ein Ziel zu erreichen. Ähnlich der „Sequenz“.
+7. Sequeration
+Bedeutung: Der Prozess der Verfolgung oder des Fortschreitens in einer bestimmten Reihenfolge.
+Mögliche Definition: Die Methode, durch die eine Serie von Schritten oder Ereignissen verfolgt und in einer logischen oder zeitlichen Reihenfolge durchgeführt wird. Ähnlich der „Sequenzierung“.
+8. Dekurrenz
+Bedeutung: Eine Art von Rückkehr oder Wiederholung in einem System oder Prozess.
+Mögliche Definition: Der Vorgang, bei dem bestimmte Zustände oder Werte in einem Prozess regelmäßig wiederholt oder zurückgeführt werden. Könnte eine Variation von „Rekurrenz“ darstellen.
+9. Inkurrenz
+Bedeutung: Ein Prozess des Einbezugs oder der Integration in ein bestehendes System oder Konzept.
+Mögliche Definition: Der Prozess, durch den neue Elemente oder Konzepte in ein bestehendes System integriert oder eingepasst werden. Ähnlich der „Integration“ oder „Inklusion“.
+10. Deterationsschleife
+Bedeutung: Eine Schleife oder ein Prozess, der auf die Bestimmung oder Festlegung von Werten abzielt.
+Mögliche Definition: Eine iterative Schleife, die verwendet wird, um Werte oder Parameter systematisch zu bestimmen oder festzulegen. Könnte eine Kombination aus „Iteration“ und „Determinierung“ sein.
+Zusammenfassung
+Deteration: Bestimmung von Werten oder Zuständen.
+Inkursion: Integration neuer Elemente.
+Dekursion: Rückführung oder Reduzierung von Komplexität.
+Inquenz: Konsequenz oder Auswirkung eines Prozesses.
+Dequenz: Rückkehr zu einem vorherigen Zustand.
+Sequement: Reihenfolge oder Abfolge von Prozessen.
+Sequeration: Verfolgung oder Fortschreiten in einer Reihenfolge.
+Dekurrenz: Rückkehr oder Wiederholung in einem Prozess.
+Inkurrenz: Einbezug neuer Elemente.
+Deterationsschleife: Schleife zur Bestimmung von Werten.
+Diese Begriffe könnten in verschiedenen Kontexten, wie der Informatik, Mathematik oder Logik, nützlich sein, um spezifische Konzepte zu beschreiben, die derzeit möglicherweise nicht durch etablierte Begriffe genau erfasst werden.
+
+Deteration: nein, Rückführung auf irgendetwas ordentliches, anders oder gleich, wie vorher.
+Inkursion: Der Prozess, nach Rekursion, der dann eigentlich immer passiert und eigentlich sowieso immer zur Rekursion hinzugehört, wenn da überhaupt etwas passiert, was nicht sein muss: Also: der erste Teil der Rekurion: ein mal geht es rein und dann raus. Immer, bei jeder programmierten Rekursion.
+Dann ist Dekursion davon der zweite Teil, sodass Rekursion aus Inkursion und Dekursion besteht. Die Wortneubildung macht so Sinn?
+Bei einer Sequenz bedeutet damit die Inquenz davon nach vorn und Dequenz rückwärts. Macht damit die Wortneubildung Sinn?
+Sequement ist wie ein Token in einer Sequenz.
+Sequeration ist die Iteration der Sequenz.
+Dekurrenz ist von Wahrheit zu Klasse von Wahrheiten, also Umgekehrung der Rekurrenz, wenn Inkurrenz wie Rekurrenz ist, aber einseitig, eindeutig und Reduziert, sodass Rekurrenz das volle Spektrum erfasst und Inkurrenz nur das eindeutige erfasst. Diese 2 Begriffsbildungen Inkurrenz und Dekurrenz aus Rekurrenz so passend und sinnvoll?
+Deterationsschleife wäre die Umkehrung der Iterationsschleife und damit wie das Beweisverfahren davon, also ein anderes Wort für allgemeinen oder universellen Induktionsbeweis. Richtig? Ist das alles hier entweder richtig oder passend?
+Ist Iteration und Determinierung nicht etwa das exakt gleiche wie alle Induktionsbeweise, die es geben kann?
+
