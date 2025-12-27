@@ -1,3 +1,4 @@
+O
 Ah, du willst also die „kleinsten“ und einfachsten CRC- oder Prüfsummenverfahren, die weniger komplex sind als CRC-4, oder Alternativen für sehr kurze Nachrichten. Ich fasse sie übersichtlich zusammen.
 1️⃣ Paritätsbit
 Am einfachsten: ein einzelnes Bit, das angibt, ob die Anzahl der 1-Bits gerade oder ungerade ist
@@ -141,4 +142,76 @@ Elliptische Kurven
 reale Verschlüsselung, sehr sicher
 Einfachstes Public-Key-Verfahren: „Mini-RSA“ oder allgemein RSA, weil es nur Multiplikation, Modulo und Exponentiation braucht und leicht zu verstehen ist.
 Wenn du willst, kann ich Mini-RSA direkt als Python-/C++-Code implementieren, mit verschlüsseln / entschlüsseln Schritt für Schritt, so dass du jeden Rechenschritt siehst.
+Willst du, dass ich das mache?
+Wenn ich crc und text mit private key verschlüssele, dann ist das eine digitale Unterschrift
+
+1️⃣ Paritätsbit
+2️⃣ 2-Bit-Parität / horizontale und vertikale Parität
+3️⃣ Summenprüfsumme (Modulo N)
+4️⃣ XOR-Checksumme über Byte
+5️⃣ Tiny CRCs CRC-3, CRC-4
+Extrem einfache Lernvariante: „Toy RSA“
+Primzahlen sehr klein (z. B. p=5, q=11)
+Perfekt! Ich baue dir ein komplettes Python-Beispiel, das Schritt für Schritt zeigt, wie man:
+Einen Tweet-Text in UTF-8 codiert
+Einen Hash daraus berechnet (SHA-256)
+Den Hash mit einem privaten RSA-Key signiert
+Die Signatur mit dem öffentlichen Key überprüft
+So sieht es aus, als würdest du einen Tweet digital signieren.
+🔹 Python-Beispiel: Tweet digital signieren
+Code kopieren
+Python
+from Crypto.PublicKey import RSA
+from Crypto.Signature import pkcs1_15
+from Crypto.Hash import SHA256
+
+# -------------------------------
+# 1. Schlüssel generieren
+# -------------------------------
+key = RSA.generate(2048)
+private_key = key
+public_key = key.publickey()
+
+# -------------------------------
+# 2. Tweet-Text (UTF-8)
+# -------------------------------
+tweet = "Hallo Welt! 😀 #TestTweet"
+tweet_bytes = tweet.encode("utf-8")  # unbedingt UTF-8 verwenden
+
+# -------------------------------
+# 3. Hash berechnen
+# -------------------------------
+hash_tweet = SHA256.new(tweet_bytes)
+
+# -------------------------------
+# 4. Signatur erstellen (privater Key)
+# -------------------------------
+signature = pkcs1_15.new(private_key).sign(hash_tweet)
+print("Signatur (Hex):", signature.hex())
+
+# -------------------------------
+# 5. Signatur überprüfen (öffentlicher Key)
+# -------------------------------
+try:
+    pkcs1_15.new(public_key).verify(hash_tweet, signature)
+    print("✅ Signatur gültig")
+except (ValueError, TypeError):
+    print("❌ Signatur ungültig")
+🔹 Erklärung Schritt für Schritt
+RSA Keypair → private_key zum Signieren, public_key zum Verifizieren
+UTF-8 → der Text muss exakt so kodiert werden, sonst stimmt der Hash nicht
+SHA-256 → bildet eine kompakte, sichere Prüfsumme
+pkcs1_15.sign → verschlüsselt den Hash mit dem privaten Key → digitale Signatur
+Verifikation → öffentlicher Key entschlüsselt die Signatur, berechnet Hash neu, vergleicht
+🔹 Output Beispiel
+Code kopieren
+
+Signatur (Hex): 9f2a5b... (256 Bytes)
+✅ Signatur gültig
+Wenn du ein einzelnes Zeichen im Tweet änderst → Signatur schlägt fehl
+Emoji & Sonderzeichen funktionieren problemlos, solange UTF-8 verwendet wird
+Wenn du willst, kann ich noch die CRC-Variante einbauen:
+Statt SHA-256 wird der Tweet mit CRC-4 (oder CRC-32) gehasht
+Signatur = private-key-Verschlüsselung des CRC
+Dann sieht man den Unterschied zwischen CRC und echten Hashes im Kontext digitaler Signaturen.
 Willst du, dass ich das mache?
