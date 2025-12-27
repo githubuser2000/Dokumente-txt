@@ -1,0 +1,144 @@
+Ah, du willst also die „kleinsten“ und einfachsten CRC- oder Prüfsummenverfahren, die weniger komplex sind als CRC-4, oder Alternativen für sehr kurze Nachrichten. Ich fasse sie übersichtlich zusammen.
+1️⃣ Paritätsbit
+Am einfachsten: ein einzelnes Bit, das angibt, ob die Anzahl der 1-Bits gerade oder ungerade ist
+Berechnung: XOR aller Bits
+Fehlererkennung:
+erkennt alle Einzelbitfehler
+erkennt keine Doppelbitfehler (z. B. zwei Bits kippen sich gegenseitig auf Parität)
+Sehr schnell, nur ein Bit pro Nachricht
+Beispiel:
+Code kopieren
+
+Daten = 101101
+Parität = 1 XOR 0 XOR 1 XOR 1 XOR 0 XOR 1 = 0  (gerade)
+2️⃣ 2-Bit-Parität / horizontale und vertikale Parität
+2D-Parität: Zeilen- und Spaltenparität
+Fehlererkennung: kann ein Bit lokalisiert erkennen
+Etwas komplexer, aber immer noch sehr leicht zu implementieren
+3️⃣ Summenprüfsumme (Modulo N)
+Addiere alle Bytes / Worte der Nachricht mod N
+Beispiel: mod 256 für 8-Bit-Checksumme
+Vorteil: einfache Addition statt Bitweise-XOR
+Nachteil: erkennt keine vertauschten Bytes, Fehlererkennung ist schwächer als CRC
+4️⃣ XOR-Checksumme über Bytes
+XOR aller Bytes der Nachricht → Prüfsumme
+Extrem einfach, sehr schnell
+Erkennt alle einzelnen Bitfehler in einem Byte, aber nicht alle Doppelbitfehler
+Wird oft in kleinen Embedded-Protokollen genutzt
+5️⃣ Tiny CRCs
+CRC-3, CRC-4 (wie oben), CRC-5
+Vorteil: kann mehrere Bitfehler erkennen
+Nachteil: Rechenaufwand steigt leicht, aber immer noch sehr klein
+Beispiel CRC-3: Polynom x^3 + x + 1 → nur 3 Bit Prüfsumme
+Datenbits durch Division + XOR → Rest = 3-Bit Prüfsumme
+Einfacher als CRC-4, etwas weniger robust
+🔹 Vergleich einfache Verfahren
+Verfahren
+Bits
+Fehlererkennung
+Komplexität
+Parität
+1
+Einzelbit
+sehr niedrig
+2D-Parität
+2–3+
+Einzelbit + teilweise Position
+niedrig
+Summenprüfung mod N
+8..16
+Einzel-/Mehrbit, schwächer
+sehr niedrig
+XOR-Checksumme
+8..16
+Einzelbit pro Byte
+sehr niedrig
+CRC-3 / CRC-4
+3–4
+Einzel- & viele Doppelbitfehler
+niedrig
+💡 Fazit:
+Wenn du wirklich das kleinste, einfachste Verfahren willst, nimm Parität (1 Bit) oder XOR-Checksumme.
+Wenn du minimal robust gegen mehrere Bitfehler willst → CRC-3 oder CRC-4.
+Wenn du willst, kann ich dir alle drei Varianten (Parität, XOR, CRC-3) als Python/C++ Code minimal implementiert zeigen, so dass man sie hin- und zurück prüfen kann.
+Willst du, dass ich das mache?
+
+
+Ah, jetzt wechseln wir von Prüfsummen zu Public-Key-Kryptographie. Ich erkläre systematisch, welches Verfahren am einfachsten ist, wie es funktioniert, und warum es als „einfach“ gilt.
+🔹 Grundidee Public-Key-Kryptographie
+Jeder Benutzer hat ein Schlüsselpaar:
+Privat: geheim
+Öffentlich: frei verbreitet
+Nachricht verschlüsseln: mit öffentlichem Schlüssel
+Entschlüsseln: mit privatem Schlüssel
+Vorteil: keine gemeinsame geheime Schlüsselvereinbarung nötig
+1️⃣ Einfachstes Verfahren: RSA mit sehr kleinem Schlüssel
+Klassisch, gut verständlich
+Kernidee: basiert auf Multiplikation zweier Primzahlen
+Einfacher Ablauf:
+Zwei Primzahlen wählen: p und q
+n = p*q → öffentlicher Modulus
+φ(n) = (p-1)*(q-1)
+Wähle e, das teilerfremd zu φ(n) ist → öffentlicher Exponent
+Berechne d, den multiplikativen Inversen von e mod φ(n) → privater Exponent
+Verschlüsseln:
+Code kopieren
+
+C = M^e mod n
+Entschlüsseln:
+Code kopieren
+
+M = C^d mod n
+✅ Vorteil: sehr intuitiv, mathematisch leicht zu verstehen
+⚠ Nachteil: für echte Sicherheit braucht man sehr große Zahlen (1024–4096 Bit)
+2️⃣ Noch einfachere Modelle zum Lernen: ElGamal / Diffie-Hellman
+ElGamal basiert auf diskretem Logarithmus
+Vorteil: kann leicht in kleinen Beispielen demonstriert werden
+Ablauf: modulare Exponentiation
+Für Unterricht / Demo sehr klein wählbar, z. B. modulo 17
+3️⃣ Extrem einfache Lernvariante: „Toy RSA“
+Primzahlen sehr klein (z. B. p=5, q=11)
+Alles per Hand berechenbar
+Hilft, das Prinzip zu verstehen, nicht für reale Sicherheit
+Man kann sogar Python/Handrechnungen machen
+Beispiel „Mini-RSA“:
+Code kopieren
+
+p=5, q=11
+n = 55
+phi = 4*10 = 40
+e = 3
+d = 27   (weil 3*27 mod 40 = 1)
+Verschlüsseln M=7:
+Code kopieren
+
+C = 7^3 mod 55 = 343 mod 55 = 13
+Entschlüsseln:
+Code kopieren
+
+M = 13^27 mod 55 = 7
+Alles in kleinen Zahlen sichtbar → sehr einfach
+🔹 Fazit
+Mathematisches Prinzip
+Verfahren
+Einfachheit
+Geeignet für
+Mini-RSA
+sehr hoch
+Faktorisierung von Primzahlen
+Lernen / Demo
+RSA (real)
+mittel
+Faktorisierung / Modulare Arithmetik
+reale Verschlüsselung
+ElGamal / DH
+mittel
+Diskreter Logarithmus
+Demo / Schlüsselvereinbarung
+ECC (Elliptic)
+komplex
+Elliptische Kurven
+reale Verschlüsselung, sehr sicher
+Einfachstes Public-Key-Verfahren: „Mini-RSA“ oder allgemein RSA, weil es nur Multiplikation, Modulo und Exponentiation braucht und leicht zu verstehen ist.
+Wenn du willst, kann ich Mini-RSA direkt als Python-/C++-Code implementieren, mit verschlüsseln / entschlüsseln Schritt für Schritt, so dass du jeden Rechenschritt siehst.
+Willst du, dass ich das mache?
