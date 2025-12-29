@@ -1,0 +1,11 @@
+Kategorie,Idee
+Klassisch,g∘f, normale Hintereinanderausführung
+Pipeline,Datenfluss
+Kleisli,Effekte & Monaden
+Applicative,kombinierte Anwendung
+Functor,Mapping über Struktur
+Parallel,gleichzeitige Ausführung
+Relational,Relation ∘ Relation
+Kombinatorisch,Programme aus Bausteinen
+Typ-level,Komposition von Typkonstruktoren
+Currying,Argumente fixieren → neue Funktion/

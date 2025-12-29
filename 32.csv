@@ -1,0 +1,11 @@
+Kategorie,Idee
+Klassisch,g∘f, normale Hintereinanderausführung
+Pipeline,Datenfluss: x | f | g | h
+Kleisli,Effekte / Monaden: f: A->M B, bind/then
+Applicative,kombinierte Anwendung auf Struktur (parallel)
+Functor,Mapping über Struktur (fmap)
+Parallel,gleichzeitige Ausführung, Map-Reduce, Futures, Datenflow
+Relational,Komposition von Relationen: R∘S = {(x,z)| ∃y: (x,y)∈S,(y,z)∈R}
+Kombinatorisch,S, K, B, Parser-Kombinatoren, Combinatory Logic
+Typ-level,Typfunktionen, Funktor-Komposition
+Currying / partielle Anwendung,Argumente fixieren → neue Funktion

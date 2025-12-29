@@ -1,0 +1,11 @@
+Kompositionstyp,Arithmetik / Algebra,Analysis
+Klassische Komposition,symbolisch / algebraisch,Stetigkeit; Ableitung; Grenzprozesse
+Pipeline / Datenfluss,diskrete Transformationskette,selten relevant (kein Grenzbezug)
+Kleisli-Komposition (Effekte),algebraische Struktur (Monaden; Kategorien),analytisch neutral
+Applicative-Komposition,algebraische Parallelkombination,analytisch neutral
+Funktor-Komposition / Mapping,strukturell-algebraisch,keine analytische Bedeutung
+Parallel-Komposition,diskrete Zerlegung/Kombination,nur bei kontinuierlichen Operatoren relevant
+Relationale Komposition,rein algebraisch-logisch,kein analytischer Begriff
+Kombinatoren (S; K; B…),syntaktisch-algebraisch,analytisch irrelevant
+Typ-Level-Komposition,Kategorie-/Typentheorie,analytisch neutral
+Currying / partielle Anwendung,funktional-algebraische Umformung,keine analytische Rolle
