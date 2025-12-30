@@ -1,0 +1,1 @@
+Makros, Addons, Plugins, Templates, Limitierungen durch z.B Präprozessoren oder Programmierung von Programmierung sind Meta-Programmierung.

@@ -1,0 +1,56 @@
+truncate -s 10G btrfs_img1.img
+truncate -s 10G btrfs_img2.img
+truncate -s 10G btrfs_img3.img
+truncate -s 10G btrfs_img4.img sudo losetup -fP btrfs_img1.img  # z. B. /dev/loop0
+sudo losetup -fP btrfs_img2.img  # z. B. /dev/loop1
+sudo losetup -fP btrfs_img3.img  # z. B. /dev/loop2
+sudo losetup -fP btrfs_img4.img  # z. B. /dev/loop3  mkfs.btrfs -d raid10 -m raid1 /dev/sdX /dev/sdY /dev/sdZ /dev/sdW pkg install tsu tsu
+
+
+
+kann ich ssh so einrichten, dass es immer wieder reconnected?
+
+
+Für Tunnels (z. B. Reverse-Tunnel): autossh ist unschlagbar.
+Wenn du nur Prozesse persistieren lassen willst: Starte tmux/screen auf dem Server manuell und re-attach später mit tmux attach.
+Die Kombi autossh + tmux ist für die meisten Fälle die zuverlässigste. Probier's aus – bei Fragen mehr Details!
+
+
+
+40 Webseiten
+,Nein, Mosh unterstützt keine remote Mounts wie SSHFS (FUSE-basiertes Mounting eines Remote-Verzeichnisses als lokales Dateisystem) oder Port-Forwarding/Tunnels.
+Warum nicht?
+Mosh ist speziell für interaktive Terminal-Sessions optimiert (robuster bei instabilen Verbindungen, IP-Wechseln, Schlafmodus).
+Es nutzt UDP und ein eigenes Protokoll (SSP), das keine beliebigen Datenströme (wie SFTP für SSHFS oder TCP-Tunnels) überträgt.
+Die initiale Verbindung läuft über SSH (für Authentifizierung), aber danach schließt SSH und Mosh übernimmt – Port-Forwarding oder SSHFS funktionieren nicht.
+Stand Dezember 2025: Immer noch keine native Unterstützung (lange offene Issues im Mosh-Projekt, z. B. für Out-of-Band-Data oder Tunnels).
+Beste Lösung für persistente Remote-Mounts bei instabilen Verbindungen
+Verwende SSHFS mit built-in Reconnect-Option – das ist die einfachste und robusteste Methode für Dateizugriff bei Abbrüchen.Beispiel-Mount (mit Auto-Reconnect):
+sshfs user@host:/remote/path /mnt/remote \
+  -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3,compression=yes,follow_symlinks,IdentityFile=~/.ssh/id_ed25519
+reconnect: Versucht automatisch, die Verbindung wiederherzustellen (sehr effektiv bei kurzen Abbrüchen).
+ServerAlive*: Sendet Keep-Alive-Pakete, um Timeouts zu vermeiden.
+Kombiniere mit autossh für noch mehr Robustheit (autossh überwacht und restartet den SSH-Prozess).
+Persistenter Mount (z. B. via /etc/fstab für Auto-Mount bei Boot/Netzwerk):
+user@host:/remote/path /mnt/remote fuse.sshfs _netdev,x-systemd.automount,reconnect,IdentityFile=/path/to/key,allow_other,idmap=user 0 0
+_netdev und x-systemd.automount: Mountet erst bei Zugriff und reconnectet bei Netzwerkproblemen.
+Das funktioniert super bei WLAN-Wechseln, Mobilfunk oder Schlafmodus – der Mount "friert" kurz ein, reconnectet aber automatisch.
+Weitere Alternativen
+Kombiniere Mosh + SSHFS separat:
+Nutze Mosh für die interaktive Shell (mosh user@host).
+Separat SSHFS mounten (mit reconnect) für Dateien.
+Oder autossh für einen persistenten Tunnel: autossh -M 0 -f -N -o "ServerAliveInterval=30" user@host
+rclone mount: Moderne Alternative zu SSHFS (unterstützt SFTP-Backend, Caching, gute Performance).
+rclone mount remote:/path /mnt/remote --vfs-cache-mode writes --daemon
+Besser bei großen Dateien, aber etwas komplexer.
+NFS über VPN (z. B. WireGuard): Sehr performant und persistent, aber mehr Setup (VPN für Stabilität).
+Für die meisten Fälle reicht SSHFS mit reconnect aus – es ist genau für deine Szenario (instabile Connections + Remote-Dateizugriff) gemacht. Probier's aus, und falls du spezifische Probleme hast, mehr Details!
+
+
+
+44 Webseiten
+Mehr zu autossh-Ktonfiguration
+WireGuard VPN Setup
+Kürzere Erklärung
+
+/
