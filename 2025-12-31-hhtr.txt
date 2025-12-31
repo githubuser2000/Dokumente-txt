@@ -1,0 +1,6 @@
+Programmiere eine Funktion, die das aufsummieren der Buchstaben protokolliert in einem Array, und dazwischen ein ‘+’ element für Addition.
+Dann programmiere für solche Aufsummierungen alle Denkbaren Aufsummierungen dazu. Bei 3 z.B. 3=3+0=2+1=1+1+1 als array.
+auch das dazu programmiere: eine summe n ist immer das was das, was zwei von n-1 ausmacht, aber ohne dessen neue Eigenschaft. So ist ein Raum ohne nicht rechtwinklige Winkel. Das war falsch vorher von mir behauptet. Bitte korrigiere meinen Fehler.
+Deswegen ist ein Winkel 2 Zahlen ohne Betrag, mit dem Betrag 1, was auch die Bedeutung der Summe 5 ist: Box Schachtel Befehl das Ganze die Zahl eins. Bitte programmiere diese Informationen ein!
+Deswegen ist eine Zahl viele Einsen, aber ohne Kapsel Box Schachtel zu sein, weil das Prinzip für alle Summen gilt. Demnach ist Summe 9 was die Variable darstellt meint und ist mehrere Räume ohne Dimensionen. Also n=((2*n)-n). Programmiere dies sowohl textlich wie auch als array und bei dieser Formel kommt ‘*’ und ‘-’ dazu, also zwischen jedem operanden diese operationen ins text array!
+

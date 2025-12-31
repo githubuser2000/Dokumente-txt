@@ -1,0 +1,134 @@
+P13 HierarchieHierarchie ColorsFarben
+A01yellowGelb,
+B02blueBlau,
+C03redRot,
+D04violetViolett,
+E05darkDunklesdeepTiefenGreenGrün,
+F06reddishRötlichesOrangeOrange,
+G07lightLichtBrightHellesBrownBraun,
+H08darkDunklesdeepTiefDeepTiefBlueBlau,
+I09strawberryErdbeerCreamSahnePinkPink,
+J10sunnySonnigesYellowGelbLittleWenigOrangeOrange:::
+
+HierarchieHierarchie ColorsFarben
+🌼 A01 Yellow – Gelb 🌼
+🔵 B02 Blue – Blau 🔵
+🔴 C03 Red – Rot 🔴
+🟣 D04 Violet – Violett 🟣
+🌲 E05 Dark/Deep Green – Dunkles/Tiefes Grün 🌲
+🟠 F06 Reddish Orange – Rötliches Orange 🟠
+🐻 G07 Light/Bright Brown – Licht/Helles Braun 🐻
+🌊 H08 Dark/Deep Blue – Dunkles/Tiefes Blau 🌊
+🍓 I09 Strawberry Cream Pink – Erdbeer-Sahne-Pink 🍓
+☀️ J10 Sunny Yellow (little Orange) – Sonniges Gelb (wenig Orange) ☀️
+HierarchieHierarchie ColorsFarben
+
+
+
+
+
+
+
+
+
+
+
+HierarchieHierarchie
+ColorsFarben
+🌼 A01 Yellow – Gelb 🌼
+🔵 B02 Blue – Blau 🔵
+🔴 C03 Red – Rot 🔴
+🟣 D04 Violet – Violett 🟣
+🌲 E05 Dark/Deep Green – Dunkles/Tiefes Grün 🌲
+🟠 F06 Reddish Orange –
+Rötliches Orange 🟠
+🐻 G07 Light/Bright Brown – Licht/Helles Braun 🐻
+🌊 H08 Dark/Deep Blue – Dunkles/Tiefes Blau 🌊
+🍓 I09 Strawberry Cream 
+Pink – Erdbeer-Sahne-Pink 🍓
+☀️ J10 Sunny Yellow 
+(little Orange) – Sonniges Gelb (wenig Orange) ☀️
+HierarchieHierarchie 
+ColorsFarben
+
+
+
+
+
+
+
+Nr,Deutsch,Emoji,Englisch,
+Emoji
+0,"Frauen Mädchen Damen Hierarchie Omas","👑👵👩‍�","Women
+Girls Ladies Hierarchy Grandmas","👑👵👩‍�"
+1,"Verhältnisse","👥",
+"Relationships","👥"
+2,"Gestaltung weiblich",
+"🎨","Design female","🎨"
+3,"Bedingung","📜",
+"Condition","📜"
+4,"Fangen weiblich","�",
+"Catching female","�"
+5,"Karriere","🚀","Career",
+"🚀"
+6,"Reinheit weiblich","✨",
+"Purity female","✨"
+7,"Bürger","🗳️","Citizen","🗳️"
+8,"Regeln Gesetze weiblich","⚖️","Rules Laws female","⚖️"
+9,"Kategorien","📂",
+"Categories","📂"
+10,"Definitionen weiblich","📖","Definitions female","📖"
+11,"Zuschauer Zuhörer","👀👂",
+"Spectators Listeners","👀👂"
+12,"Kartieren Sieben Sortieren weiblich","🗺️","Mapping Seven Sorting female","🗺️"
+13,"Bestimmer-Sollen!","👑",
+"Determiner-Shall!","👑"
+14,"Analysist weiblich","🔍",
+"Analyst female","🔍"
+15,"Invariante Überprüferin Wach","🛡️","Invariant 
+Checker Alert","🛡️"
+16,"Respekt-Verteiler weiblich","🙌","Respect 
+Distributor female","🙌"
+17,"Gedanklich 
+nachvollziehen","🧠",
+"Mentally comprehend","🧠"
+18,"Totalitaristin weiblich","🏰","Totalitarian female","🏰"
+19,"Fundamentalist","⛪",
+"Fundamentalist","⛪"
+20,"Gedichtskodiererin 
+weiblich Dekodieren",
+"📝🔓","Poem coder female Decoding"," 📝🔓"
+
+
+
+
+
+
+
+
+
+| Nr | Deutsch                               | Emoji        | Englisch                           | Emoji        |
+|----+---------------------------------------+--------------+-----------------------------------+--------------|
+| 0  | Frauen Mädchen Damen Hierarchie Omas  | 👑👵👩‍� | Women Girls Ladies Hierarchy Grandmas | 👑👵👩‍� |
+| 1  | Verhältnisse                          | 👥           | Relationships                     | 👥           |
+| 2  | Gestaltung weiblich                   | 🎨           | Design female                      | 🎨           |
+| 3  | Bedingung                             | 📜           | Condition                          | 📜           |
+| 4  | Fangen weiblich                       | �           | Catching female                     | �           |
+| 5  | Karriere                              | 🚀           | Career                              | 🚀           |
+| 6  | Reinheit weiblich                     | ✨           | Purity female                        | ✨           |
+| 7  | Bürger                                | 🗳️          | Citizen                             | 🗳️          |
+| 8  | Regeln Gesetze weiblich               | ⚖️           | Rules Laws female                   | ⚖️           |
+| 9  | Kategorien                             | 📂           | Categories                          | 📂           |
+| 10 | Definitionen weiblich                 | 📖           | Definitions female                   | 📖           |
+| 11 | Zuschauer Zuhörer                     | 👀👂        | Spectators Listeners                 | 👀👂        |
+| 12 | Kartieren Sieben Sortieren weiblich   | 🗺️           | Mapping Seven Sorting female         | 🗺️           |
+| 13 | Bestimmer-Sollen!                     | 👑           | Determiner-Shall!                    | 👑           |
+| 14 | Analysist weiblich                     | 🔍           | Analyst female                        | 🔍           |
+| 15 | Invariante Überprüferin Wach          | 🛡️           | Invariant Checker Alert               | 🛡️           |
+| 16 | Respekt-Verteiler weiblich            | 🙌           | Respect Distributor female            | 🙌           |
+| 17 | Gedanklich nachvollziehen             | 🧠           | Mentally comprehend                  | 🧠           |
+| 18 | Totalitaristin weiblich               | 🏰           | Totalitarian female                  | 🏰           |
+| 19 | Fundamentalist                        | ⛪           | Fundamentalist                       | ⛪           |
+| 20 | Gedichtskodiererin weiblich Dekodieren | 📝🔓       | Poem coder female Decoding            | 📝🔓       | 
+
+
