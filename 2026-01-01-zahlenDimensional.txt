@@ -1,0 +1,40 @@
+lWie könnte man die ziffern einer fliesskommazahl indexieren um multiplikation von vektoren als zahl zu meinen?
+Das ist eine faszinierende Idee, die uns direkt zur p-adischen Arithmetik zurückführt, über die wir vorhin gesprochen haben. Um die Ziffern einer Fließkommazahl als Vektor zu interpretieren und deren Multiplikation sinnvoll zu definieren, muss man die Zahl als eine Art "unendlichen Vektor" betrachten.
+​Hier ist der mathematische Weg, wie man das konstruiert:
+​1. Die Indexierung (Die "Stellen" als Vektor-Komponenten)
+​Eine Zahl x kann man in einer Basis b (z. B. b=10 oder b=2) als Summe darstellen. Die Indizes des Vektors entsprechen dabei den Potenzen der Basis:
+Man kann die Zahl also als einen Vektor \vec{a} schreiben:
+​Der Index i steht für die Position der Ziffer (die i-te Potenz).
+​Der Wert a_i ist die Ziffer an dieser Stelle.
+​2. Multiplikation als Faltung (Convolution)
+​Wenn du zwei Vektoren \vec{a} und \vec{b} multiplizieren willst, sodass das Ergebnis der Multiplikation der entsprechenden Zahlen entspricht, nutzt man die diskrete Faltung.
+​Wenn c = x \cdot y, dann sind die Komponenten des Ergebnisvektors \vec{c}:
+Das Problem: Bei normalen Fließkommazahlen gibt es einen Übertrag (Carry). Wenn c_n \geq 10 ist, fließt der Rest in c_{n+1} ein. Das verhindert, dass die Vektormultiplikation eine rein komponentenweise Operation bleibt.
+​3. Die Lösung: p-adische Indizierung
+​Hier kommen die p-adischen Zahlen (\mathbb{Q}_p) wieder ins Spiel. In der p-adischen Welt indexiert man die Ziffern oft nur mit positiven Indizes (i = 0, 1, 2, \dots), lässt den Vektor aber unendlich lang werden.
+​Vorteil: Es gibt keine Begrenzung nach "links" (zu immer größeren Potenzen).
+​Struktur: Man definiert den Ring der p-adischen Zahlen genau so: als Folgen (Vektoren) von Ziffern, auf denen die Multiplikation durch Faltung und Übertrag definiert ist.
+​4. Ein alternativer Ansatz: Komponentenweise Multiplikation
+​Wenn du die Vektoren komponentenweise multiplizieren willst (Hadamard-Produkt), also:
+...dann entspricht das nicht der normalen Multiplikation von Zahlen. In diesem Fall hättest du einen neuen Ring konstruiert (einen direkten Produkt-Ring), in dem es keine Überträge gibt. Das wird in der Informatik manchmal für SIMD-Operationen (Single Instruction, Multiple Data) genutzt, um viele kleine Rechnungen gleichzeitig in einem "Zahlen-Container" auszuführen.
+​Zusammenfassung der Indexierung
+
+Typ
+Index-Bereich
+Bedeutung der Multiplikation
+Fließkomma (Dezimal)
+i \in \mathbb{Z}
+Faltung mit Übertrag (kompliziert).
+p-adisch
+i \in \mathbb{N}_0
+Faltung mit Übertrag (algebraisch sauber).
+Vektor-Modus
+i \in \{1 \dots n\}
+Komponentenweise (keine "Zahl" im klassischen Sinn).
+
+Anwendungsidee:
+Könnte man dies nutzen, um große Zahlen in deinem csvPy Projekt schneller zu multiplizieren? Ja! Die Fast Fourier Transformation (FFT) macht genau das: Sie wandelt die Ziffern-Vektoren in einen Raum um, in dem die Faltung zu einer einfachen komponentenweisen Multiplikation wird, und wandelt sie dann zurück.
+​Möchtest du ein kleines Python-Skript sehen, das eine Zahl in einen Vektor zerlegt und die Multiplikation über eine Faltung simuliert?
+
+
+
