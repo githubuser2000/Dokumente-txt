@@ -1,0 +1,29 @@
+Bei perfektoiden Körpern kommen jedoch "beliebig feine" Wurzeln von p hinzu (z. B. p^{1/p}, p^{1/p^2}, \dots), was die Darstellung zu einer Art fraktalen Summe macht.
+Wie funktioniert tilt. polynome mit besonderen wurzeln sind also perfektoide zahlen. was ist eine charakteristik?
+Was ist eine Charakteristik?
+​In der Algebra ist die Charakteristik eine Zahl, die uns sagt, wie oft man die "1" zu sich selbst addieren muss, um bei "0" zu landen.
+Der Tilt ist eine mathematische Brücke, die einen Körper aus der schwierigen Welt (Charakteristik 0) in die einfachere Welt (Charakteristik p) übersetzt.
+Polynome mit besonderen Wurzeln
+​Du hast recht: Perfektoide Zahlen entstehen oft dadurch, dass man zu den p-adischen Zahlen immer mehr Wurzeln hinzufügt.
+
+
+Frobenius-Endomorphismus (oft einfach nur "der Frobenius") ist das wichtigste Werkzeug in der Welt der Charakteristik p
+​In der normalen Schule lernst du, dass (a + b)^2 nicht a^2 + b^2 ist (wegen des Mittelterm 2ab).
+In der Charakteristik p passiert aber etwas Magisches: Da alle Vielfachen von p zu Null werden, verschwinden bei der binomischen Formel alle mittleren Terme. Es gilt:
+potenzen addiert in klammern sind die summe in klammern mit deren Exponenten potenziert.
+Ein Körper heißt perfekt, wenn der Frobenius eine Bijektion ist – also wenn jedes Element genau eine p-te Wurzel besitzt. Das ist die perfektoide Zahl.
+Man schreibt sie wie eine Klasse.
+
+Der Frobenius als "Zeitmaschine" oder "Rotation"
+​In der Arithmetischen GeometrieDer Frobenius als "Zeitmaschine" oder "Rotation"
+​In der Arithmetischen Geometrie betrachtet man den Frobenius oft wie eine dynamische Bewegung:
+​Er lässt die "normalen" Zahlen (aus dem Grundkörper) unverändert (x^p = x).
+​Aber er vertauscht die "höheren" Zahlen (aus Erweiterungskörpern).
+betrachtet man den Frobenius oft wie eine dynamische Bewegung:
+​Er lässt die "normalen" Zahlen (aus dem Grundkörper) unverändert (x^p = x).
+​Aber er vertauscht die "höheren" Zahlen (aus Erweiterungskörpern).
+
+
+
+
+
