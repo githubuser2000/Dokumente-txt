@@ -11,3 +11,7 @@ reverse Engineering.
 
 Intelligenzbolzen20KlassenClasses
 Stufe 2
+
+6 n vs 1/n
+8 1/n vs n+-+-2 
+8 1/n vs n+-+-4 
