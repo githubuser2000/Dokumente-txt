@@ -1,0 +1,11 @@
+CircuitKreislaufEconomyWirtschaft
+1letLassenPlanzenGrowWachsen
+2letLassenMeatFleischGrowWachsen
+3DeadTotesBothBeidesMeatFleischPlantPflanze
+4EarthErde
+orOder
+1beginAnfangGrothWachstumPlantPflanze
+2RipReißenPlantPflanzeOutHeraus
+3EatEssenDigestVerdauuen
+4CompostKompost
+5EarthErdeNotNichtYetBereitsVulcanVulkan
