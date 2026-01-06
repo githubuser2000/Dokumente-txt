@@ -1,0 +1,37 @@
+(33)AG Kontinuum
+A1Tüfteln,
+B2Technik,
+C3Techologie
+D4Technisieren,
+E5Implementieren,
+F6Skalieren,
+G7techisches Zeichnen,
+H8Entwurf,
+I9Technologisieren,
+J10Einbau,
+K11Technokratie,
+L12Technikreihe,
+M13Reparatur
+N14Ingenieurskunst,
+O15Einsatzimplementierung,
+P16Generalüberholen,
+Q17Beschaffung woher,
+R18Matrix aus Technik Relational verkreuzen,
+S19wohin mit den Erzeugnissen,
+T20Zusammenbau,
+U21Einsatz wie Plotter,
+V22Weiter-Entwicklung,
+W23Bauplan
+X24Matrix-Technologien,
+Y25Volks-Technik,
+Z26Kompatibilität
+AA27Interoperabilität,
+AB28Zusammenwirken,
+AC29Tiefenanalyse,
+AD30Gerät Device,
+AE31Feinjustieren,
+AF32Design Technologie Entwurf,Technisieren,
+AG33Produkt.
+
+
+
