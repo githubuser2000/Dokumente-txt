@@ -1,0 +1,22 @@
+(20) T Kontinuum
+A1Form, Eindruck
+B2Formulierbar, Formbar, dass es geht,
+C4Formuliertes,Formulieren, die Tat (informell),
+D5Formel selbst als Muster und Struktur,
+F6Formal, das Formale, die Art (abduktiv),
+G7Formalisierung, Prozess dafür (induktiv),
+H8Formalisiertes,Welt zu Formel zu Eins (deduktiv),
+I9Geformt (informell)
+J10Formalisierung mit Bezug zur Formelteilen sind ein Muster von Strukturen.
+K11Formelteile im Bezug zueinander (aduktiv),
+L12Formel-Ordnungs-System-Strukturgesetze,
+M13Formelweg (abduktiv und induktiv)
+N14Aufbau,Verbindung,Zusammenhang,
+O15Formel in Formel, Formalem (deduktiv),
+P16Formen von Formen,
+Q17kürzen (deduktiv),
+R18Muster Verhältnis zu Struktur Formeln,
+S19erweitern (induktiv),
+T20Muster mehreren Strukturen von Formalem, wo dieses Formale Formeln selbst zusammen zueinander Formalem Bezug Formel Bezug, deswegen Muster, statt nur Struktur,
+U21Formel von Formel als Entwicklungspunkt (induktiv),
+V22Formel-Entwicklungsreihe (vor, zurück) gesucht gegeben gefunden Baumstrukturen (abduktiv),
