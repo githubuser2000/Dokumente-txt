@@ -1,0 +1,10 @@
+d4,c4,b4,a4,_4,-a4,-b4,-c4,-d4
+d3,,,,das davor nutzen fuer vorwaerts konkatteniert,,,,
+d2,,,Begehen-Befahren hintereinander nebeneinander,der Weg konkatteniert minus oder plus,Begehen-Befahren hintereinander in Stuecken,,,
+d1,,,"Dreiecksbildung getan, parallel konkatteniert",rueckkoppeln mit Anhaenger konkatteniert,"Dreiecksbildung getan, seriell konkatteniert",,,
+d0,,links fuer die Seite (nicht Freund Feind) parallel,rechts gegen die Seite (nicht Freund Feind) parallel,RichtungWinkel ueberhaupt,rechts gegen seitlich (nicht Freund Feind) seriell,links fuer seitlich (nicht Freund Feind) seriell,,
+d-1,,,"Dreiecksbildung getan, parallel addiert",rueckwaerts subtrahiert,"Dreiecksbildung getan, seriell addiert",,,
+d-2,,,Begehen-Befahren zusammenaddiert nebenlaeufig,der Weg addiert oder subtrahiert,Begehen-Befahren nur seriell addiert nicht konkatteniert nur bus auto eins mehr nicht,,,
+d-3,,,,vorwaerts add,,,,
+d-4,,,,,,,,
+,,,,Präzision Winkel Richtung,,,,
