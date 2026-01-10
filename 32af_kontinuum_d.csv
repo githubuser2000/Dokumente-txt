@@ -1,0 +1,45 @@
+Beschreibung;Code
+Idee / Designintention;a1
+Grundriss, Kante, Ecke – elementare Raumdefinition;b2
+Grobentwurf – Verbindung, Dreieck, erstes Polygon;c3
+Linienansichten – Fortschritt, Verkantung, Orientierung;d4
+Prototyp – Anker, tragende Entwurfsgrundlage;e5
+Entwicklungsmodelle – Stufen, Iterationen, Reifegrade;f6
+Zeichnerisches Design – Kreis, Kugel, Volumenidee;g7
+Plotmodus 2D/3D (CAD) – Polygonalisierung;h8
+Morphologie – Wandlung, kontinuierliche Verbindung;i9
+Ansicht – Hülle, Haut, Anzug (Perzeptionsschicht);j10
+Umsicht & Anpassung – Systemverhalten, Passung;k11
+Fundament – Designobjekt-Hierarchie;l12
+Design-Möglichkeitsräume – Begrenzungen, Zäune;m13
+Zusammengehörigkeit – Objektkohärenz in 2D/3D;n14
+Fertiges Grunddesign – Objekt + Animation;o15
+Skin / Überzug – Kleidung, Zwischenräume, Zeitachsen, Medienkomposition;p16
+Überstruktur – Muster, Reduktion, Delle;q17
+Konstellation – Verbund von Verbundobjekten;r18
+Kontext – Einbettung, Aufplüschung, Expansion;s19
+Fertigmodi – Erscheinungsvarianten, Zergliederung;t20
+Ausstellung / Show – Wechselwirkung 3D↔2D, Puzzlelogik;u21
+Variation – Probieren, Interaktion, Passungsprüfung;v22
+Speicherung – Absicherung, Nachweis, Verklebung, Verbindung;w23
+Innere Programm-Logik – CAD / Raytracing / Radiosity, Freiheitsgrade;x24
+Entwurfspipeline – Arbeitsreihenfolge, Wirkungsentfaltung;y25
+Programm- & Modellkompatibilität – Horizont der Sichtweite;z26
+Stil-Kohärenz – Gesamtbild, Entwirrung;aa27
+Kulturelle Einbettung – Stoff als Mathematik, Topologie → Topografie;ab28
+Tiefenmorphologie – mathematische Verbiegungen;ac29
+Energie & Zeit – Animation, Trickfilm, virtuelle Energiegesetze;ad30
+Detailtreue – Hochsensibilität, Feinschliff, Korrektur;ae31
+Designmodell – Skulptur;af32
+Technisierung – angewandte Technologie;ag33
+Replikation – Automatisierung, probabilistische Flächen;ah34
+Steuerbares Modell – Mosaik-Interaktion, lokale Korrektur;ai35
+Gesamtszenerie;aj36
+Technisches Zeichnen – Flächenstricken, Polygonlogik;ak37
+Dellen;al38
+Aufquellen;am39
+Bemalung;an40
+Kollaboration;ao41
+Extrusion / Introversion;ap42
+Präsentation – Rendering, Plotmodi, Farbreduktion;aq43
+Animation & Verhalten – Mechanik, Robotik, AV-Dimension, Cursor-Logik;ar44
