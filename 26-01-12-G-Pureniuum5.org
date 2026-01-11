@@ -1,0 +1,14 @@
+|      | d4 | c4 | b4 | a4 | _5 | _4 | _0 | _-4 | _-5 | -a4 | -b4 | -c4 | -d4 |
+|------+----+----+----+----+----+----+----+-----+-----+-----+-----+-----+-----|
+| d3   |    |    |    |    |    | das zuvor genutzte Element wird vorwaerts gerichtet sequenziell konkatteniert |    |     |     |     |     |     |     |
+| d2   |    |    |    |    | Begehen-Befahren wird geordnet hintereinander und zugleich nebeneinander organisiert | der Weg wird strukturell konkatteniert und kontextabhaengig addiert oder subtrahiert | Begehen-Befahren erfolgt abschnittsweise seriell in funktionalen Stuecken |     |     |     |     |     |     |
+| d1   |    |    |    |    | Dreiecksbildung wird stabil parallel konkatteniert | rueckkoppeln erfolgt dynamisch mit angehaengtem Traeger seriell konkatteniert | Dreiecksbildung wird kontrolliert seriell konkatteniert |     |     |     |     |     |     |
+| d0   |    |    |    |    | links wird relational seitlich parallel ausgerichtet | Richtung und Winkel werden referenziell bestimmt | neutrale Orientierung ohne Vorzeichenbindung | rechts wird querseitig seriell gefuehrt | links wird querseitig seriell gefuehrt |     |     |     |     |
+| d-1  |    |    |    |    | Dreiecksbildung wird parallel strukturell addiert | rueckwaerts wird differenziell subtrahiert | Dreiecksbildung wird seriell akkumulativ addiert |     |     |     |     |     |     |
+| d-2  |    |    |    |    | Begehen-Befahren wird zusammengefuehrt und nebenlaeufig addiert | der Weg wird arithmetisch addiert oder gezielt subtrahiert | Begehen-Befahren wird ausschliesslich seriell addiert nicht konkatteniert |     |     |     |     |     |     |
+| d-3  |    |    |    |    |    | vorwaerts wird linear additiv fortgeschrieben |    |     |     |     |     |     |     |
+| d-4  |    |    |    |    |    |    |    |     |     |     |     |     |     |
+| e0   |    |    |    |    |    | Praezision des Winkels entsteht durch Linearkombination von Winkelrichtungen parallel und seriell |    |     |     |     |     |     |     |
+| -e0  |    |    |    |    |    | Praezision des Winkels entsteht gespiegelt aus derselben Linearkombination der Winkelrichtungen |    |     |     |     |     |     |     |
+| _5   |    |    |    |    |    | Praezision des Winkels wirkt symmetrisch durch linearkombinierte Richtungsanteile |    |     |     |     |     |     |     |
+| _-5  |    |    |    |    |    | Praezision des Winkels wird maximal durch vollstaendige Linearkombination orthogonaler Winkelrichtungen |    |     |     |     |     |     |     |
