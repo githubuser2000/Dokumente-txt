@@ -1,0 +1,22 @@
+“””HierarchyHierarchieColorsFarben 🧭
+🌼 A01 Yellow – Gelb 🌼
+🔵 B02 Blue – Blau 🔵
+🔴 C03 Red – Rot 🔴
+🟣 D04 Violet – Violett 🟣
+🌲 E05 Dark/Deep Green – Dunkles/Tiefes Grün 🌲
+🟠 F06 Reddish Orange – Rötliches Orange 🟠
+🐻 G07 Light/Bright Brown – Licht/Helles Braun 🐻
+🌊 H08 Dark/Deep Blue – Dunkles/Tiefes Blau 🌊
+🍓 I09 Strawberry Cream Pink – Erdbeer-Sahne-Pink 🍓
+☀️ J10 Sunny Yellow (little Orange) – Sonniges Gelb (wenig Orange) ☀️
+K11 milkMilchPaleBlassBrightHell
+L12 glancingGlänzendSilvernSilberndTinyWinzigRoseRosaShinyScheinendPinkyPinkLittleWenig 🌸 🌈
+M13 reflectingReflektierendMetalMetallRoughGrobschlächtigHardRohh🔥🚀GalaxyGalaxie,
+N14thReddishRötlichesDeepenTiefesBrownBraun 🌰 🌄 ,Cluster,Fusion 🔗 ,
+O15thPaleBlassesSkyHimmelsBlueBlau 🌤️ 🪽 ,5UniverseUniversum5 🌌 ,6CosmosKosmos6,7communicationKommunikatiom7,8blocksBlöcke8,9unityEinheit9_O15O,
+P16cobaldKobaltBlueBlau,
+Q17blueBlauVioletViolettCristalKristal,
+R18deepTiefRedRotCristalKristall,
+S19grayGrauCristalKristall.
+‘HierarchyHierarchieColorsFarben 🧭”””
+“””🧩’.,BiologicalBiologische1stRacesRassenOrOder2ndSocietyGesellschaftsSpeciesSpeziesClassesKlassenOrOder3rdHierarchyHierarchieStarSternenSystemsSystemeAsWieSunSonneSolSonneOrOder4thPositionsPositionenRolesRollenImpersonatorDarstellerEqualityGleichheitUnityEinheit.'.”’”
