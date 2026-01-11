@@ -1,0 +1,16 @@
+* Bedeutungsgenerierung aus Substantiv + Verb + Attributen
+
+| Substantiv | Verb          | Adjektiv    | Adverb        | Schlussfolgerte Bedeutung |
+|-----------+---------------+-------------+---------------+---------------------------|
+| Weg       | gehen         | linear      | parallel      | Fortbewegung entlang einer stabilen Struktur ohne Richtungswechsel |
+| Weg       | gehen         | verzweigt   | seriell       | Sequenzielles Durchlaufen diskreter Teilstrecken mit Entscheidungspunkten |
+| Weg       | befahren      | breit       | nebeneinander | Gleichzeitige Nutzung derselben Struktur durch mehrere Akteure |
+| Weg       | befahren      | eng         | hintereinander| Zwang zur Ordnung und zeitlichen Staffelung |
+| System    | koppeln       | starr       | parallel      | Synchronisierte Kopplung ohne Freiheitsgrade |
+| System    | koppeln       | flexibel    | seriell       | Abhängige Verkettung mit Rückwirkung |
+| Bewegung  | addieren      | gerichtet   | vorwaerts     | Akkumulation mit klarer Fortschrittsrichtung |
+| Bewegung  | konkatenieren | segmentiert | stueckweise   | Zusammensetzen funktionaler Einheiten ohne Verschmelzung |
+| Struktur  | bilden        | dreieckig   | gegenseitig   | Stabile Relation durch wechselseitige Abstützung |
+| Struktur  | bilden        | linear      | einseitig     | Instabile Ordnung mit Ausfallrisiko |
+| Richtung  | bestimmen     | relativ     | winklig      | Orientierung entsteht nur im Bezugssystem |
+| Richtung  | bestimmen     | absolut     | axial        | Orientierung unabhängig vom Kontext |
