@@ -1,0 +1,1 @@
+ByDurch PerfectoidPerfektoide NumbersZahlen WeWir CanKoennen CombineKombinieren EveryAlle P-AdicAdischen AndUnd N-AdicAdischen ForFuer TaxationSteuer MoneyGeld AndUnd DemocracyDemokratie PoliticsPolitik AndUnd DefenseVerteidigung MilitaryMilitär WeaponsWaffen. 
