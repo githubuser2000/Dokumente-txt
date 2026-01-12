@@ -1,0 +1,17 @@
+ByDurch 🌍  
+ComparingVergleichen 🔍 TwoZwei ✌️ BothBeide 🧩  
+CausalityKausalitätsImpulseImpulsChainsKetten ⛓️  
+
+YouDu 😊 CanKannst 💪 EarnVerdienen 🏆 NotNicht ❌ UnitEinheit 📏  
+ButAber 🌟 ElementsElemente ⚛️  
+
+PlanetPlanetenCurrencyWährung 🪙 OfVom 🌐 TypeTyp 🏷️ EffectEffekt ⚡  
+MaybeVielleicht ❓ ProbablyWahrscheinlich 📊 ResultErgebnis 🎯  
+
+ButAber 🔄 EffectEffekt 🌩️  
+ButAber 🛠️ ByDurch 🔗 ConnectingVerbinden 🤝 BothBeide 👥 BoundGebunden 🔒  
+BothBeide 🌉 TwoZwei 2️⃣ YouDu 🌱 EarnVerdienst 💰  
+
+TypeArt 🎨 CurrencyWährung 💸 SubstanceStoff 🧱 IssueAngelegenheit 📜  
+MaterialStoff 🛡️ ClothesKleidung 👕 CompoundsStoff 🧪 NotNicht 🚫 UnitEinheit 🧩  
+ButAber ✨ ElementsElemente 🧬 TruthWahrheit ☀️ RealityRealitäts 🌏 PlanetPlaneten 🪐 EarthErde 🌍 CurrencyWährung 🌱
