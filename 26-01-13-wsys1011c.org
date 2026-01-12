@@ -1,0 +1,16 @@
+* Einheiten und Elemente
+
+** Einheiten
+- Schlange
+- Gurke
+- Banane
+- Zucchini
+- Geldzahlenwährung
+- Aktie
+
+** Elemente
+*** Verhalten / Element Delta
+- Benötigt 3 Einheiten (z. B. drei beliebige der oben genannten Einheiten)
+
+*** Wahr oder Falsch / Wahrheitswert / Realität
+- Benötigt 2 Einheiten (z. B. zwei beliebige der oben genannten Einheiten)

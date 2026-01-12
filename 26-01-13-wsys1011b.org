@@ -1,0 +1,52 @@
+* Element-Delta aus drei Einheiten
+
+Ziel: Aus drei Einheiten wird ein Element-Delta berechnet, das das Verhalten des Elements beschreibt.
+
+- Delta = Maß für Unterschied / Variation zwischen Einheiten
+- Jede Einheit kann:
+  - numerisch sein (Zahlen)
+  - boolesch sein (wahr/falsch)
+  - kategorisch sein (z. B. Typen)
+
+**1. Kodierung der drei Einheiten**
+
+| Einheit   | Wert / Kategorie |
+|-----------+-----------------|
+| Einheit A | z. B. Zahl 1    |
+| Einheit B | z. B. Zahl 2    |
+| Einheit C | z. B. Zahl 3    |
+
+**2. Delta berechnen**
+
+**2.1 Numerisches Delta**
+
+- Δ_AB = |A - B|  
+- Δ_AC = |A - C|  
+- Δ_BC = |B - C|  
+
+- Maximal-Delta = max(Δ_AB, Δ_AC, Δ_BC)  
+- Mittelwert-Delta = (Δ_AB + Δ_AC + Δ_BC) / 3
+
+**2.2 Boolesches Delta**
+
+- Delta = 1, wenn nicht alle gleich  
+- Delta = 0, wenn alle gleich  
+
+**Beispiel:** [1,1,0] → Delta = 1  
+[1,1,1] → Delta = 0
+
+**2.3 Kategorisches Delta**
+
+- Delta = Anzahl verschiedener Kategorien minus 1  
+
+**Beispiel:** [Banane, Gurke, Banane] → Delta = 1  
+[Banane, Zucchini, Gurke] → Delta = 2
+
+**3. Element-Verhalten aus Delta ableiten**
+
+- Je größer das Delta → desto diverser/unterschiedlicher das Element  
+- Beispiel: Elementwert = Summe der Einheiten * Delta
+
+- Für boolesches Element:  
+  - Delta = 0 → alle gleich → Element real = 1  
+  - Delta > 0 → Unterschied → Element real = 0 oder angepasst

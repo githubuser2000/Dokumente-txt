@@ -1,0 +1,48 @@
+* Umwandlung mehrerer Einheiten in Realitätswert (wahr/falsch)
+
+Ziel: Mehrere Einheiten sollen zu einem Realitätswert zusammengefasst werden:
+
+- 1 = wahr (real)
+- 0 = falsch (nicht real)
+
+**Kodierung der Einheiten**
+
+| Einheit   | Realitätswert |
+|-----------+---------------|
+| Banane    | 1             |
+| Zucchini  | 1             |
+| Gurke     | 1             |
+| Schlange  | 0             |
+
+**Kombination von Einheiten**
+
+- AND → nur 1, wenn alle Einheiten real sind
+- OR  → 1, wenn mindestens eine Einheit real ist
+
+**Beispiel 1:** Gurke, Zucchini, Banane
+
+| Einheit   | Realitätswert |
+|-----------+---------------|
+| Gurke     | 1             |
+| Zucchini  | 1             |
+| Banane    | 1             |
+
+- AND → 1
+- OR  → 1
+
+**Beispiel 2:** Gurke, Zucchini, Schlange
+
+| Einheit   | Realitätswert |
+|-----------+---------------|
+| Gurke     | 1             |
+| Zucchini  | 1             |
+| Schlange  | 0             |
+
+- AND → 0
+- OR  → 1
+
+**Schritte:**
+
+1. Jede Einheit kodieren (1 = real, 0 = nicht real)  
+2. Mehrere Einheiten kombinieren (AND / OR)  
+3. Ergebnis = Realitätswert (1/0)
