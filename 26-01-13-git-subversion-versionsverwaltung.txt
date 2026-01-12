@@ -1,0 +1,21 @@
+Ja, genau – Git ist nicht das einzige Versionskontrollsystem. Es gibt noch andere, sowohl modernere als auch ältere. Die wichtigsten sind:
+SVN (Subversion)
+Zentralisiertes Versionskontrollsystem.
+Ein „Server“ hält die Hauptversion, Entwickler checken Dateien aus und committen Änderungen wieder zurück.
+Vorteil: Einfaches Modell, geeignet für Projekte, die zentral gesteuert werden.
+Nachteil: Weniger flexibel bei Branches/Merges als Git.
+CVS (Concurrent Versions System)
+Sehr alt, historisch wichtig.
+Auch zentralisiert, weniger Features als SVN.
+Heute kaum noch genutzt, aber die Basis vieler Konzepte.
+Perforce (P4)
+Kommerzielles, zentralisiertes System, sehr beliebt in großen Firmen oder bei Spielen.
+Starke Unterstützung für große Binärdateien und komplexe Branching-Strategien.
+Mercurial (hg)
+Dezentrales System wie Git, ähnlich in Konzept, oft einfacher zu bedienen.
+Wurde in der Vergangenheit z. B. bei Mozilla genutzt.
+RCS / Revision Control System
+Sehr alt, für einzelne Dateien gedacht.
+Heute praktisch nur noch als Basis für andere Systeme historisch relevant.
+Also ja, SVN, RCS, Mercurial, Perforce – „rvn“ gibt es so als Abkürzung nicht standardmäßig, vielleicht meinst du CVS oder ein internes Tool.
+Wenn du willst, kann ich dir eine kleine Übersichtstabelle machen, die Git, SVN, Mercurial und CVS direkt vergleichend gegenüberstellt – sehr nützlich, um die Unterschiede schnell zu sehen. Willst du, dass ich das mache?
