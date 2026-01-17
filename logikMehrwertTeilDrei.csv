@@ -1,0 +1,8 @@
+ID,Basis_Logik,Doch_Faktor,Identitaet,Stapelbar
+V1,Weder_W_noch_F,Doch_Falsch,Ding,Nein
+V2,Weder_W_noch_F,Doch_Wahr,Ding,Ja
+V3,Wahr_und_Falsch,Doch_Wahr,Raum,Nein
+V4,Wahr_und_Falsch,Doch_Falsch,Raum,Ja
+V5,Rein_Wahr,Wahr,Information,Neutral
+V6,Rein_Falsch,Falsch,Leere,Neutral
+

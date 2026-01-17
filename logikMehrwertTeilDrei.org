@@ -1,0 +1,9 @@
+| ID | Basis-Logik            | "Doch"-Faktor | Identität    | Stapelbar |
+|----+------------------------+---------------+--------------+-----------|
+| V1 | Weder Wahr noch Falsch | Doch Falsch   | Ding         | Nein      |
+| V2 | Weder Wahr noch Falsch | Doch Wahr     | Ding         | Ja        |
+| V3 | Wahr und Falsch        | Doch Wahr     | Raum         | Nein      |
+| V4 | Wahr und Falsch        | Doch Falsch   | Raum         | Ja        |
+| V5 | Rein Wahr              | Wahr          | Information  | Neutral   |
+| V6 | Rein Falsch            | Falsch        | Leere        | Neutral   |
+
