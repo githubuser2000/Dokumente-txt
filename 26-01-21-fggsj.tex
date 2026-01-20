@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+
+\title{Ordinalzahlen, Mächtigkeit und Folgen}
+\author{Alexander Kern}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Sind gewichtete p-adische Zahlenteile mit Gewichten 0--100\% wie Ordinalzahlen?}
+
+Gewichtete p-adische Zahlenteile mit Gewichten in $[0,1]$ (oder 0--100\%) beschreiben die \emph{relative Relevanz oder Tiefe} eines Teils in einer p-adischen Struktur. 
+
+\begin{itemize}
+    \item Ordinalzahlen messen \emph{Positionen in wohlgeordneten Mengen}, nicht Maß oder Anteil.
+    \item Prozentwerte beschreiben \emph{stetige Gewichtung}, Ordinale sind \emph{diskret und wohlgeordnet}.
+    \item Daher können gewichtete p-adische Teile nicht direkt als Ordinalzahlen interpretiert werden.
+\end{itemize}
+
+Man kann sie formal als \emph{maßtheoretische oder informationsbasierte Bewertung} eines Elements in einem ultrametrischen Raum verstehen.
+
+\[
+\text{Gewichtetes Element } x_i \in \mathbb{Z}_p \text{ mit Gewicht } w_i \in [0,1]
+\]
+
+Diese Gewichte sagen \emph{nicht} aus, wie mächtig die Menge ist, sondern nur, wie relevant oder dominant $x_i$ innerhalb der Struktur ist.
+
+\bigskip
+
+\section{Ist die Mächtigkeit einer Menge eine Menge oder eine Klasse?}
+
+Die Antwort hängt von der Größe der Menge ab:
+
+\begin{itemize}
+    \item \textbf{Kleine Mengen:} Endliche Mengen oder Mengen wie $\mathbb{N}, \mathbb{R}$  
+    → Ihre Mächtigkeit (Kardinalzahl) ist \emph{eine Menge}, z.B. $|\mathbb{N}| = \aleph_0$.
+    \item \textbf{Große Mengen / Klassen:} Die Menge aller Mengen $V$  
+    → Ihre „Mächtigkeit“ existiert nicht als Menge, sondern nur als \emph{echte Klasse}.
+\end{itemize}
+
+\[
+\begin{array}{c|c|c}
+\text{Objekt} & \text{Kardinalität} & \text{Bemerkung} \\
+\hline
+\text{Endliche Menge} & n \in \mathbb{N} & \text{Menge} \\
+\text{Abzählbare Menge } \mathbb{N} & \aleph_0 & \text{Menge} \\
+\text{Überabzählbare Menge } \mathbb{R} & \mathfrak{c} & \text{Menge} \\
+\text{Klasse aller Mengen } V & - & \text{echte Klasse} \\
+\end{array}
+\]
+
+\bigskip
+
+\section{Begrenzen Ordinalzahlen divergente oder konvergente Zahlen?}
+
+\subsection{Grundprinzip}
+\begin{itemize}
+    \item Ordinalzahlen messen \emph{Positionen in wohlgeordneten Mengen}, nicht den Wert einer Zahl.
+    \item Konvergenz oder Divergenz ist ein \emph{metrisches Konzept} in $\mathbb{R}$ oder $\mathbb{C}$.
+    \item Ordinale können \emph{indirekt} eine Folge begrenzen, wenn sie als Indexmenge dienen, z.B.:
+\end{itemize}
+
+\subsection{Beispiele}
+
+\textbf{Klassische Folge:}
+\[
+x_n = n \quad \text{divergiert in } \mathbb{R}
+\]
+\[
+x_n = \frac{1}{n} \quad \text{konvergiert in } \mathbb{R}
+\]
+
+\textbf{Transfinite Folge:}
+\[
+x_\alpha = \frac{1}{\alpha+1}, \quad \alpha < \omega_1
+\]
+Hier indiziert $\alpha$ Ordinalzahlen bis $\omega_1$; das Limit ist
+\[
+\lim_{\alpha \to \omega_1} x_\alpha = 0
+\]
+
+\subsection{Fazit}
+
+\begin{itemize}
+    \item Ordinale \emph{begrenzen nur die Indexmenge} der Folge.
+    \item Sie erzwingen \emph{nicht die Konvergenz} der Zahlenwerte.
+    \item Merksatz:
+    \[
+    \text{Ordinal} \neq \text{Konvergenzwert}, \quad
+    \text{Konvergenz} \text{ wird durch Metrik bestimmt, nicht durch Ordnung.}
+    \]
+\end{itemize}
+
+\end{document}
+
