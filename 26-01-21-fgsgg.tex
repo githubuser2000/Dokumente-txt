@@ -1,0 +1,165 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Darstellungsformen eines geordneten Körpers}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{0. Ausgangspunkt: Was ist ein geordneter Körper?}
+
+Ein \emph{geordneter Körper} ist eine mathematische Struktur
+\[
+(K,\; +,\; \cdot,\; 0,\; 1,\; <),
+\]
+wobei
+\begin{itemize}
+  \item $(K,+,\cdot,0,1)$ ein Körper ist,
+  \item $<$ eine totale Ordnung auf $K$ ist,
+  \item die Ordnung mit Addition und Multiplikation verträglich ist.
+\end{itemize}
+
+Wichtig ist: Ein geordneter Körper ist primär ein \emph{Strukturbegriff}, kein
+Objekt einer bestimmten ontologischen Kategorie wie Zahl oder Menge.
+
+\section*{1. Darstellung als Zahl (arithmetische Kodierung)}
+
+In der Metamathematik kann ein geordneter Körper durch eine einzelne natürliche
+Zahl kodiert werden, etwa mittels Gödelnummerierung.
+
+\[
+\ulcorner (K,+,\cdot,0,1,<) \urcorner \;\in\; \mathbb{N}.
+\]
+
+Dabei gilt:
+\begin{itemize}
+  \item Symbole, Formeln und Axiome werden numerisch kodiert,
+  \item die gesamte Theorie des geordneten Körpers wird auf eine Zahl abgebildet.
+\end{itemize}
+
+Schematisch:
+\[
+\text{OrdFld} \;=\; 2^{n_1}\cdot 3^{n_2}\cdot 5^{n_3}\cdots
+\]
+
+\paragraph{Bedeutung.}
+Diese Darstellung ist vollständig syntaktisch. Die algebraische und ordnungstheoretische
+Struktur ist nicht direkt sichtbar, sondern nur implizit über die Kodierung gegeben.
+
+\section*{2. Darstellung als Menge (ZFC-Standard)}
+
+In der üblichen mengentheoretischen Grundlegung wird ein geordneter Körper als
+Menge mit Zusatzstruktur realisiert.
+
+\[
+(K,+,\cdot,<)
+\]
+
+wobei
+\begin{align*}
++ &\subseteq K \times K \times K,\\
+\cdot &\subseteq K \times K \times K,\\
+< &\subseteq K \times K.
+\end{align*}
+
+Eine mögliche formale Kodierung ist etwa:
+\[
+\bigl\{ \{0,K\},\{1,+\},\{2,\cdot\},\{3,<\} \bigr\}.
+\]
+
+\subsection*{Beispiel: Die rationalen Zahlen}
+
+\[
+\mathbb{Q}
+=
+\{(a,b)\in\mathbb{Z}\times\mathbb{Z}_{\neq 0}\}/\sim
+\]
+
+mit den üblichen Definitionen von $+$, $\cdot$ und $<$ als Mengen von Tupeln.
+
+\paragraph{Bedeutung.}
+Diese Darstellung ist mathematisch präzise und operativ, aber nicht kanonisch:
+Isomorphe Körper sind im Allgemeinen nicht gleich als Mengen.
+
+\section*{3. Darstellung als Klasse (strukturelle Sicht)}
+
+\subsection*{3.1 Klasse aller geordneten Körper}
+
+\[
+\mathsf{OrdFld}
+=
+\{ (K,+,\cdot,<) \mid K \text{ ist ein geordneter Körper} \}.
+\]
+
+Dies ist im Allgemeinen eine echte Klasse, keine Menge.
+
+\subsection*{3.2 Isomorphietyp eines Körpers}
+
+Für einen konkreten Körper, etwa $\mathbb{R}$:
+\[
+[\mathbb{R}]
+=
+\{ K \mid K \cong \mathbb{R} \text{ als geordneter Körper} \}.
+\]
+
+\subsection*{3.3 Kategorientheoretische Sicht}
+
+In der Kategorie der geordneten Körper
+\[
+\mathbf{OrdFld}
+\]
+ist ein Körper kein singuläres Objekt im ontologischen Sinn, sondern ein
+Isomorphietyp innerhalb der Kategorie.
+
+\paragraph{Bedeutung.}
+Die Klassendarstellung abstrahiert vollständig von konkreten Implementierungen
+und erfasst die Struktur „bis auf Isomorphie“.
+
+\section*{4. Vergleich der drei Darstellungsformen}
+
+\[
+\begin{array}{l|l|l}
+\text{Form} & \text{Schreibweise} & \text{Status} \\
+\hline
+\text{Zahl} & \ulcorner K \urcorner \in \mathbb{N} & \text{syntaktischer Code} \\
+\text{Menge} & (K,+,\cdot,<) & \text{konkretes Objekt} \\
+\text{Klasse} & \mathsf{OrdFld},\; [K] & \text{Strukturtyp}
+\end{array}
+\]
+
+\section*{5. Zentrale Einsicht}
+
+Der geordnete Körper selbst ist weder Zahl, noch Menge, noch Klasse.
+Er ist ein \emph{Strukturbegriff}, der je nach metatheoretischem Rahmen
+unterschiedlich realisiert wird:
+
+\begin{itemize}
+  \item als Zahl: syntaktische Repräsentation,
+  \item als Menge: implementierte Struktur,
+  \item als Klasse: semantischer Typ.
+\end{itemize}
+
+Dies ist direkt vergleichbar mit:
+\begin{itemize}
+  \item Programm als Bitstring,
+  \item Programm als abstrakter Syntaxbaum,
+  \item Programm als mathematische Funktion.
+\end{itemize}
+
+\section*{6. Kurzfassung}
+
+Ein geordneter Körper kann als natürliche Zahl kodiert, als strukturierte Menge
+implementiert oder als Klasse von isomorphen Modellen aufgefasst werden – keine
+dieser Formen ist der geordnete Körper selbst, sondern jeweils eine Darstellung
+auf einer anderen Abstraktionsebene.
+
+\end{document}
+
