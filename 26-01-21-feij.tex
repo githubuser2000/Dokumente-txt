@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+
+\title{Geordnete Körper, CRC und RAID}
+\author{Alexander Kern}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Frage}
+Eignet sich der geordnete Körper für Redundanz wie RAID und irgendwie für CRC?
+
+\section{Antwort}
+
+\subsection{1. Eigenschaften geordneter Körper}
+Ein geordneter Körper \(K\) ist ein Körper mit einer totalen Ordnung \(<\), die mit der Addition und Multiplikation kompatibel ist:
+
+\begin{itemize}
+    \item Additivität: \(a,b \in P \Rightarrow a+b \in P\)
+    \item Multiplikativität: \(a,b \in P \Rightarrow a\cdot b \in P\)
+    \item Trichotomie: Für jedes \(a \in K\) gilt genau eine: \(a \in P\), \(-a \in P\), \(a = 0\)
+\end{itemize}
+
+Beispiele: \(\mathbb{Q}, \mathbb{R}\)  
+Nicht-geordnet: \(\mathbb{C}\)
+
+\subsection{2. Anforderungen von CRC und RAID}
+\begin{itemize}
+    \item \textbf{CRC}: arbeitet über endlichen Körpern, meist \(\mathbb{F}_2\) oder \(\mathbb{F}_{2^n}\), mit Polynomdivision modulo 2.
+    \item \textbf{RAID}: z.B. RAID 5/6 nutzt XOR oder Reed-Solomon-Codes über \(\mathbb{F}_{2^8}\).
+    \item Eigenschaften:
+    \begin{itemize}
+        \item Endliche Menge von Elementen
+        \item Abgeschlossene Addition und Multiplikation
+        \item Diskrete Struktur für deterministische Redundanz
+    \end{itemize}
+\end{itemize}
+
+\subsection{3. Vergleich geordneter Körper vs. CRC/RAID}
+
+\begin{tabular}{c|c|c}
+\textbf{Eigenschaft} & \textbf{Geordneter Körper (\(\mathbb{R}\))} & \textbf{CRC/RAID} \\
+\hline
+Endlichkeit & ❌ unendlich & ✅ endlich \\
+Addition & ✅ & ✅ \\
+Multiplikation & ✅ & ✅ \\
+Ordnung & ✅ relevant für Analysis & irrelevant \\
+Diskrete Struktur & ❌ stetig & ✅ diskret, XOR-basiert \\
+Modularität / Polynomrechnung & ❌ nicht geeignet & ✅ nötig \\
+\end{tabular}
+
+\subsection{4. Fazit}
+\begin{itemize}
+    \item Geordnete Körper sind geeignet für **Vergleich, Analysis und Optimierung**.
+    \item CRC und RAID benötigen **endlich-algebraische Strukturen**, z.B. \(\mathbb{F}_2\) oder \(\mathbb{F}_{2^8}\).
+    \item Geordnete Körper sind **nicht geeignet** für digitale Redundanz oder Fehlerkorrektur.
+\end{itemize}
+
+\end{document}
+
