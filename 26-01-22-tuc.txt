@@ -1,0 +1,34 @@
+AE31 continuumKontinuum
+fein und detailliert;1;
+Zusammenhang Gleichmäßigkeit;2;
+Zergliederte Flocken Eindeutigkeit Ort;3;
+Überlappen länglich;4;
+Lokale Punkte in Gliederung sind das Detail Lokal;5;
+Haufen Cluster Verdichtung Ansammlung Gestaffelt;6;
+Kurve justiert gelenkt kalibriert;7;
+Überqueren Verknotet senkrecht gegen waagerecht;8;
+Stücke Happen Teile uniformiert Einheitsform Abschnitte;9;
+Gleichmäßig Eben Gleichförmig Glatt Global Symmetrie;10;
+Dynamisch Durcheinander Wirbel Flexibel Anpassung;11;
+Geordnet Ordentlich Orientiert Untersuchbar Verzweigt Bündelung;12;
+Uneben Geneigt Kurven Vielseitigkeit mehrseitig Richtungsweisend;13;
+Lösend Auflösend Zusammen fallend mischend Reaktiv;14;
+Cluster Eindeutigkeit Detailgenau;15;
+Präzise Genau Harmonisch;16;
+Makroskopisch fragmentiert zerstückelt;17;
+Mikroskopisch elementar;18;
+Flexibel Dynamisch Umgänglich Wege weisend;19;
+Cluster Detail Feinheitsgrade Detail Ebenen Balance;20;
+Zielend Cluster flockenartige Verdichtung der Richtung lenkend;21;
+Wellenentwicklung voneinander abhängig sich entwickelnd aufeinander aufbauend;22;
+Paradoxien Untergeordnetes lagernd Halde Wissensbasis;23;
+Überkreuzend durchqueren Sichtbarkeit Unsichtbarkeit Verflochten;24;
+Strom Fluss fließen;25;
+Segmentiert Knotenbildung Spindel;26;
+Knoten Auflösung durchlässig gerissen;27;
+Gewebt wie Kleidung;28;
+Genäht wie Socken in die Tiefe;29;
+Geflochten Verflochten Verflickst;30;
+In die Höhe Geflochtenes Detail Feinheit Entflochten;31;
+
+
