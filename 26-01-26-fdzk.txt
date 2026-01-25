@@ -1,0 +1,15 @@
+12 Mac AdressAdresse,
+13 useVerwenden Mac,
+15 IPX SPX IPv6 IPv4 choseWählen,
+17 sendSenden StrengthStärke,
+18 IP HaveHaben AdressAdresse,
+19 useVerwenden IP, ProtocolProtokoll,
+21 RoutingPfadfinden,
+24 Header StoreSpeichern andUnd ForwardVorwärts,
+25 FragmentationFragmentierun,,,
+
+GermanDeutsch
+ISO/OSI-Referenzmodell OrOder
+EnglishEnglisch
+Open Systems Interconnection model
+EqualsGleicht CorrespondsEntspricht 24X24ContinuumKontinuum ItEs SelfSelbst.
