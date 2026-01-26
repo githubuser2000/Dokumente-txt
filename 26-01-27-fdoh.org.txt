@@ -1,0 +1,160 @@
+#+TITLE: Mechanisch-optisches Gerät zur Wahrnehmungsbewertung
+#+SUBTITLE: Vergleich von zwei bananen- / gurken- / zucchini-förmigen Wertgegenständen
+#+OPTIONS: toc:t num:t
+
+* Ausgangsfrage
+
+Wie könnte ein Gerät feststellen, *welche von zwei ähnlich gekrümmten, länglichen
+Wertgegenständen* (bananen-, gurken- oder zucchini-förmig) *in der Wahrnehmung
+„besser“ ist*, unter der Nebenbedingung, dass das Verfahren *möglichst mechanisch
+oder optisch* und nicht primär elektrisch oder rechnerisch arbeitet?
+
+* Grundannahme (entscheidend)
+
+*Wahrnehmungsqualität* wird nicht als Schönheit definiert, sondern als:
+
+#+BEGIN_QUOTE
+geringe kognitive Last bei maximaler formaler Information
+#+END_QUOTE
+
+Physikalisch übersetzt bedeutet das:
+- gleichmäßige Krümmung
+- wenige Richtungswechsel
+- stabile Projektionen
+- hohe Symmetrie oder Vorhersagbarkeit
+- geringe dynamische Unruhe
+
+Ein Gerät kann diese Eigenschaften *indirekt messen*, ohne Wahrnehmung zu
+simulieren.
+
+* Prinzip 1: Rein mechanische Verfahren
+
+** 1.1 Krümmungs-Abtastgerät (mechanischer Curvature-Scanner)
+
+*Aufbau*
+- Zwei parallele Führungsschienen
+- Reihe federnd gelagerter Taster zwischen den Schienen
+- Objekt wird linear hindurchgeführt
+
+*Messprinzip*
+- Taster folgen der Oberfläche
+- Auslenkungen werden mechanisch summiert oder visuell abgelesen
+
+*Bewertung*
+- Gleichmäßige Auslenkung → gute Wahrnehmbarkeit
+- Zacken, häufige Richtungswechsel → schlechte Wahrnehmbarkeit
+
+*Interpretation*
+Formen mit niedriger lokaler Krümmungsvarianz sind leichter wahrnehmbar.
+
+** 1.2 Rolltest auf geneigter Bahn
+
+*Aufbau*
+- Zwei leicht geneigte Schienen
+- Objekt rollt frei, ohne zu rutschen
+
+*Messgrößen*
+- Gleichmäßigkeit der Rollbewegung
+- Seitliche Abweichung
+- Anzahl von Rucklern oder Stopps
+- Zeit bis zum Stillstand
+
+*Bewertung*
+- Ruhiges, periodisches Rollen → gute Form
+- Unruhiges, kippendes Rollen → komplexe Form
+
+*Prinzip*
+Was das mechanische Gleichgewicht „versteht“, versteht auch das Auge.
+
+* Prinzip 2: Optische Verfahren (ohne Elektronik)
+
+** 2.1 Schatten- und Silhouettenanalyse
+
+*Aufbau*
+- Punktförmige Lichtquelle
+- Drehbare Plattform
+- Mattscheibe oder Projektionsfläche
+
+*Beobachtung*
+- Objekt wird langsam gedreht
+- Silhouette wird kontinuierlich betrachtet
+
+*Bewertungskriterien*
+- Stabilität der Umrissform
+- Änderungsrate der Silhouettenfläche
+- Symmetrie über Rotationswinkel
+- Anzahl abrupter Formänderungen
+
+*Ergebnis*
+Formen mit stabilen Silhouetten über viele Blickwinkel sind besser wahrnehmbar.
+
+** 2.2 Optischer Krümmungs-Integrator
+
+*Aufbau*
+- Zylinderlinse oder Parabolspiegel
+- Objekt wird entlang der optischen Achse bewegt
+
+*Beobachtung*
+- Fokuslinie bzw. Lichtband auf Projektionsfläche
+
+*Bewertung*
+- Ruhiges, stabiles Lichtband → gleichmäßige Krümmung
+- Flackerndes, springendes Bild → unruhige Form
+
+*Prinzip*
+Optische Systeme reagieren empfindlich auf lokale Krümmungsänderungen.
+
+* Prinzip 3: Mechanisch-optische Hybridlösung
+
+** 3.1 Form-Resonanz-Tester
+
+*Aufbau*
+- Drei federnde Auflagepunkte
+- Objekt liegt frei gelagert
+- Leichte mechanische Anregung (Pendel, Stoß)
+- Kleiner Spiegel auf dem Objekt
+- Lichtpunkt auf Skala oder Wand
+
+*Messprinzip*
+- Bewegung des Lichtpunkts zeigt Eigenmoden der Form
+
+*Bewertung*
+- Schnelle Beruhigung, saubere Spur → gute Form
+- Chaotische, langanhaltende Bewegung → komplexe Form
+
+*Interpretation*
+Gute Formen besitzen wenige, gut gedämpfte Eigenmoden.
+
+* Entscheidungslogik (ohne Elektronik)
+
+Zwei Objekte werden *identisch getestet*.
+
+| Kriterium                 | Objekt A | Objekt B |
+|--------------------------+----------+----------|
+| Rollruhe                 | hoch     | mittel   |
+| Silhouettenstabilität    | hoch     | niedrig  |
+| Krümmungsgleichmäßigkeit | hoch     | niedrig  |
+| Resonanzdämpfung         | hoch     | mittel   |
+
+*Besser wahrnehmbar ist das Objekt mit der geringsten Gesamt-Unruhe.*
+
+* Zentrale Einsicht
+
+#+BEGIN_QUOTE
+Wahrnehmung bevorzugt Formen, die mit wenigen Parametern beschreibbar sind und
+über viele Projektionen konsistent bleiben.
+#+END_QUOTE
+
+Das Gerät misst daher nicht Geschmack, sondern *den Widerstand einer Form gegen
+Ordnung*.
+
+* Übertragbarkeit
+
+Das gleiche Prinzip ist anwendbar auf:
+- Skulpturen
+- Münzen und Medaillen
+- Werkzeuge
+- Griffe und Waffen
+- Logos und Produktdesign
+
+Überall dort, wo *Form verstanden werden soll*, nicht nur gesehen.
