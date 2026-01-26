@@ -536,3 +536,139 @@ H_total = 44 + 90 + 49 + 118 + 103
 - Beides existiert gleichzeitig
 - Polynome bleiben **Analysis-Funktionen**
 - Die Kategorie liefert die Struktur (Produkte + Pullbacks)
+* Dreidimensionales Beispiel: 3 Polynome vom Grad 3 mit Hierarchie + n:m-Relationen
+
+** 1. Ziel
+- Modell: Analytische Polynome als Objekte
+- Hierarchie: Verschachtelte Tupel
+- n:m-Relationen: Pullbacks / relationale Tabellen
+- Drei Polynome vom Grad 3 → dreidimensionales System
+
+---
+
+** 2. Polynome / Objekte
+
+*** P1: Basisobjekt
+#+BEGIN_SRC
+P1(x1,x2,x3) = x1^3 + x2^3 + x3^3
+#+END_SRC
+
+- Tupel: (x1,x2,x3)
+- Konkrete Instanzen:
+| P1-ID | x1 | x2 | x3 |
+|-------+----+----+----|
+| 1     | 1  | 2  | 3  |
+| 2     | 2  | 1  | 0  |
+
+- Auswertung:
+#+BEGIN_SRC
+P1(1,2,3) = 1 + 8 + 27 = 36
+P1(2,1,0) = 8 + 1 + 0 = 9
+#+END_SRC
+
+*** P2: Zweite Ebene, enthält P1
+#+BEGIN_SRC
+P2(y1,y2,y3) = y1^3 + y2^3 + P1(y3,y2,y1)
+#+END_SRC
+
+- Tupel: (y1,y2,y3)
+- Konkrete Instanzen:
+| P2-ID | y1 | y2 | y3 |
+|-------+----+----+----|
+| 1     | 1  | 1  | 1  |
+| 2     | 2  | 0  | 2  |
+
+- Auswertung:
+#+BEGIN_SRC
+P2(1,1,1) = 1 + 1 + P1(1,1,1) = 2 + 3 = 5
+P2(2,0,2) = 8 + 0 + P1(2,0,2) = 8 + (8+0+8=16) = 24
+#+END_SRC
+
+*** P3: Dritte Ebene, enthält P2
+#+BEGIN_SRC
+P3(z1,z2,z3) = z1^3 + z2^3 + P2(z3,z1,z2)
+#+END_SRC
+
+- Tupel: (z1,z2,z3)
+- Konkrete Instanzen:
+| P3-ID | z1 | z2 | z3 |
+|-------+----+----+----|
+| 1     | 1  | 2  | 1  |
+| 2     | 0  | 1  | 2  |
+
+- Auswertung:
+#+BEGIN_SRC
+P3(1,2,1) = 1 + 8 + P2(1,1,2) 
+          = 9 + (1+1+P1(2,1,1)=2+10=12) = 21
+P3(0,1,2) = 0 + 1 + P2(2,0,1) 
+          = 1 + (8+0+P1(1,0,2)=8+0+9=17) = 18
+#+END_SRC
+
+---
+
+** 3. n:m-Relationen
+
+*** R1: P1 ↔ P2
+| R1-ID | P1-ID | P2-ID | Gewicht |
+|-------+-------+-------+---------|
+| 1     | 1     | 1     | 1.0     |
+| 2     | 1     | 2     | 0.5     |
+| 3     | 2     | 2     | 1.5     |
+
+- Analytische Funktion:
+#+BEGIN_SRC
+f_R1(x1,x2,x3,y1,y2,y3) = (x1+y1)*(x2+y2) + y3^2
+#+END_SRC
+
+- Auswertung:
+#+BEGIN_SRC
+R1(1,1) = (1+1)*(2+1) + 1^2 = 6 + 1 = 7
+R1(1,2) = (1+2)*(2+0) + 2^2 = 6 + 4 = 10
+R1(2,2) = (2+2)*(1+0) + 1^2 = 4 + 1 = 5
+
+R1_total = 1*7 + 0.5*10 + 1.5*5 = 7 + 5 + 7.5 = 19.5
+#+END_SRC
+
+*** R2: P2 ↔ P3
+| R2-ID | P2-ID | P3-ID | Gewicht |
+|-------+-------+-------+---------|
+| 1     | 1     | 1     | 1.0     |
+| 2     | 2     | 1     | 1.0     |
+| 3     | 2     | 2     | 2.0     |
+
+- Analytische Funktion:
+#+BEGIN_SRC
+f_R2(y1,y2,y3,z1,z2,z3) = y1*z1 + y2*z2 + y3*z3
+#+END_SRC
+
+- Auswertung:
+#+BEGIN_SRC
+R2(1,1) = 1*1 + 1*2 + 1*1 = 1 + 2 + 1 = 4
+R2(2,1) = 2*1 + 0*2 + 1*1 = 2 + 0 + 1 = 3
+R2(2,2) = 2*0 + 0*1 + 1*2 = 0 + 0 + 2 = 2
+
+R2_total = 1*4 + 1*3 + 2*2 = 4 + 3 + 4 = 11
+#+END_SRC
+
+---
+
+** 4. Gesamtsystem: H_total
+- Summe aller Polynome + Relation:
+
+#+BEGIN_SRC
+sum_P1 = 36 + 9 = 45
+sum_P2 = 5 + 24 = 29
+sum_P3 = 21 + 18 = 39
+H_total = sum_P1 + sum_P2 + sum_P3 + R1_total + R2_total
+H_total = 45 + 29 + 39 + 19.5 + 11 = 143.5
+#+END_SRC
+
+---
+
+** 5. Interpretation
+
+- **Hierarchie:** P2 benutzt P1, P3 benutzt P2 → Produktstruktur der Tupel
+- **n:m-Relationen:** R1, R2 verbinden Objekte über separate Paarungen
+- **Grad 3:** interne nichtlineare Kopplung in jedem Polynom
+- **3 Polynome:** definieren dreidimensionales System (3 Objekte)
+- **H_total = 143.5**: Analytische Summe aller Komponenten
