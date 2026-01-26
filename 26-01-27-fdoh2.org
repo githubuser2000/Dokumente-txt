@@ -1,0 +1,167 @@
+#+TITLE: Formruhe-Comparator
+#+SUBTITLE: Konkretes mechanisch-optisches Design zur Wahrnehmungsbewertung von gekrümmten Wertgegenständen
+#+OPTIONS: toc:t num:t
+
+* Ziel
+
+Entwurf eines *rein mechanisch-optischen Geräts*, das zwei längliche, gekrümmte
+Wertgegenstände (bananen-/gurken-/zucchini-förmig) objektiv vergleicht und
+entscheidet, welche Form *wahrnehmungsbesser* ist.
+
+„Wahrnehmungsbesser“ bedeutet:
+- geringere formale Unruhe
+- höhere Stabilität unter Lage- und Blickwinkeländerung
+- schnellere dynamische Beruhigung
+
+* Grundidee
+
+#+BEGIN_QUOTE
+Die bessere Form ist diejenige, die unter mechanischer und optischer
+Transformation am stabilsten bleibt.
+#+END_QUOTE
+
+Das Gerät misst keine Meinung und keinen Geschmack, sondern den *Widerstand der
+Form gegen Ordnung*.
+
+* Gesamtaufbau
+
+Das Gerät besteht aus drei fest gekoppelten, aber getrennt auswertbaren Modulen:
+
+1. 3-Punkt-Formlager (statische Stabilität)
+2. Resonanz- und Beruhigungseinheit (dynamische Stabilität)
+3. Optischer Silhouetten-Comparator (projektive Stabilität)
+
+* Modul A: 3-Punkt-Formlager
+
+** Zweck
+- Erzwingt eindeutige, reproduzierbare Lage
+- Verstärkt Asymmetrien der Form
+- Macht Schwerpunkt- und Krümmungsfehler sichtbar
+
+** Aufbau
+- Drei identische Federteller
+- Anordnung im 120°-Winkel
+- Lineare Druckfedern mit gleicher Federkonstante
+- Leicht konkave Auflageflächen (selbstzentrierend)
+
+#+BEGIN_EXAMPLE
+Draufsicht:
+
+        o
+       / \
+      o---o
+#+END_EXAMPLE
+
+** Wirkung
+- Gute Formen → gleichmäßige Federkompression
+- Schlechte Formen → driftende, instabile Lastverteilung
+
+* Modul B: Resonanz- und Beruhigungstest
+
+** Zweck
+Erfasst:
+- Eigenmoden der Form
+- Kopplung zwischen Rotation und Translation
+- Dämpfungscharakteristik
+
+** Aufbau
+- Objekt verbleibt im 3-Punkt-Lager
+- Mechanischer Impuls über Pendel oder Schlagfeder
+- Impulsstärke konstant, reproduzierbar
+- Keine Sensoren, keine Elektronik
+
+#+BEGIN_EXAMPLE
+Seitenansicht:
+
+      Objekt
+       ||
+   ----||----
+      /  \
+     o    o
+      \__/
+        |
+      Pendel
+#+END_EXAMPLE
+
+** Beobachtung
+- Zeit bis zur Ruhe
+- Bewegungsform (kreisend, elliptisch, chaotisch)
+- Wiederholbarkeit bei erneutem Impuls
+
+** Bewertung
+- Kurze, saubere Beruhigung → gute Wahrnehmung
+- Lange, unruhige Bewegung → schlechte Wahrnehmung
+
+* Modul C: Optischer Silhouetten-Comparator
+
+** Zweck
+Macht wahrnehmungsrelevante Unterschiede direkt sichtbar.
+
+** Aufbau
+- Punktlichtquelle (Lampe + Lochblende)
+- Drehbare Objektachse mit Rastung
+- Mattscheibe oder Milchglas mit Raster
+
+#+BEGIN_EXAMPLE
+Draufsicht:
+
+[Licht] -> (Objekt) -> | Mattscheibe |
+#+END_EXAMPLE
+
+** Beobachtungskriterien
+- Stabilität des Umrisses bei Drehung
+- Änderungsrate der Silhouettenfläche
+- Auftreten abrupter Formbrüche
+- Klarheit von Symmetrieachsen
+
+** Interpretation
+- Gute Form → stabile Silhouette über viele Winkel
+- Schlechte Form → flackernde, überraschende Projektionen
+
+* Optionales Zusatzmodul: Rollstreifen
+
+** Aufbau
+- Zwei parallele, leicht V-förmige Schienen
+- Geringe Neigung
+- Objekt rollt frei
+
+** Beobachtung
+- Spurtreue
+- Ruckeln
+- Seitliches Wandern
+
+Rein visuelle Entscheidung, kein Messwert nötig.
+
+* Entscheidungslogik
+
+Beide Objekte werden identisch geprüft.
+
+Für jedes Objekt:
+1. Lagergleichgewicht
+2. Resonanzruhe
+3. Silhouettenstabilität
+
+#+BEGIN_EXAMPLE
+Objekt A: ruhig / stabil / zentriert
+Objekt B: unruhig / flackernd / driftend
+#+END_EXAMPLE
+
+Die Form mit der geringsten Gesamt-Unruhe ist wahrnehmungsbesser.
+
+* Zentrale Einsicht
+
+#+BEGIN_QUOTE
+Wahrnehmung ist Stabilität unter Transformation.
+#+END_QUOTE
+
+Das Gerät erzwingt Transformationen und beobachtet,
+wie sehr sich eine Form dagegen „wehrt“.
+
+* Anwendbarkeit
+
+Übertragbar auf:
+- Skulpturen
+- Münzen und Medaillen
+- Werkzeuge und Griffe
+- Waffenformen
+- Logos und Produktdesign
