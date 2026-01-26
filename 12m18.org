@@ -347,3 +347,192 @@ H(x, y, z) = sum_{i=1..n_A} P_A(x1^i, x2^i)
 - Nicht nur eine Menge von Polynomen, sondern ein Diagramm von Objekten + Morphismen
 - Universelle Eigenschaften sichern Konsistenz, Modularität und automatische Propagation von Änderungen
 - Kategorie ist strukturiert und robust: Hierarchie + n:m-Beziehungen werden gleichzeitig abgebildet
+
+* Beispiel: Analytische Polynome mit Hierarchie und n:m-Relation (konkret)
+
+** 1. Ziel des Beispiels
+Dieses Beispiel zeigt explizit:
+
+- Polynome als analytische Funktionen
+- Tupel als Koordinaten-Hierarchie
+- n:m-Relationen als eigene analytische Konstrukte
+- ein Gesamtsystem, das beides gleichzeitig ist
+
+---
+
+** 2. Hierarchie-Ebene 1: Objekt A (Basis)
+
+*** Definition (Variablen)
+#+BEGIN_SRC
+P_A(x1, x2) = x1^2 + x1*x2 + x2^2
+#+END_SRC
+
+- Koordinaten-Tupel: (x1, x2)
+- Bedeutung: Basiselement der Hierarchie
+
+*** Konkrete Instanzen (Zahlen)
+| A-ID | x1 | x2 |
+|-----+----+----|
+| A1  |  1 |  2 |
+| A2  |  3 |  4 |
+
+*** Auswertung
+#+BEGIN_SRC
+P_A(1,2) = 1 + 2 + 4 = 7
+P_A(3,4) = 9 + 12 + 16 = 37
+#+END_SRC
+
+---
+
+** 3. Hierarchie-Ebene 2: Objekt B (enthält A)
+
+*** Definition (Variablen)
+#+BEGIN_SRC
+P_B(y1, y2, y3) = y1^3 + y1*y2 + P_A(y2, y3)
+#+END_SRC
+
+- Tupel: (y1, y2, y3)
+- Hierarchie: (y2, y3) wird als Koordinaten von A benutzt
+
+*** Konkrete Instanzen
+| B-ID | y1 | y2 | y3 |
+|-----+----+----+----|
+| B1  |  2 |  1 |  2 |
+| B2  |  3 |  3 |  4 |
+
+*** Auswertung
+#+BEGIN_SRC
+P_B(2,1,2) = 8 + 2 + P_A(1,2)
+           = 10 + 7 = 17
+
+P_B(3,3,4) = 27 + 9 + P_A(3,4)
+           = 36 + 37 = 73
+#+END_SRC
+
+→ **Hierarchie sichtbar**:  
+B benutzt A *intern* als Unterstruktur (Produkt / Verschachtelung).
+
+---
+
+** 4. Separates Objekt C (keine Hierarchie)
+
+*** Definition
+#+BEGIN_SRC
+P_C(z1, z2) = z1^2*z2 + z2^3
+#+END_SRC
+
+*** Konkrete Instanzen
+| C-ID | z1 | z2 |
+|-----+----+----|
+| C1  |  1 |  2 |
+| C2  |  2 |  3 |
+
+*** Auswertung
+#+BEGIN_SRC
+P_C(1,2) = 2 + 8 = 10
+P_C(2,3) = 12 + 27 = 39
+#+END_SRC
+
+---
+
+** 5. n:m-Relation R1: A ↔ B
+
+*** Relationale Tabelle
+| R1-ID | A-ID | B-ID | Gewicht w |
+|------+-----+------+-----------|
+| R1-1 | A1  | B1   | 1.0       |
+| R1-2 | A1  | B2   | 0.5       |
+| R1-3 | A2  | B2   | 1.5       |
+
+→ **klassische n:m-Tabelle**
+
+*** Analytische Relationsfunktion
+#+BEGIN_SRC
+f_AB(x1,x2,y1,y2,y3)
+  = (x1 + y1)*(x2 + y2) + y3^2
+#+END_SRC
+
+*** Konkrete Auswertung
+#+BEGIN_SRC
+R1(A1,B1) = (1+2)*(2+1) + 2^2 = 9 + 4 = 13
+R1(A1,B2) = (1+3)*(2+3) + 4^2 = 20 + 16 = 36
+R1(A2,B2) = (3+3)*(4+3) + 4^2 = 42 + 16 = 58
+#+END_SRC
+
+*** Gewichtete Summe
+#+BEGIN_SRC
+R1_total = 1.0*13 + 0.5*36 + 1.5*58
+         = 13 + 18 + 87
+         = 118
+#+END_SRC
+
+→ **Relation ist analytisch + n:m**
+
+---
+
+** 6. n:m-Relation R2: B ↔ C
+
+*** Relationale Tabelle
+| R2-ID | B-ID | C-ID | Gewicht v |
+|------+-----+------+-----------|
+| R2-1 | B1  | C1   | 1.0       |
+| R2-2 | B2  | C1   | 1.0       |
+| R2-3 | B2  | C2   | 2.0       |
+
+*** Relationsfunktion
+#+BEGIN_SRC
+f_BC(y1,y2,y3,z1,z2)
+  = y1*z1 + y2*z2 + y3*z1*z2
+#+END_SRC
+
+*** Auswertung
+#+BEGIN_SRC
+R2(B1,C1) = 2*1 + 1*2 + 2*1*2 = 2 + 2 + 4 = 8
+R2(B2,C1) = 3*1 + 3*2 + 4*1*2 = 3 + 6 + 8 = 17
+R2(B2,C2) = 3*2 + 3*3 + 4*2*3 = 6 + 9 + 24 = 39
+#+END_SRC
+
+*** Gewichtete Summe
+#+BEGIN_SRC
+R2_total = 1*8 + 1*17 + 2*39
+         = 8 + 17 + 78
+         = 103
+#+END_SRC
+
+---
+
+** 7. Gesamtsystem: Hierarchie + Relation als eine Struktur
+
+#+BEGIN_SRC
+H_total =
+  sum P_A
++ sum P_B
++ sum P_C
++ R1_total
++ R2_total
+#+END_SRC
+
+#+BEGIN_SRC
+sum P_A = 7 + 37 = 44
+sum P_B = 17 + 73 = 90
+sum P_C = 10 + 39 = 49
+#+END_SRC
+
+#+BEGIN_SRC
+H_total = 44 + 90 + 49 + 118 + 103
+        = 404
+#+END_SRC
+
+---
+
+** 8. Interpretation (entscheidend)
+
+- Hierarchie:
+  - entsteht durch *Verschachtelung von Polynomen*
+  - Tupel → Produktstruktur
+- n:m-Relation:
+  - entsteht durch *separate Relationsobjekte*
+  - Summen über Paarungen (A,B) bzw. (B,C)
+- Beides existiert gleichzeitig
+- Polynome bleiben **Analysis-Funktionen**
+- Die Kategorie liefert die Struktur (Produkte + Pullbacks)
