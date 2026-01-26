@@ -299,3 +299,51 @@ H(x, y, z) = sum_{i=1..n_A} P_A(x1^i, x2^i)
 - R1 und R2 summieren über diese Tupel
 - Ergebnis: H(x,y,z) als konkrete analytische Zahlensumme
 
+* Typ der Kategorie für mehrere analytische Funktions-Polynome
+
+** 1. Objekte
+- Jedes Polynom P_A, P_B, P_C ist ein Objekt
+- Tupel-Koordinaten der Polynome (x1,x2,… etc.) bilden die interne Struktur der Objekte
+- n:m-Beziehungen R1, R2 können ebenfalls als Objekte betrachtet werden, die Morphismen zu Polynomen haben
+
+** 2. Morphismen
+- Inklusion / Hierarchie: P_A -> P_B (A ist Teil von B)
+- Projektionen von n:m-Relationen: R1 -> A, R1 -> B; R2 -> B, R2 -> C
+- Optional: Funktoren / Transformationen F: P_A -> P_B
+- Morphismen sind strukturerhaltend, d.h. sie respektieren Produkte und Pullbacks
+
+** 3. Universelle Eigenschaften
+- Products / Coproducts:
+  - Modellieren die hierarchische Verschachtelung von Tupeln
+  - Beispiel: P_B × X3 → verschachtelte Hierarchie
+- Pullbacks:
+  - Modellieren n:m-Relationen sauber
+  - Garantieren, dass Joins konsistent sind
+- Die Kategorie besitzt also Limits (finitely complete)
+
+** 4. Typ der Kategorie
+- Cartesische Kategorie:
+  - Weil Products existieren
+  - Morphismen respektieren die Produktstruktur
+- Kategorie mit Pullbacks:
+  - Pullbacks modellieren n:m-Relationen
+  - Finitely complete
+- Optional: Enriched Category
+  - Wenn Hom-Sets analytische Funktionen enthalten, kann über Vektorräume (R oder C) angereichert werden
+  - → lineare Morphismen zwischen Funktionsräumen
+
+** 5. Zusammenfassung der Eigenschaften
+
+| Eigenschaft | Interpretation |
+|------------|----------------|
+| Objekte | Analytische Funktions-Polynome mit Tupel-Koordinaten |
+| Morphismen | Hierarchische Inklusion, Projektionen von Pullbacks, optionale Funktoren |
+| Limits | Products für Hierarchie, Pullbacks für n:m-Relationen |
+| Completeness | Endlich komplett (finitely complete) |
+| Enrichment | Optional über Vektorräume R oder C |
+| Typ | Cartesische Kategorie mit Pullbacks, evtl. enriched |
+
+** 6. Intuition
+- Nicht nur eine Menge von Polynomen, sondern ein Diagramm von Objekten + Morphismen
+- Universelle Eigenschaften sichern Konsistenz, Modularität und automatische Propagation von Änderungen
+- Kategorie ist strukturiert und robust: Hierarchie + n:m-Beziehungen werden gleichzeitig abgebildet
