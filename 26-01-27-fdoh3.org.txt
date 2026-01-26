@@ -1,0 +1,221 @@
+#+TITLE: Materialien und Toleranzen
+#+SUBTITLE: Formruhe-Comparator – mechanisch-optisches Wahrnehmungsgerät
+#+OPTIONS: toc:t num:t
+
+* Ziel dieses Dokuments
+
+Dieses Dokument spezifiziert *konkrete Materialien*, *Fertigungsverfahren* und
+*funktionale Toleranzen* für den Bau des Formruhe-Comparators.
+
+Leitprinzip:
+#+BEGIN_QUOTE
+Nicht maximale Präzision, sondern reproduzierbare, ehrliche Physik.
+#+END_QUOTE
+
+Überpräzision ist kontraproduktiv, da sie Wahrnehmungsunruhe maskieren kann.
+
+* Systemübersicht: Materialphilosophie
+
+Das Gerät folgt drei Materialregeln:
+
+1. Steif, wo Referenz entsteht
+2. Elastisch, wo Form antwortet
+3. Optisch ruhig, wo Projektion stattfindet
+
+Keine aktiven Dämpfer, keine Kunststoffe mit Zeitkriechen im Messpfad.
+
+* Grundplatte und Rahmen
+
+** Funktion
+- Referenzebene
+- Entkopplung von Umwelteinflüssen
+- Masse für mechanische Ruhe
+
+** Material
+- Grauguss EN-GJL-250 ODER
+- Alternativ: Stahl S355, spannungsarm geglüht
+
+** Begründung
+- Hohe innere Dämpfung (Grauguss)
+- Geringe Nachschwingneigung
+- Langzeitstabilität
+
+** Toleranzen
+- Ebenheit: ≤ 0,05 mm / 300 mm
+- Parallelität relevanter Flächen: ≤ 0,05 mm
+- Oberflächenrauheit: Ra 3,2 µm (kein Feinschliff nötig)
+
+* 3-Punkt-Formlager (Federteller + Träger)
+
+** Federteller (Kontakt zur Form)
+
+*** Material
+- Werkzeugstahl 1.2842 (gehärtet) ODER
+- Bronze CuSn12 (wenn Schonung der Objekte wichtig ist)
+
+*** Oberfläche
+- Fein geschliffen oder geläppt
+- Optional: dünne Leder- oder Filzeinlage (nur bei sehr empfindlichen Objekten)
+
+*** Geometrie
+- Leicht konkav
+- Radius: 30–80 mm (nicht kritisch, aber identisch für alle drei Teller)
+
+*** Toleranzen
+- Höhenabweichung zwischen Tellern: ≤ 0,02 mm
+- Formabweichung der Konkavität: ≤ 0,05 mm
+
+** Druckfedern
+
+*** Material
+- Federstahl EN 10270-1 (SH)
+
+*** Parameter
+- Federkonstante: identisch ±5 %
+- Arbeitshub im linearen Bereich (30–70 % der Nennfeder)
+
+*** Toleranzen
+- Federkonstante: ±5 %
+- Freie Länge: ±0,5 mm (unkritisch)
+- Seitliche Führungsspiel: ≤ 0,1 mm
+
+** Federführungen
+
+*** Material
+- Stahl oder Messing
+- Keine Kunststoffe (Kriechen vermeiden)
+
+*** Toleranzen
+- Radialspiel: 0,05–0,1 mm
+- Axialspiel: < 0,1 mm
+
+* Resonanz- und Impulsmodul
+
+** Pendel oder Schlagfeder
+
+*** Material
+- Pendelarm: Stahl oder Messing
+- Pendelmasse: Messing (hohe Dichte, gut einstellbar)
+
+*** Lagerung
+- Messerlager ODER
+- Präzisions-Gleitlager (Bronze)
+
+*** Toleranzen
+- Lagerreibung: so niedrig wie möglich, aber reproduzierbar
+- Seitenspiel Lager: ≤ 0,05 mm
+
+** Impulsreproduzierbarkeit
+
+*** Anforderung
+- Impulsenergie konstant innerhalb ±5 %
+
+*** Mechanische Lösung
+- Fester Anschlagwinkel
+- Mechanische Rastung
+- Keine Federn mit Hysterese im Impulspfad
+
+* Drehachse für Silhouettenvergleich
+
+** Achse
+
+*** Material
+- Edelstahl 1.4301 oder Werkzeugstahl
+
+*** Geometrie
+- Durchmesser: 8–12 mm (steif, aber handhabbar)
+
+*** Toleranzen
+- Rundlauf: ≤ 0,02 mm
+- Axialspiel: ≤ 0,05 mm
+
+** Lagerung
+
+*** Typ
+- Gleitlager aus Bronze oder Sinterbronze
+
+*** Begründung
+- Leichte Dämpfung erwünscht
+- Keine hochpräzisen Wälzlager (zu „sauber“)
+
+* Rastmechanismus (Drehwinkel)
+
+** Funktion
+- Definierte Winkelpositionen
+- Vergleichbarkeit der Silhouetten
+
+** Material
+- Rastkranz: Stahl
+- Rastkugel: gehärteter Stahl
+- Feder: Federstahl
+
+** Toleranzen
+- Winkelabweichung je Rastung: ≤ 1°
+- Rastkraft: konstant ±10 %
+
+* Optisches Modul
+
+** Lichtquelle
+
+*** Typ
+- Halogen- oder LED-Lampe (thermisch stabil montiert)
+
+*** Blende
+- Stahl- oder Messingplatte
+- Lochdurchmesser: 0,5–1,0 mm
+
+*** Toleranzen
+- Lochrundheit: unkritisch
+- Position: ±0,2 mm ausreichend
+
+** Mattscheibe
+
+*** Material
+- Milchglas
+- Alternativ: Acrylglas mit beidseitigem Diffusorschliff
+
+*** Oberfläche
+- Gleichmäßig matt
+- Keine sichtbare Maserung
+
+*** Toleranzen
+- Ebenheit: ≤ 0,2 mm
+- Position relativ zur Achse: ±0,5 mm
+
+* Rollstreifen (optional)
+
+** Schienen
+
+*** Material
+- Aluminium eloxiert ODER
+- Stahl fein geschliffen
+
+*** Geometrie
+- V-Winkel: 60–90°
+- Länge: ≥ 500 mm
+
+*** Toleranzen
+- Parallelität: ≤ 0,1 mm / 500 mm
+- Oberflächenrauheit: Ra 1,6–3,2 µm
+
+* Bewusste Nicht-Anforderungen
+
+Diese Dinge sind *absichtlich nicht nötig*:
+- µm-Genauigkeit
+- Temperaturkompensation
+- Elektronische Sensorik
+- Digitale Auswertung
+
+#+BEGIN_QUOTE
+Das Gerät soll Unterschiede zeigen, nicht sie wegrechnen.
+#+END_QUOTE
+
+* Zusammenfassung
+
+- Steife, schwere Referenzteile
+- Identische, nicht perfekte Elastik
+- Leicht gedämpfte Lager
+- Optisch ruhige, einfache Projektion
+
+Damit entsteht ein Gerät, das Formen ehrlich „unter Stress setzt“
+und ihre Wahrnehmungsqualität sichtbar macht.
