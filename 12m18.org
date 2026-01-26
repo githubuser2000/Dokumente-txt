@@ -672,3 +672,149 @@ H_total = 45 + 29 + 39 + 19.5 + 11 = 143.5
 - **Grad 3:** interne nichtlineare Kopplung in jedem Polynom
 - **3 Polynome:** definieren dreidimensionales System (3 Objekte)
 - **H_total = 143.5**: Analytische Summe aller Komponenten
+
+* Dreidimensionales Beispiel: Polynome + Morphismen + Natürliche Transformationen
+
+** 1. Ziel
+- Objekte: Polynome vom Grad 3 (P1, P2, P3)
+- Hierarchie: Verschachtelte Tupel
+- n:m-Relationen: R1, R2
+- Morphismen: Inklusion / Projektion / Funktoren
+- Natürliche Transformationen: Relationen zwischen Funktoren
+
+---
+
+** 2. Polynome / Objekte
+
+*** P1: Basisobjekt
+#+BEGIN_SRC
+P1(x1,x2,x3) = x1^3 + x2^3 + x3^3
+#+END_SRC
+- Tupel: (x1,x2,x3)
+- Beispiele:
+| P1-ID | x1 | x2 | x3 |
+|-------+----+----+----|
+| 1     | 1  | 2  | 3  |
+| 2     | 2  | 1  | 0  |
+
+*** P2: Zweite Ebene
+#+BEGIN_SRC
+P2(y1,y2,y3) = y1^3 + y2^3 + P1(y3,y2,y1)
+#+END_SRC
+- Tupel: (y1,y2,y3)
+| P2-ID | y1 | y2 | y3 |
+|-------+----+----+----|
+| 1     | 1  | 1  | 1  |
+| 2     | 2  | 0  | 2  |
+
+*** P3: Dritte Ebene
+#+BEGIN_SRC
+P3(z1,z2,z3) = z1^3 + z2^3 + P2(z3,z1,z2)
+#+END_SRC
+- Tupel: (z1,z2,z3)
+| P3-ID | z1 | z2 | z3 |
+|-------+----+----+----|
+| 1     | 1  | 2  | 1  |
+| 2     | 0  | 1  | 2  |
+
+---
+
+** 3. Morphismen
+
+- **f1: Inklusionsmorphismus** P1 → P2
+#+BEGIN_SRC
+f1(x1,x2,x3) = P2(x1, x2, x3)
+#+END_SRC
+
+- **f2: Inklusionsmorphismus** P2 → P3
+#+BEGIN_SRC
+f2(y1,y2,y3) = P3(y1, y2, y3)
+#+END_SRC
+
+- **f3: Projektion / Funktor**: P3 → P1
+#+BEGIN_SRC
+f3(z1,z2,z3) = P1(z1, z2, z3)
+#+END_SRC
+
+- Morphismen können **hierarchische Struktur + n:m-Relationen respektieren**
+
+---
+
+** 4. Natürliche Transformationen
+
+- Natürliche Transformation η: zwischen zwei Funktoren F, G: C → D  
+- Beispiel: F = „Inklusion von P1→P2“, G = „Projektion P3→P2“
+- Für jedes Objekt X in C:  
+#+BEGIN_SRC
+η_X: F(X) → G(X)
+#+END_SRC
+- Bedingung: Für jeden Morphismus f: X→Y in C:
+#+BEGIN_SRC
+G(f) ∘ η_X = η_Y ∘ F(f)
+#+END_SRC
+
+*** Konkretes Beispiel
+
+- Funktoren:
+  - F: P1 → P2 (f1)
+  - G: P3 → P2 (f2 ∘ f3)
+- Natürliche Transformation η:
+#+BEGIN_SRC
+η_P1: F(P1) = P2(x1,x2,x3) → G(P1) = P2(P3(P1)) 
+#+END_SRC
+- η stellt sicher, dass die Diagramme **kommutativ** sind:
+#+BEGIN_SRC
+P1 --f1--> P2
+ |           ^
+f3          G(f)
+ v           |
+P3 --f2--> P2
+#+END_SRC
+
+---
+
+** 5. n:m-Relationen mit Morphismen
+
+*** R1: P1 ↔ P2
+| R1-ID | P1-ID | P2-ID | Gewicht |
+|-------+-------+-------+---------|
+| 1     | 1     | 1     | 1.0     |
+| 2     | 1     | 2     | 0.5     |
+| 3     | 2     | 2     | 1.5     |
+
+- Relation als Morphismus: R1: P1 × P2 → Gewicht
+
+*** R2: P2 ↔ P3
+| R2-ID | P2-ID | P3-ID | Gewicht |
+|-------+-------+-------+---------|
+| 1     | 1     | 1     | 1.0     |
+| 2     | 2     | 1     | 1.0     |
+| 3     | 2     | 2     | 2.0     |
+
+- Relation als Morphismus: R2: P2 × P3 → Gewicht
+
+---
+
+** 6. Gesamtsystem H_total
+
+#+BEGIN_SRC
+sum_P1 = P1(1,2,3) + P1(2,1,0) = 36 + 9 = 45
+sum_P2 = P2(1,1,1) + P2(2,0,2) = 5 + 24 = 29
+sum_P3 = P3(1,2,1) + P3(0,1,2) = 21 + 18 = 39
+R1_total = 19.5
+R2_total = 11
+H_total = sum_P1 + sum_P2 + sum_P3 + R1_total + R2_total
+H_total = 143.5
+#+END_SRC
+
+---
+
+** 7. Interpretation
+
+- **Morphismen:** f1, f2, f3 bilden die Hierarchie der Polynome ab
+- **Natürliche Transformationen η:** garantieren Kommutativität zwischen Funktoren
+- **n:m-Relationen R1, R2:** modellieren Beziehungen zwischen Objekten
+- **Grad 3 Polynome:** interne nichtlineare Kopplung
+- **3 Polynome:** dreidimensionales System
+- **H_total = 143.5**: Gesamtsumme aller Komponenten
+- Kategorie: Objekte = Polynome, Morphismen = f1,f2,f3, Funktoren + η = natürliche Transformationen
