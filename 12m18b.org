@@ -1,0 +1,255 @@
+angenommen das sind drei Dimensionen von 3 Lustkategorien darunter nur eins sexuelle Lust, eins Bindungslust Beziehung, eins beliebig ganz andere Art von Lust z.B., auf Wissen Bücher und Bildung.
+* Drei Dimensionen von Lust-Kategorien als Polynome
+
+** 1. Ziel
+- Drei Polynome Grad 3 → drei Dimensionen von Lust
+  - P1: Sexuelle Lust
+  - P2: Bindungslust / Beziehung
+  - P3: Wissen / Bildung / sonstige Lust
+- Hierarchie, n:m-Relationen, Morphismen bleiben erhalten
+- Gesamtsystem H_total = integrativer „Lust-Wert“ über alle Kategorien
+
+---
+
+** 2. Polynome / Objekte (Lustdimensionen)
+
+*** P1: Sexuelle Lust
+#+BEGIN_SRC
+P1(x1,x2,x3) = x1^3 + x2^3 + x3^3
+#+END_SRC
+- Tupel (x1,x2,x3) = Subdimensionen sexuelle Lust, z.B. körperlich, emotional, visuell
+- Beispiele:
+| P1-ID | körperlich | emotional | visuell |
+|-------+------------+-----------+---------|
+| 1     | 1          | 2         | 3       |
+| 2     | 2          | 1         | 0       |
+
+*** P2: Bindungslust / Beziehung
+#+BEGIN_SRC
+P2(y1,y2,y3) = y1^3 + y2^3 + P1(y3,y2,y1)
+#+END_SRC
+- Tupel (y1,y2,y3) = Subdimensionen Beziehungslust, z.B. Vertrauen, Fürsorge, Nähe
+| P2-ID | Vertrauen | Fürsorge | Nähe |
+|-------+-----------+---------+-----|
+| 1     | 1         | 1       | 1   |
+| 2     | 2         | 0       | 2   |
+
+*** P3: Wissenslust / Bildung / andere Lust
+#+BEGIN_SRC
+P3(z1,z2,z3) = z1^3 + z2^3 + P2(z3,z1,z2)
+#+END_SRC
+- Tupel (z1,z2,z3) = Subdimensionen Wissenslust, z.B. Bücher, Experimente, Theorie
+| P3-ID | Bücher | Experimente | Theorie |
+|-------+--------+------------+--------|
+| 1     | 1      | 2          | 1      |
+| 2     | 0      | 1          | 2      |
+
+---
+
+** 3. Morphismen zwischen Lustdimensionen
+
+- f1: Sexuelle Lust → Bindungslust
+  - z.B. wie körperliche Lust emotionale Bindung beeinflusst
+#+BEGIN_SRC
+f1(x1,x2,x3) = P2(x1, x2, x3)
+#+END_SRC
+
+- f2: Bindungslust → Wissenslust
+  - z.B. wie Beziehung Lust motiviert, zu lernen / Wissen zu sammeln
+#+BEGIN_SRC
+f2(y1,y2,y3) = P3(y1, y2, y3)
+#+END_SRC
+
+- f3: Wissenslust → Sexuelle Lust (Rückkopplung)
+  - z.B. intellektuelle Anziehungskraft beeinflusst sexuelle Lust
+#+BEGIN_SRC
+f3(z1,z2,z3) = P1(z1, z2, z3)
+#+END_SRC
+
+---
+
+** 4. Natürliche Transformationen (η)
+- η: F → G zwischen Funktoren (z.B. f1 und f3 ∘ f2)
+- Kommutatives Diagramm: Lust wirkt in Zyklen aufeinander
+#+BEGIN_SRC
+η_P1: F(P1) = P2(x1,x2,x3) → G(P1) = P3(P1)
+#+END_SRC
+- η garantiert Konsistenz der Wirkung der Lustdimensionen über Morphismen
+
+---
+
+** 5. n:m-Relationen
+
+*** R1: Sexuelle Lust ↔ Bindungslust
+| R1-ID | P1-ID | P2-ID | Gewicht |
+|-------+-------+-------+---------|
+| 1     | 1     | 1     | 1.0     |
+| 2     | 1     | 2     | 0.5     |
+| 3     | 2     | 2     | 1.5     |
+
+*** R2: Bindungslust ↔ Wissenslust
+| R2-ID | P2-ID | P3-ID | Gewicht |
+|-------+-------+-------+---------|
+| 1     | 1     | 1     | 1.0     |
+| 2     | 2     | 1     | 1.0     |
+| 3     | 2     | 2     | 2.0     |
+
+- n:m-Relationen modellieren Interaktion / Einfluss zwischen Lustdimensionen
+
+---
+
+** 6. Gesamtsystem: H_total Lustwert
+#+BEGIN_SRC
+sum_P1 = P1(1,2,3) + P1(2,1,0) = 36 + 9 = 45
+sum_P2 = P2(1,1,1) + P2(2,0,2) = 5 + 24 = 29
+sum_P3 = P3(1,2,1) + P3(0,1,2) = 21 + 18 = 39
+R1_total = 19.5
+R2_total = 11
+H_total = sum_P1 + sum_P2 + sum_P3 + R1_total + R2_total
+H_total = 143.5
+#+END_SRC
+
+---
+
+** 7. Interpretation
+
+- P1 = Sexuelle Lust, P2 = Bindungslust, P3 = Wissenslust / Bildung
+- Morphismen f1,f2,f3 modellieren gegenseitige Einflüsse
+- Natürliche Transformation η = zyklische Wechselwirkung / Konsistenz
+- n:m-Relationen R1,R2 = quantitative Kopplung / Gewichtungen der Lustdimensionen
+- H_total = integrierter Gesamtwert aller Lustdimensionen
+- Grad 3 Polynome = interne nichtlineare Kopplungen in jeder Lustdimension
+- Drei Polynome = drei Dimensionen des Systems
+angenommen es sind 9=3*3 Polynome. Dann sind es drei 3D Personen in Hierarchie übereinander mit Hierarchiebeziehung, eine Dreierbeziehung aus 2 vom einen und eine vom anderen Geschlecht und alle drei nur an einer Position von drei Hierarchiestufen
+* Drei Personen / Dreierbeziehung als 9 Polynome
+
+** 1. Ziel
+- 9 Polynome (3 Personen × 3 Dimensionen) → 3D-System pro Person
+- Jede Person = 3D Lust-Dimensionen (sexuell, Bindung, Wissen)
+- Hierarchie: Personen übereinander (Position in 3 Hierarchiestufen)
+- Dreierbeziehung: 2 Personen eines Geschlechts + 1 anderer
+- Alle 3 nur an einer Position von 3 Hierarchiestufen
+
+---
+
+** 2. Personen / Polynome
+
+*** Person A (männlich)
+- P1A: Sexuelle Lust
+- P2A: Bindungslust
+- P3A: Wissenslust
+#+BEGIN_SRC
+P1A(x1,x2,x3) = x1^3 + x2^3 + x3^3
+P2A(y1,y2,y3) = y1^3 + y2^3 + P1A(y3,y2,y1)
+P3A(z1,z2,z3) = z1^3 + z2^3 + P2A(z3,z1,z2)
+#+END_SRC
+
+*** Person B (männlich)
+- P1B(x1,x2,x3), P2B(y1,y2,y3), P3B(z1,z2,z3)
+- Analog zu Person A, eigene Tupelwerte
+
+*** Person C (weiblich)
+- P1C(x1,x2,x3), P2C(y1,y2,y3), P3C(z1,z2,z3)
+- Analog, eigene Werte
+
+- Jede Person hat **3 Polynome = 3D Lustsystem**
+
+---
+
+** 3. Hierarchie der Personen
+- Positionen: obere, mittlere, untere Hierarchiestufe
+- Beispiel:
+| Hierarchie-ID | Person | Stufe |
+|---------------+--------+-------|
+| 1             | A      | oben  |
+| 2             | B      | mittel|
+| 3             | C      | unten |
+
+- Morphismus h: „Position → Einfluss“:
+#+BEGIN_SRC
+h(A) = mittlerer Einfluss auf B,C
+h(B) = geringer Einfluss auf C
+h(C) = minimal auf A,B
+#+END_SRC
+
+---
+
+** 4. Dreierbeziehung
+- Beteiligte:
+  - Person A, Person B (männlich)
+  - Person C (weiblich)
+- n:m-Beziehung zwischen den 3 Personen:
+| Beziehung-ID | Person1 | Person2 | Person3 | Gewicht |
+|--------------+---------+---------+---------+---------|
+| 1            | A       | B       | C       | 1.0     |
+
+- Morphismus r: „Interaktion der Lustdimensionen“:
+#+BEGIN_SRC
+r(P1A,P1B,P1C) = P1A(x1,x2,x3) + P1B(x1,x2,x3) + P1C(x1,x2,x3)
+r(P2A,P2B,P2C) = analog
+r(P3A,P3B,P3C) = analog
+#+END_SRC
+
+---
+
+** 5. Natürliche Transformationen zwischen Funktoren
+
+- Funktor F: Tupel → Gesamtlust der Dreierbeziehung
+- Funktor G: Hierarchieeinfluss auf Lustwerte
+- Natürliche Transformation η: F → G
+- Kommutatives Diagramm:  
+#+BEGIN_SRC
+P1A,P1B,P1C --r--> Gesamtlust
+   |                   ^
+   | h(Position)        |
+   v                   |
+Hierarchie-Einfluss --> Gesamtlust
+#+END_SRC
+
+- η gewährleistet: Einfluss der Hierarchiestufe wirkt konsistent auf Gesamtlust
+
+---
+
+** 6. n:m-Relationen innerhalb Dreierbeziehung
+
+- R1: Sexuelle Lust
+| R1-ID | P1A | P1B | P1C | Gewicht |
+|-------+-----+-----+-----+---------|
+| 1     | 1   | 1   | 1   | 1.0     |
+
+- R2: Bindungslust
+| R2-ID | P2A | P2B | P2C | Gewicht |
+|-------+-----+-----+-----+---------|
+| 1     | 1   | 1   | 1   | 1.0     |
+
+- R3: Wissenslust
+| R3-ID | P3A | P3B | P3C | Gewicht |
+|-------+-----+-----+-----+---------|
+| 1     | 1   | 1   | 1   | 1.0     |
+
+- Gewicht = Stärke der Kopplung / Interaktion
+
+---
+
+** 7. Gesamtsystem H_total Dreierbeziehung
+
+#+BEGIN_SRC
+sum_P1 = P1A(...) + P1B(...) + P1C(...) 
+sum_P2 = P2A(...) + P2B(...) + P2C(...)
+sum_P3 = P3A(...) + P3B(...) + P3C(...)
+
+R_total = R1_total + R2_total + R3_total
+
+H_total = sum_P1 + sum_P2 + sum_P3 + R_total
+#+END_SRC
+
+---
+
+** 8. Interpretation
+
+- 9 Polynome → 3 Personen × 3 Lustdimensionen
+- Hierarchie: obere/mittlere/untere Position beeinflusst die Interaktion
+- Dreierbeziehung: 2 Männer + 1 Frau → n:m-Beziehung
+- Morphismen h,r = wie Hierarchie / Lustdimensionen interagieren
+- Natürliche Transformationen η = zyklische Konsistenz zwischen Funktoren
+- H_total = integrativer „Lustwert“ aller Beteiligten
