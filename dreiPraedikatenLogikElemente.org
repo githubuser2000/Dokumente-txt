@@ -1,0 +1,13 @@
+* Drei Prädikaten Logik Elemente
+
+#+ATTR_ORG: :width 100% :align llll
+| Nr | Muster   | Klassischer Name (falls) | Vergleich / Kommentar                       |
+|----+----------+--------------------------+--------------------------------------------|
+| 1  | ˘ ˘ ˘    | –                        | Alle Silben unbetont, sehr weich / neutral |
+| 2  | ˘ ˘ ´    | Anapäst                  | Letzte Silbe hart, beschwingt, vorwärts   |
+| 3  | ˘ ´ ˘    | –                        | Mittel Silbe betont, unerwartet, abgehackt|
+| 4  | ˘ ´ ´    | –                        | Letzte zwei Silben betont, dramatisch     |
+| 5  | ´ ˘ ˘    | Daktylus                 | Erste Silbe betont, feierlich / beschwingt|
+| 6  | ´ ˘ ´    | –                        | 1. und 3. Silbe betont, stoßartig / sprunghaft|
+| 7  | ´ ´ ˘    | –                        | Erste zwei Silben betont, kraftvoll / schwer|
+| 8  | ´ ´ ´    | –                        | Alle Silben betont, sehr hart / dramatisch|
