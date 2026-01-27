@@ -1,0 +1,10 @@
+OrganizationOrganisation ThinkDenk TankFabrik GermanDeutsche TeutonsTeutonen TribesStämme (federalBundes) CountriesLänder EuropeEuropa WorldWelt,,,0,Rang,Morphismus-Typ,Bemerkung
+1,Identität,trivial, neutral für Komposition
+2,Set-Funktion,einfacher elementweiser Morphismus
+3,Inklusion,Teilobjekt einbetten
+4,Injektion / Surjektion / Bijektion,besondere Eigenschaft einer Funktion
+5,Endomorphismus,Morphismus auf sich selbst
+6,Komposition,Hintereinanderausführung
+7,Mono / Epi,abstrakte Injektionen / Surjektionen
+8,Isomorphismus,invertierbar, strukturerhaltend
+9,Universal-Morphismus,Limiten, Pullbacks, Pushouts, hochabstrakt.
