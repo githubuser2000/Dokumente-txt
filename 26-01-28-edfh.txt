@@ -1,0 +1,33 @@
+* Drei Prädikaten Logik Elemente – Klassische Versfüße 8=2³, Existenz Vorfinden anstelle Bestimmung Phänomen und anstelle Zeit:
+
+| Nr | Silbenzahl | Muster  | Name           | Kommentar / Vergleich |
+|----+------------+---------+----------------+----------------------|
+| 1  | 2          | ˘ ˘     | Pyrrhichius    | völlig weich, instabil |
+| 2  | 2          | ˘ ´     | Jambus         | steigend, Sprache, Drama |
+| 3  | 2          | ´ ˘     | Trochäus       | fallend, Lied, Nachdruck |
+| 4  | 2          | ´ ´     | Spondeus       | maximal hart, Gewicht |
+| 5  | 3          | ˘ ´ ˘   | Amphibrachys   | symmetrisch, schwebend |
+| 6  | 3          | ´ ˘ ˘   | Daktylus      | feierlich, episch |
+| 7  | 3          | ˘ ˘ ´   | Anapäst       | vorwärtsdrängend |
+| 8  | 3          | ´ ´ ´   | Molossus      | extrem hart, rhetorisch |
+
+Jambus: „weich auf der ersten, hart auf der zweiten“ → wie ein Schritt vorwärts.
+Trochäus: „hart auf der ersten, weich auf der zweiten“ → wie ein Schritt nach unten.
+Daktylus: „hart, weich, weich“ → wie eine kleine Abwärtsbewegung mit Schwung.
+Jambus / Trochäus → lineare Bewegung (vorwärts vs. abwärts)
+Daktylus / Anapäst → gerichtete Dynamik (Fall vs. Sprung)
+Amphibrachys → Symmetrie, Balance
+Pyrrhichius / Molossus / Spondeus → Grenzfälle (zu weich / zu hart)
+* Drei Prädikaten Logik Elemente – Versfüße als Gang- und Physikmodelle
+
+| Versfuß      | Muster  | Physikalisches Modell | Gangbild / Dynamik |
+|---------------+---------+-----------------------+--------------------|
+| Pyrrhichius  | ˘ ˘     | kein Impuls, kaum Kraftübertragung | Gleiten, Schleichen, nahezu Stillstand |
+| Jambus       | ˘ ´     | positiver Impuls am Ende | Schritt vorwärts, Abstoß nach Anlauf |
+| Trochäus     | ´ ˘     | Impuls am Anfang, dann Abbremsen | Schritt nach unten, Auftreten → Ausrollen |
+| Spondeus     | ´ ´     | statische Masse, hohe Normalkraft | Stampfen, Last tragen, Stillstand unter Gewicht |
+| Amphibrachys | ˘ ´ ˘   | zentrierter Impuls | Balancieren, Wippe, Schwerpunkt in der Mitte |
+| Daktylus    | ´ ˘ ˘   | Impuls → dissipative Bewegung | Abwärtsbewegung mit Nachschwingen |
+| Anapäst     | ˘ ˘ ´   | gespeicherte Energie → Entladung | Anlauf und Sprung nach vorn |
+| Molossus    | ´ ´ ´   | maximale Kraft pro Zeit | Dreifachschlag, Rammbock, Wucht |
+
