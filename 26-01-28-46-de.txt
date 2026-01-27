@@ -1,0 +1,90 @@
+* Organisation des Vertrauens hat die Größe eines Planeten 🌍, eines Mondes 🌙, eines Habitats 🏠, eines Himmelskörpers um einen Stern ☀️ wie die Sonne 🌞
+
+** Vergleich: A Versionsverwaltungssysteme vs B Blockchain vs C Lenses/Traversals in Haskell 🛠️
+
+** Frage 🤔
+Vergleiche A Versionsverwaltungssysteme wie SVN/Git mit B Blockchain und C Lenses + Traversals aus der Programmiersprache Haskell, als Querschnitts-Modell der Aspekte A, B, C 🌐
+
+** 0. Kurzintuition ⚡
+- A (VCS) 📝: Versionierte Zeitachsen von Zuständen ⏳  
+- B (Blockchain) 🔗: Kryptographisch fixierte globale Historie 🛡️  
+- C (Lenses/Traversals) 🔍: Strukturelle Zugriffe und Transformationen auf immutable Daten 🧱  
+- A & B organisieren Historie 📜  
+- C organisiert Struktur 🏗️  
+- Alle drei sind gerichtete, persistent gedachte Systeme 🔄  
+
+** 1. Ontologie: Grundobjekt 🧬
+
+| Aspekt         | A – VCS 📝        | B – Blockchain 🔗      | C – Lenses/Traversals 🔍 |
+|----------------|-----------------|----------------------|-------------------------|
+| Primäres Objekt    | Snapshot / Commit | Block / State-Transition | Wert (immutable data) |
+| Identität       | Hash (Git) oder Rev-ID | Kryptographischer Hash | Typ + Struktur |
+| Persistenz    | Persistent, historisch | Append-only, unveränderlich | Persistent per Immutabilität |
+
+** 2. Zeit vs Struktur ⏱️🏗️
+
+*** A – Versionsverwaltung
+- Zeit: explizit ⏳  
+- Historie: DAG 📈  
+- Fokus: Zustandshistorie  
+
+*** B – Blockchain
+- Zeit: linearisiert ➡️  
+- Historie: Kette (mit temporären Forks) 🌲  
+- Fokus: kanonischer globaler Zustand 🌐  
+
+*** C – Lenses/Traversals
+- Zeit: irrelevant ❌  
+- Fokus: strukturierter Zugriff 🔎  
+- Historie: nur implizit durch Persistenz 💾  
+
+** 3. Graphstruktur 📊
+
+| System       | Graph-Typ |
+|-------------|-----------|
+| SVN         | Linear ➖ |
+| Git         | DAG 📈 |
+| Blockchain  | Linear (+ Forks) 🔗 |
+| Lenses      | Pfad / Fokus 🔍 |
+| Traversals  | Multimenge von Pfaden 🌿 |
+
+- Tiefe Analogie: Git-Commit-Graph ≈ historischer Traversalraum 🚀  
+- Lens-Pfad ≈ deterministischer Fokus im Datenbaum 🌳  
+
+** 4. Mutabilität & Wahrheit 🧪
+
+| Aspekt       | A 📝 | B 🔗 | C 🔍 |
+|--------------|------|------|------|
+| Mutierbarkeit   | logisch unveränderlich ✅ | absolut unveränderlich 🛡️ | unveränderlich 🧱 |
+| Wahrheit        | sozial / projektabhängig 👥 | konsensbasiert 🤝 | formal / lokal 🏛️ |
+| Konflikte       | Merge-Konflikte ⚔️ | Forks / Reorgs 🔀 | Typfehler ❌ |
+
+** 5. Zugriff & Fokus (Lens-Analogie) 🎯
+
+*** Lens
+#+BEGIN_SRC haskell
+get :: s -> a
+set :: a -> s -> s
+#+END_SRC
+
+*** Git
+- checkout commit ≈ Fokus auf Zustand 🔍  
+- apply patch ≈ strukturelle Transformation 🏗️  
+- rebase ≈ Pfad-Neuinterpretation 🔄  
+
+*** Blockchain
+- Block ≈ Lens auf globalen State 🌐  
+- Transaction ≈ partielle State-Transformation 🔧  
+- Smart Contract ≈ komponierte Traversal 🧩  
+
+** 6. Komposition 🧩
+
+| System       | Komposition |
+|-------------|-------------|
+| Git         | Commits → History 📜 |
+| Blockchain  | TX → Block → Chain 🔗 |
+| Lenses      | Lens ∘ Lens 🔍 |
+| Traversals  | Traversal ∘ Traversal 🌿 |
+
+- Lens-Komposition: assoziativ 🔄  
+- Commit-Reihenfolge: assoziativ, nicht kommutativ ↔

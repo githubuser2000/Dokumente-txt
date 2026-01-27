@@ -92,3 +92,63 @@ set :: a -> s -> s
 - Blockchain-Transitions: monoidisch über State
 
 **
+** 7. Nebenläufigkeit & Konflikte
+
+| System       | Parallelitätshandhabung   |
+|-------------|--------------------------|
+| Git         | Branches + Merge         |
+| Blockchain  | Mempool + Ordering       |
+| Lenses      | Parallel Traversals      |
+| Haskell     | Keine Race Conditions    |
+
+- Git & Blockchain lösen Konflikte nachträglich  
+- Lenses vermeiden sie strukturell
+
+** 8. Sicherheitsmodell
+
+| Aspekt       | A      | B                    | C         |
+|-------------|--------|--------------------|-----------|
+| Sicherheit  | sozial / kryptografisch | kryptografisch + ökonomisch | formal / Compiler |
+| Angriffe    | History rewrite         | 51%-Attacke                  | unmöglich per Typ |
+| Vertrauen   | Projekt                 | Netzwerk                     | Compiler |
+
+** 9. Abstrakte Zusammenfassung (Querschnittsmodell)
+- Dimensionen: Zeit, Struktur, Wahrheit/Konsens
+
+| System       | Zeit | Struktur | Konsens          |
+|-------------|------|----------|-----------------|
+| Git         | hoch | mittel   | sozial          |
+| Blockchain  | maximal | gering | global         |
+| Lenses      | null | maximal  | formal          |
+
+** 10. Organisation & Vertrauen nach Größe
+- Größenordnung analog zu Himmelskörpern
+
+| System       | Vertrauen / Organisation | Analogie |
+|-------------|-------------------------|---------|
+| Git         | Projekt, Team           | Habitat |
+| SVN         | Projekt                 | Mond    |
+| Blockchain  | Netzwerk, Konsens       | Planet  |
+| Lenses      | Compiler / Typensystem  | Sternen-System (Sonne) |
+
+- Erklärung:
+  - **Habitat / Mond**: begrenzte lokale Kontrolle (Git/SVN)
+  - **Planet**: kollektives Vertrauen (Blockchain)
+  - **Sternensystem**: formale, globale Konsistenz (Lenses/Haskell)
+
+** 11. Tiefere Einsicht
+- Git und Blockchain: historisierte Funktionskompositionen
+- Lenses: strukturierte Funktionsfokussierung
+
+- Kategorie-Theorie Sicht:
+  - Git ≈ Kategorie von Zuständen mit Morphismen = Patches
+  - Blockchain ≈ Monoid von State-Transitions mit globaler Serialisierung
+  - Lenses ≈ bidirektionale Morphismen in der Kategorie der Produkte
+
+** 12. Fazit
+- A (VCS): optimiert für menschliche Kollaboration  
+- B (Blockchain): optimiert für vertrauenslose Wahrheit  
+- C (Lenses): optimiert für formale Korrektheit
+
+- A & B organisieren Geschichte  
+- C organisiert Bedeutung
