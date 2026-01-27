@@ -1,0 +1,34 @@
+* Three Predicate-Logic Elements – Classical Metrical Feet (8 = 2³)
+  Existence as *finding* rather than determination, phenomenon instead of time ⏳✨
+
+| Nr | Syllables | Pattern | Name          | Comment / Comparison |
+|----+-----------+---------+---------------+----------------------|
+| 1  | 2         | ˘ ˘     | Pyrrhichius   | completely soft, unstable 🌫️ |
+| 2  | 2         | ˘ ´     | Iamb          | rising, speech, drama 🎭 |
+| 3  | 2         | ´ ˘     | Trochee       | falling, song, emphasis 🎶 |
+| 4  | 2         | ´ ´     | Spondee       | maximally hard, weight ⚖️ |
+| 5  | 3         | ˘ ´ ˘   | Amphibrach   | symmetric, floating ⚖️✨ |
+| 6  | 3         | ´ ˘ ˘   | Dactyl       | solemn, epic 🏛️ |
+| 7  | 3         | ˘ ˘ ´   | Anapaest     | driving forward 🚀 |
+| 8  | 3         | ´ ´ ´   | Molossus     | extremely hard, rhetorical 🧱 |
+
+- Iamb: “soft on the first, hard on the second” → like a step forward 🚶‍♂️➡️  
+- Trochee: “hard on the first, soft on the second” → like a step downward ⬇️  
+- Dactyl: “hard, soft, soft” → a small downward motion with momentum 🌊  
+- Iamb / Trochee → linear movement (forward vs. downward) ➡️⬇️  
+- Dactyl / Anapaest → directed dynamics (fall vs. jump) 🎢  
+- Amphibrach → symmetry, balance ⚖️  
+- Pyrrhichius / Molossus / Spondee → limit cases (too soft / too hard) ❄️🔥
+
+* Three Predicate-Logic Elements – Metrical Feet as Gait and Physics Models 🧠⚙️
+
+| Metrical Foot | Pattern | Physical Model | Gait / Dynamics |
+|----------------+---------+----------------+-----------------|
+| Pyrrhichius   | ˘ ˘     | no impulse, hardly any force transfer | Gliding, sneaking, near standstill 🐾 |
+| Iamb          | ˘ ´     | positive impulse at the end | Step forward, push-off after run-up ➡️ |
+| Trochee       | ´ ˘     | impulse at the beginning, then braking | Step downward, strike → roll-out ⬇️ |
+| Spondee       | ´ ´     | static mass, high normal force | Stomping, carrying load, weighted standstill 🏋️ |
+| Amphibrach    | ˘ ´ ˘   | centered impulse | Balancing, seesaw, center of mass in the middle ⚖️ |
+| Dactyl        | ´ ˘ ˘   | impulse → dissipative motion | Downward motion with after-swing 🌊 |
+| Anapaest      | ˘ ˘ ´   | stored energy → release | Run-up and forward jump 🏃‍♂️💥 |
+| Molossus      | ´ ´ ´   | maximum force per unit time | Triple strike, battering ram, sheer impact 🧱💥 |
