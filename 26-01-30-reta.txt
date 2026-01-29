@@ -1,0 +1,15 @@
+Reta 4.0
+Hauptsächlich sollte folgendes einprogrammiert werden:
+1 Wichtigstes: WinkelRichtungs basiert über cotangens von Rationalen Zahlen,
+2. Relational Operationen wie Primranges
+3. 77 und 105 universelles Navigations-System statt künstlicher Intelligenz,
+4. Pureniuum Hexagon zu Kontinuum Pentagon
+5. retaPrompt, eigene Befehle in csv definieren und Kurzbefehle selbst.
+
+Reta 4.0
+The following should be programmed:
+1. Most important: Angle and direction based on the cotangent of rational numbers,
+2. Relational operations such as prime ranges,
+3. Universal navigation system (77 and 105) instead of artificial intelligence,
+4. Pureniuum hexagon added to continuum pentagon,
+5. RetaPrompt, define your own commands in CSV and create your own shortcuts.
