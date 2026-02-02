@@ -1,0 +1,110 @@
+Währung 💱✨ sind kontinuierliche ♾️📈 Zahlen 🔢, also reelle 📐🌊 Zahlen 🔢, statt rationale 🔢➗ Zahlen ❓🤔, fragwürdig ⚖️❓, ob irrationale 🌀🔢 statt rationale 🔢➗ Zahlen, aber kontinuierliche ♾️🌊 Zahlen ❗❗
+
+Currency 💱✨ are continuous ♾️📈 numbers 🔢, that is real 📐🌊 numbers 🔢, instead of rational 🔢➗ numbers ❓🤔, questionable ⚖️❓ whether irrational 🌀🔢 instead of rational 🔢➗ numbers, but continuous ♾️🌊 numbers ❗❗
+
+Im Gesamter Vollständiger Planet oder Mond oder Habitat Wirtschaftssystem 🌍✨ ist die Markt Währung 💱 etwas Wahrnehmbares oder Sehenbares eine Bestimmung 🎯 Feststellung 📜 ein Vergleich etwas Hartes Festes oder eine Kausalität 🔁 oder Zeit ⏳ oder etwas Vorhandenes Intensives 🔥 oder Potenziale 💡 Richtungsbestimmungen � Richtungskausalitäten ➡️🔗 oder Effekte ✨ oder Stoff � oder Raum 🌌 Mobilien 🚗 Immobilien 🏠 Grund und Boden 🌱 als Währung 💰 oder etwas mit Potenzial oder Stoff beispielsweise Kleidung für gesamte Sonnen-System 🌞 Himmelskörper wie die Erde 🌏. die Währung 💲 ist Effektresultatinformation 📊 der Bestimmung 🎛️ Festlegung 📑 des Vergleiches ⚖️ der Relation 🔗 mit Feedback 🔄 einer Bilanz � aus Aktiva 💼 und Passiva 📉 Rechnung z.B. auf Papier 📃 oder etc. Geld 💵 = relationale Vergleichsinformation ⚖️📡 mit rückgekoppelter Kausalwirkung 🔁⚙️
+
+On the entire complete planet or moon or habitat economic system 🌍✨ the market currency 💱 is some perceptionable or seeable a determination 🎯 a specification 📜 a comparison or a causality 🔁 something solid hard or time ⏳ or something existing and intensive 🔥 or potentials 💡 directional determinations � directional causalities ➡️🔗 or effects ✨ or matter � or space 🌌 movables 🚗 immovables 🏠 land and soil 🌱 or something with potencial or substance as like clothes as currency 💰 for entire solar-system 🌞 celestial bodies like the Earth 🌏. the currency 💲 is effect-result information 📊 of the determination 🎛️ specification 📑 of the comparison ⚖️ of the relation 🔗 with feedback 🔄 of a balance sheet � of assets 💼 and liabilities 📉 accounting e.g. on paper 📃 or etc. Money 💵 = relational comparison information ⚖️📡 with recursive causal feedback effect 🔁⚙️.                               
+                                                                            Eine Winkelrichtung 📐↗️ (Wenn Intensität zu eins normalisiert dann ist Winkelrichtung gleich Vektor)  Politik 🏛️ und Wirtschaft 💱 Bildung 📚 Andere 🌐 Klima 🌦️ Umwelt 🌳 Ökologie 🐝 Dann Pythagoras 📏➕ auf eins 1️⃣ Vektorlänge ➡️ normieren ♾️ Dann mit Cotangens 📐↔️ aus Vektor ➡️ ist die Winkelrichtung 📐 die rationale Zahl 🔢 berechnen �. Das ist die Planeten � Ökonomie 💱 Währung  💰. Vierwertige 🔢4 Logik ⚙️ verifizieren ✔️ falsifizieren ❌ Sechswertige 🔢6 stapelbar 📚 nun möglich ✅ Achtwertige 🔢8 Logik ⚙️ Raumschichten 🌌 nun neu machbar 🆕 Anfang Zehnwertige 🔢10 Logik ⚙️ Kausalketten 🔗 Layer 🗂️ Stufen ⬆️ machbar ✅ Anfang � Auswirkungen ⚡ Effekte 🌊 Pythagoras 📏 normiert zwei ✌️ mehrwertige 🔢 Logiken ⚙️ zu eins 1️⃣, die Vektorintensität ➡️ aus zwei: eine Winkelrichtung 📐↗️ Politik 🏛️ und Wirtschaft 💱 Bildung 📚 andere 🌐 Klima 🌦️ Umwelt 🌳 Ökologie 🐝 Dann ist Vektor ➡️ gleich Winkel 📐. Mit dem Cotangens 📐↔️ kann man Winkelrichtung 📐 und rationale Zahl 🔢 hin und zurück 🔄 ineinander umrechnen. Die Fließkommazahl 🌊🔢 ist die Währung 💱 des Planeten � oder des Mondes 🌙 oder Habitats 🌿. Nicht nur rationale Zahlen 🔢➗, nicht nur ganze 🔢 durch ganze 🔢 Zahl geteilt ➗.
+                                                                            An angle direction 📐↗️ (if intensity is normalized to be one than angle direction is vector same) Politics 🏛️ and economy 💱 education 📚 Others 🌐 Climate 🌦️ environment 🌳 ecology 🐝 Then Pythagoras 📏➕ normalize to one 1️⃣ vector length ➡️ ♾️  Then with cotangent 📐↔️ from the vector ➡️ the vector direction  or angle direction 📐 gives the rational number 🔢 calculation �. This is the planets � economy 💱 currency 💰. Four-valued 🔢4 valued logic ⚙️ verify ✔️ falsify ❌  Six-valued 🔢6 stackable 📚 now possible ✅  Eight-valued 🔢8 logic ⚙️ space  room layers 🌌 now newly possible 🆕 start �  Ten-valued 🔢10 logic ⚙️ causal chains 🔗 layers 🗂️ stages ⬆️ possible ✅ start effects ⚡ impacts 🌊 Pythagoras 📏 normalizes two ✌️ multi-valued 🔢 logics ⚙️ into one 1️⃣, the vector intensity ➡️ from tm a vector direction 📐↗️ politics 🏛️ and economy 💱 education 📚 others 🌐 climate 🌦️ environment 🌳 ecology 🐝 Then the vector ➡️ equals the angle 📐. With cotangent 📐↔️ you can convert 🔄 back and forth between vector direction 📐 and rational number 🔢. The floating-point number 🌊🔢 is the currency 💱 of the planet  or the moon 🌙 or habitat 🌿. Not only rational numbers 🔢➗, not only integers 🔢 divided ➗ by integers 🔢.                                                                                                                                                       Kunstwerke 🎨✨ lassen sich bezahlen 💱 durch das Wirtschaftssystem ⚙️ der Anführer 👑 weil die Fläche 📐 bezahlt wird, durch das S-Kontinuum ♾️ Wirtschafts-System 🌌 mit perfektoiden 🔮 Zahlen 🔢 oder durch das Planetenkorrigierungs-Wirtschaftssystem �⚖️, weil Kunstwerke 🖼️ Realität 🌍 implizieren also richtig ✔️ oder falsch ❌ sind..                                                                                                                            Works of art 🎨✨ can be paid 💱 through the economic system ⚙️ of leaders 👑 because the area 📐 is paid, through the S-continuum ♾️ economic system 🌌 with perfectoid 🔮 numbers 🔢 or through the planet-correction economic system �⚖️, because works of art 🖼️ imply reality 🌍 and are therefore true ✔️ or false ❌.                                                                                                                                                                                                                             Balance-sheetBilanz withMit AssetsAktiva Plus Liabilities-and-EquityPassiva isIst A_Eine TwoZwei, TwoZwei OfDa ItVon AreSind A_Eine FourVier IfWenn ComparedVerglichen ButAber CombinedKombiniert AddedAddiert A_Eine SixSechs BecauseWeil EveryJede CombinationKombination Addition AddsHinzufügt TwoZwei ThatDass FifeFünf Balance-sheetBilanz CombinedKombiniert AddedAddiert addsHinzufügt TwoZwei TimesMal FifeFünf IsIst TogetherZusammen TenZehn AreSind TwoZwei CausalKausal ChainsKetten StackedGestapelt ComparedVerglichen ButAber NotNicht CombinedKombiniert AddedAddiert BecauseWeil CausalKausal ChainKette AsWie BlockStück ChainKette IsIst A_Eine FifeFünf ThatDass TwoZwei CombinedKombiniert AddedAddiert WouldWäre A_Eine TwelveZwölf AreSind SixSechs ComparedVerglichene StackedGestapelte Balance-sheetBilanz OrOder FourVier VerifiedVerifizierte FalsifiedFalsifizierte Balance-sheetBilanz withMit AssetsAktiva Plus Liabilities-and-EquityPassiva, Because OneEine CorrectedKorrigierte Balance-sheetBilanz IsIst A_Eine ThreeDrei AsWie A_Eine InventuryInventur IsIst AlsoAuch AEine ThreeDrei, ThatDass FourVier InventuriesInventuren AreSind AEine TwelveZwölf AsWie TwoZwei CausalKausal ChainsKetten CombinedKombiniert AddedAddiert NotNicht ComparedVerglichen, ButAber ComparedVerglichen AreSind OneEine EffectEffekt ChainKette IsIst A_Eine TenZehn LikeWie OneEine CausalKausal ChainKette OneEine InventuryInventur OneEine Balance-sheetBilanz StackedGestapelt ComparedVerglichen NotNicht CombinedKombiniert AddedAddiert IsIst FifeFünf Plus ThreeDrei Plus TwoZwei.                                                                                                                     EverythingAllesPerceptibleWahrnehmbaresAsAls NotNichtUNITsEINHEITen ButAber ElementsElemente InsideInnerhalb MoneyGeldPocketBörse OfVon BehaviourVerhaltens_Delta System_TheoryTheorie AndUnd SetsMengenTuplesTupeln AreSind PlanetPlanetenCurrencyWährung FloatingFliessCommaKomma RealReelle NumbersZahlen, NotNicht OnlyNur RationalRationale NumbersZahlen.
+
+# 🌈 ExampleBeispiel: OfVon Muktiplevaluemehrwertiger LogicsLogik ToZu OneEiner ContinuusKontinuierlichen NumberZahl 🔢✨                                                                                                           WeWir ShowZeigen **ConcreteKonkret AndUnd CalculatingRechnerisch**, HowWie FromAus MultipleMehr ValuedWertiger LogicsLogik OneEine **DotKomma NumberZahl** GetsTatsächlich CreatesEntsteht.                                         AllAlles IsIst **MechanicallyMechanisch**, **WithoutOhne GeometryGeometrie**, **WithoutOhne AngledirectionsWinkel** �❌.                                                                                                            ---                                                                                                                                                     ## � StepSchritt 1: ThreeDrei ValuedWertige LogicsLogik ��🔴                                                                                            WeWir StartStarten WithMit AEiner FiniteEndlichen MultipleMehr ValuedWertigen LogicsLogik:                                                                                                                                          V3 = {0, 1/2, 1}
+
+MeaningsBedeutung:                                                          - 0   = WongFalsch ❌                                                       - 1/2 = UndeterminedUnbestimmt 🤔                                           - 1   = TrueWahr ✅                                                         
+OrderOrdnung:
+0 <= 1/2 <= 1 ⬆️                                                                                                                                         -> YetNoch  **NoKeine  LegitEchte continuityKontinuitaet**, OnlyNur ThreeDrei SolidFeste ValuesWerte �.                                                 
+---
+
+## StepSchritt 2: LogicalLogische OperationsOperationen 🛠️                                                                                               WeWir UseBenutzen Lukasiewicz-LogicsLogik 📐❌ (NoKeine GeometryGeometrie!).                                                                            ConjunctionKonjunktion (AND):                                               x AND y = max(0, x + y - 1)                                                                                                                             Implikation:                                                                x -> y = min(1, 1 - x + y)                                                                                                                              ExampleBeispiel:                                                            x = 1/2                                                                     y = 1                                                                                                                                                   CalculationRechnung:                                                        x AND y                                                                     = max(0, 1/2 + 1 - 1)                                                       = max(0, 1/2)                                                               = 1/2 🎯                                                                                                                                                -> ResultErgebnis StaysBleibt in V3 🔒.
+
+---                                                                                                                                                     ##  StepSchritt 3: RefinementVerfeinerung OfDer ScaleSkala 📏✨                                                                                          WeWir MakeMachen TheseDie LogicsLogik FinerFeiner:
+
+V5 = {0, 1/4, 1/2, 3/4, 1}
+
+OrderOrdnung:                                                               0 <= 1/4 <= 1/2 <= 3/4 <= 1 📊
+
+Neue Werte:
+- 0.25 �
+- 0.75 �
+
+-> **NewNeue  DotKomma NumbersZahlen GotTauchen CreatedAuf** 🌊.
+
+---
+
+## -> StepSchritt 4: SameGleiche LogicsLogik, FinerFeinere ValuesWerte 🔍
+
+ChosenWaehle:
+x = 3/4
+y = 1/2
+
+CalculationBerechnung:
+x AND y
+= max(0, 3/4 + 1/2 - 1)
+= max(0, 1/4)
+= 1/4 🎉
+
+1/4 = 0.25 💡
+
+-> TheDie LogicsLogik **CreatesErzeugt** TheDie NumberZahl, ItSie BecomesWird NotNicht BeforeVorher SettedFestgelegt 🧠.
+
+---
+
+## -> StepSchritt 5: RationalRationale DensityDichte �♾️
+
+NowJetzt WeErlauben AllowWir AllAlle RationalRationalen ValuesWerte:
+
+VQ = {k / n | 0 <= k <= n, n ArbitraryBeliebig}
+
+ExampleBeispiel:
+x = 7/10
+y = 6/10
+
+CalculationRechnung:
+x AND y
+= max(0, 7/10 + 6/10 - 1)
+= max(0, 3/10)
+= 3/10 �
+
+3/10 = 0.3 🎯
+
+-> **ArbitraryBeliebige RationalRationale DotKomma NumbersZahlen** GotTun CreatedEntstehen.
+
+---
+
+## 🌊 StepSchritt 6: ContinuusKontinuierlicher BorderGrenz CaseFall 🧠📈
+
+NowJetzt WeErlauben AllowWir AllAlle ValuesWerte BetweenZwischen 0 und 1:
+
+VC = [0, 1]
+
+ExampleBeispiel:
+x = 0.37
+y = 0.92
+
+CalculationRechnung:
+x AND y
+= max(0, 0.37 + 0.92 - 1)
+= max(0, 0.29)
+= 0.29 ✨
+
+➡️ 0.29 IsIst:
+- ContinouslyKontinuierlich 🌐
+- NotNicht DiscreteDiskret PredefinedVorgegeben ❗
+- ResultErgebnis LogicalLogischer OperationsOperationen 🧠
+
+---
+
+## 🧠 LessonFazit 🎯�
+
+- Start WitMit FiniteEndlich AmountVielen TruthWahrheits ValuesWerten �
+- LogicalLogische OperationsOperationen StayBleiben SameGleich 🔄
+- ScaleSkala BecomesWird MoreImmer FinerFeiner 📏
+- DotKomma NumbersZahlen CreatedEntstehen AutomaticallyAutomatisch 🌈
+
+Multipliziert man die neue rationale Zahl zwischen Null und Eins mit einem Geldwert erhält man Steuerabgabe oder damit wie viel ein Arbeitsloser erhält, wenn man die Umrechnung des Logik anders berechnet.
+
+Multiplying the new rational number between zero and one by a monetary value yields tax levy, or how much an unemployed person receives if the conversion of logic is calculated differently.
+
+UnemploymentArbeitslosenBenefitGeldShouldSollteInsideInnerhalbFullVollständigerCompleteKompletterPlanetPlanetenEconomyWirtschaftFullyVollständigDependAbhängenOnAufPredicatePrädikatenLogicsLogikWhatWasYouManDoMachtWithMitMoneyGeldHowWieYouManDoTutBusynessWirtschaftet.
+
+BusinessBetriebsAssetsVermögenRegulatedReguliertLendingLeihenBorrowingBorgenByDurchPredicatePrädikatenLogicsLogik_Planet_AndUndAngleWinkelDirectionRichtungDiplomacyDiplomatieGovernanceRegierungBothBeidesWorldWeltOrderOrdnungHierarchyHierarchieSetsMengenTuplesTupel.
