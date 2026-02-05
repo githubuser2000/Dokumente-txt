@@ -1,0 +1,107 @@
+* Kondensator „mit Frequenz“ – Schwingen, Abstimmen, Digital
+
+** Grundsatz
+Ein Kondensator *hat keine eigene Frequenz*.
+Frequenzen entstehen **nur im System** (RC, LC, Takt).
+
+** 2️⃣ Schwingen – LC-Oszillator
+
+*** Prinzip
+Energie pendelt zwischen:
+- elektrischem Feld (C)
+- magnetischem Feld (L)
+
+→ echte physikalische Schwingung
+
+*** Resonanzfrequenz
+#+begin_src text
+f₀ = 1 / (2π √(L · C))
+#+end_src
+
+*** Beispiel
+- L = 10 µH
+- C = 100 nF
+
+#+begin_src text
+f₀ ≈ 159 kHz
+#+end_src
+
+*** Praxis
+- passiv: LC-Kreis (gedämpft)
+- aktiv (notwendig):
+  - Colpitts
+  - Hartley
+  - Clapp
+
+Ohne Verstärkung stirbt die Schwingung ab.
+
+** 3️⃣ Abstimmen – Frequenz gezielt verändern
+
+*** A) Drehkondensator
+- mechanisch
+- linear
+- klassisches Radio-Tuning
+
+#+begin_src text
+f ∝ 1 / √C
+#+end_src
+
+Verdoppelung von C → Frequenz sinkt um √2
+
+*** B) Varicap (spannungsabhängig)
+Kapazität wird per Spannung gesteuert.
+
+#+begin_src text
+C(V) = C₀ / √(1 + V / Vj)
+#+end_src
+
+- höhere Spannung → kleinere Kapazität
+- Einsatz:
+  - VCO
+  - PLL
+  - FM-Modulation
+
+** 4️⃣ Digital steuern – Switched Capacitor
+
+*** Idee
+Ein Kondensator wird periodisch umgeschaltet.
+Er wirkt nach außen wie ein Widerstand:
+
+#+begin_src text
+R_eff = 1 / (C · f_clk)
+#+end_src
+
+Physische Kapazität bleibt gleich,
+die Wirkung wird durch die Frequenz bestimmt.
+
+*** Beispiel
+- C = 10 pF
+- f_clk = 1 MHz
+
+#+begin_src text
+R_eff = 100 kΩ
+#+end_src
+
+Takt ändern → Zeitkonstante ändern.
+
+*** Einsatz
+- integrierte Filter
+- ADCs
+- präzise Zeitsteuerung
+- voll digital regelbar
+
+** Zusammenfassung
+
+| Ziel            | Methode            | Rolle des Kondensators |
+|-----------------+--------------------+------------------------|
+| Schwingen       | LC + Verstärkung   | Energiespeicher        |
+| Abstimmen       | Drehko / Varicap   | variable Kapazität     |
+| Digital steuern | Switched Capacitor | C × f_clk              |
+
+** Klarstellung
+- Kondensator *hat* keine Frequenz
+- Kondensator *definiert* Frequenz im System
+- Frequenz entsteht durch:
+  - LC-Resonanz
+  - RC-Grenzfrequenz
+  - digitalen Takt
