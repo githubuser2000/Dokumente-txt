@@ -1,0 +1,89 @@
+Ja – aber ich gebe dir keine Start-up-Pitchfolien, sondern belastbare Gründungsrichtungen, die für einen Informatiker mit Substanz Sinn ergeben. Entscheidend ist nicht die Idee, sondern Hebel, Marktzugang und Verhandlungsmacht. Ich strukturiere das deshalb nach ökonomischer Logik, nicht nach Hype.
+1. B2B-Software für langweilige, aber teure Probleme (mein klarer Favorit)
+These: Dort, wo Prozesse alt, reguliert und ungeliebt sind, ist Zahlungsbereitschaft hoch.
+Konkrete Felder
+Dokumenten- & Regelwerke-Automatisierung
+z. B. Bauordnungen, Vergaberecht, Fördermittel, Compliance
+Parsing + Validierung + Entscheidungslogik
+Daten-Migration & Datenhygiene
+Legacy-Systeme → moderne Strukturen
+Viele Firmen wissen, dass ihre Daten schlecht sind – sie zahlen dafür
+Interne KI-Werkzeuge
+nicht Chatbots
+sondern: Klassifikation, Konsistenzprüfungen, Entscheidungsunterstützung
+Warum gut?
+Wenig Konkurrenz
+Kein Endkundenmarketing
+Verkauf über Fachabteilungen
+Monatliche Wartungsverträge
+Geschäftsmodell:
+Lizenz + Wartung / SaaS + Consulting-Onboarding
+2. Vertikale SaaS (nicht „für alle“, sondern für eine Branche)
+These: Horizontale Tools sterben an Konkurrenz. Vertikale Software überlebt Jahrzehnte.
+Beispiele
+Software nur für:
+Hausverwaltungen
+Medizinische Labore
+Architekturbüros
+Gutachter / Sachverständige
+Fokus auf:
+Formate
+Normen
+Export-Pflichten
+Prüfpfade
+Technisch oft simpel, aber:
+Fachwissen = Markteintrittsbarriere
+Kunden wechseln ungern
+3. Gründung als „Produkt-Dienstleister“ (keine Agentur)
+Unterschied zur Agentur:
+Du verkaufst ein wiederholbares technisches System, nicht Stunden.
+Beispiele
+„Wir bauen Rust-basierte CLI-Tools für Datenvalidierung“
+„Wir migrieren XML-Monster nach JSON + Schema + Tests“
+„Wir härten Build-Pipelines für regulierte Software“
+Key:
+1 klar umrissenes Angebot
+1 klarer Zielkunde
+1 klarer Preis
+4. Infrastruktur-Werkzeuge für Entwickler (hoch, aber riskant)
+Nur sinnvoll, wenn du wirklich tief bist.
+Richtungen
+Konfigurations-Validatoren
+Build-Optimierung
+Deterministische Datenpipelines
+Werkzeuge gegen Konfigurations-Drift
+Warnung:
+Sehr hoher Qualitätsanspruch
+Langsamer Cashflow
+Aber: enorme Hebelwirkung
+5. Daten-Monetarisierung (unterschätzt)
+These: Viele Daten sind wertvoll – nur nicht für ihren Besitzer.
+Beispiele
+Aggregierte Markt- oder Prozessdaten
+Qualitäts-Benchmarks
+Fehlerstatistiken
+Zeit-/Kosten-Vergleiche
+Du verkaufst Erkenntnis, nicht Software.
+6. Staat & Verwaltung (unglamourös, aber stabil)
+Wenn du Geduld hast:
+Digitale Akten
+Validierung von Formularen
+Schnittstellen zwischen Behörden
+Langfristige Wartungsverträge
+Vorteil:
+Wenig Wettbewerb von guten Entwicklern
+Hohe Trägheit → lange Kundenbeziehungen
+Harte Wahrheit (wichtig)
+„Ich habe eine Idee“ ist wertlos.
+Zugang zu Kunden ist alles.
+Die beste Frage ist nicht:
+Was kann ich bauen?
+sondern:
+Wessen Problem kenne ich gut genug, dass ich sofort verkaufen kann?
+Nächster sinnvoller Schritt
+Wenn du willst, gehen wir nicht theoretisch weiter, sondern konkret:
+dein technisches Profil (Sprachen, Tiefe)
+ob Solo-Gründung oder Team
+ob Deutschland / EU / USA
+ob Cashflow-nah oder langfristig
+Dann formuliere ich dir 2–3 realistische Gründungspfade inkl. Markteintritt, ohne Bullshit.
