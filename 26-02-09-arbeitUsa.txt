@@ -1,0 +1,64 @@
+Kurzantwort: Bei fast jedem großen US-Arbeitgeber im Tech-Bereich – insbesondere solchen, die Remote-Arbeit unterstützen oder internationale Rekrutierung machen – kannst du dich als Computerwissenschaftler/ Informatiker aus Deutschland bewerben. Entscheidend sind die Visa-/Arbeitserlaubnis-Regelungen und die jeweilige Firmenpolitik zur internationalen Rekrutierung.
+💡 Arbeitgeber-Kategorien, bei denen deutsche Bewerbungen realistisch sind
+🧠 Große Tech-Unternehmen mit aktivem internationalen Recruiting
+Diese Firmen haben etablierte Programme, um internationale Talente einzustellen – oft mit Visa-Sponsoring:
+FAANG/Tech-Giganten
+Google
+Facebook/Meta
+Apple
+Amazon
+Netflix
+Andere große US-Techs
+Microsoft
+Adobe
+Salesforce
+Oracle
+Diese Unternehmen haben üblicherweise Recruiting-Programme in Europa sowie Teams in Berlin, Dublin, London etc., über die du aus Deutschland starten kannst.
+🌍 Remote-freundliche Firmen (mit Bewerbungen aus dem Ausland möglich)
+Gerade seit COVID bieten viele Tech-Firmen Remote-Jobs an, bei denen eine Bewerbung aus Deutschland möglich ist – auch ohne sofortige US-Relokation:
+GitLab
+Automattic
+HashiCorp
+MongoDB
+Stripe (teilweise Remote-Optionen)
+Slack/Zoom (teilweise hybride Modelle)
+Ob du dauerhaft remote arbeiten kannst oder früher später in die USA umziehen musst, hängt von der Stelle und dem Team ab.
+🚀 Startups mit internationalem Fokus
+Viele US-Startups rekrutieren global, besonders wenn sie in Europa Teams oder Kunden haben:
+Coinbase
+Palantir
+Snowflake
+Robinhood
+Databricks
+UI/UX-, AI- oder Cloud-Startups (z. B. in NYC/SF/Austin)
+Hier lohnt sich oft ein Blick auf AngelList, Wellfound oder direkt auf den Karriereseiten.
+📌 Bewerbung aus Deutschland – praktische Optionen
+1) Direkt remote bewerben
+Für Remote-Stellen: ✔ Du arbeitest von Deutschland.
+✔ Du brauchst kein US-Visa.
+✔ Gute Option, wenn du nicht unbedingt in die USA willst.
+Tipp: Filtere nach „Remote“ oder „Europe timezone friendly“.
+2) Mit Relocation / Visa-Sponsoring
+Viele große Firmen bieten dies an: ✔ H-1B
+✔ O-1 (bei außergewöhnlicher Qualifikation)
+✔ L-1 (Inter-Company Transfer, wenn du intern wechselst)
+→ Das ist der klassische Weg, um physisch in die USA zu arbeiten.
+3) Über Tochtergesellschaften oder internationale Büros
+Viele US-Konzerne haben EU-Standorte, z. B.:
+Google (Dublin, London, München, Berlin)
+Microsoft (Berlin, Dublin, London)
+Amazon (Berlin, Dublin, Luxemburg)
+Du kannst dort anfangen und später intern in die USA wechseln.
+🎯 Tipps für deinen Bewerbungsansatz
+✅ LinkedIn/Indeed/Glassdoor/Xing/Wellfound gezielt nach remote oder international Filtern
+✅ Direkt auf Karriereseiten: „Internationals“, „Global Opportunities“, „Visa sponsorship“
+✅ Netzwerken mit US-Teams über LinkedIn oder GitHub
+✅ Open Source-Beiträge / Projekte – machen dich international sichtbarer
+✅ Zertifikate/Projekte in gefragten Bereichen (Cloud, AI/ML, Security, Distributed Systems)
+🧠 Fazit
+Du kannst dich aus Deutschland bei einer breiten Palette von US-Arbeitgebern bewerben – insbesondere:
+große Tech-Firmen mit internationaler Rekrutierung
+Remote-first-Unternehmen
+US-Startups mit globaler Belegschaft
+über EU-Standorte mit späterer Relocation
+Wenn du willst, kann ich dir konkrete Firmenlisten nach Fachgebiet (z. B. KI, System-Software, Cloud) oder beispielhafte Job-Listings zusammenstellen. Sag mir kurz, was genau deine Schwerpunkte sind.
