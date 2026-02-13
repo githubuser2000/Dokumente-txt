@@ -1,0 +1,42 @@
+1 testingTesten,
+2 determinationBestimmung Ampere,
+3 connectionVerbindung electricalElektrische VoltageSpannung,
+4 StreamStrom startBegin comesKommt, endEnde physicalPhysische LayerEbebe,
+5 Bit OneEins OrOder ZeroNull BeginAnfang Data Link LayerEbene,
+6 FramesRahmen ofVon Bits,
+7 controlingSteuerung,
+8 correctionKorrigierung,
+9 FramesRahmen ofVon Bytes ofDer CorrectionKorrigierung andUnd controlKontrolle,
+10 Medium DeterminationBestimmung Ethernet WifiWlan Mac AdressAdresse,
+11 UsingVerwenden Mac AdressAdresse BeginAnfang NetworkVermittlungs LayerSchicht,
+12 FramesRahmen Mac AdressAdresse,
+13 useVerwenden Mac FramesRahmen ForFür InfrastructureInfrastruktur,
+15 IPX SPX IPv6 IPv4 ICMP,
+16 spacesRäumeRoomsRäume IP AddressesAdressen,
+17 DifficultySchwierigkeit Offset AndUnd MTU DeterminationBestimmung BeginAnfang NetworkNetzwerk LayerEbene,
+18 FractioningZerlegen IntoIn IP PacketsPakete WithMit Overhead,
+19 useVerwenden IP, ProtocolProtokoll MessagesNachrichten,
+20 NetworkNetzwerk DistinguishionUnterscheidung Unicast Broadcast Multicast, 
+21 RoutingPfadfinden,
+22 useVerwenden RoutesPfade,
+23 Hop DescisionEntscheidung, 
+24 Header StoreSpeichern andUnd ForwardVorwärts,
+25 FragmentationFragmentierung EndEnde OfDer NetworkNetzwerk LayerEbene,
+26 Transport LayerEbene Ports EndEnde ToZu EndEnde CommunicationKommunikation,
+27 Transport LayerEbene TCP UDP ConnectionVerbindungs ManagementHandhabung ThreeDrei WayWege HandHände ShakeSchütteln,
+28 BeginAnfang SessionSitzungs LayerEbene RegistrationRegistrierung,
+29 UserBenutzer LoginEinloggen,
+30 AuthentificationAuthentifikation Duplexing AsWie USB, SessionSitzungs ID,
+31 Token CreationErschaffung continuityWeiterführung,
+32 TheDie SessionSitzung AndUnd EndEnde SessionSitzungs LayerEbene,
+33 SignsZeichen TypesTypen DestinguishionUnterscheidung BeginAnfang PresentationPräsentations LayerEbene
+34 FormatingFormatieren SerializationSerialisierung,
+35 TranslationÜbersetzung EncodingEnkodierung CompressionKompression,
+36 StandardizationStandardisierung EndEnde OfDer PresentationPräsentations LayerEbene
+3
+
+GermanDeutsch
+ISO/OSI-Referenzmodell OrOder
+EnglishEnglisch
+Open Systems Interconnection model
+EqualsGleicht CorrespondsEntspricht 24X24ContinuumKontinuum ItEs SelfSelbst.
