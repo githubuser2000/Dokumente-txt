@@ -1,0 +1,64 @@
+Warum navigiert das nach welcher Arithmetik zu diesem Bruch?
+Kann man sich das vorstellen?
+
+Ja, das ist absolut möglich! Da 10/7 in der 3-adischen Welt eine unendliche (aber periodische) Reihe ist, funktioniert die Rückumwandlung mathematisch genau wie bei einem periodischen Dezimalbruch (z. B. 0,\overline{3} = 1/3).
+​Hier sind die zwei Wege, wie man das verstehen und berechnen kann:
+​1. Der "Schulmathematik"-Trick (Perioden-Formel)
+​Nehmen wir an, du hast die 3-adische Zahl x berechnet. In der 3-adischen Darstellung stehen die Ziffern für Potenzen von 3:
+
+
+Warum landet man genau bei 10/7?
+​Stell dir vor, du versuchst eine Lücke zu füllen. 10/7 ist im Dezimalsystem eine unendliche Periode, weil 7 nicht in die Basis 10 passt. Im 3-adischen System ist es genau dasselbe: Weil 7 nicht in der Basis 3 steckt, "stottert" der Algorithmus und erzeugt eine unendliche (aber periodische) Folge von Ziffern nach links, um den Bruch 10/7 exakt auszubalancieren.
+​Ein intuitiver Test:
+Wenn du die 3-adische Zahl x hast und sie mit 7 multiplizierst (nach den Regeln der schriftlichen Multiplikation, nur von rechts nach links!), wirst du sehen, dass alle Stellen nach und nach zu 0 werden, bis am Ende nur die "10" (als 3-adischer Wert) übrig bleibt. Es ist wie ein Puzzle, das perfekt aufgeht.
+​Soll ich dir zeigen, wie die Periode bei 10/7 im Vergleich zu 1/7 aussieht?
+
+Mit dem cot kann man rationale Zahlen in Winkel umwandeln
+
+Das ist ein faszinierender Gedankensprung! Du verbindest hier zwei Welten: die Zahlentheorie (p-adische Zahlen) und die Trigonometrie.
+​Tatsächlich gibt es eine tiefe mathematische Verwandtschaft zwischen der Art, wie man Brüche p-adisch darstellt, und wie man sie in Winkelfunktionen wie den Kotangens (\cot) einsetzt.
+​1. Die rationale Verbindung
+​Wenn du eine rationale Zahl r = \frac{a}{b} hast, kannst du sie als Argument für den Arkuskotangens verwenden, um einen Winkel \theta zu erhalten:
+
+
+
+Das wird oft in der Geometrie genutzt, um Steigungen in Winkel umzurechnen.
+​2. Die Analogie: P-adisch vs. Trigonometrisch
+​Es gibt eine berühmte mathematische Brücke, die beide Konzepte vereint: Die Theorie der Modulformen und L-Funktionen. Hier ein Vergleich, wie beide Systeme mit rationalen Zahlen "navigieren":
+
+3. Warum der Kotangens besonders ist
+​Der Kotangens taucht in der Zahlentheorie oft in Form von Eisenstein-Reihen auf. Es gibt eine Formel, die den Kotangens als unendliche Summe von rationalen Brüchen darstellt:
+
+
+Das sieht einer p-adischen Entwicklung verblüffend ähnlich! Während du im 3-adischen System 10/7 in Potenzen von 3 zerlegst, zerlegt diese Formel den "Winkelwert" des Kotangens in eine unendliche Reihe rationaler Bausteine.
+​Kann man das kombinieren?
+​Es gibt tatsächlich die sogenannten p-adischen L-Funktionen, bei denen man versucht, trigonometrische Werte (wie sie beim \cot vorkommen) in einer p-adischen Welt zu interpretieren. Das Ziel ist es, "analytische" Kurven (Wellen) in einer "diskreten" Welt (Primzahlen) zu finden.
+​Ein praktischer Gedanke:
+Wenn du in deinem Python-Code den Wert x.val (also 10/7) nimmst und math.atan(1/x.val) rechnest, erhältst du den Winkel im Bogenmaß. In der p-adischen Welt würde man sich fragen: Gibt es einen "p-adischen Winkel", der sich genauso periodisch verhält wie der Kotangens? (Die Antwort führt zur p-adischen Exponentialfunktion exp_p).
+​Möchtest du sehen, wie man den Winkel für deinen Bruch 10/7 berechnet, oder interessiert dich eher, ob es eine "p-adische Trigonometrie" gibt?
+
+Ich kann mir das nicht vorstellen
+
+Das ist völlig verständlich. Die p-adische Welt steht unserer Alltagserfahrung komplett entgegen. Um sie sich vorzustellen, hilft es, die Idee vom „Zahlenstrahl“ (der immer länger wird) durch das Bild einer Zahlentrommel oder einer Kilometeranzeige im Auto zu ersetzen.
+​Stell dir eine Kilometeranzeige vor, die nur von 0 bis 999 geht. Wenn du bei 999 einen Kilometer weiterfährst, springt sie auf 000. In dieser Welt ist die Zahl „1000“ dasselbe wie „0“.
+​1. Das "Überlauf"-Prinzip (Modulo)
+​In deinem 3-adischen Beispiel mit 10 Stellen haben wir ein Fenster, das alles ignoriert, was größer ist als 3^{10} (59.049).
+​Stell dir vor, 10/7 ist ein Zielpunkt auf einer kreisförmigen Skala.
+​Die linke Seite: Du nimmst deine berechnete Ersatz-Zahl (eine riesige Ganzzahl) und vervielfachst sie siebenmal auf dieser Trommel.
+​Die rechte Seite: Das ist der Punkt, an dem die Zahl 10 auf der Trommel liegt.
+​Wenn die linke und die rechte Seite gleich sind, bedeutet das, dass deine riesige Zahl auf dieser speziellen Trommel genau an der gleichen Stelle landet wie der Bruch 10/7.
+​2. Die Lupe (Fraktale Vorstellung)
+​Ein anderes Bild: Stell dir vor, du navigierst in einem Videospiel in eine unendlich detaillierte Karte.
+​Stelle 1 (3^0): Du wählst eines von 3 großen Toren.
+​Stelle 2 (3^1): Hinter dem Tor sind wieder 3 Türen.
+​Stelle 10 (3^9): Du bist jetzt 10 Ebenen tief in den "Raum" hineingegangen.
+​Die "Ganzzahl", die das Skript ausspuckt, ist die Wegbeschreibung zu diesem Punkt. Wenn du sagst: "Ich bin bei 10/7", meinst du das unendliche Ende des Weges. Die Ganzzahl ist der Ort, an dem du nach 10 Schritten stehst.
+​3. Warum "Linke Seite = Rechte Seite" wichtig ist
+​Stell dir vor, jemand behauptet: "Die Zahl 142 ist fast so etwas wie 1000 geteilt durch 7".
+Du prüfst das: 142 \times 7 = 994.
+Auf einer Trommel, die nur 3 Stellen hat (0-999), ist 994 fast 0.
+​In der p-adischen Arithmetik wählen wir die Ziffern so geschickt aus, dass beim Multiplizieren mit dem Nenner (7) alle Stellen "weggeputzt" werden, bis nur noch der Zähler (10) oben stehen bleibt. Alles andere wird zu Null (es "läuft über").
+​Zusammengefasst
+​Du kannst dir die p-adische Zahl als eine "Ersatzzahl" vorstellen. Sie ist keine physikalische Menge wie "1,4 Liter Wasser". Sie ist eine Codierung, die sich in einem begrenzten Rechenraum (unseren 10 Stellen) exakt so verhält wie der Bruch 10/7.
+
+Verständlicher wird es oft, wenn man es mit p=2 (Binärsystem) vergleicht. Möchtest du, dass wir das gleiche Beispiel mit p=2 und nur 4 Stellen machen? Das kann man fast an den Fingern abzählen.
