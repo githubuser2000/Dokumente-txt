@@ -1,0 +1,13 @@
+Bewerbung
+Alexander Kern, 015758078013, noch Leipziger bald nicht mehr,
+
+Nach dem Studium 8 Jahre Bachelor Master of Science der Informatik war ich kurz Freiberufler Nachhilfelehrer und ansonsten habe ich die letzten 12 Jahre sehr viel Programmiert und zwar kostenlose Software. Ich habe im Studium viel C und Java und programmiert, danach sehr viel Python (auch Typescript) und seit Neuestem Rust. Ansonsten kann ich 10 bis 15 Programmiersprachen und Programmiere seit Ende der 1990” Software.
+Mein Portfolio, meine Repositories sind
+https://github.com/githubuser2000/
+https://gitlab.com/githubuser2000/
+
+Der Code ist nur von mir und über die Jahre hat sich sehr viel Code angesammelt. Viele sind nur kleine Projekte.
+Ich habe Open Source programmiert, weil es mir unmöglich gemacht wurde für Geld zu arbeiten, weil hinter meinem Rücken irgendetwas gemacht wurde, was ich nicht weiß was. Deswegen habe ich die letzten 12 Jahre stark kostenlos programmiert.
+
+Im Anhang sind die Zeugnisse von Master Bachelor Informatik-Assistent, 3 Ausbildungen.
+
