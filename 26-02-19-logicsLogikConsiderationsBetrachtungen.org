@@ -1,0 +1,57 @@
+#+TITLE: Logisch-Ontologische Matrix
+
+* Ontologische Ableitungen
+** Phänomen
+:PROPERTIES:
+:LOGIC: Falsch
+:END:
+Reine Erscheinung, unbestimmt/bestimmbar, aber ohne stabile Wahrheit.
+
+** Bestimmung
+:PROPERTIES:
+:LOGIC: Wahr
+:END:
+Das Festgelegte, das „es ist so und nicht anders“.
+
+** (Nicht-)Existenz
+:PROPERTIES:
+:LOGIC: Weder wahr noch falsch
+:END:
+Das reine Dass oder Nicht-Dass, vor/jenseits aller Qualifikation; ambivalente Existenzialität.
+
+** Zeit
+:PROPERTIES:
+:LOGIC: Sowohl wahr als auch falsch (einfache Äquivalenz)
+:END:
+Linearität erlaubt an beiden „Enden“ dieselbe Doppelwertigkeit; Zeit als Medium des Widerspruchs.
+
+** Kausalität
+:PROPERTIES:
+:LOGIC: Falsch UND „weder wahr noch falsch“
+:END:
+Phänomen + (Nicht-)Existenz → „wir wissen es nicht“, Würfelwurf-Charakter; Kausalität als blinder Start.
+
+** Zahl / Wert
+:PROPERTIES:
+:LOGIC: Falsch, obwohl ursprünglich sowohl wahr als auch falsch
+:END:
+Stückweise/stufenweise Bestätigung oder Enttäuschung von Existenz; diskrete Werte.
+
+** Winkel / Richtung
+:PROPERTIES:
+:LOGIC: Wahr UND falsch UND dann doch wahr
+:END:
+Zeitliche Ambivalenz wird durch eine zusätzliche Selektion/Bestimmung aufgelöst → gerichtete Ausrichtung, Vektor-Charakter.
+
+** Raum
+:PROPERTIES:
+:LOGIC: Sowohl wahr als auch falsch UND meta-äquivalent
+:END:
+Symmetrie in allen Richtungen; Widerspruch wird multidirektional ausgeglichen → isotroper Raum.
+
+** Potenzial
+:PROPERTIES:
+:LOGIC: Doppelte doppelte Negation
+:END:
+Reine Möglichkeit vor jeglicher Differenzierung; weder Existenz noch Nichtexistenz; Vor-ontologische Potenz.
+

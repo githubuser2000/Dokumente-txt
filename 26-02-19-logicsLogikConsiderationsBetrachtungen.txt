@@ -1,11 +1,10 @@
 Falsch = Phänomen,
 Wahr = Bestimmung,
-Weder wahr noch falsch = Existenz,
-Sowohl wahr als auch falsch (eine Art Äquivalenz) = Zeit (wegen Liniearität an beiden Enden),
-wahr und “weder wahr noch falsch” = wegen etwas wissen wir es nicht = Kausalität (Existenz oder Nichtexistenz und dann die Bestimmung dazu ja los start wie würfeln Kausalität los),
-weder wahr noch falsch und dann doch falsch = Zahl Wert (Stückweise Bestätigung von Existenz wie bei Zahlen),
+Weder wahr noch falsch = (Nicht-) Existenz,
+Sowohl wahr als auch falsch (eine Art Äquivalenz) = Zeit (wegen Linearität an beiden Enden),
+falsch und “weder wahr noch falsch” = wegen etwas wissen wir es nicht = Kausalität (Existenz oder Nichtexistenz und dann ein Phänomen ohne Bestimmung dazu ja los start wie würfeln Kausalität los),
+falsch, obwohl es sowohl wahr als auch falsch ist = Zahl Wert (Stückweise Bestätigung von Existenz wie bei Zahlen),
 wahr und falsch und dann doch wahr  = doch trotzdem obwohl = WinkelRichtung (Weil erst Zeitlich beides möglich und dann Lenkung durch nur wahr als dritte Information lenkt zu etwas),
 sowohl wahr als auch falsch und äquivalent in beide Richtungen wahr, also mehr als eine Art Äquivalenz, sondern eine weitere Art Äquivalenz zwischen einer Art Äquivalenz = Raum.
-“weder wahr noch falsch” und “weder wahr noch falsch” = Potenzial,
-“weder wahr noch falsch” und “sowohl wahr und falsch” = Effekt.
+weder “weder wahr noch falsch” noch “weder wahr noch falsch” = weder Existenz noch Existenz = Potenzial.
 
