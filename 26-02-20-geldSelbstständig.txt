@@ -1,0 +1,108 @@
+Das ist eine exzellente Frage. Wenn du Kunden nach dem Coden suchst, spielst du Lotto. Wenn du sie vorher findest, baust du mit Rückenwind.
+Hier ist der strategische Kern:
+Du verkaufst das Problem und das Ergebnis, nicht das Produkt.
+1. Verkaufe ein Ergebnis, kein Feature
+Die meisten Entwickler denken:
+„Ich baue X, das kann Y.“
+Der Markt denkt:
+„Ich habe Problem Z. Kann das weg?“
+Bevor du irgendetwas entwickelst, brauchst du:
+Eine klar definierte Zielgruppe (nicht „KMU“, sondern z. B. Inhouse-Recruiter in SaaS-Firmen mit 50–200 MA)
+Ein messbares Problem
+Ein greifbares Versprechen
+Schlecht:
+„KI-gestützte Workflow-Optimierung“
+Gut:
+„Reduziert manuelle Angebotserstellung in Handwerksbetrieben um 70 %“
+2. Problem-Interviews – keine Produkt-Pitches
+Sprich mit 15–30 potenziellen Kunden.
+Nicht:
+„Würdest du das kaufen?“
+Sondern:
+Was ist aktuell dein größtes Problem in Bereich X?
+Wie löst du es heute?
+Was kostet dich das (Zeit, Geld, Stress)?
+Hast du schon für eine Lösung bezahlt?
+Wenn niemand bereits Geld oder Zeit investiert → Problem ist nicht schmerzhaft genug.
+Das ist der Moment, wo du brutal ehrlich sein musst.
+3. Fake Door / Pre-Sell-Strategie
+Bevor du baust:
+Landingpage mit klarer Value Proposition
+Konkretes Angebot
+Call-to-Action: „Jetzt vorbestellen“ oder „Early Access sichern“
+Kein „Coming Soon“-Unsinn.
+Echte Zahlungsbereitschaft testen.
+Optionen:
+Warteliste mit klarer Problemformulierung
+Vorverkauf mit Discount
+Letter of Intent (B2B)
+Pilotvertrag
+Wenn niemand klickt oder zahlt → du hast Marktfeedback ohne 6 Monate Code verbrannt zu haben.
+4. Manuelle Lösung als MVP
+Der stärkste Trick:
+Simuliere dein Softwareprodukt manuell.
+Beispiel: Bevor du ein KI-Analyse-Tool baust →
+Mach die Analyse händisch als Dienstleistung.
+Warum?
+Du lernst das Problem tief
+Du erkennst Edge Cases
+Du verstehst Zahlungsbereitschaft
+Du weißt, welche Funktionen wirklich zählen
+Viele erfolgreiche SaaS-Produkte starteten als „Concierge MVP“.
+5. Community statt Produkt bauen
+Wenn du technischer Gründer bist (was ich vermute):
+Baue nicht zuerst Software.
+Baue:
+LinkedIn-Positionierung
+Fach-Newsletter
+Nischen-Community
+Problem-zentrierte Inhalte
+Wenn 500 Leute dir zuhören, brauchst du kein Marketingbudget mehr.
+Produkt folgt Audience.
+6. Zahlungsbereitschaft ist der einzige valide Indikator
+Likes sind wertlos.
+„Klingt spannend“ ist wertlos.
+Wartelisten ohne Commitment sind schwach.
+Goldstandard:
+Vorauszahlung
+Anzahlung
+Vertrag
+Pilot mit Budget
+Alles andere ist Ego-Futter.
+7. Mentales Reframing für Entwickler
+Du bist Softwareentwickler.
+Dein Reflex:
+„Ich baue erst mal.“
+Aber in Wahrheit bist du:
+Problemlöser im Markt.
+Code ist nur Implementierungsdetail.
+Wenn du das verinnerlichst, steigt deine Erfolgsquote massiv.
+8. Konkreter 30-Tage-Plan
+Woche 1:
+Zielgruppe schärfen
+20 Interview-Anfragen verschicken
+Woche 2:
+10–15 Gespräche führen
+Muster erkennen
+Problemstatement formulieren
+Woche 3:
+Landingpage
+Klare Positionierung
+Preis festlegen
+Woche 4:
+Outreach + Vorverkauf
+3 zahlende Kunden oder Pivot
+Wenn nach 30 Tagen niemand zahlen will → Problem neu denken.
+Brutale Wahrheit
+Wenn du kein einziges Gespräch führen willst,
+kein einziges Nein hören willst,
+kein Geld im Voraus verlangen willst,
+dann willst du eigentlich nur programmieren,
+nicht ein Produkt verkaufen.
+Und das ist okay – aber dann ist es ein Hobby, kein Business.
+Wenn du willst, gehen wir das konkret durch:
+Welche Zielgruppe?
+Welches Problem?
+B2B oder B2C?
+Welche Preisspanne stellst du dir vor?
+Dann zerlegen wir das strategisch.
