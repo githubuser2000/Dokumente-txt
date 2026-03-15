@@ -1,0 +1,26 @@
+O15Pureniuum Hexagon
+
+Ja. Die universelle Struktur ist die komplexe Exponentialabbildung, die Winkel und Zahlen verbindet und den Kreis als ℝ modulo 2PI realisiert.
+
+Raum → Winkel
+Name: Argument oder Polarwinkel
+
+Winkel → Raum
+Name: Parametrisierung des Kreises
+
+Winkel → Zahl
+Name: komplexe Exponentialabbildung
+
+Zahl → Winkel
+Name: Argument einer komplexen Zahl
+
+Die universelle Eigenschaft, die genau dieses Paar beschreibt
+Raum → Zahl
+Zahl → Raum
+heißt in der Mathematik meist:
+Koordinatisierung eines Raumes
+oder abstrakter
+Darstellung eines Raumes durch Koordinaten.
+
+Raum → Zahlen: Auswertung von Funktionen
+Zahlen → Raum: Koordinatenabbildung
